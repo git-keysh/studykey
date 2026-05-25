@@ -1,0 +1,536 @@
+exam:
+  title: "CSEC English A P1 2018 MJ"
+  year: 2018
+  subject: "English A"
+  total_items: 60
+  items:
+    - number: 2
+      question: "When parents display a ______ for one child, the others are likely to feel ______"
+      options:
+        A: "fondness lonely"
+        B: "dislike indifferent"
+        C: "preference jealous"
+        D: "concern angry"
+      correct_answer: "C"
+
+    - number: 3
+      question: "An attack on someone when that person is most vulnerable may be ______ but is always ______"
+      options:
+        A: "inappropriate thoughtful"
+        B: "rewarding satisfying"
+        C: "destructive distressing"
+        D: "effective unkind"
+      correct_answer: "D"
+
+    - number: 4
+      question: "While the committee members ______ insults across the floor, the chairman tried in vain to ______ order."
+      options:
+        A: "hurled restore"
+        B: "spoke impose"
+        C: "gave maintain"
+        D: "exchanged conserve"
+      correct_answer: "A"
+
+    - number: 5
+      question: "To conceal his true activities, the spy quickly ______ a plausible excuse for his presence there."
+      options:
+        A: "fabricated"
+        B: "divulged"
+        C: "explained"
+        D: "disguised"
+      correct_answer: "A"
+
+    - number: 6
+      question: "He was eager to share the news with his friends."
+      options:
+        A: "worried"
+        B: "reluctant"
+        C: "displeased"
+        D: "unavailable"
+      correct_answer: "B"
+
+    - number: 7
+      question: "Many parents and even some teenagers do not approve of the amount of permissiveness in today's society."
+      options:
+        A: "restrictiveness"
+        B: "competitiveness"
+        C: "progressiveness"
+        D: "broadmindedness"
+      correct_answer: "A"
+
+    - number: 8
+      question: "Every effort was made to avert the chance of failure."
+      options:
+        A: "ensure"
+        B: "exclude"
+        C: "examine"
+        D: "overcome"
+      correct_answer: "A"
+
+    - number: 9
+      question: "The president of the students' association never mentioned the treasurer's integrity."
+      options:
+        A: "skill"
+        B: "loyalty"
+        C: "inability"
+        D: "dishonesty"
+      correct_answer: "D"
+
+    - number: 10
+      question: "She seems to be sensitive to the feelings of others."
+      options:
+        A: "unaware of"
+        B: "unaffected by"
+        C: "uninterested in"
+        D: "undecided about"
+      correct_answer: "A"
+
+    - number: 11
+      question: "People from crowded nations cannot get over the accessibility of Canada's natural environment, in all its magnificence. Begin the sentence with 'It is impossible for'"
+      options:
+        A: "to be over"
+        B: "to get over"
+        C: "to have got over"
+        D: "to getting over"
+      correct_answer: "B"
+
+    - number: 12
+      question: "If Charlie invites me, I will go to his party. Begin the sentence with 'Were Charlie to invite me'"
+      options:
+        A: "I would go"
+        B: "I will have gone"
+        C: "I would have gone"
+        D: "I would have been"
+      correct_answer: "A"
+
+    - number: 13
+      question: "More is experienced in one day of the life of a learned man than an ignorant man experiences in his whole lifetime. Begin the sentence with 'A learned man'"
+      options:
+        A: "experienced more in one day"
+        B: "more experienced in one day"
+        C: "experiences more in one day"
+        D: "has more experience in one day"
+      correct_answer: "C"
+
+    - number: 14
+      question: "She found, even after she had made several attempts to regulate the sprinkler, that the water was still reaching the furniture on the verandah. Begin the sentence with 'Having made'"
+      options:
+        A: "she found that"
+        B: "she had found that"
+        C: "she was finding that"
+        D: "and finding that"
+      correct_answer: "A"
+
+    - number: 15
+      question: "The cricket match ended abruptly when many of the spectators stormed the field. Begin the sentence with 'Many of the spectators stormed'"
+      options:
+        A: "so"
+        B: "but"
+        C: "getting"
+        D: "preventing"
+      correct_answer: "A"
+
+    - number: 16
+      question: "Considering the chaos you would cause if you were to resign now, I have no choice than to refuse your request."
+      options:
+        A: "Considering"
+        B: "were to resign"
+        C: "than"
+        D: "No error"
+      correct_answer: "C"
+
+    - number: 17
+      question: "'You may notice that the windows of the house next to the playground looks like those of ancient English cottages.'"
+      options:
+        A: "may notice"
+        B: "looks"
+        C: "ancient"
+        D: "No error"
+      correct_answer: "B"
+
+    - number: 18
+      question: "There is hardly a point to our knocking as no one is not at home."
+      options:
+        A: "hardly"
+        B: "knocking"
+        C: "is not"
+        D: "No error"
+      correct_answer: "C"
+
+    - number: 19
+      question: "Tom, the most talented of those musicians who need help, has promised to give his services free of charge for any worthwhile cause."
+      options:
+        A: "most talented"
+        B: "need"
+        C: "has promised"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 20
+      question: "Any disease of the bones and joints which are due to deficiencies in a single nutritional factor can be prevented."
+      options:
+        A: "bones and joints"
+        B: "are"
+        C: "nutritional"
+        D: "No error"
+      correct_answer: "B"
+
+    - number: 21
+      question: "There are many who have not considered the need to abstain from alcohol, but sobriety is truly the only option for one who wishes to engage in healthy lifestyle practices."
+      options:
+        A: "The sentence is wordy, is repetitive or contains redundancies."
+        B: "The sentence contains a cliché or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "A"
+
+    - number: 22
+      question: "He wanted to beg for his old job, but that ship has sailed, and he had to simply play the hand that was dealt him."
+      options:
+        A: "The sentence is wordy, is repetitive or contains redundancies."
+        B: "The sentence contains a cliché or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "B"
+
+    - number: 23
+      question: "Rising from the throne, the crowd cheered their noble monarch as he walked solemnly forward to greet the foreign dignitaries."
+      options:
+        A: "The sentence is wordy, is repetitive or contains redundancies."
+        B: "The sentence contains a cliché or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "C"
+
+    - number: 24
+      question: "The moon shone brightly in the clear night sky, its cool light a blessing after the searing heat of day."
+      options:
+        A: "The sentence is wordy, is repetitive or contains redundancies."
+        B: "The sentence contains a cliché or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "D"
+
+    - number: 25
+      question: "When the clerk raised his voice in protest, his boss asked him to hold his tongue since empty vessels made the most noise and are often thrown in the den to be eaten by the lions."
+      options:
+        A: "The sentence is wordy, is repetitive or contains redundancies."
+        B: "The sentence contains a cliché or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "B"
+
+    - number: 26
+      question: "The phrase 'Her garden looks' (line 1) is an example of"
+      options:
+        A: "simile"
+        B: "metaphor"
+        C: "sarcasm"
+        D: "personification"
+      correct_answer: "D"
+
+    - number: 27
+      question: "The garden seemed 'Criss-crossed' (line 2) because the"
+      options:
+        A: "poet was looking at it through a lattice window"
+        B: "garden beds were laid out in squares"
+        C: "children were walking across the garden"
+        D: "the person looking at the garden was cross-eyed"
+      correct_answer: "A"
+
+    - number: 28
+      question: "Which of the following phrases is meant to be taken literally?"
+      options:
+        A: "'Hiding places for small girls' (line 4)"
+        B: "'Her garden ... / Travels politely unto the verandah' (lines 5-6)"
+        C: "'Feeding her frail consciousness' (line 14)"
+        D: "'... watching the even shape of her/ days' (line 28-29)"
+      correct_answer: "A"
+
+    - number: 29
+      question: "'Her garden stands neatly round her house' (line 5) tells us that"
+      options:
+        A: "there were several well-kept potted plants on stands around her house"
+        B: "several tall trees stood along the side of the house"
+        C: "the garden which surrounded the house was well kept"
+        D: "the woman cleaned the flower stands every day"
+      correct_answer: "C"
+
+    - number: 30
+      question: "The poet uses the words 'frail consciousness' (line 14) to show that Mama"
+      options:
+        A: "was unconscious most of the time"
+        B: "was not understanding as well as she used to"
+        C: "had fainted because of lack of food"
+        D: "was thin and weak and could hardly walk"
+      correct_answer: "B"
+
+    - number: 31
+      question: "Which of the following BEST describes the woman's extra thoughtfulness of her mother?"
+      options:
+        A: "'She lives with Mama, shepherding her with / her full body' (lines 10-11)"
+        B: "'press moist, breathless kisses' (line 21)"
+        C: "'Feeding her ... with edited/ Gleaner news' (lines 14-15)"
+        D: "'Spreading out nostalgia through/ Strings and flutes' (lines 24-25)"
+      correct_answer: "C"
+
+    - number: 32
+      question: "The poet uses the phrase 'borrowed children' (line 17) to show"
+      options:
+        A: "how much she loved the children"
+        B: "that she had no children of her own"
+        C: "that she did not want children"
+        D: "why she made the children wash their dirty hands"
+      correct_answer: "B"
+
+    - number: 33
+      question: "Which of the following were done by the children to show their love for the woman? I. Wiping their hands before touching the china bird II. Eating all the sticky cakes she made them III. Kissing her on the side of her lips"
+      options:
+        A: "I and II only"
+        B: "I and III only"
+        C: "II and III only"
+        D: "I, II and III"
+      correct_answer: "B"
+
+    - number: 34
+      question: "Which word BEST describes the homeowner's attitude towards the hillside near his house?"
+      options:
+        A: "Angry"
+        B: "Proud"
+        C: "Pleased"
+        D: "Possessive"
+      correct_answer: "D"
+
+    - number: 35
+      question: "The words 'struck him' (line 2) suggest that to the homeowner the sudden appearance of the squatter's house"
+      options:
+        A: "stirred disgust at the nature of the home"
+        B: "awoke interest in how quickly it was built"
+        C: "aroused shock at the unexpected neighbour"
+        D: "stimulated pain because of the loss of privacy and control"
+      correct_answer: "C"
+
+    - number: 36
+      question: "The phrase 'sat on' (line 9) tells us that the house is"
+      options:
+        A: "set into the hillside"
+        B: "comfortably situated"
+        C: "precariously located"
+        D: "placed directly on the hill"
+      correct_answer: "D"
+
+    - number: 37
+      question: "Which of the following did the homeowner believe gave him the right to claim the hill?"
+      options:
+        A: "Its proximity to his home."
+        B: "It was not easily accessible."
+        C: "The length of time he lived there."
+        D: "No one had moved in for some time."
+      correct_answer: "C"
+
+    - number: 38
+      question: "The word 'littered' (line 7) highlights the owner's belief that the squatters' settlements were I. temporary II. a blemish III. poorly built"
+      options:
+        A: "II only"
+        B: "I and III only"
+        C: "II and III only"
+        D: "I, II and III"
+      correct_answer: "C"
+
+    - number: 39
+      question: "Which of the following BEST captures the homeowner's biggest fear?"
+      options:
+        A: "The silk-cotton tree would become gigantic"
+        B: "Proper houses would be built on the hillside"
+        C: "The hillside would become a squatters' settlement"
+        D: "Littering would become a problem on the hillside"
+      correct_answer: "C"
+
+    - number: 40
+      question: "The repetition of 'his hill' (lines 3, 20) by the narrator"
+      options:
+        A: "displays the depth of his disgust"
+        B: "shows how persistent his shock was"
+        C: "presents the homeowner's stubbornness"
+        D: "emphasizes the passion behind his attitude"
+      correct_answer: "D"
+
+    - number: 41
+      question: "Which words BEST sum up the homeowner's view of squatters' settlement?"
+      options:
+        A: "'sprung up daily' (line 7)"
+        B: "'society out of control' (line 8)"
+        C: "'marred his view' (line 9)"
+        D: "'houses, proper ones' (line 11)"
+      correct_answer: "B"
+
+    - number: 42
+      question: "The writer's MAIN purpose in the extract is to"
+      options:
+        A: "show that the ocean is very diverse"
+        B: "convince the reader to visit the ocean"
+        C: "describe the beauty of the ocean to humans"
+        D: "discuss the different creatures that live in the ocean"
+      correct_answer: "A"
+
+    - number: 43
+      question: "The word 'prejudiced' (line 1) is NEAREST in meaning to"
+      options:
+        A: "racial"
+        B: "biased"
+        C: "negative"
+        D: "unpleasant"
+      correct_answer: "B"
+
+    - number: 44
+      question: "The writer says that prejudiced eyes see the oceans as being 'as homogeneous as outer space' (lines 1-2). This description suggests that the oceans seem to be"
+      options:
+        A: "empty and far away"
+        B: "the cause of prejudice"
+        C: "a rich and varied place"
+        D: "one continuous stretch of water"
+      correct_answer: "D"
+
+    - number: 45
+      question: "The statement 'some marine creatures treat the whole maritime world as their oyster' (lines 2-3) suggests that the creatures"
+      options:
+        A: "live in oysters"
+        B: "feed on oysters"
+        C: "stay in one part of the ocean"
+        D: "move freely throughout the oceans"
+      correct_answer: "D"
+
+    - number: 46
+      question: "According to the extract, 'patchiness' (line 13) refers to"
+      options:
+        A: "variation"
+        B: "confusion"
+        C: "movement"
+        D: "piecing together"
+      correct_answer: "A"
+
+    - number: 47
+      question: "Which of the following BEST describes the type of writing in the extract?"
+      options:
+        A: "Critical"
+        B: "Narrative"
+        C: "Informative"
+        D: "Argumentative"
+      correct_answer: "C"
+
+    - number: 48
+      question: "According to the extract, which of the following statements is FALSE?"
+      options:
+        A: "There are more species on land than in the ocean."
+        B: "There are more species in the ocean than on land."
+        C: "Many ocean creatures divide their time in different parts of the ocean."
+        D: "Many sea creatures take different forms at different stages of their lives."
+      correct_answer: "B"
+
+    - number: 49
+      question: "The clause 'there are so many different ways of making a living in the oceans' (line 16) refers to"
+      options:
+        A: "tourists"
+        B: "fishermen"
+        C: "scientists"
+        D: "marine creatures"
+      correct_answer: "D"
+
+    - number: 50
+      question: "The advertisement was most likely taken from a"
+      options:
+        A: "newspaper"
+        B: "geography text"
+        C: "tourism brochure"
+        D: "naturalist magazine"
+      correct_answer: "C"
+
+    - number: 51
+      question: "Which of the following is nearest in meaning to 'off the beaten track' (line 1)?"
+      options:
+        A: "On unpaved trails"
+        B: "Into the wilderness"
+        C: "Through dense vegetation"
+        D: "Along routes not regularly traversed"
+      correct_answer: "D"
+
+    - number: 52
+      question: "Which of the following does the advertisement promise? I. Scenic beauty II. Sedate enjoyment III. Outdoor adventure"
+      options:
+        A: "I and II only"
+        B: "I and III only"
+        C: "II and III only"
+        D: "I, II and III"
+      correct_answer: "D"
+
+    - number: 53
+      question: "The phrase 'The neat sugar cane fields sweep down the rolling hills' (line 5) contains an example of"
+      options:
+        A: "contrast"
+        B: "repetition"
+        C: "metaphor"
+        D: "specific reference"
+      correct_answer: "C"
+
+    - number: 54
+      question: "This advertisement seeks to persuade the reader mainly through the use of"
+      options:
+        A: "detail"
+        B: "imagery"
+        C: "suspense"
+        D: "exaggeration"
+      correct_answer: "B"
+
+    - number: 55
+      question: "What does this airline promise if a person joins the Miles Programme?"
+      options:
+        A: "Faster travel"
+        B: "Free shopping"
+        C: "Frequent shopping"
+        D: "Rewards for every flight"
+      correct_answer: "D"
+
+    - number: 56
+      question: "How many bonus miles does a silver tier member receive?"
+      options:
+        A: "3000"
+        B: "5000"
+        C: "7000"
+        D: "8000"
+      correct_answer: "A"
+
+    - number: 57
+      question: "To which of the following destinations can a person fly using 25 500 airline miles?"
+      options:
+        A: "Asia"
+        B: "Africa"
+        C: "Europe"
+        D: "North America"
+      correct_answer: "D"
+
+    - number: 58
+      question: "According to the advertisement, what should a prospective member do if more detailed information is needed about the benefits of the programme?"
+      options:
+        A: "Fly frequently."
+        B: "Visit the airline's webpage."
+        C: "Visit the airline's offices."
+        D: "Join the Miles Programme."
+      correct_answer: "B"
+
+    - number: 59
+      question: "Which technique does the advertisement use to appeal to travellers to join the Miles Programme?"
+      options:
+        A: "Facts"
+        B: "Opinion"
+        C: "Persuasive language"
+        D: "Personal experience"
+      correct_answer: "A"
+
+    - number: 60
+      question: "The MAIN purpose of the advertisement is to encourage persons to"
+      options:
+        A: "enjoy air travel"
+        B: "receive an executive gold card"
+        C: "fly more often"
+        D: "become members of the Miles Programme"
+      correct_answer: "D"

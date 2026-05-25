@@ -1,0 +1,541 @@
+exam:
+  title: "CSEC English A P1 2024 MJ"
+  year: 2024
+  subject: "English A"
+  total_items: 60
+  items:
+    - number: 1
+      question: "Many teenagers and even some parents do not agree with the amount of restrictiveness in today's society."
+      options:
+        A: "bluntness"
+        B: "forcefulness"
+        C: "permissiveness"
+        D: "competitiveness"
+      correct_answer: "C"
+
+    - number: 2
+      question: "Constructive criticism is neither appreciated nor encouraged by some of our peers."
+      options:
+        A: "Sound"
+        B: "Negative"
+        C: "Valuable"
+        D: "Unsatisfactory"
+      correct_answer: "C"
+
+    - number: 3
+      question: "The affluence displayed in the community on the hill indicated the significant difference in economic status compared with dwellers in the city."
+      options:
+        A: "misery"
+        B: "wealth"
+        C: "poverty"
+        D: "richness"
+      correct_answer: "B"
+
+    - number: 4
+      question: "The barren land was a result of agricultural practices."
+      options:
+        A: "stony"
+        B: "fertile"
+        C: "swampy"
+        D: "unproductive"
+      correct_answer: "D"
+
+    - number: 5
+      question: "They always displayed a lackadaisical approach to their studies, so no one was surprised at the results."
+      options:
+        A: "calm"
+        B: "casual"
+        C: "diligent"
+        D: "careless"
+      correct_answer: "D"
+
+    - number: 6
+      question: "He advanced a step or two to meet his attacker who became alarmed and retreated back."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains cliches or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "A"
+
+    - number: 7
+      question: "Her friend told her to look for the good in the situation as every cloud has a silver lining."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains cliches or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "B"
+
+    - number: 8
+      question: "She had adequate time to prepare for the interview."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains cliches or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "D"
+
+    - number: 9
+      question: "When the clerk raised his voice in protest, his boss asked him to hold his tongue since empty vessels made the most noise and are often thrown in the den to be eaten by the lions."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains cliches or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "B"
+
+    - number: 10
+      question: "If I was the captain of the West Indies cricket team, I will attack the batsmen with my fast bowlers."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains cliches or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "C"
+
+    - number: 11
+      question: "The novice climber called out to my partner and me for assistance as she struggled up the slope."
+      options:
+        A: "called out"
+        B: "my partner and me"
+        C: "struggled up"
+        D: "No error."
+      correct_answer: "D"
+
+    - number: 12
+      question: "Neither the books nor the pen are affordable on my meagre budget."
+      options:
+        A: "Neither"
+        B: "are"
+        C: "meagre"
+        D: "No error."
+      correct_answer: "B"
+
+    - number: 13
+      question: "The earthquake in Haiti, destroyed many buildings, devastated the population and was a catalyst for other disasters."
+      options:
+        A: "The earthquake in Haiti,"
+        B: "devastated"
+        C: "catalyst"
+        D: "No error."
+      correct_answer: "A"
+
+    - number: 14
+      question: "He is full of venom since the war, took a great toll on him."
+      options:
+        A: "full of venom"
+        B: "since the war,"
+        C: "took a great toll"
+        D: "No error."
+      correct_answer: "B"
+
+    - number: 15
+      question: "I decided to eat the hamburger before class, though I was already late, however I was ravenous."
+      options:
+        A: "before class"
+        B: "though I was already late,"
+        C: "however I was ravenous."
+        D: "No error."
+      correct_answer: "C"
+
+    - number: 16
+      question: "I would have considered going to the picnic had I heard of it earlier. Begin the sentence with 'Since I did not know'"
+      options:
+        A: "I could"
+        B: "I should"
+        C: "I considered"
+        D: "have consideration"
+      correct_answer: "A"
+
+    - number: 17
+      question: "The kitten, frightened by the thunder, cowered under the sofa. Begin the sentence with 'The thunder frightened the kitten, so'"
+      options:
+        A: "covers"
+        B: "covered"
+        C: "cowering"
+        D: "was cowering"
+      correct_answer: "D"
+
+    - number: 18
+      question: "The cricket match ended abruptly when many of the spectators stormed the field. Begin the sentence with 'Many of the spectators stormed'"
+      options:
+        A: "so"
+        B: "but"
+        C: "getting"
+        D: "preventing"
+      correct_answer: "A"
+
+    - number: 19
+      question: "These students are hard-working as well as respectful. Begin the sentence with 'Not only'"
+      options:
+        A: "and"
+        B: "though"
+        C: "rather than"
+        D: "but they are"
+      correct_answer: "D"
+
+    - number: 20
+      question: "She did not know my exact location. Begin with 'She had no'"
+      options: []
+      correct_answer: null
+
+    - number: 21
+      question: "It was impossible to rectify the error made by the computer since inaccurate information had been fed into it."
+      options:
+        A: "fix"
+        B: "pin"
+        C: "aggravate"
+        D: "determine"
+      correct_answer: "A"
+
+    - number: 22
+      question: "The flowers grow profusely in the garden."
+      options:
+        A: "wildly"
+        B: "healthily"
+        C: "plentifully"
+        D: "colourfully"
+      correct_answer: "C"
+
+    - number: 23
+      question: "The news story revealed the squalor of the old prison cells."
+      options:
+        A: "security"
+        B: "strength"
+        C: "ambiance"
+        D: "filthiness"
+      correct_answer: "D"
+
+    - number: 24
+      question: "The gregarious young man was involved in numerous groups on campus and also enjoyed spending time with his large group of friends."
+      options:
+        A: "helpful"
+        B: "sociable"
+        C: "grateful"
+        D: "respectable"
+      correct_answer: "B"
+
+    - number: 25
+      question: "Bush fires are prevalent during the dry season, but the current drought has made the situation worse."
+      options:
+        A: "frequent"
+        B: "unpopular"
+        C: "controlled"
+        D: "established"
+      correct_answer: "A"
+
+    - number: 26
+      question: "The speaker in the poem is MOST likely"
+      options:
+        A: "a parent"
+        B: "a grandfather"
+        C: "an older sibling"
+        D: "a riding instructor"
+      correct_answer: "A"
+
+    - number: 27
+      question: "Why does the speaker compare the daughter's leaving home to her learning to ride a bicycle? I. The daughter needs support in both activities. II. The person remembers the child's courage and enjoyment. III. The person thinks learning to ride a bicycle is hard, as is life."
+      options:
+        A: "I and II only"
+        B: "I and III only"
+        C: "II and III only"
+        D: "I, II and III"
+      correct_answer: "A"
+
+    - number: 28
+      question: "The speaker's mouth is 'rounding/in surprise' (lines 7 and 8) because the"
+      options:
+        A: "girl wobbles, but does not fall"
+        B: "girl is confident that the speaker can keep up with her"
+        C: "novice rider is able to easily ride around a bend"
+        D: "daughter pulls away from the person's protective hold and rides ahead"
+      correct_answer: "D"
+
+    - number: 29
+      question: "What device is used in lines 12 and 13 ('for the thud/of your crash as I sprinted to catch up')?"
+      options:
+        A: "Onomatopoeia"
+        B: "Repetition"
+        C: "Metaphor"
+        D: "Simile"
+      correct_answer: "A"
+
+    - number: 30
+      question: "The words 'breakable/with distance' (lines 15 and 16) indicate the speaker's"
+      options:
+        A: "concern that he/she is not keeping up with the child"
+        B: "fear that the daughter will fall prey to a variety of dangers"
+        C: "worry that the child is fragile and cannot cope with the bicycle"
+        D: "anxiety that the girl cannot be protected when she is away from home"
+      correct_answer: "D"
+
+    - number: 31
+      question: "'Pumping/for your life' (lines 17 and 18) indicates that the"
+      options:
+        A: "girl's well-being is compromised"
+        B: "person fears that the girl will fall"
+        C: "girl is willing to exert herself to succeed"
+        D: "person thinks the girl is too young to be on her own"
+      correct_answer: "C"
+
+    - number: 32
+      question: "What literary device is used in the last four lines of the poem?"
+      options:
+        A: "Simile"
+        B: "Metaphor"
+        C: "Repetition"
+        D: "Onomatopoeia"
+      correct_answer: "A"
+
+    - number: 33
+      question: "The word 'goodbye' stands alone in the last line of the poem to"
+      options:
+        A: "indicate the end of one phase of life"
+        B: "point to the girl's happiness at leaving home"
+        C: "represent the speaker's understanding that he/she has to let go"
+        D: "symbolize the end of the relationship between the person and child"
+      correct_answer: "C"
+
+    - number: 34
+      question: "The mother's 'thrust of the chin' (line 3) is done in"
+      options:
+        A: "fear"
+        B: "hatred"
+        C: "defiance"
+        D: "contemplation"
+      correct_answer: "C"
+
+    - number: 35
+      question: "The son cautioned his mother about telling people exactly what she thought because he"
+      options:
+        A: "was affronted by her arrogance"
+        B: "thought others would be offended"
+        C: "found her behaviour aggressive"
+        D: "was upset that she would not change"
+      correct_answer: "B"
+
+    - number: 36
+      question: "Why does the writer choose the expression 'A formidable woman' (line 11) to describe the mother?"
+      options:
+        A: "He is intimidated by her."
+        B: "Her words often provoked anger."
+        C: "The difference in her style shows the constancy of her character."
+        D: "He emphasizes her strength which he finds admirable."
+      correct_answer: "D"
+
+    - number: 37
+      question: "What does 'In that time when I had known her best' (line 12) say about the mother-son relationship?"
+      options:
+        A: "They had grown apart."
+        B: "They admired each other."
+        C: "They had always had a close relationship."
+        D: "The son had forgotten things about his mother."
+      correct_answer: "A"
+
+    - number: 38
+      question: "What literary device is used in lines 12-13, 'my mother had hurled herself at life'?"
+      options:
+        A: "Irony"
+        B: "Imagery"
+        C: "Repetition"
+        D: "Onomatopoeia"
+      correct_answer: "B"
+
+    - number: 39
+      question: "The behaviours the mother finds contemptible include I. timidity II. laziness III. cowardice"
+      options:
+        A: "I and II only"
+        B: "I and III only"
+        C: "II and III only"
+        D: "I, II and III"
+      correct_answer: "D"
+
+    - number: 40
+      question: "The incident at Thanksgiving shows the mother's attitude to be one of"
+      options:
+        A: "hastiness"
+        B: "aggression"
+        C: "impudence"
+        D: "determination"
+      correct_answer: "D"
+
+    - number: 41
+      question: "The final sentence of the extract implies that the mother has"
+      options:
+        A: "become lazy and sleepy"
+        B: "lost her physical strength"
+        C: "hurt her leg in the hospital"
+        D: "died leaving the son to reminisce"
+      correct_answer: "D"
+
+    - number: 42
+      question: "The MAIN idea of the extract is that"
+      options:
+        A: "men and women have different ideas of beauty and what is acceptable"
+        B: "women have low self-esteem because of society's beauty ideals"
+        C: "women must not try to trap men with their questions"
+        D: "men do not understand women"
+      correct_answer: "A"
+
+    - number: 43
+      question: "According to the author, women's self-esteem is eroded by I. the cosmetics and fashion industries II. their own unquestioning acceptance of societal norms III. dolls whose proportions do not match the average woman's"
+      options:
+        A: "I and II only"
+        B: "I and III only"
+        C: "II and III only"
+        D: "I, II and III"
+      correct_answer: "D"
+
+    - number: 44
+      question: "The writer believes that most men are free from the self-esteem problem women face because men"
+      options:
+        A: "think they are irresistible anyway"
+        B: "prefer the natural look to rigorous beauty regimens"
+        C: "are perfectly fine with being average looking"
+        D: "believe that it is the woman's job to look good, not theirs"
+      correct_answer: "C"
+
+    - number: 45
+      question: "According to the extract, why is a man's 'beauty regimen' so comparatively simple?"
+      options:
+        A: "It is very low on his list of priorities."
+        B: "Most men look good anyway; they do need a beauty regimen."
+        C: "Men are honest and sensitive, and not as concerned with appearance."
+        D: "Men are less complex creatures than women and their habits reflect this."
+      correct_answer: "A"
+
+    - number: 46
+      question: "The language of the extract is informal, with personal interjections, because the author"
+      options:
+        A: "wants to make fun of the situation"
+        B: "wants to create rapport with his audience"
+        C: "is expressing his opinion, not studied fact"
+        D: "wishes to share simple truths about the sexes"
+      correct_answer: "B"
+
+    - number: 47
+      question: "The writer's use of the word 'brain' (line 1) is meant to"
+      options:
+        A: "compliment an individual"
+        B: "create a comparison of streets"
+        C: "make fun of the poor decisions"
+        D: "exaggerate the traffic problems"
+      correct_answer: "C"
+
+    - number: 48
+      question: "When the writer repeats 'not them' in paragraph 1, he implies that"
+      options:
+        A: "he is choosing someone to complain to"
+        B: "no one wants to accept responsibility for the traffic situation"
+        C: "no one knows who is in charge of the traffic management"
+        D: "he is searching diligently for the person in charge of traffic"
+      correct_answer: "B"
+
+    - number: 49
+      question: "'Stoke Street' (line 7), 'Celestial Road' (line 9) and 'Delino Street' (line 17) can BEST be considered as"
+      options:
+        A: "prohibited streets for all drivers"
+        B: "streets that attract a lot of attention"
+        C: "examples to support the writer's case"
+        D: "assigned parking places for diplomats"
+      correct_answer: "C"
+
+    - number: 50
+      question: "The writer's tone can be described as"
+      options:
+        A: "puzzled"
+        B: "resigned"
+        C: "sarcastic"
+        D: "complimentary"
+      correct_answer: "C"
+
+    - number: 51
+      question: "The last sentence of the letter is similar to paragraph 5 because both of them"
+      options:
+        A: "mention cars"
+        B: "express disgust"
+        C: "are complimentary"
+        D: "contain rhetorical questions"
+      correct_answer: "D"
+
+    - number: 52
+      question: "The author of the extract is MOST likely a"
+      options:
+        A: "motorist"
+        B: "pedestrian"
+        C: "traffic warden"
+        D: "government official"
+      correct_answer: "A"
+
+    - number: 53
+      question: "'Again the small man suffers' (line 14) implies that the small man is often"
+      options:
+        A: "ignored"
+        B: "disadvantaged"
+        C: "the one who is wrong"
+        D: "discriminated against"
+      correct_answer: "B"
+
+    - number: 54
+      question: "The letter was MOST likely published in a"
+      options:
+        A: "newspaper"
+        B: "press release"
+        C: "tourist brochure"
+        D: "school magazine"
+      correct_answer: "A"
+
+    - number: 55
+      question: "The MAIN purpose of the advertisement is to"
+      options:
+        A: "sell light bulbs"
+        B: "encourage better energy use"
+        C: "promote lighting in the home"
+        D: "highlight energy use in the home"
+      correct_answer: "B"
+
+    - number: 56
+      question: "Which of the following is the BEST meaning of the word 'absorb' as used in Tip 1 of the advertisement?"
+      options:
+        A: "Use up"
+        B: "Soak up"
+        C: "Take in"
+        D: "Swallow up"
+      correct_answer: "C"
+
+    - number: 57
+      question: "Which of the following practices is recommended?"
+      options:
+        A: "Turning off all lights for a minute"
+        B: "Turning off the lights for short periods"
+        C: "Keeping the lights on when leaving a room"
+        D: "Turning off the lights when leaving a room"
+      correct_answer: "D"
+
+    - number: 58
+      question: "The advertisement emphasizes that motion sensors are important because they"
+      options:
+        A: "are efficient and provide security"
+        B: "are cheaper and brighter"
+        C: "do not waste energy"
+        D: "use energy indoors"
+      correct_answer: "A"
+
+    - number: 59
+      question: "Which of the following statements is NOT made in the advertisement?"
+      options:
+        A: "Low wattage bulbs use less energy."
+        B: "Not all light bulbs are energy efficient."
+        C: "Compact fluorescent lights are energy efficient."
+        D: "Lamps placed on the floor are better for energy efficiency."
+      correct_answer: "D"
+
+    - number: 60
+      question: "The information in the advertisement would be MOST useful to"
+      options:
+        A: "electricians"
+        B: "householders"
+        C: "the light company"
+        D: "building contractors"
+      correct_answer: "B"

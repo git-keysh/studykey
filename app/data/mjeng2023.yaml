@@ -1,0 +1,545 @@
+exam:
+  title: "CSEC English A P1 2023 MJ"
+  year: 2023
+  subject: "English A"
+  total_items: 60
+  items:
+    - number: 1
+      question: "Their actions showed that they were firm in their rejection of the new law."
+      options:
+        A: "ignorance"
+        B: "acceptance"
+        C: "application"
+        D: "understanding"
+      correct_answer: "B"
+
+    - number: 2
+      question: "Every effort was made to ensure his arrival."
+      options:
+        A: "avoid"
+        B: "predict"
+        C: "analyse"
+        D: "jeopardize"
+      correct_answer: "D"
+
+    - number: 3
+      question: "Paul was enthusiastic about attending the final game."
+      options:
+        A: "eager"
+        B: "anxious"
+        C: "curious"
+        D: "unconcerned"
+      correct_answer: "A"
+
+    - number: 4
+      question: "The compassionate man was known by many in the crowd."
+      options:
+        A: "fussy"
+        B: "proud"
+        C: "uncaring"
+        D: "dissatisfied"
+      correct_answer: "C"
+
+    - number: 5
+      question: "As a result of the available evidence, the accused was apprehended and no further action was taken."
+      options:
+        A: "evicted"
+        B: "released"
+        C: "cautioned"
+        D: "summoned"
+      correct_answer: "B"
+
+    - number: 6
+      question: "He quickly reversed back the car into the street to avoid being hit by the oncoming vehicle."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains clichés or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "A"
+
+    - number: 7
+      question: "Its not absolutely necessary for it to be done today."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains clichés or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "C"
+
+    - number: 8
+      question: "She had adequate time to prepare for the interview."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains clichés or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "D"
+
+    - number: 9
+      question: "We must ensure that we do not put the cart before the horse in this matter."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains clichés or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "B"
+
+    - number: 10
+      question: "Sitting alone in his room by himself he repeated her name over and over again."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains clichés or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "A"
+
+    - number: 11
+      question: "The principal bought the school furniture from that store."
+      options:
+        A: "principal"
+        B: "bought"
+        C: "furniture"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 12
+      question: "The minister complained that the number of persons selected to perform was inadequate."
+      options:
+        A: "minister"
+        B: "complained"
+        C: "inadequate"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 13
+      question: "The receipt of his letter assured me that such an incident would not be tolerated."
+      options:
+        A: "receipt"
+        B: "assured"
+        C: "tolerated"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 14
+      question: "His colleague thought that the accommodation provided was substandard."
+      options:
+        A: "colleague"
+        B: "accommodation"
+        C: "substandard"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 15
+      question: "It is my privilege to give you some advice concerning proper nutrition."
+      options:
+        A: "privilege"
+        B: "advice"
+        C: "nutrition"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 16
+      question: "'It's going to be alright,' Mum assured me. Begin the sentence with 'Mum assured me that'"
+      options:
+        A: "there"
+        B: "it was"
+        C: "simply"
+        D: "only just"
+      correct_answer: "B"
+
+    - number: 17
+      question: "In your travels you will meet people of different cultures. Begin the sentence with 'Your travels'"
+      options:
+        A: "expose you to"
+        B: "submit you to"
+        C: "burdened with"
+        D: "be invited along with"
+      correct_answer: "A"
+
+    - number: 18
+      question: "On learning of the impending hurricane, many persons rushed to the supermarket. Begin the sentence with 'Many persons rushed'"
+      options:
+        A: "so they learnt"
+        B: "but they learned"
+        C: "when they learnt"
+        D: "for they were learning"
+      correct_answer: "C"
+
+    - number: 19
+      question: "The cricket match ended abruptly when many of the spectators stormed the field. Begin the sentence with 'Many of the spectators stormed'"
+      options:
+        A: "so"
+        B: "but"
+        C: "getting"
+        D: "preventing"
+      correct_answer: "A"
+
+    - number: 20
+      question: "During my time at school, I was involved in extracurricular activities. Begin the sentence with 'I was involved in'"
+      options:
+        A: "on staying"
+        B: "while I was"
+        C: "for my stay"
+        D: "when staying"
+      correct_answer: "B"
+
+    - number: 21
+      question: "It was impossible to rectify the error made by the computer since inaccurate information had been fed into it."
+      options:
+        A: "alter"
+        B: "erase"
+        C: "correct"
+        D: "determine"
+      correct_answer: "C"
+
+    - number: 22
+      question: "The flowers grow profusely in the garden."
+      options:
+        A: "wildly"
+        B: "healthily"
+        C: "abundantly"
+        D: "colourfully"
+      correct_answer: "C"
+
+    - number: 23
+      question: "For the first time in a decade, the company disclosed a deficit in its account."
+      options:
+        A: "altered"
+        B: "revealed"
+        C: "fabricated"
+        D: "concealed"
+      correct_answer: "B"
+
+    - number: 24
+      question: "Bush fires are prevalent during the dry season."
+      options:
+        A: "practised"
+        B: "curtailed"
+        C: "widespread"
+        D: "threatening"
+      correct_answer: "C"
+
+    - number: 25
+      question: "During the final stages of the trial, a new witness was called to corroborate the testimony of the accused."
+      options:
+        A: "clarify"
+        B: "support"
+        C: "conclude"
+        D: "compliment"
+      correct_answer: "B"
+
+    - number: 26
+      question: "There is a 'single kite' (line 1) left in the sky MOST likely because"
+      options:
+        A: "it is late"
+        B: "the lone fisherman waits"
+        C: "the cover of night has descended"
+        D: "the other kite flyers are asleep"
+      correct_answer: "A"
+
+    - number: 27
+      question: "What aspect of the sky does the poet focus on?"
+      options:
+        A: "Size"
+        B: "Shape"
+        C: "Colour"
+        D: "Distance"
+      correct_answer: "C"
+
+    - number: 28
+      question: "Of whom is the poet MOST likely thinking in the poem?"
+      options:
+        A: "An artist at work"
+        B: "A lonely old man"
+        C: "An enemy in hiding"
+        D: "Someone he/she loves"
+      correct_answer: "D"
+
+    - number: 29
+      question: "'When bats break a calm lake / like scissors on a warm fabric' (lines 10-11) is an example of"
+      options:
+        A: "simile"
+        B: "assonance"
+        C: "onomatopoeia"
+        D: "personification"
+      correct_answer: "A"
+
+    - number: 30
+      question: "The poet speaks of each of the following EXCEPT"
+      options:
+        A: "a single kite that is flying"
+        B: "a lone fisherman waiting"
+        C: "bats breaking warm fabric"
+        D: "the hen's wings that are warm"
+      correct_answer: "C"
+
+    - number: 31
+      question: "Which of the following literary devices is used in line 4?"
+      options:
+        A: "Contrast"
+        B: "Metaphor"
+        C: "Hyperbole"
+        D: "Alliteration"
+      correct_answer: "B"
+
+    - number: 32
+      question: "The poet's intention is to"
+      options:
+        A: "describe nature"
+        B: "describe the sunset"
+        C: "tell us of the lone fisherman"
+        D: "tell someone he/she is missing him/her"
+      correct_answer: "D"
+
+    - number: 33
+      question: "Which word BEST describes the poet's tone?"
+      options:
+        A: "Bitter"
+        B: "Serious"
+        C: "Regretful"
+        D: "Nostalgic"
+      correct_answer: "D"
+
+    - number: 34
+      question: "At what time of day did the MAIN events of the passage occur?"
+      options:
+        A: "Noon"
+        B: "Night"
+        C: "Evening"
+        D: "Morning"
+      correct_answer: "C"
+
+    - number: 35
+      question: "What effect did the truck have as it moved through the town?"
+      options:
+        A: "Dramatic"
+        B: "Disturbing"
+        C: "Scintillating"
+        D: "Stimulating"
+      correct_answer: "A"
+
+    - number: 36
+      question: "In lines 1-12 the town is described as"
+      options:
+        A: "having hills and valleys"
+        B: "undeveloped, with poor roads"
+        C: "having a series of winding roads"
+        D: "organized with main and secondary roads"
+      correct_answer: "C"
+
+    - number: 37
+      question: "Which of the following is NOT illustrated in the passage?"
+      options:
+        A: "The village had no vegetation."
+        B: "The people of the village were curious."
+        C: "Village life was quiet and uneventful."
+        D: "The village had just been hit by a hurricane."
+      correct_answer: "A"
+
+    - number: 38
+      question: "What is the dominant literary device used in the passage?"
+      options:
+        A: "Pun"
+        B: "Simile"
+        C: "Metaphor"
+        D: "Hyperbole"
+      correct_answer: "B"
+
+    - number: 39
+      question: "The passage appeals MOST to the senses of"
+      options:
+        A: "taste and hearing"
+        B: "sight and hearing"
+        C: "smell and hearing"
+        D: "touch and hearing"
+      correct_answer: "B"
+
+    - number: 40
+      question: "The words 'he didn't show himself again until the town clock struck eight' (lines 21-22) suggest that he"
+      options:
+        A: "was late in getting ready"
+        B: "was ashamed to show himself before eight"
+        C: "waited for the clock to strike eight to begin"
+        D: "forgot the time and started when the clock struck eight"
+      correct_answer: "C"
+
+    - number: 41
+      question: "The last sentence of the passage highlights the"
+      options:
+        A: "number of villagers present"
+        B: "exciting quality of the entertainment"
+        C: "lack of entertainment in the village"
+        D: "eagerness of the villagers for entertainment"
+      correct_answer: "D"
+
+    - number: 42
+      question: "According to paragraph 1 (lines 1-4), deaths from heart disease, cancer and disability are on the increase because of"
+      options:
+        A: "the dangers posed by modern living"
+        B: "traditional lifestyles in developing countries"
+        C: "growing substance abuse in today's society"
+        D: "longer life expectancy in recent years"
+      correct_answer: "A"
+
+    - number: 43
+      question: "The words 'succumbing' and 'dependence' (line 5) imply that the habits of cigarette smoking, alcohol and drug use"
+      options:
+        A: "inhibit development"
+        B: "are created by the users"
+        C: "give rise to a state of numbness"
+        D: "have an overpowering effect on people"
+      correct_answer: "D"
+
+    - number: 44
+      question: "The writer feels that deaths from cigarette smoking can BEST be minimized if"
+      options:
+        A: "governments institute new policies"
+        B: "countries have more creative health programmes"
+        C: "individuals simplify their lifestyles in the area of health"
+        D: "individuals make more personal choices about health programmes"
+      correct_answer: "A"
+
+    - number: 45
+      question: "From paragraphs 1 and 2 (lines 1-9), we may deduce that cancer is"
+      options:
+        A: "on the increase in developing countries"
+        B: "caused by excessive alcohol, drug and cigarette use"
+        C: "more likely to cause the death of people under 60 years of age"
+        D: "one major drawback to health programmes in developing countries"
+      correct_answer: "A"
+
+    - number: 46
+      question: "In the passage, it is suggested that one reason people smoke is that cigarette smoking"
+      options:
+        A: "is fashionable in modern society"
+        B: "is promoted by numerous advertisements"
+        C: "provides governments with needed revenue"
+        D: "provides release and relaxation for individuals"
+      correct_answer: "D"
+
+    - number: 47
+      question: "In the last paragraph (lines 27-29), which of the following is NOT suggested as a way in which dangers to health can be reduced?"
+      options:
+        A: "Governments implementing new policies"
+        B: "Allocating funds adequately to policies"
+        C: "Individuals altering patterns of living"
+        D: "Politicians becoming more responsible"
+      correct_answer: "D"
+
+    - number: 48
+      question: "The writer's use of the word 'brain' (line 1) is meant to"
+      options:
+        A: "make fun of the decisions"
+        B: "exaggerate the traffic problems"
+        C: "create a comparison of streets"
+        D: "compliment those responsible"
+      correct_answer: "A"
+
+    - number: 49
+      question: "When the writer repeats 'not them' in paragraph 1, he implies that"
+      options:
+        A: "he is choosing someone to complain to"
+        B: "no one knows who is in charge of the traffic management"
+        C: "no one wants to accept responsibility for the traffic situation"
+        D: "he is searching diligently for the person in charge of traffic"
+      correct_answer: "C"
+
+    - number: 50
+      question: "'Stoke Street' (line 7), 'Celestial Road' (line 9) and 'Delino Street' (line 17) can BEST be considered as"
+      options:
+        A: "prohibited streets for all drivers"
+        B: "streets that attract a lot of attention"
+        C: "assigned parking places for diplomats"
+        D: "examples to support the writer's case"
+      correct_answer: "D"
+
+    - number: 51
+      question: "The writer's tone can be described as"
+      options:
+        A: "puzzled"
+        B: "resigned"
+        C: "sarcastic"
+        D: "complimentary"
+      correct_answer: "C"
+
+    - number: 52
+      question: "The last sentence of the letter is similar to paragraph 5 because both of them"
+      options:
+        A: "mention cars"
+        B: "express disgust"
+        C: "are complimentary"
+        D: "contain rhetorical questions"
+      correct_answer: "D"
+
+    - number: 53
+      question: "The author of this passage is MOST likely a"
+      options:
+        A: "motorist"
+        B: "pedestrian"
+        C: "traffic warden"
+        D: "government official"
+      correct_answer: "A"
+
+    - number: 54
+      question: "'Again the small man suffers'(line 14) implies that the small man is often"
+      options:
+        A: "ignored"
+        B: "disadvantaged"
+        C: "considered the most"
+        D: "the one who is wrong"
+      correct_answer: "B"
+
+    - number: 55
+      question: "The letter was MOST likely published in a"
+      options:
+        A: "newspaper"
+        B: "press release"
+        C: "tourist brochure"
+        D: "school magazine"
+      correct_answer: "A"
+
+    - number: 56
+      question: "When the writer uses the statement 'Our floral arrangements send the message when there are no words' (line 3), he is suggesting that"
+      options:
+        A: "there are no words to describe Love Blooms"
+        B: "those who receive the flowers are left speechless"
+        C: "these flowers are sent by people who cannot speak"
+        D: "flowers convey the message more clearly than the spoken word"
+      correct_answer: "D"
+
+    - number: 57
+      question: "According to the advertisement, the treatment applied to the flowers"
+      options:
+        A: "makes the stems grow longer"
+        B: "is a result of the training that the florists receive"
+        C: "makes the flowers stay fresh for a longer period"
+        D: "causes the flower arrangers to work with them better"
+      correct_answer: "C"
+
+    - number: 58
+      question: "The use of the words 'to meet your every whim and fancy' (lines 7-8) is intended to make customers feel that"
+      options:
+        A: "their desires will be met"
+        B: "some desires are trivial"
+        C: "the florists are very creative"
+        D: "the arrangements are always fashionable"
+      correct_answer: "A"
+
+    - number: 59
+      question: "In using the statement '9 out of 10 customers value our efficient and reliable service' (line 9), the writer's purpose is MOST likely to"
+      options:
+        A: "show that people like the company"
+        B: "show how many people use the service"
+        C: "demonstrate that the company has done some research"
+        D: "encourage patronage by appealing to the need to be part of the group"
+      correct_answer: "D"
+
+    - number: 60
+      question: "The primary purpose of this advertisement is to"
+      options:
+        A: "introduce a gift special"
+        B: "give information about the delivery service"
+        C: "persuade readers to use the service offered by Love Blooms"
+        D: "give some examples of occasions when flowers may be used"
+      correct_answer: "C"

@@ -1,0 +1,545 @@
+exam:
+  title: "CSEC English A P1 2017 MJ"
+  year: 2017
+  subject: "English A"
+  total_items: 60
+  items:
+    - number: 1
+      question: "We found her appreciative of the help that we had given her on this matter."
+      options:
+        A: "unhappy about"
+        B: "displeased at"
+        C: "ungrateful for"
+        D: "intolerant of"
+      correct_answer: "C"
+
+    - number: 2
+      question: "While the employers approved of his work habits, they objected to his radical views."
+      options:
+        A: "capitalist"
+        B: "informed"
+        C: "fashionable"
+        D: "conservative"
+      correct_answer: "D"
+
+    - number: 3
+      question: "At the sound of the bell, the lower forms went reluctantly back to their classrooms."
+      options:
+        A: "willingly"
+        B: "hurriedly"
+        C: "anxiously"
+        D: "punctually"
+      correct_answer: "A"
+
+    - number: 4
+      question: "The guest speaker's address was devoid of humour and this made persons uneasy."
+      options:
+        A: "full of"
+        B: "indicative of"
+        C: "controlled by"
+        D: "presented with"
+      correct_answer: "A"
+
+    - number: 5
+      question: "As a result of the available evidence, the accused was apprehended and no further action was taken."
+      options:
+        A: "evicted"
+        B: "released"
+        C: "cautioned"
+        D: "summoned"
+      correct_answer: "B"
+
+    - number: 6
+      question: "Despite his being somewhat short-tempered, his willingness to give of his wealth to help others to succeed led people to call him"
+      options:
+        A: "hasty"
+        B: "foolish"
+        C: "benevolent"
+        D: "old fashioned"
+      correct_answer: "C"
+
+    - number: 7
+      question: "When parents display a ______ for one child, the others are likely to feel ______"
+      options:
+        A: "concern unsympathetic"
+        B: "dislike indifferent"
+        C: "fondness lonely"
+        D: "preference jealous"
+      correct_answer: "D"
+
+    - number: 8
+      question: "An attack on someone when that person is most vulnerable may be ______ but is always ______"
+      options:
+        A: "inappropriate thoughtful"
+        B: "rewarding satisfying"
+        C: "destructive distressing"
+        D: "effective unkind"
+      correct_answer: "D"
+
+    - number: 9
+      question: "While the committee members ______ insults across the floor, the chairman tried in vain to ______ order."
+      options:
+        A: "hurled restore"
+        B: "spoke impose"
+        C: "gave maintain"
+        D: "exchanged conserve"
+      correct_answer: "A"
+
+    - number: 10
+      question: "Are you trying to ______ that all along he knew of the plot to oust the committee?"
+      options:
+        A: "clarify"
+        B: "accuse"
+        C: "identify"
+        D: "insinuate"
+      correct_answer: "D"
+
+    - number: 11
+      question: "Mary still wanted to marry John even though he had lost all his money."
+      options:
+        A: "Mary agreed to marry John although he had lost all his money."
+        B: "The loss of all John's money did not affect Mary's wish to marry him."
+        C: "John's money did not matter to Mary who still wanted to marry him."
+        D: "Mary intended to marry John even if he were to lose all his money."
+      correct_answer: "B"
+
+    - number: 12
+      question: "No right-thinking person who has lived in the country will fail to understand my disgust at noise."
+      options:
+        A: "Every right-thinking person will understand my disgust at noise in the country."
+        B: "Noise in the country is as disgusting to me as it is to all right-thinking people."
+        C: "My disgust at noise will be understood by any right-thinking person who has lived in the country."
+        D: "It is inconceivable that a right-thinking person in the country could fail to understand my disgust at noise."
+      correct_answer: "C"
+
+    - number: 13
+      question: "The youth of the country need to organize themselves into co-operatives in order to support the prime minister's drive for self-sufficiency."
+      options:
+        A: "Co-operatives are the only means by which the prime minister's plan for self-sufficiency could be achieved by the youth."
+        B: "The prime minister advised the youth to get into co-operative groups so that they could support his plan for self-sufficiency."
+        C: "The youth should show their support for the prime minister's plans for self-sufficiency by organizing themselves into co-operatives."
+        D: "In order to support the plan for self-sufficiency the youth need to organize themselves and co-operate with the prime minister."
+      correct_answer: "C"
+
+    - number: 14
+      question: "Realizing that her suitcase was left on the bus, the woman desperately tried to attract the conductor's attention."
+      options:
+        A: "When the desperate woman realized that she was leaving the bus without her suitcase, she tried to attract the conductor's attention."
+        B: "The woman became aware of the fact that she no longer had her suitcase and did her best to catch the attention of the bus conductor."
+        C: "The woman made all attempts to attract the conductor's attention to the suitcase which she had left on the bus."
+        D: "The conductor's attention was attracted by the woman who in desperation, had forgotten her suitcase on the bus."
+      correct_answer: "B"
+
+    - number: 15
+      question: "The Europeans who were not well off were those who came to the West Indies in search of wealth."
+      options:
+        A: "Europeans settled in the West Indies because they were told that they would become richer."
+        B: "Unemployment at home caused Europeans to come to the West Indies to seek their fortune."
+        C: "Financial difficulties at home made Europeans who came to the West Indies decide to settle there."
+        D: "Europeans who came to the West Indies to seek their fortunes were the ones who were not wealthy."
+      correct_answer: "D"
+
+    - number: 16
+      question: "We could reach the survivors neither by boat or by plane, and so we abandoned our search as futile."
+      options:
+        A: "neither"
+        B: "or"
+        C: "futile"
+        D: "No error"
+      correct_answer: "B"
+
+    - number: 17
+      question: "I formed the brilliant idea of climbing the fence and to hang from the top of the rail until the bull went away."
+      options:
+        A: "formed"
+        B: "to hang"
+        C: "went away"
+        D: "No error"
+      correct_answer: "B"
+
+    - number: 18
+      question: "She was not feeling well at the beginning of the journey, and sitting at the front of the car made her feel worse."
+      options:
+        A: "well"
+        B: "beginning"
+        C: "worse"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 19
+      question: "My ambition is to have a good job and to further my studies at one of the more prestigious universities."
+      options:
+        A: "ambition"
+        B: "to further"
+        C: "more prestigious"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 20
+      question: "The better of the two athletes claim never to have used the dangerous drugs found in his possession."
+      options:
+        A: "better"
+        B: "claim"
+        C: "dangerous"
+        D: "No error"
+      correct_answer: "B"
+
+    - number: 21
+      question: "Which of the following is NOT true of the poet today?"
+      options:
+        A: "She cannot smile."
+        B: "She cannot be sad today."
+        C: "She does not love children."
+        D: "She cannot see beauty in anything."
+      correct_answer: "B"
+
+    - number: 22
+      question: "Which of the following words BEST describes the poet's mood?"
+      options:
+        A: "Jovial"
+        B: "Anxious"
+        C: "Reflective"
+        D: "Melancholic"
+      correct_answer: "D"
+
+    - number: 23
+      question: "The word 'particularly' (line 4) is NEAREST in meaning to"
+      options:
+        A: "rarely"
+        B: "truthfully"
+        C: "especially"
+        D: "sincerely"
+      correct_answer: "C"
+
+    - number: 24
+      question: "Which of the following is an example of alliteration?"
+      options:
+        A: "'cannot smile today' (line 1)"
+        B: "'can't love today' (line 9)"
+        C: "'wish the wind away' (line 12)"
+        D: "'I can't be happy today' (line 13)"
+      correct_answer: "C"
+
+    - number: 25
+      question: "The poet repeats the word 'today' for"
+      options:
+        A: "balance"
+        B: "emphasis"
+        C: "consistency"
+        D: "enhancement"
+      correct_answer: "B"
+
+    - number: 26
+      question: "The words 'nor see beauty' (line 10) mean that the poet cannot"
+      options:
+        A: "see nature"
+        B: "see her friend"
+        C: "tolerate people"
+        D: "appreciate anything"
+      correct_answer: "D"
+
+    - number: 27
+      question: "'I looked down the future today' (line 14) is an example of"
+      options:
+        A: "simile"
+        B: "metaphor"
+        C: "onomatopoeia"
+        D: "personification"
+      correct_answer: "B"
+
+    - number: 28
+      question: "The poet 'began to die' (line 15) probably because"
+      options:
+        A: "the weather was gloomy"
+        B: "she could not control her anger"
+        C: "future events did not look promising"
+        D: "there were too many people around her"
+      correct_answer: "C"
+
+    - number: 29
+      question: "The mood of the poem can BEST be described as"
+      options:
+        A: "depressing"
+        B: "peaceful"
+        C: "sarcastic"
+        D: "apprehensive"
+      correct_answer: "A"
+
+    - number: 30
+      question: "The poet's intention is to"
+      options:
+        A: "express her state of being"
+        B: "show us her dislike of children"
+        C: "demonstrate her hatred of people"
+        D: "encourage herself to be contented"
+      correct_answer: "A"
+
+    - number: 31
+      question: "The expression 'this bush does reduce you to an animal' (lines 1-2) implies that Shark would"
+      options:
+        A: "eat like an animal"
+        B: "walk on all fours like an animal"
+        C: "be forced to adopt the instincts of an animal"
+        D: "hunt for prey like an animal for survival"
+      correct_answer: "C"
+
+    - number: 32
+      question: "The advice given to Shark in the first sentence was meant to warn him that"
+      options:
+        A: "he should not be in the bush after dark"
+        B: "he could miss seeing the river in the dark"
+        C: "he should be careful about dangerous animals in the bush"
+        D: "there were things he did not yet know about life"
+      correct_answer: "D"
+
+    - number: 33
+      question: "'The forest darkened' (lines 6-7) suggests that the"
+      options:
+        A: "sun had set by this time"
+        B: "trees leaned over the river"
+        C: "sun made trees create shadows"
+        D: "trees were blocking out the sunlight"
+      correct_answer: "C"
+
+    - number: 34
+      question: "The phrase 'molasses-black' (line 12) describes"
+      options:
+        A: "the colour of the water"
+        B: "the thickness of the water"
+        C: "how slowly the water flowed"
+        D: "how the water smelled like molasses"
+      correct_answer: "A"
+
+    - number: 35
+      question: "The conclusion we may draw about Shark 'scanning the far bank' (line 13) is that he was"
+      options:
+        A: "examining carefully"
+        B: "glimpsing the bank"
+        C: "peering through the bushes"
+        D: "looking at the trees nearby"
+      correct_answer: "A"
+
+    - number: 36
+      question: "The phrases 'scanning the far bank' (line 13), 'descended stealthily' (line 13), 'hid my ... pouch' (line 14), 'crouched down' (line 15) show that Shark is"
+      options:
+        A: "looking for a friend"
+        B: "expecting an attack from animals"
+        C: "expecting someone who was not a friend"
+        D: "searching for a place to set up camp"
+      correct_answer: "C"
+
+    - number: 37
+      question: "Based on the extract, the only feeling Shark did NOT experience was"
+      options:
+        A: "fear"
+        B: "aloneness"
+        C: "anticipation"
+        D: "satisfaction"
+      correct_answer: "D"
+
+    - number: 38
+      question: "The concluding sentence of this extract"
+      options:
+        A: "suggests that Shark expected someone or something to appear at any moment"
+        B: "indicates that Shark was tired and wished to take a short rest"
+        C: "summarizes the events which took place"
+        D: "indicates that Shark had achieved his goal"
+      correct_answer: "A"
+
+    - number: 39
+      question: "Which of the following suggested titles BEST suits the extract?"
+      options:
+        A: "Nameless River"
+        B: "Lessons in Life"
+        C: "Lost in the Wild"
+        D: "Tracking in the Bush"
+      correct_answer: "D"
+
+    - number: 40
+      question: "According to the writer in lines 1-9, what is the most frightening thought that occurs when a guest stares at your bookshelves?"
+      options:
+        A: "He will be bored by your selection of books."
+        B: "He would ask to borrow one of your favourite books."
+        C: "He might show disapproval of your taste in books."
+        D: "He will be distracted from the important business at hand by looking at your books."
+      correct_answer: "B"
+
+    - number: 41
+      question: "The guest looks 'from title to title, as from girl to girl in an overheated dance hall' (lines 5-6). This comparison is intended to suggest a feeling of"
+      options:
+        A: "anticipation"
+        B: "frustration"
+        C: "confusion"
+        D: "maliciousness"
+      correct_answer: "D"
+
+    - number: 42
+      question: "The writer uses a series of short sentences in lines 7-8 to suggest his feeling of"
+      options:
+        A: "pleasure"
+        B: "disbelief"
+        C: "excitement"
+        D: "apprehension"
+      correct_answer: "D"
+
+    - number: 43
+      question: "The writer, in paragraph 2 (lines 10-15), describes in detail how he obtained the book in order to"
+      options:
+        A: "explain to the reader why he is so attached to the book"
+        B: "make the guest aware of how he came to own the book"
+        C: "show the reader that he did not mind if the guest borrowed the book"
+        D: "give his guest the background necessary to understand what the book is about"
+      correct_answer: "A"
+
+    - number: 44
+      question: "The word 'Mind?' (line 15) is written in italics because the author wishes to emphasize"
+      options:
+        A: "how much he minds lending his book to his friend"
+        B: "that his thoughts are not spoken aloud to his friend"
+        C: "how much of a history the particular book has"
+        D: "that he does not mind at all lending the book to his friend"
+      correct_answer: "B"
+
+    - number: 45
+      question: "In line 19, the writer uses square brackets to indicate that the word in these brackets"
+      options:
+        A: "is an expansion of those not in brackets (lines 16-18)"
+        B: "parallels those words not in brackets (lines 16-18)"
+        C: "contradicts those words not in brackets (lines 16-18)"
+        D: "is there to emphasize those words not in brackets (lines 16-18)"
+      correct_answer: "C"
+
+    - number: 46
+      question: "'One has books; one has friends; they are bound to meet' (lines 20-21). This statement implies that it is"
+      options:
+        A: "unusual to have neither books nor friends"
+        B: "inevitable that books will be borrowed by one's friends"
+        C: "possible to avoid such meetings by hiding away one's books"
+        D: "impossible to have a friend who does not want to keep one's books"
+      correct_answer: "B"
+
+    - number: 47
+      question: "According to the writer, which of the following is TRUE?"
+      options:
+        A: "The borrower of books never raises the question of money."
+        B: "The borrower of books only returns the books because of a sense of guilt."
+        C: "The borrower is more inclined to remember books than money."
+        D: "The borrower of money becomes a slave to the lender."
+      correct_answer: "D"
+
+    - number: 48
+      question: "The writer's use of the word 'brain' (line 1) is meant to"
+      options:
+        A: "make fun of the decisions"
+        B: "exaggerate the traffic problems"
+        C: "create a comparison of streets"
+        D: "compliment those responsible"
+      correct_answer: "A"
+
+    - number: 49
+      question: "When the writer repeats 'not them' in paragraph 1, he implies that"
+      options:
+        A: "he is choosing someone to complain to"
+        B: "no one knows who is in charge of the traffic management"
+        C: "no one wants to accept responsibility for the traffic situation"
+        D: "he is searching diligently for the person in charge of traffic"
+      correct_answer: "C"
+
+    - number: 50
+      question: "'Stoke Street' (line 7), 'Celestial Road' (line 9) and 'Delino Street' (line 17) can BEST be considered as"
+      options:
+        A: "assigned parking places for diplomats"
+        B: "examples to support the writer's case"
+        C: "prohibited streets for all drivers"
+        D: "streets that attract a lot of attention"
+      correct_answer: "B"
+
+    - number: 51
+      question: "The writer's tone can be described as"
+      options:
+        A: "puzzled"
+        B: "resigned"
+        C: "sarcastic"
+        D: "complimentary"
+      correct_answer: "C"
+
+    - number: 52
+      question: "The last sentence of the letter is similar to paragraph 5 because both of them"
+      options:
+        A: "mention cars"
+        B: "express disgust"
+        C: "are complimentary"
+        D: "contain rhetorical questions"
+      correct_answer: "D"
+
+    - number: 53
+      question: "The letter was MOST likely published in a"
+      options:
+        A: "newspaper"
+        B: "press release"
+        C: "tourist brochure"
+        D: "school magazine"
+      correct_answer: "A"
+
+    - number: 54
+      question: "The author of this passage is MOST likely a"
+      options:
+        A: "motorist"
+        B: "pedestrian"
+        C: "traffic warden"
+        D: "government official"
+      correct_answer: "A"
+
+    - number: 55
+      question: "'Again the small man suffers!' (line 14) implies that the small man is often"
+      options:
+        A: "ignored"
+        B: "disadvantaged"
+        C: "the one who is wrong"
+        D: "discriminated against"
+      correct_answer: "B"
+
+    - number: 56
+      question: "According to the information provided, the MAIN theme of the symposium is"
+      options:
+        A: "youth"
+        B: "drug abuse"
+        C: "adolescent health"
+        D: "sexually transmitted diseases"
+      correct_answer: "C"
+
+    - number: 57
+      question: "Which of the following groups is NOT a sponsor of the symposium?"
+      options:
+        A: "Ministry of Youth"
+        B: "Ministry of Health"
+        C: "Conference of Churches"
+        D: "National Council on Drug Abuse"
+      correct_answer: "C"
+
+    - number: 58
+      question: "Which of the following words can BEST replace 'symposium' in the advertisement?"
+      options:
+        A: "Exhibition"
+        B: "Conference"
+        C: "Discussion"
+        D: "Conversation"
+      correct_answer: "B"
+
+    - number: 59
+      question: "How can those who want to participate register for the event?"
+      options:
+        A: "Call the Ministry of Youth and speak to Yvonne Dalton."
+        B: "Contact Yvonne Dalton and call the Ministry of Education."
+        C: "Telephone the Ministry of Youth and the Ministry of Education."
+        D: "Complete a registration form and return it to the Ministry of Health."
+      correct_answer: "A"
+
+    - number: 60
+      question: "All of the following groups are specifically invited to attend EXCEPT"
+      options:
+        A: "youth groups"
+        B: "members of the public"
+        C: "parents of young people"
+        D: "doctors, nurses, and other health care workers"
+      correct_answer: "B"

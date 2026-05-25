@@ -1,0 +1,545 @@
+exam:
+  title: "CSEC English A P1 2020 MJ"
+  year: 2020
+  subject: "English A"
+  total_items: 60
+  items:
+    - number: 1
+      question: "Despite his short temper, his willingness to give of his wealth to help others to succeed led people to call him"
+      options:
+        A: "hasty"
+        B: "foolish"
+        C: "benevolent"
+        D: "old fashioned"
+      correct_answer: "C"
+
+    - number: 2
+      question: "The journalists were impressed by the ______ of the statesman whose speeches had a profound ______ on all who heard him."
+      options:
+        A: "eloquence......effect"
+        B: "presence......result"
+        C: "emotion......sensation"
+        D: "appearance......reaction"
+      correct_answer: "A"
+
+    - number: 3
+      question: "The new owners will be asked to start the plan as soon as possible and will be expected to ______ the policy of cost reduction approved by the board."
+      options:
+        A: "state"
+        B: "develop"
+        C: "frustrate"
+        D: "implement"
+      correct_answer: "D"
+
+    - number: 4
+      question: "Although it is possible to move the house, the cost of moving it makes the project"
+      options:
+        A: "popular"
+        B: "impractical"
+        C: "worthwhile"
+        D: "inconsiderate"
+      correct_answer: "B"
+
+    - number: 5
+      question: "To conceal his true activities, the spy quickly ______ a plausible excuse for his presence there."
+      options:
+        A: "divulged"
+        B: "disguised"
+        C: "explained"
+        D: "fabricated"
+      correct_answer: "D"
+
+    - number: 6
+      question: "She seems to be sensitive to the feelings of others."
+      options:
+        A: "unaware of"
+        B: "unsure about"
+        C: "unaffected by"
+        D: "appreciative of"
+      correct_answer: "A"
+
+    - number: 7
+      question: "Many teenagers and even some parents, do not agree with the level of restrictiveness in today's society."
+      options:
+        A: "permissiveness"
+        B: "unpleasantness"
+        C: "long sightedness"
+        D: "competitiveness"
+      correct_answer: "A"
+
+    - number: 8
+      question: "He was eager to share the news with his friends."
+      options:
+        A: "worried"
+        B: "reluctant"
+        C: "displeased"
+        D: "unavailable"
+      correct_answer: "B"
+
+    - number: 9
+      question: "The president of the students' association never mentioned the treasurer's integrity."
+      options:
+        A: "skill"
+        B: "loyalty"
+        C: "inability"
+        D: "dishonesty"
+      correct_answer: "D"
+
+    - number: 10
+      question: "While the employers approved of his work habits, they objected to his radical views."
+      options:
+        A: "capitalist"
+        B: "informed"
+        C: "fashionable"
+        D: "conventional"
+      correct_answer: "D"
+
+    - number: 11
+      question: "People from crowded nations cannot get over the accessibility of Canada's natural environment, in all of its magnificence. Begin the sentence with 'It is impossible for'"
+      options:
+        A: "to be over"
+        B: "to get over"
+        C: "to have got over"
+        D: "to getting over"
+      correct_answer: "B"
+
+    - number: 12
+      question: "On learning of the impending hurricane, many persons rushed to the supermarket. Begin the sentence with 'Many persons rushed'"
+      options:
+        A: "as they learned"
+        B: "while they learnt"
+        C: "when they learnt"
+        D: "for they were learning"
+      correct_answer: "C"
+
+    - number: 13
+      question: "More is experienced in one day of the life of a learned man than an ignorant man experiences in his whole lifetime. Begin the sentence with 'A learned man'"
+      options:
+        A: "experiences more in one day"
+        B: "more experienced in one day"
+        C: "experienced more in one day"
+        D: "has more experience in one day"
+      correct_answer: "A"
+
+    - number: 14
+      question: "During my time at school I was involved in extracurricular activities. Begin the sentence with 'I was involved in'"
+      options:
+        A: "on staying"
+        B: "while I was"
+        C: "for my stay"
+        D: "when staying"
+      correct_answer: "B"
+
+    - number: 15
+      question: "'It's going to be alright,' Mum assured me. Begin the sentence with 'Mom assured me that'"
+      options:
+        A: "it was"
+        B: "there"
+        C: "simply"
+        D: "only just"
+      correct_answer: "A"
+
+    - number: 16
+      question: "She is one of the thousands of babies who are diagnosed with that disease."
+      options:
+        A: "one of"
+        B: "are diagnosed"
+        C: "that"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 17
+      question: "The secretary had made up a calendar of events but there was not enough stationery to give each member a copy."
+      options:
+        A: "made up"
+        B: "stationery"
+        C: "each"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 18
+      question: "When the museum purchased his paintings the artist received many complements."
+      options:
+        A: "purchased"
+        B: "complements"
+        C: "artist"
+        D: "No error"
+      correct_answer: "B"
+
+    - number: 19
+      question: "After embarrassing his colleague his conscience bothered him and he eventually apologized."
+      options:
+        A: "After embarrassing"
+        B: "bothered"
+        C: "eventually"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 20
+      question: "It is my privilege to give you some advice concerning proper nutrition."
+      options:
+        A: "privilege"
+        B: "advice"
+        C: "nutrition"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 21
+      question: "So engrossed was he in his task that he did not hear his sister enter the room."
+      options:
+        A: "His task was so difficult that he did not observe his sister's entry."
+        B: "He did not hear his sister enter the room because of the job he was doing."
+        C: "His sister's entry did not attract his attention because he was enjoying what he was doing."
+        D: "He was so preoccupied with what he was doing that he was unaware of his sister's entry."
+      correct_answer: "D"
+
+    - number: 22
+      question: "The news shocked me so much that I almost forgot what to say."
+      options:
+        A: "The news was so shocking that I could not move."
+        B: "I could hardly remember my message after such shocking news."
+        C: "I nearly didn't speak again after the shock of the news."
+        D: "I was so shocked by the news that I could hardly speak."
+      correct_answer: "D"
+
+    - number: 23
+      question: "Recent floods have made the roads impassable."
+      options:
+        A: "People are unable to travel because of the floods."
+        B: "Because of heavy showers, commuters were forced to detour."
+        C: "The roads cannot be used as a result of the floods."
+        D: "Travelling has been brought to a standstill because of the floods."
+      correct_answer: "C"
+
+    - number: 24
+      question: "The Europeans who were not well off were those who came to the West Indies in search of wealth."
+      options:
+        A: "Europeans settled in the West Indies because they were told they would become richer."
+        B: "Unemployment at home caused Europeans to come to the West Indies to seek their fortune."
+        C: "Financial difficulties at home made Europeans who came to the West Indies decide to settle there."
+        D: "Europeans who came to the West Indies to seek their fortunes were the ones who were not wealthy."
+      correct_answer: "D"
+
+    - number: 25
+      question: "Water pollution is a common problem because people thoughtlessly dump their garbage in water courses."
+      options:
+        A: "People throw their garbage in water courses making this an unusual problem."
+        B: "If people did not dump their garbage in water, we would not have a pollution problem."
+        C: "Water pollution takes place because people negligently dump their garbage in water courses."
+        D: "Even though water pollution is a problem, people still dump their garbage in water courses."
+      correct_answer: "C"
+
+    - number: 26
+      question: "The speaker in the poem is"
+      options:
+        A: "a child playing"
+        B: "an adult dreaming"
+        C: "a child remembering"
+        D: "an adult remembering"
+      correct_answer: "D"
+
+    - number: 27
+      question: "How does the speaker feel about flowers in lines 11-14?"
+      options:
+        A: "Awed"
+        B: "Indifferent"
+        C: "Pessimistic"
+        D: "Unappreciative"
+      correct_answer: "A"
+
+    - number: 28
+      question: "The mood of stanza 1 of the poem is"
+      options:
+        A: "bleak"
+        B: "bland"
+        C: "lonely"
+        D: "desolate"
+      correct_answer: "A"
+
+    - number: 29
+      question: "What is the speaker's attitude to the environment in lines 2-8?"
+      options:
+        A: "Bitter"
+        B: "Acceptance"
+        C: "Contentment"
+        D: "Contemplative"
+      correct_answer: "A"
+
+    - number: 30
+      question: "What device is used in line 11 to describe the park?"
+      options:
+        A: "Simile"
+        B: "Metaphor"
+        C: "Oxymoron"
+        D: "Personification"
+      correct_answer: "A"
+
+    - number: 31
+      question: "The use of 'stark glory' (line 11) BEST suggests that the flowers"
+      options:
+        A: "stimulated the speaker with their beauty"
+        B: "had a religious significance for the speaker"
+        C: "amazed the speaker with the difference they made"
+        D: "I, II and III"
+      correct_answer: "C"
+
+    - number: 32
+      question: "The device used in line 12 compares the beauty of flowers to"
+      options:
+        A: "light"
+        B: "storms"
+        C: "thunder"
+        D: "lightning"
+      correct_answer: "D"
+
+    - number: 33
+      question: "Which of the following BEST describes the theme of the poem? I. stimulated the speaker with their beauty II. had a religious significance for the speaker III. amazed the speaker with the difference they made"
+      options:
+        A: "I and II only"
+        B: "I and III only"
+        C: "II and III only"
+        D: "I, II and III"
+      correct_answer: "D"
+
+    - number: 34
+      question: "Which word BEST describes the home-owner's attitude towards the hillside near his house?"
+      options:
+        A: "Angry"
+        B: "Proud"
+        C: "Pleased"
+        D: "Possessive"
+      correct_answer: "D"
+
+    - number: 35
+      question: "The words 'struck him' (line 2) suggest that to the homeowner the sudden appearance of the squatter's house"
+      options:
+        A: "stirred disgust at the nature of the home"
+        B: "awoke interest in how quickly it was built"
+        C: "aroused shock at the unexpected neighbour"
+        D: "stimulated pain because of the loss of privacy and control"
+      correct_answer: "C"
+
+    - number: 36
+      question: "The phrase 'sat on' (line 9) tells us that the house is"
+      options:
+        A: "set into the hillside"
+        B: "comfortably situated"
+        C: "precariously located"
+        D: "placed directly on the hill"
+      correct_answer: "D"
+
+    - number: 37
+      question: "Which of the following did the homeowner believe gave him the right to claim the hill?"
+      options:
+        A: "Its proximity to his home."
+        B: "It was not easily accessible."
+        C: "The length of time he lived there."
+        D: "No one had moved in for some time."
+      correct_answer: "C"
+
+    - number: 38
+      question: "The word 'littered' (line 7) suggests that the homeowner believes that squatter settlements are"
+      options:
+        A: "an eyesore"
+        B: "unique to his area"
+        C: "a necessary part of life"
+        D: "a legitimate solution to the housing problem"
+      correct_answer: "A"
+
+    - number: 39
+      question: "Which of the following may be one of the homeowner's fears on seeing the house on the hillside?"
+      options:
+        A: "The silk-cotton tree would become gigantic."
+        B: "Proper houses would be built on the hillside."
+        C: "The hillside would become a squatters' settlement."
+        D: "Littering would become a problem on the hillside."
+      correct_answer: "C"
+
+    - number: 40
+      question: "The repetition of 'his hill' (lines 3, 20) by the narrator"
+      options:
+        A: "displays the depth of his disgust"
+        B: "shows how persistent his shock was"
+        C: "presents the homeowner's stubbornness"
+        D: "emphasizes the passion behind his attitude"
+      correct_answer: "D"
+
+    - number: 41
+      question: "Which words BEST sum up the homeowner's view of squatter settlements?"
+      options:
+        A: "'sprung up daily' (line 7)"
+        B: "'society out of control' (line 8)"
+        C: "'marred his view' (line 9)"
+        D: "'houses, proper ones' (line 11)"
+      correct_answer: "B"
+
+    - number: 42
+      question: "According to paragraph 1 (lines 1-5), which of the following results from conflict between family members?"
+      options:
+        A: "Disorder in society"
+        B: "Anxiety in the workplace"
+        C: "Disruptive behavior in homes"
+        D: "High levels tension between parents"
+      correct_answer: "A"
+
+    - number: 43
+      question: "According to the passage, all of the following threaten the existence of the family EXCEPT"
+      options:
+        A: "high divorce rate in Western society"
+        B: "conflicts between employers and working parents"
+        C: "problems family members experience in getting along"
+        D: "the increase in the number of mothers of school-age children working outside of the home"
+      correct_answer: "B"
+
+    - number: 44
+      question: "The word that is closest in meaning to 'imperatives' (line 9) is"
+      options:
+        A: "matters"
+        B: "demands"
+        C: "concerns"
+        D: "guidelines"
+      correct_answer: "B"
+
+    - number: 45
+      question: "In paragraph 2 (lines 6-12), the writer compares income in the 1950s to income today to show that"
+      options:
+        A: "people today work longer hours for the same pay as in the 1950s"
+        B: "people earned more in the 1950s than today"
+        C: "people today do not work as hard as people in the 1950s"
+        D: "a single income cannot adequately support an average family"
+      correct_answer: "D"
+
+    - number: 46
+      question: "The writer suggests in lines 12-15, that tensions in mother-child relationships can occur because mothers I. are dealing with the stress of work II. are unable to help children who are under stress III. lack sufficient time to care for children"
+      options:
+        A: "I only"
+        B: "II only"
+        C: "I and III only"
+        D: "II and III only"
+      correct_answer: "C"
+
+    - number: 47
+      question: "The writer's main purpose is to"
+      options:
+        A: "focus on the problems experienced by men"
+        B: "reveal the problems experienced by men, women and children"
+        C: "highlight some of the internal problems threatening the family"
+        D: "show that single-income families function better than two-income families"
+      correct_answer: "C"
+
+    - number: 48
+      question: "Couples feel they must 'go their separate ways' (line 23) because of"
+      options:
+        A: "high divorce rates"
+        B: "inability to live harmoniously"
+        C: "difficulty with Western societies"
+        D: "changes in relations in good times"
+      correct_answer: "B"
+
+    - number: 49
+      question: "The tone of the passage may be BEST described as"
+      options:
+        A: "mocking"
+        B: "indignant"
+        C: "analytical"
+        D: "complaining"
+      correct_answer: "C"
+
+    - number: 50
+      question: "The advertisement was most likely taken from a"
+      options:
+        A: "newspaper"
+        B: "geography text"
+        C: "tourism brochure"
+        D: "naturalist magazine"
+      correct_answer: "C"
+
+    - number: 51
+      question: "Which of the following is nearest in meaning to 'off the beaten track' (line 1)?"
+      options:
+        A: "On unpaved trails"
+        B: "Into the wilderness"
+        C: "Through dense vegetation"
+        D: "Along routes not regularly traversed"
+      correct_answer: "D"
+
+    - number: 52
+      question: "Which of the following does the advertisement promise? I. Scenic beauty II. Sedate enjoyment III. Outdoor adventure"
+      options:
+        A: "I and II only"
+        B: "I and III only"
+        C: "II and III only"
+        D: "I, II and III"
+      correct_answer: "D"
+
+    - number: 53
+      question: "The phrase 'The neat sugar cane fields sweep down the rolling hills' (line 5) contains an example of"
+      options:
+        A: "contrast"
+        B: "repetition"
+        C: "metaphor"
+        D: "specific reference"
+      correct_answer: "C"
+
+    - number: 54
+      question: "This advertisement seeks to persuade the reader mainly through the use of"
+      options:
+        A: "imagery"
+        B: "suspense"
+        C: "alliteration"
+        D: "exaggeration"
+      correct_answer: "A"
+
+    - number: 55
+      question: "One FACT contained in the advertisement is"
+      options:
+        A: "the price of the product"
+        B: "expert approval of Acue Be Gone!"
+        C: "the product's popularity and effectiveness"
+        D: "that stores everywhere are selling the product"
+      correct_answer: "A"
+
+    - number: 56
+      question: "To whom is this product MAINLY targeted?"
+      options:
+        A: "People who suffer with acne"
+        B: "Ambitious people with money"
+        C: "Girls who want dates for graduation"
+        D: "People who lack confidence because of their appearance"
+      correct_answer: "A"
+
+    - number: 57
+      question: "Which of the following techniques are used to persuade in this advertisement? I. Financial enticement II. Showing of the container III. Appeal to fears and desires"
+      options:
+        A: "I and II only"
+        B: "I and III only"
+        C: "II and III only"
+        D: "I, II and III"
+      correct_answer: "B"
+
+    - number: 58
+      question: "A language device used in the advertisement to persuade is"
+      options:
+        A: "paradox"
+        B: "metaphor"
+        C: "hyperbole"
+        D: "rhetorical questions"
+      correct_answer: "C"
+
+    - number: 59
+      question: "What might be the purpose of the size of the font used to describe the side effects?"
+      options:
+        A: "It hides possible consequences of using the product."
+        B: "It suggests that the side effects are minor."
+        C: "It misdirects the reader and leads to erroneous conclusions about acne."
+        D: "It demonstrates that the problems are minor in comparison to the benefits."
+      correct_answer: "A"
+
+    - number: 60
+      question: "The words 'while stocks last' under the checked price MOST likely would have the effect of"
+      options:
+        A: "enticing the customers to save money"
+        B: "persuading customers to buy the product quickly"
+        C: "prompting Caribbean people to go in search of the product"
+        D: "fooling the prospective buyers into thinking he/she needs the product"
+      correct_answer: "B"

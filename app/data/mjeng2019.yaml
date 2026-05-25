@@ -1,0 +1,500 @@
+exam:
+  title: "CSEC English A P1 2019 MJ"
+  year: 2019
+  subject: "English A"
+  total_items: 60
+  items:
+    - number: 1
+      question: "We found her appreciative of the help that we had given her on this matter."
+      options:
+        A: "unhappy about"
+        B: "displeased at"
+        C: "ungrateful for"
+        D: "intolerant of"
+      correct_answer: "C"
+
+    - number: 2
+      question: "Their actions showed that they were firm in their rejection of the new law."
+      options:
+        A: "ignorance"
+        B: "application"
+        C: "acceptance"
+        D: "understanding"
+      correct_answer: "C"
+
+    - number: 3
+      question: "Constructive criticism is neither appreciated nor encouraged by some of our peers."
+      options:
+        A: "Sound"
+        B: "Negative"
+        C: "Valuable"
+        D: "Unsatisfactory"
+      correct_answer: "C"
+
+    - number: 4
+      question: "They always displayed a lackadaisical approach to their studies so no one was surprised at the results."
+      options:
+        A: "keen"
+        B: "calm"
+        C: "casual"
+        D: "careless"
+      correct_answer: "D"
+
+    - number: 5
+      question: "As a result of the available evidence, the accused was apprehended and no further action was taken."
+      options:
+        A: "evicted"
+        B: "released"
+        C: "cautioned"
+        D: "summoned"
+      correct_answer: "B"
+
+    - number: 11
+      question: "Much is being done to develop tourism in our country by providing good hotel accommodation and facilities."
+      options:
+        A: "It is important to provide good hotel accommodation and facilities for tourists."
+        B: "Good hotel accommodation and facilities are crucial if we want to develop tourism."
+        C: "We are doing a great deal to boost tourism by providing good hotel accommodation and facilities."
+        D: "If we do not provide good hotel accommodation and facilities, tourists will not come to our country."
+      correct_answer: "C"
+
+    - number: 12
+      question: "So engrossed was he in his task that he did not hear his sister enter the room."
+      options:
+        A: "His task was so difficult that he did not observe his sister's entry."
+        B: "He did not hear his sister enter the room because of the job he was doing."
+        C: "His sister's entry did not attract his attention because he was enjoying what he was doing."
+        D: "He was so preoccupied with what he was doing that he was unaware of his sister's entry."
+      correct_answer: "D"
+
+    - number: 13
+      question: "John told his parents in no uncertain terms that he was going to university as soon as he left school."
+      options:
+        A: "John boasted to his parents that he was going to university as soon as he left school."
+        B: "John told his parents that they should permit him to go to university after he left school."
+        C: "John made it quite clear to his parents that when he left school he would go to university immediately."
+        D: "John's parents were told that it was obviously his desire to attend university immediately after leaving school."
+      correct_answer: "C"
+
+    - number: 14
+      question: "The bright colours of the bird distinguished it from the others flying across the pale sky."
+      options:
+        A: "The bright colours of the bird contrasted with the pale sky while it was flying."
+        B: "The pale sky made the birds noticeable while flying as they had bright colours."
+        C: "The pale sky made the birds distinguished, particularly the one with the bright colours."
+        D: "The bright colours against the pale sky made the bird stand out among those flying by."
+      correct_answer: "D"
+
+    - number: 15
+      question: "I cannot understand why you have done this since you tell me that Mark means a lot to you."
+      options:
+        A: "Since Mark means a lot to you, the reason for your action is puzzling to me."
+        B: "Since you tell me that Mark means a lot to you, he cannot understand why you have done this."
+        C: "You tell me that although Mark means a lot to you, you did this."
+        D: "Mark cannot mean a lot to you or else I know you would not have done this."
+      correct_answer: "A"
+
+    - number: 16
+      question: "We could reach the survivors neither by boat or by plane, and so we abandoned our search as futile."
+      options:
+        A: "neither"
+        B: "or"
+        C: "futile"
+        D: "No error"
+      correct_answer: "B"
+
+    - number: 17
+      question: "I believe that if his attitude improves his general performance will also improve."
+      options:
+        A: "attitude"
+        B: "improves"
+        C: "will also improve"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 18
+      question: "She was not feeling well at the beginning of the journey, and sitting at the front of the car made her feel worse."
+      options:
+        A: "well"
+        B: "beginning"
+        C: "worse"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 19
+      question: "Overcome by fear, I ran passed my home without realizing that I had done so."
+      options:
+        A: "Overcome"
+        B: "passed"
+        C: "realizing"
+        D: "No error"
+      correct_answer: "B"
+
+    - number: 20
+      question: "The better of the two athletes claim never to have used the dangerous drugs found in his possession."
+      options:
+        A: "better"
+        B: "claim"
+        C: "dangerous"
+        D: "No error"
+      correct_answer: "B"
+
+    - number: 21
+      question: "It was impossible to rectify the error made by the computer since inaccurate information had been fed into it."
+      options:
+        A: "alter"
+        B: "erase"
+        C: "correct"
+        D: "determine"
+      correct_answer: "C"
+
+    - number: 22
+      question: "The bank teller indicated that our account was dormant."
+      options:
+        A: "inactive"
+        B: "inadequate"
+        C: "transferred"
+        D: "overdrawn"
+      correct_answer: "A"
+
+    - number: 23
+      question: "The news story revealed the squalor of the old prison cells."
+      options:
+        A: "security"
+        B: "strength"
+        C: "ambiance"
+        D: "filthiness"
+      correct_answer: "D"
+
+    - number: 24
+      question: "A citizen is expected to show complete allegiance to his native land."
+      options:
+        A: "loyalty"
+        B: "respect"
+        C: "homage"
+        D: "obedience"
+      correct_answer: "A"
+
+    - number: 25
+      question: "For the first time in a decade the company disclosed a deficit in its account."
+      options:
+        A: "error"
+        B: "defect"
+        C: "balance"
+        D: "shortfall"
+      correct_answer: "D"
+
+    - number: 26
+      question: "There is a 'single kite' (line 1) left in the sky MOST likely because"
+      options:
+        A: "it is late"
+        B: "the lone fisherman waits"
+        C: "night covers have descended"
+        D: "the other kite flyers are asleep"
+      correct_answer: "A"
+
+    - number: 27
+      question: "What aspect of the sky does the poet focus on?"
+      options:
+        A: "Size"
+        B: "Shape"
+        C: "Colour"
+        D: "Distance"
+      correct_answer: "C"
+
+    - number: 28
+      question: "Of whom is the poet MOST likely thinking in the poem?"
+      options:
+        A: "An artist at work"
+        B: "An enemy in hiding"
+        C: "A lonely old man"
+        D: "Someone he/she loves"
+      correct_answer: "D"
+
+    - number: 29
+      question: "'When bats break a calm lake/like scissors on a warm fabric' (lines 10-11) is an example of"
+      options:
+        A: "simile"
+        B: "assonance"
+        C: "onomatopoeia"
+        D: "personification"
+      correct_answer: "A"
+
+    - number: 30
+      question: "The poet speaks of each of the following EXCEPT"
+      options:
+        A: "a single kite that is flying"
+        B: "a lone fisherman waiting"
+        C: "bats breaking warm fabric"
+        D: "the hen's wings that are warm"
+      correct_answer: "C"
+
+    - number: 31
+      question: "Which of the following literary devices is used in line 4?"
+      options:
+        A: "Contrast"
+        B: "Metaphor"
+        C: "Hyperbole"
+        D: "Assonance"
+      correct_answer: "B"
+
+    - number: 32
+      question: "The poet's intention is to"
+      options:
+        A: "describe nature"
+        B: "describe the sunset"
+        C: "tell us of the lone fisherman"
+        D: "tell someone he/she is missing him/her"
+      correct_answer: "D"
+
+    - number: 33
+      question: "Which word BEST describes the poet's tone?"
+      options:
+        A: "Bitter"
+        B: "Serious"
+        C: "Regretful"
+        D: "Nostalgic"
+      correct_answer: "D"
+
+    - number: 34
+      question: "The mother's 'thrust of the chin' (line 4) is done in"
+      options:
+        A: "fear"
+        B: "hatred"
+        C: "defiance"
+        D: "contemplation"
+      correct_answer: "C"
+
+    - number: 35
+      question: "The son cautioned his mother about telling people exactly what she thought because he"
+      options:
+        A: "was affronted by her arrogance"
+        B: "thought others would be offended"
+        C: "found her behaviour aggressive"
+        D: "was upset that she would not change"
+      correct_answer: "B"
+
+    - number: 36
+      question: "Why does the writer choose the expression 'A formidable woman' (line 13) to describe the mother?"
+      options:
+        A: "He is intimidated by her."
+        B: "Her words often provoked anger."
+        C: "The difference in style shows the constancy of her character."
+        D: "He emphasizes her strength which he finds admirable."
+      correct_answer: "D"
+
+    - number: 37
+      question: "What does 'In that time when I had known her best' (line 14) say about the mother-son relationship?"
+      options:
+        A: "They had grown apart."
+        B: "They admired each other."
+        C: "They had always had a close relationship."
+        D: "The son had forgotten things about his mother."
+      correct_answer: "A"
+
+    - number: 38
+      question: "What literary device is used in lines 14-15, 'my mother had hurled herself at life'?"
+      options:
+        A: "Irony"
+        B: "Imagery"
+        C: "Repetition"
+        D: "Onomatopoeia"
+      correct_answer: "B"
+
+    - number: 39
+      question: "The behaviours the mother finds contemptible include I. timidity II. laziness III. cowardice"
+      options:
+        A: "I and II only"
+        B: "I and III only"
+        C: "II and III only"
+        D: "I, II and III"
+      correct_answer: "D"
+
+    - number: 40
+      question: "The incident at Thanksgiving shows the mother's own attitude to be one of"
+      options:
+        A: "hastiness"
+        B: "aggression"
+        C: "impudence"
+        D: "determination"
+      correct_answer: "D"
+
+    - number: 41
+      question: "The final sentence of the extract implies that the mother has"
+      options:
+        A: "become lazy and sleepy"
+        B: "lost her physical strength"
+        C: "hurt her leg in the hospital"
+        D: "died leaving the son to reminisce"
+      correct_answer: "D"
+
+    - number: 42
+      question: "This passage is primarily based on"
+      options:
+        A: "facts"
+        B: "opinions"
+        C: "statistics"
+        D: "inferences"
+      correct_answer: "A"
+
+    - number: 43
+      question: "The word 'principles' (line 6) means the same as"
+      options:
+        A: "leaders"
+        B: "instruments"
+        C: "moral standards"
+        D: "laws or precepts"
+      correct_answer: "D"
+
+    - number: 44
+      question: "The writer uses an exclamation mark at the end of paragraph 3 (line 15) in order to"
+      options:
+        A: "scare the reader"
+        B: "create an effect of shock"
+        C: "command the reader's attention"
+        D: "dispel any doubt in the reader's mind"
+      correct_answer: "B"
+
+    - number: 45
+      question: "The events of the passage are recorded in"
+      options:
+        A: "a logical order"
+        B: "the future tense"
+        C: "an illogical order"
+        D: "the present tense"
+      correct_answer: "A"
+
+    - number: 46
+      question: "According to the writer, 'modern photography took off' (lines 18-19) when"
+      options:
+        A: "Daguerre was introduced to Niepce"
+        B: "Niepce's photograph was made public"
+        C: "Daguerre made his discovery by using chemicals"
+        D: "Schulze made his discovery by using silver salts"
+      correct_answer: "C"
+
+    - number: 47
+      question: "Which of the following is the MOST suitable title for this passage?"
+      options:
+        A: "Artists and Their Inventions"
+        B: "The Invention of The Camera"
+        C: "The Importance of Photographs"
+        D: "The Camera and Its Development"
+      correct_answer: "D"
+
+    - number: 48
+      question: "The writer's use of the word 'brain' (line 1) is meant to"
+      options:
+        A: "make fun of the decisions"
+        B: "exaggerate the traffic problems"
+        C: "create a comparison of streets"
+        D: "compliment those responsible"
+      correct_answer: "A"
+
+    - number: 49
+      question: "When the writer repeats 'not them' in paragraph 1, he implies that"
+      options:
+        A: "he is choosing someone to complain to"
+        B: "no one knows who is in charge of the traffic management"
+        C: "no one wants to accept responsibility for the traffic situation"
+        D: "he is searching diligently for the person in charge of traffic"
+      correct_answer: "C"
+
+    - number: 50
+      question: "'Stoke Street' (line 7), 'Celestial Road' (line 9) and 'Delino Street' (line 17) can BEST be considered as"
+      options:
+        A: "assigned parking places for diplomats"
+        B: "examples to support the writer's case"
+        C: "prohibited streets for all drivers"
+        D: "streets that attract a lot of attention"
+      correct_answer: "B"
+
+    - number: 51
+      question: "The writer's tone can be described as"
+      options:
+        A: "puzzled"
+        B: "resigned"
+        C: "sarcastic"
+        D: "complimentary"
+      correct_answer: "C"
+
+    - number: 52
+      question: "The last sentence of the letter is similar to paragraph 5 because both of them"
+      options:
+        A: "mention cars"
+        B: "express disgust"
+        C: "are complimentary"
+        D: "contain rhetorical questions"
+      correct_answer: "D"
+
+    - number: 53
+      question: "The letter was MOST likely published in a"
+      options:
+        A: "newspaper"
+        B: "press release"
+        C: "tourist brochure"
+        D: "school magazine"
+      correct_answer: "A"
+
+    - number: 54
+      question: "The author of this passage is MOST likely a"
+      options:
+        A: "motorist"
+        B: "pedestrian"
+        C: "traffic warden"
+        D: "government official"
+      correct_answer: "A"
+
+    - number: 55
+      question: "'Again the small man suffers!' (line 14) implies that the small man is often"
+      options:
+        A: "ignored"
+        B: "disadvantaged"
+        C: "the one who is wrong"
+        D: "discriminated against"
+      correct_answer: "B"
+
+    - number: 56
+      question: "According to the information provided, the MAIN theme of the symposium is"
+      options:
+        A: "youth"
+        B: "drug abuse"
+        C: "adolescent health"
+        D: "sexually transmitted diseases"
+      correct_answer: "C"
+
+    - number: 57
+      question: "Which of the following groups is NOT a sponsor of the symposium?"
+      options:
+        A: "Ministry of Youth"
+        B: "Ministry of Health"
+        C: "Conference of Churches"
+        D: "National Council on Drug Abuse"
+      correct_answer: "C"
+
+    - number: 58
+      question: "Which of the following words can BEST replace 'symposium' in the advertisement?"
+      options:
+        A: "Exhibition"
+        B: "Conference"
+        C: "Discussion"
+        D: "Conversation"
+      correct_answer: "B"
+
+    - number: 59
+      question: "How can those who want to participate register for the event?"
+      options:
+        A: "Call the Ministry of Youth and speak to Yvonne Dalton."
+        B: "Contact Yvonne Dalton and call the Ministry of Education."
+        C: "Telephone the Ministry of Youth and the Ministry of Education."
+        D: "Complete a registration form and return it to the Ministry of Health."
+      correct_answer: "A"
+
+    - number: 60
+      question: "All of the following groups are specifically invited to attend EXCEPT"
+      options:
+        A: "youth groups"
+        B: "members of the public"
+        C: "parents of young people"
+        D: "doctors, nurses, and other health care workers"
+      correct_answer: "B"

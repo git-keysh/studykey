@@ -1,0 +1,500 @@
+exam:
+  title: "CSEC English A P1 2024 JAN"
+  year: 2024
+  subject: "English A"
+  total_items: 60
+  items:
+    - number: 6
+      question: "They were told to collaborate together to produce the project."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains cliches or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "A"
+
+    - number: 7
+      question: "In some traditional wedding ceremonies, money is thrown at the bride and groom."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains cliches or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "D"
+
+    - number: 8
+      question: "Disgusted with the situation, he decided to jump into the saddle and put down his foot."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains cliches or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "B"
+
+    - number: 9
+      question: "Each of the children have an appointment with the principal."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains cliches or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "C"
+
+    - number: 10
+      question: "He advanced a step or two to meet his attacker who suddenly became alarmed and retreated back four or five paces."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains cliches or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "A"
+
+    - number: 11
+      question: "The doctors' attempts to resuscitate the patient were futile."
+      options:
+        A: "attempts"
+        B: "resuscitate"
+        C: "futile"
+        D: "No Error"
+      correct_answer: "D"
+
+    - number: 12
+      question: "If Antonio's attitude changes their will be a vast improvement in his performance."
+      options:
+        A: "changes"
+        B: "their"
+        C: "vast"
+        D: "No Error"
+      correct_answer: "B"
+
+    - number: 13
+      question: "One of the admirable characteristics of the young is that they are not easily scared."
+      options:
+        A: "admirable"
+        B: "is"
+        C: "scared"
+        D: "No Error"
+      correct_answer: "D"
+
+    - number: 14
+      question: "Since too much passengers were in the taxi, the policeman issued a ticket to the driver."
+      options:
+        A: "Since"
+        B: "much"
+        C: "issued"
+        D: "No Error"
+      correct_answer: "B"
+
+    - number: 15
+      question: "As John listened to the lesson being taught, he began to loose interest."
+      options:
+        A: "listened"
+        B: "being taught"
+        C: "loose"
+        D: "No Error"
+      correct_answer: "C"
+
+    - number: 16
+      question: "She paid meticulous attention to her work as she attached the beads to the costume."
+      options:
+        A: "scant"
+        B: "careful"
+        C: "detailed"
+        D: "cautious"
+      correct_answer: "C"
+
+    - number: 17
+      question: "They lived in a large, sprawling, modern house in a very remote area of the parish."
+      options:
+        A: "historic"
+        B: "built-up"
+        C: "well-kept"
+        D: "depressed"
+      correct_answer: "B"
+
+    - number: 18
+      question: "James has a hatred for things that crawl."
+      options:
+        A: "fear"
+        B: "dislike"
+        C: "respect"
+        D: "fondness"
+      correct_answer: "B"
+
+    - number: 19
+      question: "The views expressed by Mr Jones were inconsistent with those of the committee."
+      options:
+        A: "compatible"
+        B: "challenging"
+        C: "unpredictable"
+        D: "irreconcilable"
+      correct_answer: "D"
+
+    - number: 20
+      question: "The airline conveyed the new flight information to the passengers."
+      options:
+        A: "withheld"
+        B: "analyzed"
+        C: "misplaced"
+        D: "transmitted"
+      correct_answer: "D"
+
+    - number: 21
+      question: "I saw the two men jogging around the savannah, and they later proved to be Olympic track stars. Begin the sentence with 'The two men'"
+      options:
+        A: "that"
+        B: "when"
+        C: "which"
+        D: "whom"
+      correct_answer: "D"
+
+    - number: 22
+      question: "The cricket match ended abruptly when many of the spectators stormed the field. Begin the sentence with 'Many of the spectators stormed'"
+      options:
+        A: "so"
+        B: "but"
+        C: "getting"
+        D: "preventing"
+      correct_answer: "A"
+
+    - number: 23
+      question: "During my time at school I was involved in extra-curricular activities. Begin the sentence with 'I was involved in'"
+      options:
+        A: "on staying"
+        B: "while I was"
+        C: "for my stay"
+        D: "when staying"
+      correct_answer: "B"
+
+    - number: 24
+      question: "We visited the zoo and then we went to see the display at the museum in the city. Begin the sentence with 'We went to see the display'"
+      options:
+        A: "after"
+        B: "since"
+        C: "while"
+        D: "before"
+      correct_answer: "A"
+
+    - number: 25
+      question: "I enjoy having a room of my own, and I try hard to take care of it. Begin the sentence with 'I try hard'"
+      options:
+        A: "but"
+        B: "since"
+        C: "unless"
+        D: "although"
+      correct_answer: "D"
+
+    - number: 26
+      question: "The title of the poem, 'Forgive My Guilt', suggests that the poet is"
+      options:
+        A: "denying his guilt"
+        B: "proving his guilt"
+        C: "admitting his guilt"
+        D: "suppressing his guilt"
+      correct_answer: "C"
+
+    - number: 27
+      question: "The phrase 'The air ran blue as the flowers' (line 5) is an example of"
+      options:
+        A: "pun"
+        B: "metaphor"
+        C: "hyperbole"
+        D: "alliteration"
+      correct_answer: "B"
+
+    - number: 28
+      question: "The tone of the poem changes from one of factual recollection to one of emotional response. At which of the following lines does the change occur?"
+      options:
+        A: "Line 8"
+        B: "Line 10"
+        C: "Line 11"
+        D: "Line 14"
+      correct_answer: "C"
+
+    - number: 29
+      question: "What effect does the change of tone from factual recollection to emotional response produce?"
+      options:
+        A: "A dramatic result"
+        B: "A contrast in mood"
+        C: "A heightening of action"
+        D: "Sympathy towards the person"
+      correct_answer: "D"
+
+    - number: 30
+      question: "The following words in the poem all share the same connotation: 'sorrowful', 'crying', 'broken'. Which of the following phrases in the poem has a similar connotation to these words?"
+      options:
+        A: "their heads high" (line 10)
+        B: "jagged ivory bones" (line 12)
+        C: "walked that headland" (line 13)
+        D: "Two airy things" (line 21)
+      correct_answer: "B"
+
+    - number: 31
+      question: "All of the following phrases in the poem describe physical characteristics of the two birds EXCEPT"
+      options:
+        A: "slim as dream things" (line 6)
+        B: "Ran like quicksilver" (line 7)
+        C: "slender flutes of sorrow" (line 20)
+        D: "wild, / Airy, and beautiful" (lines 23-24)
+      correct_answer: "C"
+
+    - number: 32
+      question: "The writer uses the phrase 'denied the air' (line 21) to suggest that the birds"
+      options:
+        A: "did not care to fly"
+        B: "could not breathe"
+        C: "were unable to fly"
+        D: "were being monitored"
+      correct_answer: "C"
+
+    - number: 33
+      question: "Which of the following moods is suggested in lines 11-24?"
+      options:
+        A: "Critical"
+        B: "Indifferent"
+        C: "Sympathetic"
+        D: "Light-hearted"
+      correct_answer: "C"
+
+    - number: 34
+      question: "The MAIN theme of the poem is"
+      options:
+        A: "remorse of conscience"
+        B: "the death of two birds"
+        C: "forgiveness for a sin"
+        D: "sin committed"
+      correct_answer: "A"
+
+    - number: 35
+      question: "To which of the following senses does the poem MOST appeal?"
+      options:
+        A: "Sight and touch"
+        B: "Smell and sight"
+        C: "Sight and hearing"
+        D: "Touch and hearing"
+      correct_answer: "C"
+
+    - number: 36
+      question: "The first two sentences of the passage suggest that the relationship between the sisters was"
+      options:
+        A: "strained"
+        B: "forgiving"
+        C: "aggressive"
+        D: "affectionate"
+      correct_answer: "A"
+
+    - number: 37
+      question: "'Their marriage was a stormy one' (lines 4-5) implies that"
+      options:
+        A: "it was unpleasant"
+        B: "it was fraught with difficulty"
+        C: "they got married on a stormy day"
+        D: "they didn't always see eye to eye"
+      correct_answer: "B"
+
+    - number: 38
+      question: "The instruction 'Go to the ends of the earth' (line 12) implies that they should search"
+      options:
+        A: "every accessible land"
+        B: "the Kingdom of Wild Horses"
+        C: "over mountains and down rivers"
+        D: "through densely wooded valleys"
+      correct_answer: "A"
+
+    - number: 39
+      question: "The literary device used in the phrase 'as delicate as spider webs' (line 19) is a"
+      options:
+        A: "pun"
+        B: "simile"
+        C: "metaphor"
+        D: "hyperbole"
+      correct_answer: "B"
+
+    - number: 40
+      question: "The writer implies that Leha was"
+      options:
+        A: "a traveller"
+        B: "Marta's sister"
+        C: "a household servant"
+        D: "the leader of the queen's army"
+      correct_answer: "A"
+
+    - number: 41
+      question: "Which of the following is an example of contrast?"
+      options:
+        A: "She 'had lost both her beauty and her mind' (line 6)."
+        B: "'she had vanished without a trace' (line 8)."
+        C: "'her hair was streaked with grey' (line 18)."
+        D: "'lighting up her dark face' (line 25)."
+      correct_answer: "D"
+
+    - number: 42
+      question: "'The cloud of white hair' (line 24) is an example of"
+      options:
+        A: "litotes"
+        B: "metaphor"
+        C: "oxymoron"
+        D: "personification"
+      correct_answer: "B"
+
+    - number: 43
+      question: "The style of writing in this extract can BEST be described as"
+      options:
+        A: "factual"
+        B: "narrative"
+        C: "descriptive"
+        D: "argumentative"
+      correct_answer: "C"
+
+    - number: 44
+      question: "The word that is closest in meaning to 'turbulent' (line 27) is"
+      options:
+        A: "rough"
+        B: "placid"
+        C: "demanding"
+        D: "manageable"
+      correct_answer: "A"
+
+    - number: 45
+      question: "According to the Financial Times (UK) which of the following statements is true?"
+      options:
+        A: "There are only sixty single-sex schools at present."
+        B: "All single-sex private schools have been converted to co-ed."
+        C: "There has been an increase in the number of single-sex schools."
+        D: "Many state and private single-sex schools have been converted to co-ed."
+      correct_answer: "D"
+
+    - number: 46
+      question: "Which of the following words may BEST be used to replace 'influence' in line 6?"
+      options:
+        A: "result"
+        B: "impact"
+        C: "attitude"
+        D: "reference"
+      correct_answer: "B"
+
+    - number: 47
+      question: "Which group is the writer MOST concerned about?"
+      options:
+        A: "Successful candidates"
+        B: "Graduates from our school system"
+        C: "Men who suffered psychological distress"
+        D: "Those who have no siblings or only siblings of the same gender"
+      correct_answer: "D"
+
+    - number: 48
+      question: "What is the speaker attempting to do in the passage?"
+      options:
+        A: "Warn students about the danger of single-sex schools"
+        B: "Support the decision to implement single-sex schools"
+        C: "Criticize those who are in favour of single-sex schools"
+        D: "Argue for psychological wellbeing over academic performance"
+      correct_answer: "C"
+
+    - number: 49
+      question: "The MAIN purpose of the title 'Why create further divisions?' is to"
+      options:
+        A: "arouse the curiosity of readers"
+        B: "ask a very important question"
+        C: "state a point of view"
+        D: "state a fact"
+      correct_answer: "C"
+
+    - number: 50
+      question: "'I just can't take it anymore' (line 1) implies that the writer is"
+      options:
+        A: "crying"
+        B: "arguing"
+        C: "hurting"
+        D: "shouting"
+      correct_answer: "C"
+
+    - number: 51
+      question: "Which of the following devices does the writer use in paragraph 2 to explain her plight?"
+      options:
+        A: "Pun"
+        B: "Litotes"
+        C: "Contrast"
+        D: "The rhetorical question"
+      correct_answer: "D"
+
+    - number: 52
+      question: "The following sentence 'I work hard and every report so far indicates that I am an above-average student' (line 5) suggests that the writer"
+      options:
+        A: "is boastful"
+        B: "is pleading"
+        C: "wants to sustain this"
+        D: "is about to fail her exams"
+      correct_answer: "C"
+
+    - number: 53
+      question: "What effect does the writer achieve when she says 'Can you imagine my mother and her 16-year-old daughter going to this place in the midst of riotous drinking ...' (lines 19-20)?"
+      options:
+        A: "Criticism for their actions in going to a bar"
+        B: "Scorn for the women's behaviour in going into a bar"
+        C: "Admiration from the reader for the women's courage"
+        D: "Shock from the reader that the women should go there"
+      correct_answer: "D"
+
+    - number: 54
+      question: "This kind of writing is BEST classified as"
+      options:
+        A: "emotive"
+        B: "narrative"
+        C: "descriptive"
+        D: "argumentative"
+      correct_answer: "A"
+
+    - number: 55
+      question: "The MAIN purpose of this advertisement is to"
+      options:
+        A: "sell light bulbs"
+        B: "promote lighting in the home"
+        C: "encourage better energy use"
+        D: "highlight energy use in the home"
+      correct_answer: "C"
+
+    - number: 56
+      question: "How much energy do fluorescent lights use?"
+      options:
+        A: "Seventy-five per cent less than incandescent lights"
+        B: "Seventy-five per cent more than other lights"
+        C: "Fifty per cent of what incandescent lights use"
+        D: "The same amount of light as other lights"
+      correct_answer: "A"
+
+    - number: 57
+      question: "The advertisement emphasizes that motion sensors are important because"
+      options:
+        A: "they are cheap"
+        B: "they waste energy indoors"
+        C: "they do not conserve energy"
+        D: "they are efficient and provide security"
+      correct_answer: "D"
+
+    - number: 58
+      question: "Which of the following is NOT stated in the advertisement?"
+      options:
+        A: "Low wattage uses less energy."
+        B: "Lamps placed on the floor are better for energy efficiency."
+        C: "Not all light bulbs are energy efficient."
+        D: "Compact fluorescent lights are energy efficient."
+      correct_answer: "B"
+
+    - number: 59
+      question: "The information in the advertisement would be MOST useful to"
+      options:
+        A: "electricians"
+        B: "contractors"
+        C: "housewives"
+        D: "the light company"
+      correct_answer: "C"
+
+    - number: 60
+      question: "The literary device used in Item 7 of the advertisement is"
+      options:
+        A: "comparison showing the similarities between the ability of the fluorescent lights and incandescent lights to save energy"
+        B: "contrast showing the differences between the ability of the fluorescent lights and incandescent lights to save energy"
+        C: "emphasis highlighting the abilities of the fluorescent lights and incandescent lights to store energy"
+        D: "imagery allowing the readers to see the abilities of fluorescent lights and incandescent lights to store energy"
+      correct_answer: "B"

@@ -1,0 +1,545 @@
+exam:
+  title: "CSEC English A P1 2022 MJ"
+  year: 2022
+  subject: "English A"
+  total_items: 60
+  items:
+    - number: 1
+      question: "The manager decided to inform the staff about all complaints received from customers."
+      options:
+        A: "requests"
+        B: "demands"
+        C: "suggestions"
+        D: "compliments"
+      correct_answer: "D"
+
+    - number: 2
+      question: "There was an increase in airplane travel after that incident."
+      options:
+        A: "decline"
+        B: "upheaval"
+        C: "restriction"
+        D: "fluctuation"
+      correct_answer: "A"
+
+    - number: 3
+      question: "Constructive criticism is neither appreciated nor encouraged by some of our peers."
+      options:
+        A: "Sound"
+        B: "Negative"
+        C: "Valuable"
+        D: "Unsatisfactory"
+      correct_answer: "C"
+
+    - number: 4
+      question: "He tried to think of a tactful way to tell her he disagreed with her view of the situation."
+      options:
+        A: "honest"
+        B: "tolerable"
+        C: "impolite"
+        D: "extraordinary"
+      correct_answer: "C"
+
+    - number: 5
+      question: "They always displayed a lackadaisical approach to their studies so no one was surprised at the results."
+      options:
+        A: "calm"
+        B: "casual"
+        C: "diligent"
+        D: "careless"
+      correct_answer: "D"
+
+    - number: 6
+      question: "He advanced a step or two to meet his attacker who became alarmed and retreated back."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains clichés or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "A"
+
+    - number: 7
+      question: "Its not necessary for it to be done today."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains clichés or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "C"
+
+    - number: 8
+      question: "She had adequate time to prepare for the interview."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains clichés or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "D"
+
+    - number: 9
+      question: "The new disciplinary methods had a positive affect on the students' behaviour."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains clichés or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "C"
+
+    - number: 10
+      question: "Sitting alone in his room by himself he repeated her name over and over again."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains clichés or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "A"
+
+    - number: 11
+      question: "So engrossed was he in his task that he did not hear his sister enter the room."
+      options:
+        A: "His task was so difficult that he did not observe his sister's entry."
+        B: "He did not hear his sister enter the room because of the job he was doing."
+        C: "His sister's entry did not attract his attention because he was enjoying what he was doing."
+        D: "He was so preoccupied with what he was doing that he was unaware of his sister's entry."
+      correct_answer: "D"
+
+    - number: 12
+      question: "According to the witness, he did not see the accused man near the scene of the crime."
+      options:
+        A: "The witness testified that he did not see the accused man commit the crime."
+        B: "The witness testified that the accused man was not seen by him near the place where the crime was committed."
+        C: "The witness testified to seeing no evidence that the accused man had committed the crime."
+        D: "The witness testified that the accused man was far from the location where the crime was committed."
+      correct_answer: "B"
+
+    - number: 13
+      question: "The bright colours of the bird distinguished it from the others flying across the pale sky."
+      options:
+        A: "The bright colours of the bird contrasted with the pale sky while it was flying."
+        B: "The pale sky made the birds noticeable while flying as they had bright colours."
+        C: "The pale sky made the birds distinguished, particularly the one with the bright colours."
+        D: "The bright colours against the pale sky made the bird stand out among those flying by."
+      correct_answer: "D"
+
+    - number: 14
+      question: "Cigarettes have been linked to lung cancer and, strangely enough, so has bacon."
+      options:
+        A: "Cancer of the lungs links cigarettes, and, strangely enough, bacon."
+        B: "It is rather peculiar that bacon, like cigarettes, is connected with lung cancer."
+        C: "It is strange that bacon, quite unlike cigarettes, is linked to lung cancer."
+        D: "It is no wonder at all that both cigarettes and bacon are linked to lung cancer."
+      correct_answer: "B"
+
+    - number: 15
+      question: "I cannot understand why you have done this since you tell me that Mark means a lot to you."
+      options:
+        A: "Since Mark means a lot to you, the reason for your action is puzzling to me."
+        B: "Since you tell me that Mark means a lot to you, he cannot understand why you have done this."
+        C: "You tell me that although Mark means a lot to you, you did this."
+        D: "Mark cannot mean a lot to you or else I know you would not have done this."
+      correct_answer: "A"
+
+    - number: 16
+      question: "She was not feeling well at the beginning of the journey, and sitting at the front of the car made her feel worse."
+      options:
+        A: "beginning"
+        B: "sitting"
+        C: "worse"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 17
+      question: "Considering the chaos you would cause if you were to resign, I have no choice than to refuse your request."
+      options:
+        A: "Considering"
+        B: "were to resign"
+        C: "than"
+        D: "No error"
+      correct_answer: "C"
+
+    - number: 18
+      question: "Tom, as well as the other persons, who need help has promised to give his services free of charge for any worthwhile cause."
+      options:
+        A: "as well as"
+        B: "need"
+        C: "has promised"
+        D: "No error"
+      correct_answer: "B"
+
+    - number: 19
+      question: "After embarrassing his colleague his conscience bothered him and he eventually apologized."
+      options:
+        A: "After embarrassing"
+        B: "bothered"
+        C: "eventually"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 20
+      question: "The better of the two athletes claim never to have used the dangerous drugs found in his possession."
+      options:
+        A: "better"
+        B: "claim"
+        C: "dangerous"
+        D: "No error"
+      correct_answer: "B"
+
+    - number: 21
+      question: "It was impossible to rectify the error made by the computer since inaccurate information had been fed into it."
+      options:
+        A: "fix"
+        B: "pin"
+        C: "aggravate"
+        D: "determine"
+      correct_answer: "A"
+
+    - number: 22
+      question: "The flowers grow profusely in the garden."
+      options:
+        A: "wildly"
+        B: "healthily"
+        C: "plentifully"
+        D: "colourfully"
+      correct_answer: "C"
+
+    - number: 23
+      question: "The news story revealed the squalor of the old prison cells."
+      options:
+        A: "security"
+        B: "strength"
+        C: "ambiance"
+        D: "filthiness"
+      correct_answer: "D"
+
+    - number: 24
+      question: "During the rainstorm yesterday the wind blew incessantly across the island."
+      options:
+        A: "noisily"
+        B: "furiously"
+        C: "constantly"
+        D: "occasionally"
+      correct_answer: "C"
+
+    - number: 25
+      question: "For the first time in a decade the company disclosed a deficit in its account."
+      options:
+        A: "error"
+        B: "defect"
+        C: "balance"
+        D: "shortfall"
+      correct_answer: "D"
+
+    - number: 26
+      question: "The phrase 'Her garden looks' (line 1) is an example of"
+      options:
+        A: "simile"
+        B: "metaphor"
+        C: "sarcasm"
+        D: "personification"
+      correct_answer: "D"
+
+    - number: 27
+      question: "Which of the following phrases is meant to be taken literally?"
+      options:
+        A: "'Hiding places for small girls' (line 4)"
+        B: "'Her garden ... / Travels politely unto the verandah' (lines 5-6)"
+        C: "'Feeding her frail consciousness' (line 14)"
+        D: "'... watching the even shape of her days' (lines 28-29)"
+      correct_answer: "A"
+
+    - number: 28
+      question: "'Her garden stands neatly round her house' (line 5) tells us that"
+      options:
+        A: "there were several well-kept potted plants on stands around the house"
+        B: "several tall trees stood along the side of the house"
+        C: "the garden which surrounded the house was well kept"
+        D: "the woman cleaned the flower stands every day"
+      correct_answer: "C"
+
+    - number: 29
+      question: "The poet uses the words 'frail consciousness' (line 14) to show that Mama"
+      options:
+        A: "was unconscious most of the time"
+        B: "was not understanding as well as she used to"
+        C: "had fainted because of lack of food"
+        D: "was thin and weak and could hardly walk"
+      correct_answer: "B"
+
+    - number: 30
+      question: "Which of the following BEST describes the woman's extraordinary thoughtfulness in relation to her mother?"
+      options:
+        A: "'She lives with Mama, shepherding her with / Her full body' (lines 10-11)"
+        B: "'Feeding her... with edited Gleaner news' (lines 14-15)"
+        C: "'Press moist, breathless kisses' (line 21)"
+        D: "'Spreading out nostalgia through Strings and flutes' (lines 24-25)"
+      correct_answer: "B"
+
+    - number: 31
+      question: "The poet uses the phrase 'borrowed children' (line 17) to show"
+      options:
+        A: "that she did not want children"
+        B: "how much she loved the children"
+        C: "that she had no children of her own"
+        D: "why she made the children wash their dirty hands"
+      correct_answer: "C"
+
+    - number: 32
+      question: "Lines 23-26 ('Sometimes she fills ... and forever until ...') suggest that the woman"
+      options:
+        A: "loved to play loud music"
+        B: "was a musician in an orchestra"
+        C: "spread all the musical instruments around the house"
+        D: "enjoyed listening to happy music which tells of love"
+      correct_answer: "D"
+
+    - number: 33
+      question: "The word 'nostalgia' (line 24) tells us that the music"
+      options:
+        A: "would last forever"
+        B: "was played on strings and flutes"
+        C: "was a reminder that the moon was once blue"
+        D: "brought back pleasant memories of long ago"
+      correct_answer: "D"
+
+    - number: 34
+      question: "The mother's 'thrust of the chin' (line 4) is done in"
+      options:
+        A: "fear"
+        B: "hatred"
+        C: "defiance"
+        D: "contemplation"
+      correct_answer: "C"
+
+    - number: 35
+      question: "The son cautioned his mother about telling people exactly what she thought because he"
+      options:
+        A: "was affronted by her arrogance"
+        B: "thought others would be offended"
+        C: "found her behaviour aggressive"
+        D: "was upset that she would not change"
+      correct_answer: "B"
+
+    - number: 36
+      question: "Why does the writer choose the expression 'A formidable woman' (line 13) to describe the mother?"
+      options:
+        A: "He is intimidated by her."
+        B: "Her words often provoked anger."
+        C: "The difference in style shows the constancy of her character."
+        D: "He emphasizes her strength which he finds admirable."
+      correct_answer: "D"
+
+    - number: 37
+      question: "What does 'In that time when I had known her best' (line 14) say about the mother-son relationship?"
+      options:
+        A: "They had grown apart."
+        B: "They admired each other."
+        C: "They had always had a close relationship."
+        D: "The son had forgotten things about his mother."
+      correct_answer: "A"
+
+    - number: 38
+      question: "What literary device is used in lines 14-15, 'my mother had hurled herself at life'?"
+      options:
+        A: "Irony"
+        B: "Imagery"
+        C: "Repetition"
+        D: "Onomatopoeia"
+      correct_answer: "B"
+
+    - number: 39
+      question: "The behaviours the mother finds contemptible include I. timidity II. laziness III. cowardice"
+      options:
+        A: "I and II only"
+        B: "I and III only"
+        C: "II and III only"
+        D: "I, II and III"
+      correct_answer: "D"
+
+    - number: 40
+      question: "The incident at Thanksgiving shows the mother's own attitude to be one of"
+      options:
+        A: "hastiness"
+        B: "aggression"
+        C: "impudence"
+        D: "determination"
+      correct_answer: "D"
+
+    - number: 41
+      question: "The final sentence of the extract implies that the mother has"
+      options:
+        A: "become lazy and sleepy"
+        B: "lost her physical strength"
+        C: "hurt her leg in the hospital"
+        D: "died leaving the son to reminisce"
+      correct_answer: "D"
+
+    - number: 42
+      question: "The expression 'given the green light to arcades' (line 4) means that"
+      options:
+        A: "gambling is practised in the arcades"
+        B: "people gamble day and night under the light"
+        C: "arcades have been given permission to operate"
+        D: "green-coloured lights have been given to the arcades"
+      correct_answer: "C"
+
+    - number: 43
+      question: "The Bahamas, Antigua, Suriname and Sint Maarten are mentioned so as to"
+      options:
+        A: "list countries involved in tourism"
+        B: "give evidence from experts on the issue"
+        C: "highlight countries where gambling is allowed"
+        D: "prove that gambling is a stimulus to tourism"
+      correct_answer: "D"
+
+    - number: 44
+      question: "An expression the writer uses to introduce an opposing view in paragraph 5 is"
+      options:
+        A: "opponents"
+        B: "an upsurge of"
+        C: "on the other hand"
+        D: "with everything else"
+      correct_answer: "C"
+
+    - number: 45
+      question: "Which argument below is NOT used in support of casino gambling?"
+      options:
+        A: "It degrades the values of society."
+        B: "It can be beneficial if controlled wisely."
+        C: "It can be used as another tourist attraction."
+        D: "It is part of the everyday life of the Caribbean individual."
+      correct_answer: "A"
+
+    - number: 46
+      question: "To what does '... that is the last thing that we may need right now' (lines 18-19) refer?"
+      options:
+        A: "'gambling addiction, crime, and, worse, a debasement of society' (lines 16-17)"
+        B: "'an upsurge of gangs, drugs and violent behaviour among our youth' (lines 17-18)"
+        C: "'cruise ships keeping casinos open while docked on shore' (line 19)"
+        D: "'they flock to the tracks to watch horses run and bet millions annually' (lines 21-22)"
+      correct_answer: "A"
+
+    - number: 47
+      question: "The writer's use of the word 'brain' (line 1) is meant to"
+      options:
+        A: "exaggerate the traffic problems"
+        B: "make fun of the poor decisions"
+        C: "create a comparison of streets"
+        D: "compliment those responsible"
+      correct_answer: "B"
+
+    - number: 48
+      question: "When the writer repeats 'not them' in paragraph 1, he implies that"
+      options:
+        A: "he is choosing someone to complain to"
+        B: "no one wants to accept responsibility for the traffic situation"
+        C: "no one knows who is in charge of the traffic management"
+        D: "he is searching diligently for the person in charge of traffic"
+      correct_answer: "B"
+
+    - number: 49
+      question: "'Stoke Street' (line 7), 'Celestial Road' (line 9) and 'Delino Street' (line 17) can BEST be considered as"
+      options:
+        A: "prohibited streets for all drivers"
+        B: "streets that attract a lot of attention"
+        C: "assigned parking places for diplomats"
+        D: "examples to support the writer's case"
+      correct_answer: "D"
+
+    - number: 50
+      question: "The writer's tone can be described as"
+      options:
+        A: "puzzled"
+        B: "resigned"
+        C: "sarcastic"
+        D: "complimentary"
+      correct_answer: "C"
+
+    - number: 51
+      question: "The last sentence of the letter is similar to paragraph 5 because both of them"
+      options:
+        A: "mention cars"
+        B: "express disgust"
+        C: "are complimentary"
+        D: "contain rhetorical questions"
+      correct_answer: "D"
+
+    - number: 52
+      question: "The author of this passage is MOST likely a"
+      options:
+        A: "motorist"
+        B: "pedestrian"
+        C: "traffic warden"
+        D: "government official"
+      correct_answer: "A"
+
+    - number: 53
+      question: "'Again the small man suffers!' (line 14) implies that the small man is often"
+      options:
+        A: "ignored"
+        B: "disadvantaged"
+        C: "the one who is wrong"
+        D: "discriminated against"
+      correct_answer: "B"
+
+    - number: 54
+      question: "The letter was MOST likely published in a"
+      options:
+        A: "newspaper"
+        B: "press release"
+        C: "tourist brochure"
+        D: "school magazine"
+      correct_answer: "A"
+
+    - number: 55
+      question: "What does this airline promise if a person joins the Miles programme?"
+      options:
+        A: "Faster travel"
+        B: "Free shopping"
+        C: "Frequent shopping"
+        D: "Rewards for every flight"
+      correct_answer: "D"
+
+    - number: 56
+      question: "How many bonus miles does a silver tier member receive?"
+      options:
+        A: "3000"
+        B: "5000"
+        C: "7000"
+        D: "8000"
+      correct_answer: "A"
+
+    - number: 57
+      question: "To which of the following destinations can a person fly using 25 500 airline miles?"
+      options:
+        A: "Asia"
+        B: "Africa"
+        C: "Europe"
+        D: "North America"
+      correct_answer: "D"
+
+    - number: 58
+      question: "According to the advertisement, what should a prospective member do if more detailed information is needed about the benefits of the programme?"
+      options:
+        A: "Fly frequently."
+        B: "Visit the airline's offices."
+        C: "Visit the airline's webpage."
+        D: "Join the Miles programme."
+      correct_answer: "C"
+
+    - number: 59
+      question: "Which technique does the advertisement use to appeal to travellers to join the Miles programme?"
+      options:
+        A: "Facts"
+        B: "Opinion"
+        C: "Persuasive language"
+        D: "Personal experience"
+      correct_answer: "A"
+
+    - number: 60
+      question: "The MAIN purpose of the advertisement is to encourage persons to"
+      options:
+        A: "fly more often"
+        B: "enjoy air travel"
+        C: "receive an executive gold card"
+        D: "become members of the Miles programme"
+      correct_answer: "D"

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Key - English A P1 Quiz</title>
+    <link rel="icon" type="image/png" href="../assets/icon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <style>
+        :root {
+            --blue: #1a56db;
+            --blue-dark: #1e40af;
+            --green: #22c55e;
+            --red: #ef4444;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --border: #e2e8f0;
+            --text: #1e293b;
+            --text-light: #64748b;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height:1.6; min-height:100vh; display:flex; flex-direction:column; }
+        .navbar { background:var(--blue); color:white; padding:1rem 2rem; display:flex; align-items:center; gap:1rem; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+        .navbar a { color:white; text-decoration:none; font-weight:600; font-size:1.1rem; }
+        .navbar .logo { font-size:1.4rem; font-weight:800; letter-spacing:-0.5px; }
+        .container { max-width:1400px; width:100%; margin:2rem auto; padding:0 1.5rem; flex:1; }
+        .card { background:var(--card); border:1px solid var(--border); border-radius:1rem; padding:2rem; box-shadow:0 2px 12px rgba(0,0,0,0.04); margin-bottom:1.5rem; }
+        h1,h2,h3 { color:#0f172a; }
+        h2 { font-size:1.8rem; margin-bottom:1rem; }
+        .setup-section label { display:block; font-weight:600; margin:1rem 0 0.5rem; color:var(--text-light); }
+        .year-checkboxes { display:flex; flex-wrap:wrap; gap:0.5rem; }
+        .year-checkboxes label { display:flex; align-items:center; gap:0.3rem; font-weight:normal; color:var(--text); cursor:pointer; }
+        .year-checkboxes input[type="checkbox"] { width:1.1rem; height:1.1rem; accent-color:var(--blue); }
+        input[type="number"], select { padding:0.6rem 1rem; border:2px solid var(--border); border-radius:0.5rem; font-size:1rem; width:100%; max-width:200px; margin-bottom:1rem; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.7rem 1.5rem; background:var(--blue); color:white; border:none; border-radius:0.5rem; font-size:1rem; font-weight:600; cursor:pointer; transition:background 0.2s, transform 0.1s; text-decoration:none; }
+        .btn:hover { background:var(--blue-dark); transform:translateY(-1px); }
+        .btn-outline { background:transparent; border:2px solid var(--blue); color:var(--blue); }
+        .btn-outline:hover { background:rgba(26,86,219,0.05); }
+        .btn:disabled { opacity:0.6; pointer-events:none; }
+        .progress-bar { height:6px; background:var(--border); border-radius:3px; margin:1rem 0; overflow:hidden; }
+        .progress-fill { height:100%; background:var(--blue); width:0%; transition:width 0.3s ease; }
+        .quiz-layout { display:flex; gap:2rem; align-items:flex-start; }
+        .quiz-main { flex:1 1 60%; min-width:0; }
+        .pdf-preview { flex:1 1 40%; position:sticky; top:2rem; background:var(--card); border:1px solid var(--border); border-radius:1rem; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.04); height:80vh; display:flex; flex-direction:column; }
+        .pdf-preview iframe { width:100%; height:100%; border:none; }
+        .pdf-placeholder { display:flex; align-items:center; justify-content:center; height:100%; color:var(--text-light); font-size:0.9rem; }
+        .pdf-label { padding:0.75rem 1rem; background:#f8fafc; border-bottom:1px solid var(--border); font-size:0.85rem; color:var(--text-light); display:flex; justify-content:space-between; align-items:center; }
+        .question-text { font-size:1.2rem; font-weight:600; margin-bottom:0.5rem; line-height:1.6; }
+        .question-source { font-size:0.85rem; color:var(--text-light); margin-bottom:1.2rem; }
+        .options { display:flex; flex-direction:column; gap:0.8rem; }
+        .option-btn { text-align:left; padding:0.9rem 1.2rem; background:#f8fafc; border:2px solid var(--border); border-radius:0.6rem; font-size:1rem; cursor:pointer; transition:all 0.2s; font-family:inherit; }
+        .option-btn:hover:not(:disabled) { border-color:#93c5fd; background:#eff6ff; }
+        .option-btn.correct { border-color:var(--green); background:#f0fdf4; color:#166534; }
+        .option-btn.wrong { border-color:var(--red); background:#fef2f2; color:#991b1b; }
+        .feedback { padding:0.8rem 1rem; border-radius:0.5rem; margin:1rem 0; font-weight:600; display:none; }
+        .feedback.correct { background:#f0fdf4; color:#166534; display:block; }
+        .feedback.wrong { background:#fef2f2; color:#991b1b; display:block; }
+        .results-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px,1fr)); gap:1rem; margin:1.5rem 0; }
+        .result-stat { background:#f8fafc; padding:1rem; border-radius:0.5rem; text-align:center; }
+        .result-stat .number { font-size:2rem; font-weight:700; color:var(--blue); }
+        .history-list { list-style:none; margin-top:1rem; }
+        .history-list li { padding:0.5rem 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; }
+        .hidden { display:none; }
+        @media (max-width:1000px) { .quiz-layout { flex-direction:column; } .pdf-preview { position:static; height:60vh; margin-top:1.5rem; } }
+        @media (max-width:600px) { .container { padding:0 1rem; } .card { padding:1.5rem; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="logo">Study Key</span>
+        <a href="../index.html">Home</a>
+        <a href="../hub.html">Hub</a>
+    </nav>
+
+    <div class="container" id="app">
+        <div id="setup-screen">
+            <div class="card">
+                <h2>English A Paper 1 Quiz</h2>
+                <p style="color: var(--text-light); margin-bottom: 1.5rem;">Select papers and number of questions to practice.</p>
+                <label>Select Papers (Years):</label>
+                <div class="year-checkboxes" id="year-checkboxes"></div>
+                <label for="question-count">Number of Questions:</label>
+                <input type="number" id="question-count" min="5" max="200" value="30" step="5">
+                <div style="margin-top: 1.5rem;">
+                    <button class="btn" id="start-btn">Start Quiz</button>
+                </div>
+            </div>
+            <div class="card" id="history-section">
+                <h3>Your Quiz History</h3>
+                <div id="history-container">No quizzes taken yet.</div>
+            </div>
+        </div>
+
+        <div id="quiz-screen" class="hidden">
+            <div class="quiz-layout">
+                <div class="quiz-main">
+                    <div class="card">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <span id="question-counter"></span>
+                            <span style="color: var(--text-light);" id="score-display"></span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <div class="question-text" id="question-text"></div>
+                        <div class="question-source" id="question-source"></div>
+                        <div class="options" id="options-container"></div>
+                        <div class="feedback" id="feedback"></div>
+                        <button class="btn" id="next-btn" style="margin-top: 1rem; display: none;">Next</button>
+                    </div>
+                </div>
+                <div class="pdf-preview" id="pdf-preview-container">
+                    <div class="pdf-label">
+                        <span id="pdf-source-label">Source PDF</span>
+                        <span id="pdf-page-label"></span>
+                    </div>
+                    <div class="pdf-placeholder" id="pdf-placeholder">PDF preview will appear here</div>
+                    <iframe id="pdf-iframe" style="display:none;" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="results-screen" class="hidden">
+            <div class="card">
+                <h2>Quiz Completed!</h2>
+                <div class="results-grid">
+                    <div class="result-stat"><div class="number" id="final-score">0</div><div>Correct</div></div>
+                    <div class="result-stat"><div class="number" id="final-total">0</div><div>Total</div></div>
+                    <div class="result-stat"><div class="number" id="final-percent">0%</div><div>Score</div></div>
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <button class="btn" id="retry-btn">Retry Same Quiz</button>
+                    <button class="btn btn-outline" id="new-quiz-btn">New Quiz</button>
+                    <a href="../hub.html" class="btn btn-outline">Back to Hub</a>
+                </div>
+            </div>
+            <div class="card" id="results-history-section">
+                <h3>Previous Attempts</h3>
+                <div id="results-history-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const YAML_DIR = '../app/data/';
+        const PDF_DIR = '../app/pdfs/';
+        const HELPER_JSON_PATH = '../app/pdfs/helper.json';
+
+        const AVAILABLE_PAPERS = [
+            { file: 'mjeng2024', label: 'May/June 2024', year: 2024, pdf: 'CSEC_English_A_P1_2024_MJ.pdf', session: 'May/June', helperKey: 'English A MJ 2024' },
+            { file: 'janeng2024', label: 'January 2024', year: 2024, pdf: 'CSEC_English_A_P1_2024_JAN.pdf', session: 'January', helperKey: 'English A Jan 2024' },
+            { file: 'mjeng2023', label: 'May/June 2023', year: 2023, pdf: 'CSEC_English_A_P1_2023_MJ.pdf', session: 'May/June', helperKey: 'English A MJ 2023' },
+            { file: 'mjeng2022', label: 'May/June 2022', year: 2022, pdf: 'CSEC_English_A_P1_2022_MJ.pdf', session: 'May/June', helperKey: 'English A MJ 2022' },
+            { file: 'mjeng2021', label: 'May/June 2021', year: 2021, pdf: 'CSEC_English_A_P1_2021_MJ.pdf', session: 'May/June', helperKey: 'English A MJ 2021' },
+            { file: 'janeng2021', label: 'January 2021', year: 2021, pdf: 'CSEC_English_A_P1_2021_JAN.pdf', session: 'January', helperKey: 'English A Jan 2021' },
+            { file: 'mjeng2020', label: 'May/June 2020', year: 2020, pdf: 'CSEC_English_A_P1_2020_MJ.pdf', session: 'May/June', helperKey: 'English A MJ 2020' },
+            { file: 'mjeng2019', label: 'May/June 2019', year: 2019, pdf: 'CSEC_English_A_P1_2019_MJ.pdf', session: 'May/June', helperKey: 'English A MJ 2019' },
+            { file: 'mjeng2018', label: 'May/June 2018', year: 2018, pdf: 'CSEC_English_A_P1_2018_MJ.pdf', session: 'May/June', helperKey: 'English A MJ 2018' },
+            { file: 'mjeng2017', label: 'May/June 2017', year: 2017, pdf: 'CSEC_English_A_P1_2017_MJ.pdf', session: 'May/June', helperKey: 'English A MJ 2017' }
+        ];
+
+        const STORAGE_KEY = 'studykey_english_p1_quizzes';
+
+        let allPapers = [];
+        let quizQuestions = [];
+        let currentIndex = 0;
+        let score = 0;
+        let userAnswers = [];
+        let quizConfig = { selectedFiles: [], questionCount: 30 };
+        let questionPageMap = {};
+
+        const setupScreen = document.getElementById('setup-screen');
+        const quizScreen = document.getElementById('quiz-screen');
+        const resultsScreen = document.getElementById('results-screen');
+        const yearCheckboxes = document.getElementById('year-checkboxes');
+        const questionCountInput = document.getElementById('question-count');
+        const startBtn = document.getElementById('start-btn');
+        const questionText = document.getElementById('question-text');
+        const questionSource = document.getElementById('question-source');
+        const optionsContainer = document.getElementById('options-container');
+        const feedbackEl = document.getElementById('feedback');
+        const nextBtn = document.getElementById('next-btn');
+        const questionCounter = document.getElementById('question-counter');
+        const progressFill = document.getElementById('progress-fill');
+        const scoreDisplay = document.getElementById('score-display');
+        const pdfIframe = document.getElementById('pdf-iframe');
+        const pdfPlaceholder = document.getElementById('pdf-placeholder');
+        const pdfSourceLabel = document.getElementById('pdf-source-label');
+        const pdfPageLabel = document.getElementById('pdf-page-label');
+
+        function getPaperByFile(fileKey) {
+            return AVAILABLE_PAPERS.find(p => p.file === fileKey);
+        }
+
+        async function loadQuestionPageMap() {
+            try {
+                const response = await fetch(HELPER_JSON_PATH);
+                if (response.ok) {
+                    const rawData = await response.json();
+                    questionPageMap = {};
+                    for (const [key, entries] of Object.entries(rawData)) {
+                        const map = {};
+                        entries.forEach(entry => {
+                            map[String(entry.question)] = entry.page;
+                        });
+                        questionPageMap[key] = map;
+                    }
+                } else {
+                    questionPageMap = {};
+                }
+            } catch (e) {
+                questionPageMap = {};
+            }
+        }
+
+        function getPageForQuestion(paperInfo, questionNumber) {
+            if (!paperInfo) return 1;
+            const helperKey = paperInfo.helperKey;
+            if (questionPageMap[helperKey] && questionPageMap[helperKey][String(questionNumber)]) {
+                return questionPageMap[helperKey][String(questionNumber)];
+            }
+            return Math.floor((questionNumber - 1) / 5) + 2;
+        }
+
+        function updatePdfPreview(paperInfo, originalQuestionNumber) {
+            if (!paperInfo || !paperInfo.pdf) {
+                pdfIframe.style.display = 'none';
+                pdfPlaceholder.style.display = 'flex';
+                pdfPlaceholder.textContent = 'PDF not available';
+                pdfSourceLabel.textContent = 'Source PDF';
+                pdfPageLabel.textContent = '';
+                return;
+            }
+            const pageNum = getPageForQuestion(paperInfo, originalQuestionNumber);
+            const pdfUrl = PDF_DIR + paperInfo.pdf + `#page=${pageNum}`;
+            pdfIframe.src = pdfUrl;
+            pdfIframe.style.display = 'block';
+            pdfPlaceholder.style.display = 'none';
+            pdfSourceLabel.textContent = `${paperInfo.session} ${paperInfo.year}`;
+            pdfPageLabel.textContent = `Page ${pageNum}`;
+        }
+
+        async function init() {
+            await loadQuestionPageMap();
+
+            AVAILABLE_PAPERS.forEach(paper => {
+                const lbl = document.createElement('label');
+                lbl.innerHTML = `<input type="checkbox" value="${paper.file}" checked> ${paper.label}`;
+                yearCheckboxes.appendChild(lbl);
+            });
+
+            updateHistoryDisplay();
+
+            startBtn.addEventListener('click', startQuiz);
+            nextBtn.addEventListener('click', nextQuestion);
+            document.getElementById('retry-btn').addEventListener('click', () => {
+                resultsScreen.classList.add('hidden');
+                setupScreen.classList.remove('hidden');
+                document.querySelectorAll('#year-checkboxes input').forEach(cb => {
+                    cb.checked = quizConfig.selectedFiles.includes(cb.value);
+                });
+                questionCountInput.value = quizConfig.questionCount;
+            });
+            document.getElementById('new-quiz-btn').addEventListener('click', () => {
+                resultsScreen.classList.add('hidden');
+                setupScreen.classList.remove('hidden');
+                document.querySelectorAll('#year-checkboxes input').forEach(cb => cb.checked = true);
+                questionCountInput.value = 30;
+            });
+        }
+
+        async function loadSelectedPapers(fileList) {
+            const loaded = [];
+            for (const file of fileList) {
+                try {
+                    const response = await fetch(YAML_DIR + file + '.yaml');
+                    if (!response.ok) throw new Error('Not found');
+                    const yamlText = await response.text();
+                    const data = jsyaml.load(yamlText);
+                    if (data && data.exam && data.exam.items) {
+                        loaded.push({
+                            file: file,
+                            year: data.exam.year,
+                            session: getPaperByFile(file)?.session || 'Unknown',
+                            items: data.exam.items,
+                            paperInfo: getPaperByFile(file)
+                        });
+                    }
+                } catch (err) {
+                    console.warn(`Failed to load ${file}.yaml`, err);
+                }
+            }
+            return loaded;
+        }
+
+        function shuffleArray(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        async function startQuiz() {
+            const selectedFiles = Array.from(document.querySelectorAll('#year-checkboxes input:checked')).map(cb => cb.value);
+            if (selectedFiles.length === 0) {
+                alert('Please select at least one paper.');
+                return;
+            }
+            let questionCount = parseInt(questionCountInput.value, 10);
+            if (isNaN(questionCount) || questionCount < 1) questionCount = 30;
+
+            quizConfig = { selectedFiles, questionCount };
+
+            startBtn.disabled = true;
+            startBtn.textContent = 'Loading...';
+            allPapers = await loadSelectedPapers(selectedFiles);
+            startBtn.disabled = false;
+            startBtn.textContent = 'Start Quiz';
+
+            if (allPapers.length === 0) {
+                alert('Failed to load any papers.');
+                return;
+            }
+
+            let allItems = [];
+            allPapers.forEach(paper => {
+                paper.items.forEach(item => {
+                    allItems.push({
+                        ...item,
+                        paperFile: paper.file,
+                        session: paper.session,
+                        year: paper.year,
+                        originalQuestionNumber: item.number,
+                        paperInfo: paper.paperInfo
+                    });
+                });
+            });
+
+            allItems = shuffleArray(allItems);
+            if (allItems.length < questionCount) {
+                questionCount = allItems.length;
+            }
+            quizQuestions = allItems.slice(0, questionCount);
+
+            currentIndex = 0;
+            score = 0;
+            userAnswers = [];
+
+            setupScreen.classList.add('hidden');
+            quizScreen.classList.remove('hidden');
+            resultsScreen.classList.add('hidden');
+
+            showQuestion();
+        }
+
+        function showQuestion() {
+            if (currentIndex >= quizQuestions.length) {
+                endQuiz();
+                return;
+            }
+
+            const q = quizQuestions[currentIndex];
+            const paperInfo = q.paperInfo;
+            const sourceMonth = q.session;
+            const sourceYear = q.year;
+            const originalQNum = q.originalQuestionNumber;
+
+            questionText.innerHTML = `<strong>${currentIndex + 1}.</strong> ${q.question}`;
+            questionSource.innerHTML = `Source: ${sourceMonth} ${sourceYear}, Question ${originalQNum}`;
+
+            optionsContainer.innerHTML = '';
+            const optionLetters = ['A', 'B', 'C', 'D'];
+            optionLetters.forEach(letter => {
+                if (q.options && q.options[letter]) {
+                    const btn = document.createElement('button');
+                    btn.className = 'option-btn';
+                    btn.textContent = `${letter}. ${q.options[letter]}`;
+                    btn.addEventListener('click', () => selectAnswer(letter));
+                    optionsContainer.appendChild(btn);
+                }
+            });
+
+            const progress = (currentIndex / quizQuestions.length) * 100;
+            progressFill.style.width = progress + '%';
+            questionCounter.textContent = `Question ${currentIndex + 1} of ${quizQuestions.length}`;
+            scoreDisplay.textContent = `Score: ${score}/${currentIndex}`;
+
+            feedbackEl.className = 'feedback';
+            feedbackEl.style.display = 'none';
+            nextBtn.style.display = 'none';
+
+            updatePdfPreview(paperInfo, originalQNum);
+        }
+
+        function selectAnswer(selectedLetter) {
+            if (feedbackEl.style.display === 'block') return;
+
+            const q = quizQuestions[currentIndex];
+            const correct = q.correct_answer;
+            const isCorrect = (selectedLetter === correct);
+
+            const buttons = document.querySelectorAll('.option-btn');
+            buttons.forEach(btn => {
+                btn.disabled = true;
+                const letter = btn.textContent.charAt(0);
+                if (letter === correct) btn.classList.add('correct');
+                if (letter === selectedLetter && !isCorrect) btn.classList.add('wrong');
+            });
+
+            feedbackEl.textContent = isCorrect ? 'Correct!' : `Incorrect. The answer is ${correct}.`;
+            feedbackEl.className = `feedback ${isCorrect ? 'correct' : 'wrong'}`;
+            feedbackEl.style.display = 'block';
+
+            if (isCorrect) score++;
+            scoreDisplay.textContent = `Score: ${score}/${currentIndex + 1}`;
+
+            userAnswers.push({
+                questionNumber: q.originalQuestionNumber,
+                selected: selectedLetter,
+                correct: correct,
+                paperFile: q.paperFile,
+                session: q.session,
+                year: q.year
+            });
+
+            nextBtn.style.display = 'inline-flex';
+        }
+
+        function nextQuestion() {
+            currentIndex++;
+            if (currentIndex < quizQuestions.length) {
+                showQuestion();
+            } else {
+                endQuiz();
+            }
+        }
+
+        function endQuiz() {
+            quizScreen.classList.add('hidden');
+            resultsScreen.classList.remove('hidden');
+
+            const total = quizQuestions.length;
+            const percentage = Math.round((score / total) * 100);
+            document.getElementById('final-score').textContent = score;
+            document.getElementById('final-total').textContent = total;
+            document.getElementById('final-percent').textContent = percentage + '%';
+
+            saveQuizResult({
+                date: new Date().toISOString(),
+                score: score,
+                total: total,
+                percentage: percentage,
+                papers: quizConfig.selectedFiles,
+                questionCount: quizConfig.questionCount
+            });
+
+            updateResultsHistory();
+        }
+
+        function saveQuizResult(result) {
+            let history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+            history.push(result);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
+        }
+
+        function updateResultsHistory() {
+            const container = document.getElementById('results-history-container');
+            const history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+            if (history.length === 0) {
+                container.innerHTML = '<p>No previous attempts.</p>';
+                return;
+            }
+            const recent = history.slice(-5).reverse();
+            container.innerHTML = '<ul class="history-list">' + recent.map(h => 
+                `<li><span>${new Date(h.date).toLocaleDateString()} ${new Date(h.date).toLocaleTimeString()}</span> <span>${h.score}/${h.total} (${h.percentage}%)</span></li>`
+            ).join('') + '</ul>';
+        }
+
+        function updateHistoryDisplay() {
+            const container = document.getElementById('history-container');
+            const history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+            if (history.length === 0) {
+                container.innerHTML = '<p>No quizzes taken yet.</p>';
+                return;
+            }
+            const recent = history.slice(-5).reverse();
+            container.innerHTML = '<ul class="history-list">' + recent.map(h => 
+                `<li><span>${new Date(h.date).toLocaleDateString()} ${new Date(h.date).toLocaleTimeString()}</span> <span>${h.score}/${h.total} (${h.percentage}%)</span></li>`
+            ).join('') + '</ul>';
+        }
+
+        init();
+    </script>
+</body>
+</html>

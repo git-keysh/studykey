@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Study Key - Smart study tools for CXC students. AI-powered quizzes, past paper practice, and personalized learning.">
+    <meta name="keywords" content="CXC, CSEC, study, past papers, quizzes, exam prep, Caribbean">
+    <meta name="author" content="Study Key">
+    <meta name="theme-color" content="#1a56db">
+    <meta property="og:title" content="Study Key - CXC Study Tools">
+    <meta property="og:description" content="Smart study tools for CXC students. Practice with past papers and AI-powered quizzes.">
+    <meta property="og:image" content="assets/icon.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="apple-touch-icon" href="assets/icon.png">
+    <title>Study Key - CXC Study Tools</title>
+    <link rel="stylesheet" href="webstructure/login.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            background-color: #0b1a3b;
+            background-image: url('assets/background.jpg');
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(11, 26, 59, 0.25) 0%, rgba(11, 26, 59, 0.45) 50%, rgba(11, 26, 59, 0.9) 100%);
+        }
+
+        .scroll-hint {
+            position: absolute;
+            bottom: 28px;
+            left: 40px;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .scroll-hint:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .scroll-hint svg {
+            width: 20px;
+            height: 20px;
+            animation: pulseDown 2s infinite;
+        }
+
+        .content {
+            padding: 80px 60px 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 48px;
+            max-width: 100%;
+        }
+
+        .section {
+            margin-bottom: 64px;
+        }
+
+        .section-label {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #1a56db;
+            margin-bottom: 8px;
+        }
+
+        .section h2 {
+            font-size: 30px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .section p {
+            font-size: 16px;
+            color: #475569;
+            margin-bottom: 12px;
+        }
+
+        .beta-badge {
+            display: inline-block;
+            background: #fef3c7;
+            color: #92400e;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-left: 6px;
+            vertical-align: middle;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-top: 24px;
+        }
+
+        .feature-list li {
+            position: relative;
+            padding: 12px 0 12px 32px;
+            font-size: 16px;
+            color: #334155;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .feature-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231a56db' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .signup-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            height: fit-content;
+            position: sticky;
+            top: 40px;
+        }
+
+        .card-label {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #1a56db;
+            margin-bottom: 16px;
+        }
+
+        .signup-card .signup-greeting {
+            font-size: 15px;
+            color: #475569;
+            margin-bottom: 16px;
+        }
+
+        .signup-card .signup-greeting strong {
+            color: #1a56db;
+        }
+
+        .signup-input {
+            width: 100%;
+            padding: 13px 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 15px;
+            outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            background: #f8fafc;
+            font-family: inherit;
+            margin-bottom: 12px;
+        }
+
+        .signup-input:focus {
+            border-color: #1a56db;
+            background: #fff;
+            box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.1);
+        }
+
+        .signup-btn {
+            width: 100%;
+            padding: 13px;
+            background: #1a56db;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: inherit;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .signup-btn:hover {
+            background: #1e40af;
+            transform: translateY(-1px);
+        }
+
+        .signup-btn.saved {
+            background: #22c55e;
+            pointer-events: none;
+        }
+
+        .signup-status {
+            font-size: 13px;
+            margin-top: 10px;
+            text-align: center;
+            color: #22c55e;
+            font-weight: 600;
+            display: none;
+        }
+
+        .signup-status.show {
+            display: block;
+        }
+
+        .demo-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            height: fit-content;
+            position: sticky;
+            top: 40px;
+        }
+
+        .demo-score {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: #64748b;
+        }
+
+        .demo-score span {
+            font-weight: 700;
+            color: #1a56db;
+        }
+
+        .demo-question {
+            font-size: 15px;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .demo-option {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 13px 16px;
+            margin-bottom: 8px;
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 14px;
+            color: #334155;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+
+        .demo-option:hover {
+            border-color: #93c5fd;
+            background: #eff6ff;
+        }
+
+        .demo-option.selected {
+            border-color: #1a56db;
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .demo-option.correct {
+            border-color: #22c55e;
+            background: #f0fdf4;
+            color: #166534;
+            pointer-events: none;
+        }
+
+        .demo-option.wrong {
+            border-color: #ef4444;
+            background: #fef2f2;
+            color: #991b1b;
+            pointer-events: none;
+        }
+
+        .demo-feedback {
+            margin-top: 16px;
+            padding: 12px 16px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            display: none;
+        }
+
+        .demo-feedback.show {
+            display: block;
+        }
+
+        .demo-feedback.correct {
+            background: #f0fdf4;
+            color: #166534;
+        }
+
+        .demo-feedback.wrong {
+            background: #fef2f2;
+            color: #991b1b;
+        }
+
+        .demo-next {
+            display: none;
+            align-items: center;
+            gap: 6px;
+            margin-top: 16px;
+            padding: 10px 20px;
+            background: #1a56db;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: inherit;
+            transition: background 0.2s ease;
+        }
+
+        .demo-next.show {
+            display: inline-flex;
+        }
+
+        .demo-next:hover {
+            background: #1e40af;
+        }
+
+        .cta {
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-primary {
+            background: #1a56db;
+            color: #ffffff;
+            box-shadow: 0 4px 16px rgba(26, 86, 219, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #1e40af;
+            box-shadow: 0 6px 24px rgba(26, 86, 219, 0.4);
+        }
+
+        .footer {
+            padding: 32px 60px;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        .footer strong {
+            color: #1a56db;
+            font-weight: 600;
+        }
+
+        @keyframes pulseDown {
+            0%, 100% { transform: translateY(0); opacity: 0.5; }
+            50% { transform: translateY(8px); opacity: 1; }
+        }
+
+        @media (max-width: 1200px) {
+            .content {
+                grid-template-columns: 1fr 1fr;
+                gap: 36px;
+                padding: 60px 40px 48px;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .content {
+                grid-template-columns: 1fr;
+                gap: 32px;
+                padding: 48px 24px 40px;
+            }
+
+            .signup-card,
+            .demo-card {
+                position: static;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                height: 80vh;
+            }
+
+            .section h2 {
+                font-size: 24px;
+            }
+
+            .btn {
+                padding: 14px 24px;
+                font-size: 15px;
+            }
+
+            .scroll-hint {
+                left: 24px;
+                bottom: 20px;
+            }
+
+            .footer {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <a href="#main-content" class="scroll-hint">
+            Scroll down
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+    </section>
+
+    <main id="main-content">
+
+        <div class="content">
+            <div>
+                <div class="section">
+                    <span class="section-label">About</span>
+                    <h2>What We're All About</h2>
+                    <p>
+                        Study Key generates proper study materials for CXC students using code that processes real past papers.
+                        We break down CSEC Paper 1 and Paper 2 exams into structured quizzes with instant feedback, so you spend
+                        less time searching and more time learning.
+                    </p>
+                    <p>
+                        No PDFs to download. No answer keys to hunt for. Just pick a subject, pick a year, and start practicing.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Real CSEC English A Paper 1 questions from 2017–2024</li>
+                        <li>Instant feedback on every answer</li>
+                        <li>Track your scores and see what needs work</li>
+                        <li>Works on desktop, tablet, and phone</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <span class="section-label">Status</span>
+                    <h2>BETA <span class="beta-badge">Early Access</span></h2>
+                    <p>
+                        This is a BETA version. We're actively building and improving the platform.
+                        More subjects and features are on the way.
+                    </p>
+                    <p>
+                        Project started on <strong>May 25, 2026</strong>.
+                    </p>
+                </div>
+
+                <div class="cta">
+                    <a href="hub.html" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/><path d="M3 9h18"/></svg>
+                        Go to Hub
+                    </a>
+                </div>
+            </div>
+
+            <div class="signup-card">
+                <div class="card-label">Sign Up</div>
+                <p class="signup-greeting" id="signup-greeting">
+                    Hey there! I see you as <strong id="signup-ip">loading...</strong>.
+                </p>
+                <input type="text" class="signup-input" id="signup-name" placeholder="Enter your name" maxlength="30" autocomplete="off">
+                <button class="signup-btn" id="signup-btn" onclick="saveSignupName()">Save Name</button>
+                <div class="signup-status" id="signup-status">Name saved!</div>
+            </div>
+
+            <div class="demo-card">
+                <div class="card-label">Try a Demo</div>
+                <div class="demo-score">
+                    <span id="demo-question-num">Question 1 of 4</span>
+                    <span>Score: <span id="demo-score">0</span>/<span id="demo-total">0</span></span>
+                </div>
+                <div class="demo-question" id="demo-question"></div>
+                <div id="demo-options"></div>
+                <div class="demo-feedback" id="demo-feedback"></div>
+                <button class="demo-next" id="demo-next" onclick="nextDemoQuestion()">Next Question</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 <strong>Study Key</strong>. Built for CXC students.</p>
+    </footer>
+
+    <script>
+        const SIGNUP_KEY = 'studykey_username';
+        const IP_KEY = 'studykey_ip';
+
+        async function fetchIP() {
+            try {
+                const services = [
+                    'https://api.ipify.org?format=json',
+                    'https://api.ip.sb/ip',
+                    'https://api.my-ip.io/ip'
+                ];
+                for (const service of services) {
+                    try {
+                        const controller = new AbortController();
+                        const timeoutId = setTimeout(() => controller.abort(), 3000);
+                        const response = await fetch(service, { signal: controller.signal });
+                        clearTimeout(timeoutId);
+                        if (response.ok) {
+                            const contentType = response.headers.get('content-type');
+                            if (contentType && contentType.includes('application/json')) {
+                                const data = await response.json();
+                                return data.ip || String(data);
+                            }
+                            const text = await response.text();
+                            return text.trim();
+                        }
+                    } catch (e) {
+                        continue;
+                    }
+                }
+                return 'Unknown';
+            } catch (error) {
+                return 'Unknown';
+            }
+        }
+
+        async function initSignup() {
+            const ip = await fetchIP();
+            document.getElementById('signup-ip').textContent = ip;
+            localStorage.setItem(IP_KEY, ip);
+
+            const savedName = localStorage.getItem(SIGNUP_KEY);
+            if (savedName) {
+                document.getElementById('signup-name').value = savedName;
+                document.getElementById('signup-name').disabled = true;
+                document.getElementById('signup-btn').textContent = 'Name Saved';
+                document.getElementById('signup-btn').classList.add('saved');
+                document.getElementById('signup-status').classList.add('show');
+                document.getElementById('signup-greeting').innerHTML = `Welcome back, <strong>${escapeHTML(savedName)}</strong>!`;
+            }
+        }
+
+        function saveSignupName() {
+            const name = document.getElementById('signup-name').value.trim();
+            if (!name || name.length < 2) {
+                document.getElementById('signup-name').style.borderColor = '#ef4444';
+                setTimeout(() => {
+                    document.getElementById('signup-name').style.borderColor = '';
+                }, 2000);
+                return;
+            }
+
+            localStorage.setItem(SIGNUP_KEY, name);
+            document.getElementById('signup-name').disabled = true;
+            document.getElementById('signup-btn').textContent = 'Name Saved';
+            document.getElementById('signup-btn').classList.add('saved');
+            document.getElementById('signup-status').classList.add('show');
+            document.getElementById('signup-greeting').innerHTML = `Welcome, <strong>${escapeHTML(name)}</strong>!`;
+        }
+
+        function escapeHTML(str) {
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        initSignup();
+
+        const demoQuestions = [
+            {
+                question: "Choose the word that is NEAREST in meaning to the underlined word:<br><br><em>The flowers grow <u>profusely</u> in the garden.</em>",
+                options: ["wildly", "healthily", "plentifully", "colourfully"],
+                correct: 2
+            },
+            {
+                question: "Choose the word OPPOSITE in meaning to the underlined word:<br><br><em>She seems <u>sensitive</u> to the feelings of others.</em>",
+                options: ["unaware of", "unsure about", "unaffected by", "appreciative of"],
+                correct: 0
+            },
+            {
+                question: "Which sentence is grammatically correct?",
+                options: ["Each of the students have a book.", "Each of the students has a book.", "Each of the students are having a book.", "Each of the students were having a book."],
+                correct: 1
+            },
+            {
+                question: "Identify the error in the sentence:<br><br><em>Neither the books nor the pen are on the table.</em>",
+                options: ["Neither", "the books", "are", "on the table"],
+                correct: 2
+            }
+        ];
+
+        let currentDemoQuestion = 0;
+        let demoScore = 0;
+        let demoAnswered = false;
+
+        function loadDemoQuestion() {
+            demoAnswered = false;
+            const q = demoQuestions[currentDemoQuestion];
+            document.getElementById('demo-question-num').textContent = `Question ${currentDemoQuestion + 1} of ${demoQuestions.length}`;
+            document.getElementById('demo-question').innerHTML = q.question;
+            document.getElementById('demo-score').textContent = demoScore;
+            document.getElementById('demo-total').textContent = currentDemoQuestion;
+            
+            const optionsContainer = document.getElementById('demo-options');
+            optionsContainer.innerHTML = '';
+            
+            q.options.forEach((opt, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'demo-option';
+                btn.textContent = `${String.fromCharCode(65 + index)}. ${opt}`;
+                btn.onclick = () => selectDemoAnswer(index);
+                optionsContainer.appendChild(btn);
+            });
+            
+            document.getElementById('demo-feedback').className = 'demo-feedback';
+            document.getElementById('demo-feedback').textContent = '';
+            document.getElementById('demo-next').className = 'demo-next';
+        }
+
+        function selectDemoAnswer(index) {
+            if (demoAnswered) return;
+            demoAnswered = true;
+            
+            const q = demoQuestions[currentDemoQuestion];
+            const buttons = document.querySelectorAll('.demo-option');
+            const feedback = document.getElementById('demo-feedback');
+            const nextBtn = document.getElementById('demo-next');
+            
+            if (index === q.correct) {
+                demoScore++;
+                buttons[index].classList.add('correct');
+                feedback.textContent = 'Correct! Well done.';
+                feedback.className = 'demo-feedback correct show';
+            } else {
+                buttons[index].classList.add('wrong');
+                buttons[q.correct].classList.add('correct');
+                feedback.textContent = `Incorrect. The answer is ${String.fromCharCode(65 + q.correct)}.`;
+                feedback.className = 'demo-feedback wrong show';
+            }
+            
+            document.getElementById('demo-score').textContent = demoScore;
+            document.getElementById('demo-total').textContent = currentDemoQuestion + 1;
+            
+            if (currentDemoQuestion < demoQuestions.length - 1) {
+                nextBtn.textContent = 'Next Question';
+            } else {
+                nextBtn.textContent = 'Restart Demo';
+            }
+            nextBtn.className = 'demo-next show';
+        }
+
+        function nextDemoQuestion() {
+            currentDemoQuestion++;
+            if (currentDemoQuestion >= demoQuestions.length) {
+                currentDemoQuestion = 0;
+                demoScore = 0;
+            }
+            loadDemoQuestion();
+        }
+
+        loadDemoQuestion();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,545 @@
+exam:
+  title: "CSEC English A P1 2021 JAN"
+  year: 2021
+  subject: "English A"
+  total_items: 60
+  items:
+    - number: 1
+      question: "The distinguished actor avoided the press whenever he was on holidays."
+      options:
+        A: "praised"
+        B: "attacked"
+        C: "contacted"
+        D: "interviewed"
+      correct_answer: "D"
+
+    - number: 2
+      question: "The compassionate man was known by many in the crowd."
+      options:
+        A: "fussy"
+        B: "cruel"
+        C: "indifferent"
+        D: "dissatisfied"
+      correct_answer: "C"
+
+    - number: 3
+      question: "As far as I am concerned, the lattice windows are the most conspicuous feature on the building."
+      options:
+        A: "negative"
+        B: "important"
+        C: "insignificant"
+        D: "understandable"
+      correct_answer: "C"
+
+    - number: 4
+      question: "It seemed probable that the country will maintain the curfew for another week."
+      options:
+        A: "unlikely"
+        B: "impudent"
+        C: "undecided"
+        D: "inevitable"
+      correct_answer: "A"
+
+    - number: 5
+      question: "Many teenagers and even some parents do not agree with the amount of restrictiveness in today's society."
+      options:
+        A: "strife"
+        B: "cruelty"
+        C: "permissiveness"
+        D: "competitiveness"
+      correct_answer: "C"
+
+    - number: 6
+      question: "It is my pleasure to give you some information concerning proper nutrition."
+      options:
+        A: "pleasure"
+        B: "information"
+        C: "nutrition"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 7
+      question: "The nurses were given separate quarters because the main building did not have enough room for them."
+      options:
+        A: "quarters"
+        B: "did not"
+        C: "room"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 8
+      question: "The arguments put forward by the irate parent merely helped to further aggravate the situation."
+      options:
+        A: "put forward"
+        B: "irate"
+        C: "aggravate"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 9
+      question: "The opinion that men are superior to women is a fallacy which men themselves perpetuate."
+      options:
+        A: "superior"
+        B: "fallacy"
+        C: "perpetuate"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 10
+      question: "His intelligence rather than his height was the deciding factor when considering him for promotion."
+      options:
+        A: "rather than"
+        B: "was"
+        C: "considering"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 11
+      question: "The cricket match ended abruptly when many of the spectators stormed the field. Begin the sentence with 'Many of the spectators stormed'"
+      options:
+        A: "so"
+        B: "but"
+        C: "getting"
+        D: "preventing"
+      correct_answer: "A"
+
+    - number: 12
+      question: "People from crowded nations cannot get over the accessibility of Canada's natural environment, in all its significance. Begin the sentence with 'It is impossible for'"
+      options:
+        A: "to be over"
+        B: "to get over"
+        C: "to have got over"
+        D: "to getting over"
+      correct_answer: "B"
+
+    - number: 13
+      question: "She found, even after she had made several attempts to regulate the sprinkler, that the water was still reaching the furniture on the verandah. Begin the sentence with 'It is impossible for'"
+      options:
+        A: "she found that"
+        B: "and finding that"
+        C: "she had found that"
+        D: "she was finding that"
+      correct_answer: "A"
+
+    - number: 14
+      question: "'It's going to be alright,' Mom assured me. Begin the sentence with 'Mom assured me that'"
+      options:
+        A: "there"
+        B: "it was"
+        C: "simply"
+        D: "only"
+      correct_answer: "B"
+
+    - number: 15
+      question: "These students are hard-working as well as respectful. Begin the sentence with 'Not only'"
+      options:
+        A: "and"
+        B: "though"
+        C: "rather than"
+        D: "but they are also"
+      correct_answer: "D"
+
+    - number: 16
+      question: "'Mary, will you please full up the buckets before the water supply is cut off?'"
+      options:
+        A: "full up"
+        B: "before"
+        C: "cut off"
+        D: "No error"
+      correct_answer: "A"
+
+    - number: 17
+      question: "Julie prefers to lie in bed not wanting to go to school nor does any work."
+      options:
+        A: "lie"
+        B: "not wanting"
+        C: "nor does"
+        D: "No error"
+      correct_answer: "C"
+
+    - number: 18
+      question: "He shared the sweets among you and me."
+      options:
+        A: "shared"
+        B: "among"
+        C: "me"
+        D: "No error"
+      correct_answer: "B"
+
+    - number: 19
+      question: "Peter have dengue and feels weak, so he is unable to participate in the interschool games."
+      options:
+        A: "have"
+        B: "feels"
+        C: "unable"
+        D: "No error"
+      correct_answer: "A"
+
+    - number: 20
+      question: "Too much students entered the competition; only one of them was good enough to reach the quarter finals."
+      options:
+        A: "Too much"
+        B: "them"
+        C: "good enough"
+        D: "No error"
+      correct_answer: "A"
+
+    - number: 21
+      question: "There are many who would try to ....... your efforts because of their jealousy."
+      options:
+        A: "assist"
+        B: "affect"
+        C: "thwart"
+        D: "encourage"
+      correct_answer: "C"
+
+    - number: 22
+      question: "Most parents do not ....... indiscipline from their children."
+      options:
+        A: "tolerate"
+        B: "promote"
+        C: "frown on"
+        D: "supervise"
+      correct_answer: "A"
+
+    - number: 23
+      question: "The clerk was granted a promotion because she was ......."
+      options:
+        A: "indolent"
+        B: "agreeable"
+        C: "negligent"
+        D: "industrious"
+      correct_answer: "D"
+
+    - number: 24
+      question: "The debate on the best way to enter the Free Trade Agreement had not yet been ......."
+      options:
+        A: "resolved"
+        B: "accepted"
+        C: "approved"
+        D: "discovered"
+      correct_answer: "A"
+
+    - number: 25
+      question: "The lawyer gave his client some good ....... about taxes."
+      options:
+        A: "advice"
+        B: "methods"
+        C: "solutions"
+        D: "guarantees"
+      correct_answer: "A"
+
+    - number: 26
+      question: "Why does the poet feel the horses are laughing (line 1)?"
+      options:
+        A: "He hears them laughing."
+        B: "The prairie is all theirs to roam."
+        C: "They are treated well by their owners."
+        D: "They were replaced with something which causes harm."
+      correct_answer: "D"
+
+    - number: 27
+      question: "What are the 'things' suggested in line 4?"
+      options:
+        A: "Vehicles"
+        B: "Accidents"
+        C: "Explosions"
+        D: "Traffic jams"
+      correct_answer: "A"
+
+    - number: 28
+      question: "Which of the following words suggests the drivers' destiny?"
+      options:
+        A: "Whinning (line 5)"
+        B: "Breakdown (line 6)"
+        C: "Obituaries (line 8)"
+        D: "Howling (line 13)"
+      correct_answer: "C"
+
+    - number: 29
+      question: "According to the poet, what days seemed to be most prone to fatalities?"
+      options:
+        A: "Mondays"
+        B: "Sundays"
+        C: "Festivals"
+        D: "Public holidays"
+      correct_answer: "A"
+
+    - number: 30
+      question: "What is the poet's tone in lines 17-18?"
+      options:
+        A: "Sarcastic"
+        B: "Persuasive"
+        C: "Indifferent"
+        D: "Enthusiastic"
+      correct_answer: "A"
+
+    - number: 31
+      question: "The poet is recommending that drivers drive"
+      options:
+        A: "slowly"
+        B: "quickly"
+        C: "carefully"
+        D: "recklessly"
+      correct_answer: "C"
+
+    - number: 32
+      question: "What is the poet referring to in lines 9-10?"
+      options:
+        A: "Speed"
+        B: "Safety"
+        C: "Cautious drivers"
+        D: "Death announcements"
+      correct_answer: "D"
+
+    - number: 33
+      question: "Which of the following means NEARLY the same as the title of the poem, 'Beat That Light'?"
+      options:
+        A: "Drive faster"
+        B: "Hit the light"
+        C: "A flashing traffic light"
+        D: "Use corporal punishment"
+      correct_answer: "A"
+
+    - number: 34
+      question: "The expression 'this bush does reduce you to an animal' (lines 1-2) implies that Shark would"
+      options:
+        A: "eat like an animal"
+        B: "walk on all fours like an animal"
+        C: "be forced to adopt the instincts of an animal"
+        D: "hunt for prey like an animal for survival"
+      correct_answer: "C"
+
+    - number: 35
+      question: "The advice given to Shark in the first sentence was meant to warn him that"
+      options:
+        A: "he should not be in the bush after dark"
+        B: "he could miss seeing the river in the dark"
+        C: "he should be careful about dangerous animals in the bush"
+        D: "there were things he did not yet know about life"
+      correct_answer: "D"
+
+    - number: 36
+      question: "'The forest darkened' (line 6-7) suggests that the"
+      options:
+        A: "sun had set by this time"
+        B: "trees leaned over the river"
+        C: "sun made trees create shadows"
+        D: "trees were blacking out the sunlight"
+      correct_answer: "C"
+
+    - number: 37
+      question: "The phrase 'molasses-black' (line 12) describes"
+      options:
+        A: "the colour of the water"
+        B: "the thickness of the water"
+        C: "how slowly the water flowed"
+        D: "how the water smelled like molasses"
+      correct_answer: "A"
+
+    - number: 38
+      question: "The conclusion we may draw about Shark 'scanning the far bank' (line 13) is that he was"
+      options:
+        A: "glimpsing the bank"
+        B: "examining carefully"
+        C: "peering through the bushes"
+        D: "looking at the trees nearby"
+      correct_answer: "B"
+
+    - number: 39
+      question: "The phrases 'scanning the far bank' (line 13), 'descended stealthily' (line 13), 'hid my balata pouch' (line 14), 'crouched down' (line 15) show that Shark is"
+      options:
+        A: "looking for a friend"
+        B: "expecting an attack from animals"
+        C: "expecting someone who was not a friend"
+        D: "searching for a place to set up camp"
+      correct_answer: "C"
+
+    - number: 40
+      question: "Based on the extract, the only feeling Shark did NOT experience was"
+      options:
+        A: "fear"
+        B: "aloneness"
+        C: "anticipation"
+        D: "satisfaction"
+      correct_answer: "D"
+
+    - number: 41
+      question: "According to paragraph 1 (lines 1-4), deaths from heart disease, cancer and debility are on the increase because of"
+      options:
+        A: "the dangers posed by modern living"
+        B: "growing substance abuse in today's society"
+        C: "traditional lifestyles in developing countries"
+        D: "longer life expectancy in recent years"
+      correct_answer: "A"
+
+    - number: 42
+      question: "The words 'succumbing' and 'dependence' (line 5 and 6) imply that the habits of cigarette smoking, alcohol and drug use"
+      options:
+        A: "inhibit development"
+        B: "are created by the users"
+        C: "give rise to a state of numbness"
+        D: "have an overpowering effect on people"
+      correct_answer: "D"
+
+    - number: 43
+      question: "The writer feels that deaths from cigarette smoking can BEST be minimized if"
+      options:
+        A: "countries initiate health programmes"
+        B: "governments institute new policies"
+        C: "individuals simplify their lifestyles in the area of health"
+        D: "individuals make more personal choices about health programmes"
+      correct_answer: "B"
+
+    - number: 44
+      question: "From paragraphs 1 and 2 (lines 1-10), we may deduce that cancer is"
+      options:
+        A: "on the increase in developing countries"
+        B: "caused by excessive alcohol, drug and cigarette use"
+        C: "more likely to cause the death of people under 60 years of age"
+        D: "one major drawback to health programmes in developing countries"
+      correct_answer: "A"
+
+    - number: 45
+      question: "In the extract, it is suggested that one reason people smoke is because cigarette smoking"
+      options:
+        A: "is fashionable in modern society"
+        B: "provides governments with needed revenue"
+        C: "provides release and relaxation for individuals"
+        D: "is promoted by numerous advertisements"
+      correct_answer: "C"
+
+    - number: 46
+      question: "In the last paragraph (lines 29-31), which of the following is NOT suggested as a way in which dangers to health can be reduced?"
+      options:
+        A: "Individuals altering patterns of living"
+        B: "Allocating funds adequately to policies"
+        C: "Governments implementing new policies"
+        D: "Politicians becoming more responsible"
+      correct_answer: "D"
+
+    - number: 47
+      question: "The purpose of the speech is to"
+      options:
+        A: "introduce a new product"
+        B: "find out the needs of the audience"
+        C: "condemn the efforts of the opponents"
+        D: "convince the audience to vote for the candidate"
+      correct_answer: "D"
+
+    - number: 48
+      question: "The speech was MOST likely given at a"
+      options:
+        A: "board meeting"
+        B: "business meeting"
+        C: "political meeting"
+        D: "church meeting"
+      correct_answer: "C"
+
+    - number: 49
+      question: "The speaker addresses the audience as 'you' in order to"
+      options:
+        A: "present himself to the audience"
+        B: "distance himself from the audience"
+        C: "accuse the audience of failing in their duty"
+        D: "make the audience feel he cares about them"
+      correct_answer: "D"
+
+    - number: 50
+      question: "The speaker suggests that because the candidate 'comes from a foreign country' (line 3) he will"
+      options:
+        A: "not appreciate them"
+        B: "leave them at anytime"
+        C: "be an advantage to them"
+        D: "not represent them well"
+      correct_answer: "C"
+
+    - number: 51
+      question: "When the speaker says, 'You need to live like valued citizens' (lines 7), he attempts to"
+      options:
+        A: "change the villager's way of life"
+        B: "make the villagers feel good about their selves"
+        C: "make the villagers feel they are treated well by their representatives"
+        D: "change the villager's views of their lives so that they choose his candidate"
+      correct_answer: "D"
+
+    - number: 52
+      question: "The name Dimsville is suitable for the village because"
+      options:
+        A: "it is an important name"
+        B: "there is no electricity in the village"
+        C: "it is named after someone who used to live there"
+        D: "the villagers feel hopeless because they lack basic amenities"
+      correct_answer: "D"
+
+    - number: 53
+      question: "In paragraph 1, the speaker repeats the words 'He is the man' because he wants to"
+      options:
+        A: "present the candidate"
+        B: "emphasize the power the candidate possesses"
+        C: "impress upon the audience that he is offering them the best person for the job"
+        D: "inform the villagers that they need a man and not a woman to represent them"
+      correct_answer: "C"
+
+    - number: 54
+      question: "Which of the following devices is NOT used in the speech?"
+      options:
+        A: "Pun"
+        B: "Metaphor"
+        C: "Repetition"
+        D: "Rhetorical question"
+      correct_answer: "A"
+
+    - number: 55
+      question: "According to the information provided, the MAIN theme of the symposium is"
+      options:
+        A: "Youth"
+        B: "Drug Abuse"
+        C: "Adolescent Health"
+        D: "Sexually Transmitted Diseases"
+      correct_answer: "C"
+
+    - number: 56
+      question: "Which of the following groups is NOT a sponsor of the symposium?"
+      options:
+        A: "Ministry of Youth"
+        B: "Ministry of Health"
+        C: "Conference of Churches"
+        D: "National Council on Drug Abuse"
+      correct_answer: "C"
+
+    - number: 57
+      question: "Which of the following words can BEST replace 'symposium' in the advertisement?"
+      options:
+        A: "Exhibition"
+        B: "Conference"
+        C: "Discussion"
+        D: "Conversation"
+      correct_answer: "B"
+
+    - number: 58
+      question: "All of the following groups are specifically invited to attend the symposium EXCEPT"
+      options:
+        A: "youth groups"
+        B: "members of the public"
+        C: "parents of young people"
+        D: "doctors, nurses and other health care workers"
+      correct_answer: "B"
+
+    - number: 59
+      question: "How can those who want to participate register for the event?"
+      options:
+        A: "Contact Yvonne Dalton and call the Ministry of Education"
+        B: "Call the Ministry of Youth and speak to Yvonne Dalton"
+        C: "Telephone the Ministry of Youth and the Ministry of Education"
+        D: "Complete a registration form and return to the Ministry of Health"
+      correct_answer: "B"
+
+    - number: 60
+      question: "The MAIN address is to be delivered by"
+      options:
+        A: "Bukawela Tudor"
+        B: "Prof. Nancy Sewell"
+        C: "Dr. C. Smith-Browne"
+        D: "Major Leonard Akansa"
+      correct_answer: "B"

@@ -1,0 +1,545 @@
+exam:
+  title: "CSEC English A P1 2021 MJ"
+  year: 2021
+  subject: "English A"
+  total_items: 60
+  items:
+    - number: 1
+      question: "The manager decided to inform the staff about all complaints received from customers."
+      options:
+        A: "requests"
+        B: "demands"
+        C: "suggestions"
+        D: "compliments"
+      correct_answer: "D"
+
+    - number: 2
+      question: "Their actions showed that they were firm in their rejection of the new law."
+      options:
+        A: "ignorance"
+        B: "application"
+        C: "acceptance"
+        D: "understanding"
+      correct_answer: "C"
+
+    - number: 3
+      question: "There was an increase in airplane travel after that incident."
+      options:
+        A: "decline"
+        B: "upheaval"
+        C: "restriction"
+        D: "fluctuation"
+      correct_answer: "A"
+
+    - number: 4
+      question: "He tried to think of a tactful way to tell her he disagreed with her view of the situation."
+      options:
+        A: "honest"
+        B: "injurious"
+        C: "indifferent"
+        D: "considerate"
+      correct_answer: "D"
+
+    - number: 5
+      question: "As a result of the available evidence, the accused was apprehended and no further action was taken."
+      options:
+        A: "evicted"
+        B: "released"
+        C: "cautioned"
+        D: "summoned"
+      correct_answer: "B"
+
+    - number: 6
+      question: "He advanced a step or two to meet his attacker who became alarmed and retreated back."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains cliches or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "A"
+
+    - number: 7
+      question: "Its not absolutely necessary for it to be done today."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains cliches or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "C"
+
+    - number: 8
+      question: "She had adequate time to prepare for the interview."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains cliches or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "D"
+
+    - number: 9
+      question: "The new disciplinary methods had a positive affect on the students' behaviour."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains cliches or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "C"
+
+    - number: 10
+      question: "Sitting alone in his room by himself he repeated her name over and over again."
+      options:
+        A: "The sentence is too wordy, that is, repetitive or contains redundancies."
+        B: "The sentence contains cliches or misused metaphors."
+        C: "The sentence is incorrect grammatically or faulty in diction."
+        D: "The sentence is acceptable as it stands."
+      correct_answer: "A"
+
+    - number: 11
+      question: "Much is being done to develop tourism in our country by providing good hotel accommodation and facilities."
+      options:
+        A: "It is important to provide good hotel accommodation and facilities for tourists."
+        B: "Good hotel accommodation and facilities are crucial if we want to develop tourism."
+        C: "We are doing a great deal to boost tourism by providing good hotel accommodation and facilities."
+        D: "If we do not provide good hotel accommodation and facilities, tourists will not come to our country."
+      correct_answer: "C"
+
+    - number: 12
+      question: "According to the witness, he did not see the accused man near the scene of the crime."
+      options:
+        A: "The witness testified that he did not see the accused man commit the crime."
+        B: "The witness testified that the accused man was not seen by him near the place where the crime was committed."
+        C: "The witness testified to seeing no evidence that the accused man had committed the crime."
+        D: "The witness testified that the accused man was far from the location where the crime was committed."
+      correct_answer: "B"
+
+    - number: 13
+      question: "John told his parents in no uncertain terms that he was going to university as soon as he left school."
+      options:
+        A: "John boasted to his parents that he was going to university as soon as he left school."
+        B: "John told his parents that they should permit him to go to university after he left school."
+        C: "John made it quite clear to his parents that when he left school he would go to university immediately."
+        D: "John's parents were told that it was obviously his desire to attend university immediately after leaving school."
+      correct_answer: "C"
+
+    - number: 14
+      question: "Cigarettes have been linked to lung cancer and, strangely enough so has bacon."
+      options:
+        A: "It is strange that bacon, quite unlike cigarettes, is linked to lung cancer."
+        B: "It is rather peculiar that bacon, like cigarettes, is connected with lung cancer."
+        C: "It is no wonder at all that both cigarettes and bacon are linked to lung cancer."
+        D: "Cancer of the lungs links cigarettes, and, strangely enough, bacon."
+      correct_answer: "B"
+
+    - number: 15
+      question: "I cannot understand why you have done this since you tell me that Mark means a lot to you."
+      options:
+        A: "Since Mark means a lot to you, the reason for your action is puzzling to me."
+        B: "Since you tell me that Mark means a lot to you, he cannot understand why you have done this."
+        C: "You tell me that although Mark means a lot to you, you did this."
+        D: "Mark cannot mean a lot to you or else I know you would not have done this."
+      correct_answer: "A"
+
+    - number: 16
+      question: "We could reach the survivors neither by boat or by plane, and so we abandoned our search as futile."
+      options:
+        A: "neither"
+        B: "or"
+        C: "futile"
+        D: "No error"
+      correct_answer: "B"
+
+    - number: 17
+      question: "Considering the chaos you would cause if you were to resign, I have no choice than to refuse your request."
+      options:
+        A: "Considering"
+        B: "were to resign"
+        C: "than"
+        D: "No error"
+      correct_answer: "C"
+
+    - number: 18
+      question: "Tom, the most talented of the musicians who need help, has promised to give his services free of charge for any worthwhile cause."
+      options:
+        A: "most talented"
+        B: "need"
+        C: "has promised"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 19
+      question: "After embarrassing his colleague his conscience bothered him and he eventually apologized."
+      options:
+        A: "After embarrassing"
+        B: "bothered"
+        C: "eventually"
+        D: "No error"
+      correct_answer: "D"
+
+    - number: 20
+      question: "The better of the two athletes claim never to have used the dangerous drugs found in his possession."
+      options:
+        A: "better"
+        B: "claim"
+        C: "dangerous"
+        D: "No error"
+      correct_answer: "B"
+
+    - number: 21
+      question: "It was impossible to rectify the error made by the computer since inaccurate information had been fed to it."
+      options:
+        A: "alter"
+        B: "erase"
+        C: "correct"
+        D: "determine"
+      correct_answer: "C"
+
+    - number: 22
+      question: "The flowers grow profusely in the garden."
+      options:
+        A: "wildly"
+        B: "healthily"
+        C: "abundantly"
+        D: "colourfully"
+      correct_answer: "C"
+
+    - number: 23
+      question: "The news story revealed the squalor of the old city."
+      options:
+        A: "position"
+        B: "strength"
+        C: "ambiance"
+        D: "destitution"
+      correct_answer: "D"
+
+    - number: 24
+      question: "During the rainstorm yesterday the wind blew incessantly across the island."
+      options:
+        A: "noisily"
+        B: "furiously"
+        C: "constantly"
+        D: "occasionally"
+      correct_answer: "C"
+
+    - number: 25
+      question: "For the first time in a decade the company disclosed a deficit in its account."
+      options:
+        A: "profit"
+        B: "defect"
+        C: "balance"
+        D: "shortfall"
+      correct_answer: "D"
+
+    - number: 26
+      question: "There is a 'single kite' (line 1) left in the sky MOST likely because"
+      options:
+        A: "it is late"
+        B: "the lone fisherman waits"
+        C: "night covers have descended"
+        D: "the other kite flyers are asleep"
+      correct_answer: "A"
+
+    - number: 27
+      question: "What aspect of the sky does the poet focus on?"
+      options:
+        A: "Size"
+        B: "Shape"
+        C: "Colour"
+        D: "Distance"
+      correct_answer: "C"
+
+    - number: 28
+      question: "In the poem, the poet is MOST likely thinking of"
+      options:
+        A: "an artist at work"
+        B: "a lonely old man"
+        C: "an enemy in hiding"
+        D: "someone he/she loves"
+      correct_answer: "D"
+
+    - number: 29
+      question: "'When bats break a calm lake / like scissors on a warm fabric' (lines 10-11) is an example of"
+      options:
+        A: "simile"
+        B: "assonance"
+        C: "onomatopoeia"
+        D: "personification"
+      correct_answer: "A"
+
+    - number: 30
+      question: "The poet speaks of each of the following EXCEPT"
+      options:
+        A: "a lone fisherman waiting"
+        B: "a single kite that is flying"
+        C: "hen's wings that are warm"
+        D: "bats breaking warm fabric"
+      correct_answer: "D"
+
+    - number: 31
+      question: "Which of the following literary devices is used in line 4?"
+      options:
+        A: "Contrast"
+        B: "Metaphor"
+        C: "Hyperbole"
+        D: "Alliteration"
+      correct_answer: "B"
+
+    - number: 32
+      question: "The poet's intention is to"
+      options:
+        A: "describe nature"
+        B: "describe the sunset"
+        C: "tell us of the lone fisherman"
+        D: "tell someone he/she is missing him/her"
+      correct_answer: "D"
+
+    - number: 33
+      question: "Which word BEST describes the poet's tone?"
+      options:
+        A: "Bitter"
+        B: "Serious"
+        C: "Regretful"
+        D: "Nostalgic"
+      correct_answer: "D"
+
+    - number: 34
+      question: "The activity described in the passage is"
+      options:
+        A: "a party"
+        B: "a street protest"
+        C: "a carnival celebration"
+        D: "an unusual festival"
+      correct_answer: "C"
+
+    - number: 35
+      question: "The writer says 'For these revellers it seemed a truly glorious morning' (line 9) to show"
+      options:
+        A: "that it was a bright and sunny day"
+        B: "that the people were free to do as they pleased"
+        C: "how much the revellers were enjoying themselves"
+        D: "that the people thought the occasion was worth celebrating"
+      correct_answer: "C"
+
+    - number: 36
+      question: "Lance Corporal John on this occasion"
+      options:
+        A: "had tears in his eyes"
+        B: "wanted to make an arrest"
+        C: "wanted to join the revellers"
+        D: "was contented to watch the crowd"
+      correct_answer: "D"
+
+    - number: 37
+      question: "Lance Corporal John 'stood high up on a mound' (line 13) because he"
+      options:
+        A: "did not want to become involved in the parade"
+        B: "wanted to get out of the way of the parade"
+        C: "was too short to appreciate the parade from road level"
+        D: "felt he would be seen in case anyone wanted to misbehave"
+      correct_answer: "B"
+
+    - number: 38
+      question: "The phrase 'none other than Swithin Paul' (line 19) implies that Swithin Paul was a"
+      options:
+        A: "politician"
+        B: "band leader"
+        C: "good singer"
+        D: "well-known person"
+      correct_answer: "D"
+
+    - number: 39
+      question: "Casinos and their effect on society became an issue for the first time"
+      options:
+        A: "about ten years ago"
+        B: "less than five years ago"
+        C: "one hundred years ago"
+        D: "over twenty-five years ago"
+      correct_answer: "D"
+
+    - number: 40
+      question: "How was the issue of casinos dealt with at the time mentioned?"
+      options:
+        A: "Casinos were not allowed."
+        B: "Many casinos remained without being monitored."
+        C: "Some casinos remained while their growth was monitored."
+        D: "Most casinos were allowed on the water while their growth was monitored."
+      correct_answer: "C"
+
+    - number: 41
+      question: "Which of the following is the BEST replacement for the word 'interestingly' (line 3)?"
+      options:
+        A: "logically"
+        B: "ironically"
+        C: "thankfully"
+        D: "conveniently"
+      correct_answer: "B"
+
+    - number: 42
+      question: "In line 4, 'given the green light to arcades' means that"
+      options:
+        A: "gambling is practised in the arcades"
+        B: "arcades have been given permission to operate"
+        C: "people are able to gamble day and night under the light"
+        D: "green coloured lights have been given to the arcades"
+      correct_answer: "B"
+
+    - number: 43
+      question: "The Bahamas, Antigua, Suriname and Sint Maarten are mentioned to"
+      options:
+        A: "list countries involved in tourism"
+        B: "give evidence from experts on the issue"
+        C: "highlight countries where gambling is allowed"
+        D: "prove that gambling is a stimulus to tourism"
+      correct_answer: "D"
+
+    - number: 44
+      question: "Which of the following expressions is used to introduce an opposing view?"
+      options:
+        A: "'like most things' (line 9)"
+        B: "'For example' (line 12)"
+        C: "'on the other hand' (line 16)"
+        D: "'Additionally' (line 22)"
+      correct_answer: "C"
+
+    - number: 45
+      question: "Which argument below is NOT used in support of casino gambling?"
+      options:
+        A: "It degrades the values of society."
+        B: "It can be beneficial if controlled wisely."
+        C: "It can be used as another tourist attraction."
+        D: "It is part of the everyday life of the Caribbean individual."
+      correct_answer: "A"
+
+    - number: 46
+      question: "To what does 'that is the last thing that we may need right now' (lines 18-19) refer?"
+      options:
+        A: "'lead to gambling addiction, crime, and worse a debasement of society.' (lines 16-20)"
+        B: "'an upsurge of gangs, drugs and violent behaviour among our youth' (lines 17-18)"
+        C: "'cruise ships keeping casinos open while docked on shore' (line 19)"
+        D: "'they flock to the tracks to watch horses run and bet millions annually' (lines 21-22)"
+      correct_answer: "A"
+
+    - number: 47
+      question: "The writer's use of the word 'brain' (line 1) is meant to"
+      options:
+        A: "make fun of the decisions"
+        B: "compliment those responsible"
+        C: "create a comparison of streets"
+        D: "exaggerate the traffic problems"
+      correct_answer: "A"
+
+    - number: 48
+      question: "When the writer repeats 'not them' in paragraph 1, he implies that"
+      options:
+        A: "he is choosing someone to complain to"
+        B: "no one wants to accept responsibility for the traffic situation"
+        C: "no one knows who is in charge of the traffic management"
+        D: "he is searching diligently for the person in charge of traffic"
+      correct_answer: "B"
+
+    - number: 49
+      question: "'Stoke Street' (line 7), 'Celestial Road' (line 9) and 'Delino Street' (line 17) can BEST be considered as"
+      options:
+        A: "prohibited streets for all drivers"
+        B: "streets that attract a lot of attention"
+        C: "examples to support the writer's case"
+        D: "assigned parking places for diplomats"
+      correct_answer: "C"
+
+    - number: 50
+      question: "The writer's tone can be described as"
+      options:
+        A: "puzzled"
+        B: "sarcastic"
+        C: "resigned"
+        D: "complimentary"
+      correct_answer: "B"
+
+    - number: 51
+      question: "The last sentence of the letter is similar to paragraph 5 because both of them"
+      options:
+        A: "mention cars"
+        B: "express disgust"
+        C: "are complimentary"
+        D: "contain rhetorical questions"
+      correct_answer: "D"
+
+    - number: 52
+      question: "The author of this letter is MOST likely a"
+      options:
+        A: "motorist"
+        B: "pedestrian"
+        C: "traffic warden"
+        D: "government official"
+      correct_answer: "A"
+
+    - number: 53
+      question: "'Again the small man suffers' (line 14) implies that the small man is often"
+      options:
+        A: "ignored"
+        B: "disadvantaged"
+        C: "considered the most"
+        D: "the one who is wrong"
+      correct_answer: "B"
+
+    - number: 54
+      question: "The letter was most likely published in a"
+      options:
+        A: "newspaper"
+        B: "press release"
+        C: "tourist brochure"
+        D: "school magazine"
+      correct_answer: "A"
+
+    - number: 55
+      question: "What does this airline promise if a person joins the miles programme?"
+      options:
+        A: "Faster travel"
+        B: "Free shopping"
+        C: "Frequent shopping"
+        D: "Rewards for every flight"
+      correct_answer: "D"
+
+    - number: 56
+      question: "How many bonus miles does a Gold Tier Member receive?"
+      options:
+        A: "3000"
+        B: "5000"
+        C: "7000"
+        D: "8000"
+      correct_answer: "B"
+
+    - number: 57
+      question: "How many miles are needed to fly one-way business class within Caribbean countries?"
+      options:
+        A: "5000"
+        B: "7500"
+        C: "10000"
+        D: "12000"
+      correct_answer: "D"
+
+    - number: 58
+      question: "Which technique does the advertisement use to appeal to travellers to join the Miles Programme?"
+      options:
+        A: "Facts"
+        B: "Opinion"
+        C: "Persuasive language"
+        D: "Personal experience"
+      correct_answer: "A"
+
+    - number: 59
+      question: "Which of the following actions is BEST for a prospective member who wants more detailed information about the benefits of the programme?"
+      options:
+        A: "Fly frequently."
+        B: "Visit the airline's webpage."
+        C: "Join the Miles Programme."
+        D: "Speak to an agent when making a reservation."
+      correct_answer: "B"
+
+    - number: 60
+      question: "The MAIN purpose of the advertisement is to encourage persons to"
+      options:
+        A: "fly more often"
+        B: "enjoy air travel"
+        C: "attain executive membership"
+        D: "become members of the Miles Programme"
+      correct_answer: "D"
