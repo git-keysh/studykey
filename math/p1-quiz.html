@@ -2,135 +2,450 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="description" content="Study Key - Practice CSEC Mathematics Paper 1 with past papers, instant feedback, PDF previews, and a fun quiz mode.">
-    <meta name="theme-color" content="#1a56db">
-    <meta property="og:title" content="Study Key - Mathematics P1 Quiz">
-    <meta property="og:description" content="CSEC Maths Paper 1 practice with real past papers and interactive features.">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary">
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
-    <link rel="stylesheet" href="webstructure/login.css">
-    <title>Study Key - Mathematics P1 Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="CSEC Mathematics Paper 1 practice with past papers, instant feedback, and smart tools.">
+    <meta name="theme-color" content="#0f172a">
+    <title>Study Key • Mathematics P1</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1"></script>
     <style>
-        * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color: transparent; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8fafc; color: #1e293b; line-height:1.5; min-height:100vh; overflow-x:hidden; touch-action: pan-y; }
-        :root { --blue: #1a56db; --blue-dark: #1e40af; --green: #22c55e; --red: #ef4444; --bg: #f8fafc; --card: #ffffff; --border: #e2e8f0; --text: #1e293b; --text-light: #64748b; }
-        .navbar { background:var(--blue); color:white; padding:0.75rem 1.5rem; display:flex; align-items:center; gap:0.75rem; box-shadow:0 2px 8px rgba(0,0,0,0.1); position:sticky; top:0; z-index:100; }
-        .navbar .logo { font-size:1.3rem; font-weight:800; display:flex; align-items:center; gap:0.5rem; }
-        .navbar img { width:32px; height:32px; border-radius:8px; }
-        .navbar a { color:white; text-decoration:none; font-weight:600; }
-        .navbar .right-actions { margin-left:auto; display:flex; gap:0.75rem; align-items:center; }
-        .btn-fun-toggle { background:#f59e0b; border:none; color:white; padding:0.4rem 0.9rem; border-radius:2rem; font-weight:600; font-size:0.8rem; cursor:pointer; box-shadow:0 2px 5px rgba(0,0,0,0.2); transition:0.1s; }
-        .btn-fun-toggle.active { background:#d97706; box-shadow:inset 0 1px 3px rgba(0,0,0,0.3); }
-        .container { max-width:950px; margin:1.5rem auto; padding:0 1.2rem; transition:margin-right 0.3s; }
-        .container.shifted { margin-right:420px; }
-        .card { background:white; border-radius:1.2rem; padding:1.6rem; margin-bottom:1.5rem; box-shadow:0 2px 8px rgba(0,0,0,0.04); border:1px solid #e2e8f0; }
-        h2 { font-size:1.6rem; margin-bottom:0.5rem; }
-        .year-checkboxes { display:flex; flex-wrap:wrap; gap:0.6rem; margin:1rem 0; }
-        .year-checkboxes label { display:flex; align-items:center; gap:0.3rem; font-size:0.9rem; cursor:pointer; background:#f1f5f9; padding:0.3rem 0.8rem; border-radius:2rem; }
-        input[type="number"] { padding:0.6rem 1rem; border:2px solid #e2e8f0; border-radius:0.8rem; font-size:1rem; width:140px; }
-        .btn { background:var(--blue); color:white; border:none; padding:0.7rem 1.4rem; border-radius:0.8rem; font-weight:600; cursor:pointer; transition:0.1s; display:inline-flex; align-items:center; gap:0.5rem; }
-        .btn-outline { background:transparent; border:2px solid var(--blue); color:var(--blue); }
-        .progress-bar { height:5px; background:#e2e8f0; border-radius:3px; margin:1rem 0; }
-        .progress-fill { height:100%; background:var(--blue); width:0%; transition:width 0.2s; }
-        .question-text { font-size:1.2rem; font-weight:600; margin-bottom:0.5rem; }
-        .question-source { font-size:0.8rem; color:#64748b; margin-bottom:1rem; }
-        .options { display:flex; flex-direction:column; gap:0.7rem; }
-        .option-btn { text-align:left; padding:0.9rem 1rem; background:#f8fafc; border:2px solid #e2e8f0; border-radius:0.8rem; font-size:0.95rem; cursor:pointer; transition:all 0.1s; }
-        .option-btn.correct { background:#f0fdf4; border-color:#22c55e; }
-        .option-btn.wrong { background:#fef2f2; border-color:#ef4444; }
-        .feedback { padding:0.8rem; border-radius:0.7rem; margin:1rem 0; font-weight:600; display:none; }
-        .feedback.correct { background:#d1fae5; color:#065f46; display:block; }
-        .feedback.wrong { background:#fee2e2; color:#991b1b; display:block; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f1f5f9;
+            color: #0f172a;
+            transition: background 0.2s ease;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        body.fun-mode-active {
+            background: #000000;
+            color: #f1f5f9;
+        }
+
+        /* layout containers */
+        .app-wrapper {
+            display: flex;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* main content area */
+        .main-content {
+            flex: 1;
+            padding: 1.5rem;
+            transition: margin-right 0.25s ease;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* desktop right sidebar (always visible) */
+        .desktop-sidebar {
+            width: 400px;
+            background: #ffffff;
+            border-left: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            box-shadow: -4px 0 12px rgba(0, 0, 0, 0.05);
+            z-index: 10;
+        }
+
+        body.fun-mode-active .desktop-sidebar {
+            background: #111111;
+            border-left-color: #2d2d2d;
+        }
+
+        .sidebar-section {
+            border-bottom: 1px solid #eef2ff;
+            padding: 1.2rem;
+        }
+
+        .sidebar-section:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-title {
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #1e293b;
+        }
+
+        body.fun-mode-active .sidebar-title {
+            color: #e2e8f0;
+        }
+
+        .pdf-embed {
+            width: 100%;
+            height: 380px;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            background: #f8fafc;
+        }
+
+        .pdf-embed iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            border: none;
+        }
+
+        /* calculator widget */
+        .calc-widget {
+            background: #f8fafc;
+            border-radius: 24px;
+            padding: 0.8rem;
+        }
+
+        body.fun-mode-active .calc-widget {
+            background: #1e1e2f;
+        }
+
+        .calc-display {
+            background: #0f172a;
+            color: #a5f3c3;
+            font-family: 'Monaco', monospace;
+            font-size: 1.6rem;
+            padding: 0.8rem;
+            text-align: right;
+            border-radius: 20px;
+            margin-bottom: 1rem;
+            word-break: break-all;
+            min-height: 80px;
+        }
+
+        .calc-buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.6rem;
+        }
+
+        .calc-btn {
+            background: white;
+            border: none;
+            padding: 0.9rem 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.1s;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        body.fun-mode-active .calc-btn {
+            background: #2d2d3a;
+            color: #f1f5f9;
+        }
+
+        .calc-btn.operator {
+            background: #eef2ff;
+            color: #1e40af;
+        }
+
+        .calc-btn.equal {
+            background: #1a56db;
+            color: white;
+        }
+
+        /* mobile drawers (hidden on desktop) */
+        .mobile-drawer {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 85%;
+            max-width: 360px;
+            background: white;
+            z-index: 200;
+            transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 25px rgba(0,0,0,0.2);
+        }
+
+        .mobile-drawer.left {
+            left: 0;
+            transform: translateX(-100%);
+            border-right: 1px solid #e2e8f0;
+        }
+
+        .mobile-drawer.right {
+            right: 0;
+            transform: translateX(100%);
+            border-left: 1px solid #e2e8f0;
+        }
+
+        .mobile-drawer.open {
+            transform: translateX(0);
+        }
+
+        .drawer-header {
+            padding: 1rem;
+            background: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+        }
+
+        .drawer-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1rem;
+        }
+
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 150;
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.2s;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* card & quiz styling */
+        .card {
+            background: #ffffff;
+            border-radius: 1.5rem;
+            padding: 1.6rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #eef2ff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+
+        body.fun-mode-active .card {
+            background: #0f0f12;
+            border-color: #2a2a35;
+        }
+
+        .btn {
+            background: #1a56db;
+            color: white;
+            border: none;
+            padding: 0.7rem 1.4rem;
+            border-radius: 60px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #1a56db;
+            color: #1a56db;
+        }
+
+        body.fun-mode-active .btn-outline {
+            border-color: #3b82f6;
+            color: #3b82f6;
+        }
+
+        .progress-bar {
+            height: 5px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #1a56db;
+            width: 0%;
+            border-radius: 4px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+        }
+
+        .option-btn {
+            text-align: left;
+            padding: 0.9rem 1rem;
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 1rem;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+
+        body.fun-mode-active .option-btn {
+            background: #1a1a24;
+            border-color: #334155;
+            color: #e2e8f0;
+        }
+
+        .option-btn.correct {
+            background: #dcfce7;
+            border-color: #22c55e;
+        }
+
+        .option-btn.wrong {
+            background: #fee2e2;
+            border-color: #ef4444;
+        }
+
+        .feedback {
+            padding: 0.8rem;
+            border-radius: 1rem;
+            margin: 1rem 0;
+            font-weight: 600;
+            display: none;
+        }
+
+        .fun-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .fun-card {
+            aspect-ratio: 1 / 1;
+            border-radius: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: white;
+            text-shadow: 0 2px 6px black;
+            cursor: pointer;
+            transition: 0.07s linear;
+            box-shadow: 0 12px 20px -8px rgba(0,0,0,0.3);
+        }
+
+        .fun-card:active {
+            transform: scale(0.96);
+        }
+
+        .color-red { background: linear-gradient(145deg, #ef4444, #b91c1c); }
+        .color-green { background: linear-gradient(145deg, #22c55e, #15803d); }
+        .color-blue { background: linear-gradient(145deg, #3b82f6, #1d4ed8); }
+        .color-yellow { background: linear-gradient(145deg, #eab308, #a16207); }
+
+        .wrong-shake {
+            animation: shake 0.2s ease-in-out 0s 2;
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-7px); }
+            75% { transform: translateX(7px); }
+            100% { transform: translateX(0); }
+        }
+
         .hidden { display: none; }
-        .results-grid { display:flex; gap:1rem; justify-content:space-between; margin:1.5rem 0; }
-        .result-stat { background:#f1f5f9; padding:1rem; border-radius:1rem; text-align:center; flex:1; }
-        .result-stat .number { font-size:2rem; font-weight:800; color:var(--blue); }
-        .history-list { list-style:none; margin-top:0.8rem; }
-        .history-list li { padding:0.5rem 0; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; }
+        .year-checkboxes { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+        .year-checkboxes label { background: #f1f5f9; padding: 0.3rem 1rem; border-radius: 2rem; display: flex; align-items: center; gap: 0.3rem; }
+        body.fun-mode-active .year-checkboxes label { background: #1e293b; color: white; }
 
-        /* FUN MODE GRID */
-        .fun-mode-panel { margin:1.2rem 0; }
-        .fun-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:1rem; margin-top:1rem; }
-        .fun-card { aspect-ratio:1; border-radius:1.5rem; display:flex; align-items:center; justify-content:center; font-size:2rem; font-weight:800; color:white; text-shadow:0 2px 5px rgba(0,0,0,0.2); cursor:pointer; transition:transform 0.05s linear, box-shadow 0.1s; box-shadow:0 10px 15px -5px rgba(0,0,0,0.2); }
-        .fun-card:active { transform:scale(0.97); }
-        .color-red { background: linear-gradient(145deg, #ef4444, #dc2626); }
-        .color-green { background: linear-gradient(145deg, #22c55e, #16a34a); }
-        .color-blue { background: linear-gradient(145deg, #3b82f6, #2563eb); }
-        .color-yellow { background: linear-gradient(145deg, #eab308, #ca8a04); }
-        .wrong-animation { animation: shake 0.2s ease-in-out 0s 2; background-color:#dc2626 !important; }
-        @keyframes shake { 0% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } 100% { transform: translateX(0); } }
-        .fun-status { font-size:1rem; font-weight:600; margin-bottom:0.5rem; display:flex; justify-content:space-between; }
+        @media (max-width: 900px) {
+            .desktop-sidebar { display: none; }
+            .main-content { margin: 0 auto; padding: 1rem; }
+        }
 
-        /* PDF DRAWER */
-        .pdf-drawer { position:fixed; top:0; right:0; width:420px; height:100vh; background:white; border-left:1px solid #e2e8f0; z-index:200; transform:translateX(100%); transition:transform 0.3s cubic-bezier(0.2,0.9,0.4,1.1); display:flex; flex-direction:column; box-shadow:-4px 0 20px rgba(0,0,0,0.1); }
-        .pdf-drawer.open { transform:translateX(0); }
-        .pdf-drawer-header { padding:1rem; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; }
-        .pdf-drawer-body { flex:1; overflow:auto; background:#f1f5f9; }
-        .pdf-drawer-body iframe { width:100%; height:100%; border:none; }
-        .pdf-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.3); z-index:150; opacity:0; pointer-events:none; transition:0.2s; }
-        .pdf-overlay.show { opacity:1; pointer-events:auto; }
-        @media (max-width:900px) { .pdf-drawer { width:100vw; } .container.shifted { margin-right:0; } }
+        @media (min-width: 901px) {
+            .mobile-drawer, .mobile-overlay { display: none; }
+        }
 
-        /* QUICK CALCULATOR - swipe from left */
-        .calc-drawer { position:fixed; left:0; top:0; width:360px; height:100vh; background:#ffffff; border-right:1px solid #e2e8f0; z-index:210; transform:translateX(-100%); transition:transform 0.3s cubic-bezier(0.2,0.9,0.4,1.1); display:flex; flex-direction:column; box-shadow:4px 0 20px rgba(0,0,0,0.1); }
-        .calc-drawer.open { transform:translateX(0); }
-        .calc-header { padding:1rem; background:#0f172a; color:white; display:flex; justify-content:space-between; }
-        .calc-display { background:#1e293b; color:#0f0; font-family:monospace; font-size:1.8rem; padding:1rem; text-align:right; word-break:break-all; min-height:80px; }
-        .calc-buttons { display:grid; grid-template-columns:repeat(4,1fr); gap:0.8rem; padding:1rem; background:#f8fafc; }
-        .calc-btn { background:white; border:none; padding:1rem; font-size:1.2rem; font-weight:600; border-radius:1rem; box-shadow:0 1px 2px rgba(0,0,0,0.1); cursor:pointer; }
-        .calc-btn.operator { background:#eef2ff; color:#1e40af; }
-        .calc-btn.equal { background:#1a56db; color:white; }
-        .calc-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.2); z-index:200; opacity:0; pointer-events:none; transition:0.2s; }
-        .calc-overlay.show { opacity:1; pointer-events:auto; }
-        @media (max-width:550px) { .calc-drawer { width:90vw; } }
+        .results-grid { display: flex; gap: 1rem; margin: 1rem 0; }
+        .result-stat { background: #f1f5f9; padding: 1rem; border-radius: 1rem; text-align: center; flex: 1; }
+        .history-list { list-style: none; margin-top: 0.8rem; }
+        .history-list li { padding: 0.5rem 0; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; }
+        .fun-mode-toggle-mobile { background: #f59e0b; border: none; padding: 0.4rem 1rem; border-radius: 30px; font-weight: bold; }
     </style>
 </head>
 <body>
-<nav class="navbar">
-    <div class="logo"><img src="../assets/icon.png" alt="logo" onerror="this.style.display='none'"> Study Key</div>
-    <a href="../index.html">Home</a>
-    <a href="../hub.html">Hub</a>
-    <div class="right-actions">
-        <button id="fun-mode-toggle" class="btn-fun-toggle">🎮 Fun Mode OFF</button>
-        <button id="pdf-toggle-nav" style="background:rgba(255,255,255,0.2); border:none; color:white; padding:0.4rem 0.8rem; border-radius:0.5rem;">📄 PDF</button>
-    </div>
-</nav>
-
-<div class="container" id="main-container">
-    <div id="setup-screen">
-        <div class="card"><h2>📐 Mathematics Paper 1 Quiz</h2><p>Select past papers & number of questions.</p>
-            <label>📅 Papers:</label><div class="year-checkboxes" id="year-checkboxes"></div>
-            <label>🔢 Questions:</label><input type="number" id="question-count" min="5" max="200" value="30" step="5">
-            <div style="margin-top:1.5rem"><button class="btn" id="start-btn">🚀 Start Quiz</button></div>
+<div class="app-wrapper">
+    <!-- main quiz area -->
+    <div class="main-content" id="mainContent">
+        <div id="setupScreen">
+            <div class="card">
+                <h2>Mathematics Paper 1</h2>
+                <p style="margin-bottom: 1rem;">Select past papers & question count</p>
+                <div class="year-checkboxes" id="yearCheckboxes"></div>
+                <label>Number of questions:</label>
+                <input type="number" id="questionCount" min="5" max="200" value="30" step="5" style="margin: 0.5rem 0 1rem; padding: 0.5rem; border-radius: 12px; border: 1px solid #cbd5e1;">
+                <div><button class="btn" id="startBtn">Start Quiz</button></div>
+            </div>
+            <div class="card"><h3>Recent attempts</h3><div id="historyContainer">—</div></div>
         </div>
-        <div class="card"><h3>📜 Recent Attempts</h3><div id="history-container">—</div></div>
+
+        <div id="quizScreen" class="hidden">
+            <div class="card">
+                <div style="display: flex; justify-content: space-between;"><span id="qCounter"></span><span id="scoreDisplay"></span></div>
+                <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+                <div class="question-text" id="questionText" style="font-size: 1.2rem; font-weight: 600;"></div>
+                <div class="question-source" id="questionSource" style="font-size: 0.8rem; color: #64748b; margin: 0.3rem 0 1rem;"></div>
+                <div id="standardOptions" class="options"></div>
+                <div id="funModeContainer" class="hidden"></div>
+                <div class="feedback" id="feedbackMsg"></div>
+                <button class="btn" id="nextBtn" style="margin-top: 1rem; display: none;">Next →</button>
+            </div>
+        </div>
+
+        <div id="resultsScreen" class="hidden">
+            <div class="card">
+                <h2>Quiz completed</h2>
+                <div class="results-grid"><div class="result-stat"><div class="number" id="finalScore">0</div><div>Correct</div></div><div class="result-stat"><div class="number" id="finalTotal">0</div><div>Total</div></div><div class="result-stat"><div class="number" id="finalPercent">0%</div><div>Score</div></div></div>
+                <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;"><button class="btn" id="retryQuizBtn">Retry</button><button class="btn btn-outline" id="newQuizBtn">New quiz</button></div>
+            </div>
+            <div class="card"><h3>Past attempts</h3><div id="resultsHistory"></div></div>
+        </div>
     </div>
-    <div id="quiz-screen" class="hidden">
-        <div class="card"><div style="display:flex; justify-content:space-between;"><span id="question-counter"></span><span id="score-display"></span></div>
-        <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
-        <div class="question-text" id="question-text"></div><div class="question-source" id="question-source"></div>
-        <div class="options" id="options-container"></div><div class="feedback" id="feedback"></div>
-        <button class="btn" id="next-btn" style="display:none;">➡ Next</button></div>
-        <div id="fun-mode-container" class="hidden"></div>
-    </div>
-    <div id="results-screen" class="hidden">
-        <div class="card"><h2>✅ Quiz Completed</h2><div class="results-grid"><div class="result-stat"><div class="number" id="final-score">0</div><div>Correct</div></div><div class="result-stat"><div class="number" id="final-total">0</div><div>Total</div></div><div class="result-stat"><div class="number" id="final-percent">0%</div><div>Score</div></div></div>
-        <div style="display:flex; gap:0.8rem; flex-wrap:wrap;"><button class="btn" id="retry-btn">🔄 Retry</button><button class="btn btn-outline" id="new-quiz-btn">✨ New Quiz</button><a href="../hub.html" class="btn btn-outline">🏠 Hub</a></div></div>
-        <div class="card"><h3>📋 Past Attempts</h3><div id="results-history-container"></div></div>
+
+    <!-- DESKTOP SIDEBAR (right) : PDF + Calculator always visible -->
+    <div class="desktop-sidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-title">📄 Source Paper</div>
+            <div class="pdf-embed" id="desktopPdfContainer">
+                <iframe id="desktopPdfFrame" srcdoc="<p style='padding:2rem;text-align:center'>Select a question to preview</p>"></iframe>
+            </div>
+        </div>
+        <div class="sidebar-section">
+            <div class="sidebar-title">🧮 Smart Calculator</div>
+            <div class="calc-widget" id="desktopCalc"></div>
+        </div>
     </div>
 </div>
 
-<div class="pdf-overlay" id="pdf-overlay"></div>
-<div class="pdf-drawer" id="pdf-drawer"><div class="pdf-drawer-header"><h3 id="pdf-title">Source PDF</h3><button id="close-pdf" style="background:none;border:none;font-size:1.8rem;">&times;</button></div><div class="pdf-drawer-body"><iframe id="pdf-iframe" style="width:100%;height:100%;"></iframe></div></div>
-
-<div class="calc-overlay" id="calc-overlay"></div>
-<div class="calc-drawer" id="calc-drawer"><div class="calc-header"><span>🧮 Quick Calculator</span><button id="close-calc" style="background:none;border:none;color:white;font-size:1.5rem;">&times;</button></div><div class="calc-display" id="calc-display">0</div><div class="calc-buttons" id="calc-buttons"></div></div>
+<!-- mobile drawers (swipe only) -->
+<div class="overlay" id="mobileOverlay"></div>
+<div class="mobile-drawer left" id="calcDrawer">
+    <div class="drawer-header"><span>Calculator</span><button id="closeCalcDrawer" style="background: none; border: none; color: white; font-size: 1.6rem;">&times;</button></div>
+    <div class="drawer-content" id="mobileCalcContent"></div>
+</div>
+<div class="mobile-drawer right" id="pdfDrawer">
+    <div class="drawer-header"><span>Past Paper PDF</span><button id="closePdfDrawer" style="background: none; border: none; color: white; font-size: 1.6rem;">&times;</button></div>
+    <div class="drawer-content"><iframe id="mobilePdfFrame" style="width:100%;height:100%;border:none;"></iframe></div>
+</div>
 
 <script>
+    // ----- PAPER CONFIGURATION -----
     const PAPERS = [
         { file: 'CSEC_Mathematics_P1_2017_MJ', label: 'May/June 2017', year:2017, session:'May/June', pdf:'CSEC_Mathematics_P1_2017_MJ.pdf', helperKey:'Maths MJ 2017' },
         { file: 'CSEC_Mathematics_P1_2018_JAN', label: 'January 2018', year:2018, session:'January', pdf:'CSEC_Mathematics_P1_2018_JAN.pdf', helperKey:'Maths Jan 2018' },
@@ -147,66 +462,380 @@
     const YAML_DIR = '../app/data/';
     const PDF_DIR = '../app/pdfs/';
     const HELPER_JSON = '../app/pdfs/mathshelper.json';
-    const STORAGE_KEY = 'studykey_maths_p1_quizzes';
+    const STORAGE_KEY = 'studykey_maths_p1';
 
-    let allPapersData = [], quizQuestions = [], currentIdx = 0, score = 0, userAnswers = [], quizConfig = {};
-    let pageMap = {}, funModeActive = false, waitingForAnswer = false, currentQuestionObj = null;
-    let pdfDrawerOpen = false, calcDrawerOpen = false;
+    let pageMap = {};
+    let allPapersData = [];
+    let quizQuestions = [];
+    let currentIndex = 0, score = 0, userAnswers = [];
+    let quizConfig = {};
+    let funMode = false;
+    let waitingAnswer = false;
+    let currentQuestionObj = null;
+    let isMobile = window.innerWidth <= 900;
 
-    const setupScr = document.getElementById('setup-screen'), quizScr = document.getElementById('quiz-screen'), resultsScr = document.getElementById('results-screen');
-    const yearContainer = document.getElementById('year-checkboxes'), startBtn = document.getElementById('start-btn'), questionCountInp = document.getElementById('question-count');
-    const questionTextDiv = document.getElementById('question-text'), sourceDiv = document.getElementById('question-source'), optionsDiv = document.getElementById('options-container');
-    const feedbackEl = document.getElementById('feedback'), nextBtn = document.getElementById('next-btn'), progressFill = document.getElementById('progress-fill');
-    const qCounter = document.getElementById('question-counter'), scoreDisplay = document.getElementById('score-display');
-    const funContainer = document.getElementById('fun-mode-container'), funToggle = document.getElementById('fun-mode-toggle');
-    const pdfDrawer = document.getElementById('pdf-drawer'), pdfOverlay = document.getElementById('pdf-overlay'), pdfIframe = document.getElementById('pdf-iframe'), pdfTitle = document.getElementById('pdf-title');
-    const closePdf = document.getElementById('close-pdf'), pdfToggleNav = document.getElementById('pdf-toggle-nav');
-    const calcDrawer = document.getElementById('calc-drawer'), calcOverlay = document.getElementById('calc-overlay'), closeCalc = document.getElementById('close-calc'), calcDisplay = document.getElementById('calc-display'), calcButtonsDiv = document.getElementById('calc-buttons');
+    // DOM elements
+    const setupScreen = document.getElementById('setupScreen');
+    const quizScreen = document.getElementById('quizScreen');
+    const resultsScreen = document.getElementById('resultsScreen');
+    const yearContainer = document.getElementById('yearCheckboxes');
+    const startBtn = document.getElementById('startBtn');
+    const qCountInput = document.getElementById('questionCount');
+    const questionTextSpan = document.getElementById('questionText');
+    const questionSourceSpan = document.getElementById('questionSource');
+    const standardOptionsDiv = document.getElementById('standardOptions');
+    const funContainer = document.getElementById('funModeContainer');
+    const feedbackMsg = document.getElementById('feedbackMsg');
+    const nextBtn = document.getElementById('nextBtn');
+    const progressFill = document.getElementById('progressFill');
+    const qCounterSpan = document.getElementById('qCounter');
+    const scoreDisplaySpan = document.getElementById('scoreDisplay');
 
-    async function loadPageMap() { try { const resp = await fetch(HELPER_JSON); if(resp.ok){ const data = await resp.json(); pageMap = {}; for(const [key,val] of Object.entries(data)){ let m={}; val.forEach(v=>{ m[String(v.question)]=v.page; }); pageMap[key]=m; } } } catch(e){} }
-    function getPage(paper, qNum) { if(paper && pageMap[paper.helperKey] && pageMap[paper.helperKey][String(qNum)]) return pageMap[paper.helperKey][String(qNum)]; return Math.floor((qNum-1)/5)+2; }
-    function updatePdf(paperInfo, qNum){ if(!paperInfo || !paperInfo.pdf){ pdfTitle.innerText='PDF N/A'; pdfIframe.src=''; return; } const page = getPage(paperInfo, qNum); const url = PDF_DIR + paperInfo.pdf + `#page=${page}`; pdfTitle.innerText=`${paperInfo.session} ${paperInfo.year} - p.${page}`; pdfIframe.src=url; }
-    function openPdfDrawer(){ pdfDrawerOpen=true; pdfDrawer.classList.add('open'); pdfOverlay.classList.add('show'); document.getElementById('main-container').classList.add('shifted'); }
-    function closePdfDrawer(){ pdfDrawerOpen=false; pdfDrawer.classList.remove('open'); pdfOverlay.classList.remove('show'); document.getElementById('main-container').classList.remove('shifted'); }
-    pdfToggleNav.onclick=()=>{ if(pdfDrawerOpen) closePdfDrawer(); else openPdfDrawer(); };
-    closePdf.onclick=closePdfDrawer; pdfOverlay.onclick=closePdfDrawer;
-    
-    function initCalculator(){ const btns = [ ['7','8','9','/'], ['4','5','6','*'], ['1','2','3','-'], ['0','C','=','+'], ['%','.','√','AC'] ]; let expr='0'; function updateDisplay(){ calcDisplay.innerText = expr || '0'; } function compute(){ try { let exp = expr.replace(/√/g, 'Math.sqrt').replace(/%/g, '/100'); let result = Function('"use strict";return ('+exp+')')(); expr = String(result); } catch(e){ expr='Error'; } updateDisplay(); } calcButtonsDiv.innerHTML=''; btns.flat().forEach(label=>{ const btn=document.createElement('button'); btn.className='calc-btn'; if(['/','*','-','+','%','√'].includes(label)) btn.classList.add('operator'); if(label==='=') btn.classList.add('equal'); btn.innerText=label; btn.onclick=()=>{ if(label==='C') expr='0'; else if(label==='AC') expr='0'; else if(label==='=') compute(); else { if(expr==='0' && !isNaN(label) && label!=='.') expr=label; else expr+=label; updateDisplay(); } }; calcButtonsDiv.appendChild(btn); }); updateDisplay(); }
-    function openCalcDrawer(){ calcDrawerOpen=true; calcDrawer.classList.add('open'); calcOverlay.classList.add('show'); document.body.style.overflow='hidden'; }
-    function closeCalcDrawer(){ calcDrawerOpen=false; calcDrawer.classList.remove('open'); calcOverlay.classList.remove('show'); document.body.style.overflow=''; }
-    closeCalc.onclick=closeCalcDrawer; calcOverlay.onclick=closeCalcDrawer;
-    let touchStartX=0; document.addEventListener('touchstart',(e)=>{ touchStartX=e.touches[0].clientX; },{passive:true});
-    document.addEventListener('touchend',(e)=>{ const diff = touchStartX - e.changedTouches[0].clientX; if(Math.abs(diff)>50){ if(diff>0 && !pdfDrawerOpen && !calcDrawerOpen) openPdfDrawer(); else if(diff<-50 && !calcDrawerOpen) openCalcDrawer(); } });
-    document.addEventListener('keydown',(e)=>{ if(e.key==='Escape'){ if(calcDrawerOpen) closeCalcDrawer(); if(pdfDrawerOpen) closePdfDrawer(); } });
-    
-    async function loadPapers(files){ let loaded=[]; for(let file of files){ try{ const resp=await fetch(YAML_DIR+file+'.yaml'); if(!resp.ok) continue; const txt=await resp.text(); const data=jsyaml.load(txt); if(data?.exam?.items){ const paperMeta=PAPERS.find(p=>p.file===file); loaded.push({ file, year:data.exam.year||paperMeta?.year, session:paperMeta?.session||'Exam', items:data.exam.items, paperInfo:paperMeta }); } } catch(e){} } return loaded; }
-    function shuffle(arr){ for(let i=arr.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]]; } return arr; }
-    
-    async function startQuiz(){ const selected=Array.from(document.querySelectorAll('#year-checkboxes input:checked')).map(cb=>cb.value); if(selected.length===0){ alert('Select at least one paper'); return; } let count=parseInt(questionCountInp.value,10); if(isNaN(count)||count<1) count=30; quizConfig={selectedFiles:selected,questionCount:count}; startBtn.disabled=true; startBtn.innerText='Loading...'; allPapersData=await loadPapers(selected); startBtn.disabled=false; startBtn.innerText='Start Quiz'; if(allPapersData.length===0){ alert('No papers loaded'); return; } let allItems=[]; allPapersData.forEach(paper=>{ paper.items.forEach(item=>{ allItems.push({ ...item, paperFile:paper.file, session:paper.session, year:paper.year, originalQuestionNumber:item.number, paperInfo:paper.paperInfo }); }); }); allItems=shuffle(allItems); if(allItems.length<count) count=allItems.length; quizQuestions=allItems.slice(0,count); currentIdx=0; score=0; userAnswers=[]; setupScr.classList.add('hidden'); quizScr.classList.remove('hidden'); resultsScr.classList.add('hidden'); if(funModeActive) { funContainer.classList.remove('hidden'); buildFunModePanel(); } else { funContainer.classList.add('hidden'); } showQuestion(); }
-    
-    function buildFunModePanel(){ if(!currentQuestionObj) return; const colors=['red','green','blue','yellow']; const letters=['A','B','C','D']; const correctLetter=currentQuestionObj.correct_answer; const optionsMap=currentQuestionObj.options; const answers=letters.map(l=> ({letter:l,text:optionsMap[l]})); funContainer.innerHTML=`<div class="fun-mode-panel"><div class="fun-status"><span>🎉 FUN MODE</span><span>Tap the correct color</span></div><div class="fun-grid">${answers.map(ans=>`<div class="fun-card color-${colors[letters.indexOf(ans.letter)]}" data-letter="${ans.letter}">${ans.letter}</div>`).join('')}</div></div>`; document.querySelectorAll('.fun-card').forEach(card=>{ card.addEventListener('click',(e)=>{ if(waitingForAnswer) return; const chosenLetter=card.dataset.letter; handleFunAnswer(chosenLetter,correctLetter,card); }); }); }
-    
-    function handleFunAnswer(selected,correct,cardElement){ if(waitingForAnswer) return; waitingForAnswer=true; const isCorrect=(selected===correct); if(isCorrect){ canvasConfetti({particleCount:150,spread:70,origin:{y:0.6},startVelocity:20,colors:['#22c55e','#3b82f6','#eab308']}); document.querySelectorAll('.fun-card').forEach(c=>{ if(c.dataset.letter===correct) c.style.filter='brightness(1.2) drop-shadow(0 0 8px gold)'; }); } else { const allCards=document.querySelectorAll('.fun-card'); allCards.forEach(c=>{ if(c.dataset.letter===selected){ c.classList.add('wrong-animation'); setTimeout(()=>c.classList.remove('wrong-animation'),400); } }); const wrongMsg=document.createElement('div'); wrongMsg.innerText='WRONG'; wrongMsg.style.position='fixed'; wrongMsg.style.top='40%'; wrongMsg.style.left='50%'; wrongMsg.style.transform='translate(-50%,-50%)'; wrongMsg.style.fontSize='3rem'; wrongMsg.style.fontWeight='900'; wrongMsg.style.color='#ef4444'; wrongMsg.style.textShadow='2px 2px 0 black'; wrongMsg.style.zIndex='999'; wrongMsg.style.backgroundColor='rgba(0,0,0,0.7)'; wrongMsg.style.padding='0.5rem 2rem'; wrongMsg.style.borderRadius='2rem'; document.body.appendChild(wrongMsg); setTimeout(()=>wrongMsg.remove(),600); document.querySelectorAll('.fun-card').forEach(c=>{ if(c.dataset.letter===correct){ c.style.transform='scale(1.05)'; c.style.boxShadow='0 0 0 4px white, 0 0 0 8px #22c55e'; } }); } setTimeout(()=>{ if(isCorrect) score++; updateScoreDisplay(currentIdx+1); userAnswers.push({questionNumber:currentQuestionObj.originalQuestionNumber,selected,correct,paperFile:currentQuestionObj.paperFile}); if(currentIdx+1<quizQuestions.length){ currentIdx++; showQuestion(); } else { endQuiz(); } waitingForAnswer=false; },1000); }
-    
-    function showQuestion(){ if(currentIdx>=quizQuestions.length){ endQuiz(); return; } const q=quizQuestions[currentIdx]; currentQuestionObj=q; const paperInfo=q.paperInfo; questionTextDiv.innerHTML=`<strong>${currentIdx+1}.</strong> ${q.question}`; sourceDiv.innerHTML=`Source: ${q.session} ${q.year}, Q${q.originalQuestionNumber}`; optionsDiv.innerHTML=''; const letters=['A','B','C','D']; letters.forEach(letter=>{ if(q.options && q.options[letter]){ const btn=document.createElement('button'); btn.className='option-btn'; btn.textContent=`${letter}. ${q.options[letter]}`; btn.onclick=()=>{ if(!funModeActive && !waitingForAnswer){ selectAnswerStandard(letter); } }; optionsDiv.appendChild(btn); } }); const progress=(currentIdx/quizQuestions.length)*100; progressFill.style.width=progress+'%'; qCounter.innerText=`Q${currentIdx+1}/${quizQuestions.length}`; updateScoreDisplay(currentIdx); feedbackEl.className='feedback'; feedbackEl.style.display='none'; nextBtn.style.display='none'; waitingForAnswer=false; updatePdf(paperInfo,q.originalQuestionNumber); if(funModeActive){ buildFunModePanel(); } }
-    
-    function updateScoreDisplay(idx){ scoreDisplay.innerText=`Score: ${score}/${idx}`; }
-    function selectAnswerStandard(selected){ if(waitingForAnswer) return; waitingForAnswer=true; const q=quizQuestions[currentIdx]; const correct=q.correct_answer; const isCorrect=(selected===correct); const btns=document.querySelectorAll('.option-btn'); btns.forEach(btn=>{ btn.disabled=true; const letter=btn.textContent.charAt(0); if(letter===correct) btn.classList.add('correct'); if(letter===selected && !isCorrect) btn.classList.add('wrong'); }); feedbackEl.textContent=isCorrect?'✅ Correct!':`❌ Incorrect. Answer: ${correct}.`; feedbackEl.className=`feedback ${isCorrect?'correct':'wrong'}`; feedbackEl.style.display='block'; if(isCorrect) score++; updateScoreDisplay(currentIdx+1); userAnswers.push({questionNumber:q.originalQuestionNumber,selected,correct,paperFile:q.paperFile}); nextBtn.style.display='inline-flex'; waitingForAnswer=false; }
-    
-    function nextQuestionHandler(){ if(currentIdx+1<quizQuestions.length){ currentIdx++; showQuestion(); } else { endQuiz(); } }
-    nextBtn.onclick=nextQuestionHandler;
-    
-    function endQuiz(){ quizScr.classList.add('hidden'); resultsScr.classList.remove('hidden'); closePdfDrawer(); const total=quizQuestions.length; const percent=Math.round((score/total)*100); document.getElementById('final-score').innerText=score; document.getElementById('final-total').innerText=total; document.getElementById('final-percent').innerText=percent+'%'; saveResult({date:new Date().toISOString(),score,total,percentage:percent,papers:quizConfig.selectedFiles,questionCount:quizConfig.questionCount}); updateHistoryDisplay(); updateResultsHistory(); }
-    
-    function saveResult(res){ let hist=JSON.parse(localStorage.getItem(STORAGE_KEY))||[]; hist.push(res); localStorage.setItem(STORAGE_KEY,JSON.stringify(hist)); }
-    function updateHistoryDisplay(){ const container=document.getElementById('history-container'); const hist=JSON.parse(localStorage.getItem(STORAGE_KEY))||[]; if(hist.length===0){ container.innerHTML='<p>No attempts yet</p>'; return; } const recent=hist.slice(-5).reverse(); container.innerHTML='<ul class="history-list">'+recent.map(h=>`<li><span>${new Date(h.date).toLocaleString()}</span><span>${h.score}/${h.total} (${h.percentage}%)</span></li>`).join('')+'</ul>'; }
-    function updateResultsHistory(){ const cont=document.getElementById('results-history-container'); const hist=JSON.parse(localStorage.getItem(STORAGE_KEY))||[]; if(hist.length===0){ cont.innerHTML='<p>—</p>'; return; } cont.innerHTML='<ul class="history-list">'+hist.slice(-5).reverse().map(h=>`<li><span>${new Date(h.date).toLocaleString()}</span><span>${h.score}/${h.total} (${h.percentage}%)</span></li>`).join('')+'</ul>'; }
-    
-    funToggle.onclick=()=>{ funModeActive=!funModeActive; funToggle.innerText=funModeActive?'🎮 Fun Mode ON':'🎮 Fun Mode OFF'; funToggle.classList.toggle('active',funModeActive); if(!quizScr.classList.contains('hidden') && !setupScr.classList.contains('hidden')===false){ if(funModeActive){ funContainer.classList.remove('hidden'); if(currentQuestionObj) buildFunModePanel(); } else { funContainer.classList.add('hidden'); } } };
-    
-    function initUI(){ PAPERS.forEach(p=>{ const lbl=document.createElement('label'); lbl.innerHTML=`<input type="checkbox" value="${p.file}" checked> ${p.label}`; yearContainer.appendChild(lbl); }); startBtn.onclick=startQuiz; document.getElementById('retry-btn').onclick=()=>{ resultsScr.classList.add('hidden'); setupScr.classList.remove('hidden'); }; document.getElementById('new-quiz-btn').onclick=()=>{ resultsScr.classList.add('hidden'); setupScr.classList.remove('hidden'); document.querySelectorAll('#year-checkboxes input').forEach(cb=>cb.checked=true); questionCountInp.value=30; }; updateHistoryDisplay(); loadPageMap(); initCalculator(); }
-    initUI();
+    // helper
+    async function loadPageMap() {
+        try {
+            const resp = await fetch(HELPER_JSON);
+            if (resp.ok) {
+                const data = await resp.json();
+                for (const [key, val] of Object.entries(data)) {
+                    pageMap[key] = {};
+                    val.forEach(v => { pageMap[key][String(v.question)] = v.page; });
+                }
+            }
+        } catch(e) { console.warn(e); }
+    }
+
+    function getPageNumber(paperInfo, qNum) {
+        if (paperInfo && pageMap[paperInfo.helperKey] && pageMap[paperInfo.helperKey][String(qNum)])
+            return pageMap[paperInfo.helperKey][String(qNum)];
+        return Math.floor((qNum - 1) / 5) + 2;
+    }
+
+    function updatePdfViewer(paperInfo, qNum) {
+        if (!paperInfo || !paperInfo.pdf) return;
+        const page = getPageNumber(paperInfo, qNum);
+        const pdfUrl = `${PDF_DIR}${paperInfo.pdf}#page=${page}`;
+        // desktop iframe
+        const desktopFrame = document.getElementById('desktopPdfFrame');
+        if (desktopFrame) desktopFrame.src = pdfUrl;
+        const mobileFrame = document.getElementById('mobilePdfFrame');
+        if (mobileFrame) mobileFrame.src = pdfUrl;
+    }
+
+    // calculator factory
+    function buildCalculator(containerId) {
+        const container = typeof containerId === 'string' ? document.getElementById(containerId) : containerId;
+        if (!container) return;
+        let expression = '0';
+        const updateDisplay = (disp) => { const d = container.querySelector('.calc-display-target'); if(d) d.innerText = disp || '0'; };
+        const compute = () => {
+            try {
+                let expr = expression.replace(/√/g, 'Math.sqrt').replace(/%/g, '/100');
+                let res = Function('"use strict";return (' + expr + ')')();
+                expression = String(res);
+                updateDisplay(expression);
+            } catch(e) { expression = 'Error'; updateDisplay('Error'); }
+        };
+        const btns = [ ['7','8','9','/'], ['4','5','6','*'], ['1','2','3','-'], ['0','C','=','+'], ['%','.','√','AC'] ];
+        const html = `<div class="calc-display calc-display-target" style="font-family:monospace;">0</div><div class="calc-buttons" id="calc-buttons-${containerId}"></div>`;
+        container.innerHTML = html;
+        const btnGrid = container.querySelector(`.calc-buttons`);
+        btns.flat().forEach(label => {
+            const btn = document.createElement('button');
+            btn.className = 'calc-btn';
+            if (['/','*','-','+','%','√'].includes(label)) btn.classList.add('operator');
+            if (label === '=') btn.classList.add('equal');
+            btn.innerText = label;
+            btn.onclick = () => {
+                if (label === 'C') expression = '0';
+                else if (label === 'AC') expression = '0';
+                else if (label === '=') compute();
+                else {
+                    if (expression === '0' && !isNaN(label) && label !== '.') expression = label;
+                    else expression += label;
+                    updateDisplay(expression);
+                }
+            };
+            btnGrid.appendChild(btn);
+        });
+        updateDisplay('0');
+    }
+
+    // load papers
+    async function loadSelectedPapers(files) {
+        let loaded = [];
+        for (let f of files) {
+            try {
+                const resp = await fetch(YAML_DIR + f + '.yaml');
+                if (!resp.ok) continue;
+                const txt = await resp.text();
+                const data = jsyaml.load(txt);
+                if (data?.exam?.items) {
+                    const meta = PAPERS.find(p => p.file === f);
+                    loaded.push({
+                        file: f, year: meta?.year, session: meta?.session,
+                        items: data.exam.items, paperInfo: meta
+                    });
+                }
+            } catch(e) { console.warn(e); }
+        }
+        return loaded;
+    }
+
+    function shuffle(arr) { for (let i = arr.length - 1; i > 0; i--) { const j = Math.floor(Math.random()*(i+1)); [arr[i], arr[j]] = [arr[j], arr[i]]; } return arr; }
+
+    async function startQuiz() {
+        const selected = Array.from(document.querySelectorAll('#yearCheckboxes input:checked')).map(cb => cb.value);
+        if (selected.length === 0) { alert('Select at least one paper'); return; }
+        let count = parseInt(qCountInput.value,10);
+        if (isNaN(count) || count < 1) count = 30;
+        quizConfig = { selectedFiles: selected, questionCount: count };
+        startBtn.disabled = true; startBtn.innerText = 'Loading...';
+        allPapersData = await loadSelectedPapers(selected);
+        startBtn.disabled = false; startBtn.innerText = 'Start Quiz';
+        if (allPapersData.length === 0) { alert('Failed to load papers'); return; }
+        let allItems = [];
+        allPapersData.forEach(paper => {
+            paper.items.forEach(item => {
+                allItems.push({ ...item, paperFile: paper.file, session: paper.session, year: paper.year,
+                    originalQuestionNumber: item.number, paperInfo: paper.paperInfo });
+            });
+        });
+        allItems = shuffle(allItems);
+        if (allItems.length < count) count = allItems.length;
+        quizQuestions = allItems.slice(0, count);
+        currentIndex = 0; score = 0; userAnswers = [];
+        setupScreen.classList.add('hidden');
+        quizScreen.classList.remove('hidden');
+        resultsScreen.classList.add('hidden');
+        if (funMode && isMobile) {
+            document.body.classList.add('fun-mode-active');
+            funContainer.classList.remove('hidden');
+            standardOptionsDiv.classList.add('hidden');
+        } else {
+            document.body.classList.remove('fun-mode-active');
+            funContainer.classList.add('hidden');
+            standardOptionsDiv.classList.remove('hidden');
+        }
+        showQuestion();
+    }
+
+    function showQuestion() {
+        if (currentIndex >= quizQuestions.length) { endQuiz(); return; }
+        const q = quizQuestions[currentIndex];
+        currentQuestionObj = q;
+        questionTextSpan.innerHTML = `${currentIndex+1}. ${q.question}`;
+        questionSourceSpan.innerText = `${q.session} ${q.year} • Q${q.originalQuestionNumber}`;
+        updatePdfViewer(q.paperInfo, q.originalQuestionNumber);
+        const progress = ((currentIndex) / quizQuestions.length) * 100;
+        progressFill.style.width = progress + '%';
+        qCounterSpan.innerText = `Q${currentIndex+1}/${quizQuestions.length}`;
+        scoreDisplaySpan.innerText = `Score: ${score}/${currentIndex}`;
+        feedbackMsg.className = 'feedback';
+        feedbackMsg.style.display = 'none';
+        nextBtn.style.display = 'none';
+        waitingAnswer = false;
+
+        if (funMode && isMobile) {
+            standardOptionsDiv.classList.add('hidden');
+            funContainer.classList.remove('hidden');
+            buildFunGrid(q);
+        } else {
+            standardOptionsDiv.classList.remove('hidden');
+            funContainer.classList.add('hidden');
+            renderStandardOptions(q);
+        }
+    }
+
+    function renderStandardOptions(q) {
+        standardOptionsDiv.innerHTML = '';
+        const letters = ['A','B','C','D'];
+        letters.forEach(letter => {
+            if (q.options && q.options[letter]) {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.innerText = `${letter}. ${q.options[letter]}`;
+                btn.onclick = () => { if (!waitingAnswer) handleStandardAnswer(letter, q.correct_answer); };
+                standardOptionsDiv.appendChild(btn);
+            }
+        });
+    }
+
+    function handleStandardAnswer(selected, correct) {
+        if (waitingAnswer) return;
+        waitingAnswer = true;
+        const isCorrect = (selected === correct);
+        if (isCorrect) score++;
+        scoreDisplaySpan.innerText = `Score: ${score}/${currentIndex+1}`;
+        const btns = document.querySelectorAll('#standardOptions .option-btn');
+        btns.forEach(btn => {
+            btn.disabled = true;
+            const letter = btn.innerText.charAt(0);
+            if (letter === correct) btn.classList.add('correct');
+            if (letter === selected && !isCorrect) btn.classList.add('wrong');
+        });
+        feedbackMsg.innerText = isCorrect ? '✓ Correct' : `✗ Incorrect. Answer: ${correct}`;
+        feedbackMsg.className = `feedback ${isCorrect ? 'correct' : 'wrong'}`;
+        feedbackMsg.style.display = 'block';
+        userAnswers.push({ qNum: currentQuestionObj.originalQuestionNumber, selected, correct });
+        nextBtn.style.display = 'inline-flex';
+        waitingAnswer = false;
+    }
+
+    function buildFunGrid(q) {
+        const letters = ['A','B','C','D'];
+        const colors = ['red','green','blue','yellow'];
+        let html = `<div class="fun-grid">`;
+        letters.forEach((letter, idx) => {
+            if (q.options[letter]) {
+                html += `<div class="fun-card color-${colors[idx]}" data-letter="${letter}">${letter}</div>`;
+            }
+        });
+        html += `</div>`;
+        funContainer.innerHTML = html;
+        document.querySelectorAll('.fun-card').forEach(card => {
+            card.addEventListener('click', (e) => {
+                if (waitingAnswer) return;
+                const chosen = card.dataset.letter;
+                handleFunAnswer(chosen, q.correct_answer, card);
+            });
+        });
+    }
+
+    function handleFunAnswer(selected, correct, cardElem) {
+        if (waitingAnswer) return;
+        waitingAnswer = true;
+        const isCorrect = (selected === correct);
+        if (isCorrect) {
+            confetti({ particleCount: 120, spread: 65, origin: { y: 0.6 }, colors: ['#22c55e', '#3b82f6', '#facc15'] });
+            score++;
+            scoreDisplaySpan.innerText = `Score: ${score}/${currentIndex+1}`;
+            // highlight correct
+            document.querySelectorAll('.fun-card').forEach(c => { if(c.dataset.letter === correct) c.style.filter = 'brightness(1.3) drop-shadow(0 0 6px gold)'; });
+        } else {
+            cardElem.classList.add('wrong-shake');
+            setTimeout(() => cardElem.classList.remove('wrong-shake'), 400);
+            const wrongDiv = document.createElement('div');
+            wrongDiv.innerText = 'WRONG';
+            wrongDiv.style.position = 'fixed'; wrongDiv.style.top = '35%'; wrongDiv.style.left = '50%';
+            wrongDiv.style.transform = 'translate(-50%, -50%)'; wrongDiv.style.fontSize = '2.6rem';
+            wrongDiv.style.fontWeight = '900'; wrongDiv.style.color = '#ef4444'; wrongDiv.style.zIndex = '999';
+            wrongDiv.style.background = 'rgba(0,0,0,0.7)'; wrongDiv.style.padding = '0.3rem 1.8rem'; wrongDiv.style.borderRadius = '60px';
+            document.body.appendChild(wrongDiv);
+            setTimeout(() => wrongDiv.remove(), 600);
+            document.querySelectorAll('.fun-card').forEach(c => { if(c.dataset.letter === correct) c.style.boxShadow = '0 0 0 4px white, 0 0 0 8px #22c55e'; });
+        }
+        setTimeout(() => {
+            if (!isCorrect) scoreDisplaySpan.innerText = `Score: ${score}/${currentIndex+1}`;
+            userAnswers.push({ qNum: currentQuestionObj.originalQuestionNumber, selected, correct });
+            if (currentIndex + 1 < quizQuestions.length) {
+                currentIndex++;
+                showQuestion();
+            } else {
+                endQuiz();
+            }
+            waitingAnswer = false;
+        }, 1000);
+    }
+
+    function endQuiz() {
+        quizScreen.classList.add('hidden');
+        resultsScreen.classList.remove('hidden');
+        const total = quizQuestions.length;
+        const percent = Math.round((score/total)*100);
+        document.getElementById('finalScore').innerText = score;
+        document.getElementById('finalTotal').innerText = total;
+        document.getElementById('finalPercent').innerText = percent+'%';
+        const history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+        history.push({ date: new Date().toISOString(), score, total, percent, papers: quizConfig.selectedFiles });
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
+        updateHistoryDisplays();
+    }
+
+    function updateHistoryDisplays() {
+        const history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+        const recent = history.slice(-5).reverse();
+        const htmlList = recent.map(h => `<li><span>${new Date(h.date).toLocaleString()}</span><span>${h.score}/${h.total} (${h.percentage??h.percent}%)</span></li>`).join('');
+        document.getElementById('historyContainer').innerHTML = recent.length ? `<ul class="history-list">${htmlList}</ul>` : '<p>No attempts</p>';
+        document.getElementById('resultsHistory').innerHTML = recent.length ? `<ul class="history-list">${htmlList}</ul>` : '<p>—</p>';
+    }
+
+    // mobile detection & fun mode visibility
+    function detectMobileAndSetup() {
+        const isTouchDevice = window.matchMedia("(pointer: coarse)").matches || window.innerWidth <= 900;
+        if (!isTouchDevice) {
+            const funBtn = document.getElementById('funModeToggleMobile');
+            if(funBtn) funBtn.style.display = 'none';
+            funMode = false;
+        } else {
+            // add floating toggle for fun mode on mobile
+            const navbar = document.querySelector('.app-wrapper');
+            const toggleDiv = document.createElement('div');
+            toggleDiv.style.position = 'fixed'; toggleDiv.style.bottom = '20px'; toggleDiv.style.right = '20px'; toggleDiv.style.zIndex = '50';
+            toggleDiv.innerHTML = `<button id="funModeToggleMobile" class="fun-mode-toggle-mobile" style="background:#f97316; border:none; padding:12px 18px; border-radius:40px; font-weight:bold; box-shadow:0 4px 12px black;">✨ Fun Mode</button>`;
+            document.body.appendChild(toggleDiv);
+            const toggleBtn = document.getElementById('funModeToggleMobile');
+            toggleBtn.onclick = () => {
+                funMode = !funMode;
+                toggleBtn.innerText = funMode ? '🎉 Fun ON' : '✨ Fun Mode';
+                if (!quizScreen.classList.contains('hidden')) {
+                    if (funMode) {
+                        document.body.classList.add('fun-mode-active');
+                        funContainer.classList.remove('hidden');
+                        standardOptionsDiv.classList.add('hidden');
+                        if (currentQuestionObj) buildFunGrid(currentQuestionObj);
+                    } else {
+                        document.body.classList.remove('fun-mode-active');
+                        funContainer.classList.add('hidden');
+                        standardOptionsDiv.classList.remove('hidden');
+                        if (currentQuestionObj) renderStandardOptions(currentQuestionObj);
+                    }
+                } else {
+                    if (funMode) document.body.classList.add('fun-mode-active');
+                    else document.body.classList.remove('fun-mode-active');
+                }
+            };
+        }
+    }
+
+    function initMobileDrawers() {
+        let startX = 0;
+        document.addEventListener('touchstart', e => { startX = e.touches[0].clientX; });
+        document.addEventListener('touchend', e => {
+            const diff = startX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 50 && !document.getElementById('pdfDrawer').classList.contains('open')) {
+                    document.getElementById('pdfDrawer').classList.add('open');
+                    document.getElementById('mobileOverlay').classList.add('active');
+                } else if (diff < -50 && !document.getElementById('calcDrawer').classList.contains('open')) {
+                    document.getElementById('calcDrawer').classList.add('open');
+                    document.getElementById('mobileOverlay').classList.add('active');
+                }
+            }
+        });
+        document.getElementById('closePdfDrawer').onclick = () => { document.getElementById('pdfDrawer').classList.remove('open'); document.getElementById('mobileOverlay').classList.remove('active'); };
+        document.getElementById('closeCalcDrawer').onclick = () => { document.getElementById('calcDrawer').classList.remove('open'); document.getElementById('mobileOverlay').classList.remove('active'); };
+        document.getElementById('mobileOverlay').onclick = () => {
+            document.getElementById('pdfDrawer').classList.remove('open');
+            document.getElementById('calcDrawer').classList.remove('open');
+            document.getElementById('mobileOverlay').classList.remove('active');
+        };
+        buildCalculator('mobileCalcContent');
+    }
+
+    async function init() {
+        await loadPageMap();
+        PAPERS.forEach(p => { const label = document.createElement('label'); label.innerHTML = `<input type="checkbox" value="${p.file}" checked> ${p.label}`; yearContainer.appendChild(label); });
+        startBtn.onclick = startQuiz;
+        document.getElementById('retryQuizBtn').onclick = () => { resultsScreen.classList.add('hidden'); setupScreen.classList.remove('hidden'); };
+        document.getElementById('newQuizBtn').onclick = () => { resultsScreen.classList.add('hidden'); setupScreen.classList.remove('hidden'); document.querySelectorAll('#yearCheckboxes input').forEach(cb => cb.checked=true); qCountInput.value=30; };
+        nextBtn.onclick = () => { if (currentIndex+1 < quizQuestions.length) { currentIndex++; showQuestion(); } else endQuiz(); };
+        updateHistoryDisplays();
+        buildCalculator('desktopCalc');
+        if (window.innerWidth <= 900) initMobileDrawers();
+        detectMobileAndSetup();
+    }
+    init();
 </script>
-<script src="webstructure/login.js"></script>
 </body>
 </html>
