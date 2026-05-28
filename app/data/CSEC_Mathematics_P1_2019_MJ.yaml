@@ -1,0 +1,545 @@
+exam:
+  title: "CSEC Mathematics P1 2019 MJ"
+  year: 2019
+  subject: "Mathematics"
+  total_items: 60
+  items:
+    - number: 1
+      question: "(-3)^2 + (-2)^2 is equal to"
+      options:
+        A: "-13"
+        B: "-10"
+        C: "13"
+        D: "25"
+      correct_answer: "C"
+
+    - number: 2
+      question: "What number when added to 1⅓ gives 2?"
+      options:
+        A: "1/3"
+        B: "2/3"
+        C: "1"
+        D: "3"
+      correct_answer: "B"
+
+    - number: 3
+      question: "11.1 ÷ 0.01 is equal to"
+      options:
+        A: "110"
+        B: "111"
+        C: "1,100"
+        D: "1,110"
+      correct_answer: "D"
+
+    - number: 4
+      question: "12½% of a sum of money is $40. What is the sum of money?"
+      options:
+        A: "$45"
+        B: "$320"
+        C: "$500"
+        D: "$4,500"
+      correct_answer: "B"
+
+    - number: 5
+      question: "A test was marked out of 80. A boy scored 60% of the marks. How many marks did he score?"
+      options:
+        A: "20"
+        B: "48"
+        C: "60"
+        D: "75"
+      correct_answer: "B"
+
+    - number: 6
+      question: "The square root of 181 lies between"
+      options:
+        A: "13 and 14"
+        B: "45 and 46"
+        C: "9 and 11"
+        D: "11 and 13"
+      correct_answer: "A"
+
+    - number: 7
+      question: "Which set is defined by {x ∈ Z: -2 ≤ x ≤ 4}?"
+      options:
+        A: "{0,1,2,3,4}"
+        B: "{1,2,3,4}"
+        C: "{-1,0,1,2,3}"
+        D: "{-2,-1,0,1,2,3,4}"
+      correct_answer: "D"
+
+    - number: 8
+      question: "If Q = {a,b,c}, how many subsets can be obtained from Q?"
+      options:
+        A: "2 + 3"
+        B: "2 × 3"
+        C: "3²"
+        D: "2³"
+      correct_answer: "D"
+
+    - number: 9
+      question: "In the Venn diagram, n(P)=5, n(Q)=9 and n(P∪Q)=10. What is n(P∩Q)?"
+      options:
+        A: "4"
+        B: "6"
+        C: "14"
+        D: "24"
+      correct_answer: "A"
+
+    - number: 10
+      question: "P = {prime numbers}, Q = {odd numbers}, R = {even numbers}. Which set is empty?"
+      options:
+        A: "P ∩ R"
+        B: "Q ∩ R"
+        C: "P ∩ Q"
+        D: "P ∪ Q"
+      correct_answer: "A"
+
+    - number: 11
+      question: "If P = {2,3,5,7}, Q = {2,3,6} and S = {2,4,5}, then P ∩ Q ∩ S ="
+      options:
+        A: "{2}"
+        B: "{2,3}"
+        C: "{2,3,5}"
+        D: "{2,3,4,5,6,7}"
+      correct_answer: "A"
+
+    - number: 12
+      question: "In the Venn diagram, the shaded area represents"
+      options:
+        A: "P'"
+        B: "(P∪Q)'"
+        C: "Q ∪ P'"
+        D: "Q ∩ P'"
+      correct_answer: "D"
+
+    - number: 13
+      question: "If TT $6.00 = US $1.00, then TT $15.00 in US dollars is"
+      options:
+        A: "$0.25"
+        B: "$0.40"
+        C: "$2.50"
+        D: "$4.00"
+      correct_answer: "C"
+
+    - number: 14
+      question: "If $7,000.00 is borrowed at 5% per annum for 3 years, the simple interest is"
+      options:
+        A: "$105"
+        B: "$210"
+        C: "$370"
+        D: "$1,050"
+      correct_answer: "D"
+
+    - number: 15
+      question: "A dress costing $180.00 is sold at a 10% discount. The amount of the discount is"
+      options:
+        A: "$1.80"
+        B: "$10.00"
+        C: "$18.00"
+        D: "$170.00"
+      correct_answer: "C"
+
+    - number: 16
+      question: "Land value $18,000.00. Tax at $0.70 per $100.00 value. Total tax paid?"
+      options:
+        A: "$110.00"
+        B: "$126.00"
+        C: "$180.70"
+        D: "$257.15"
+      correct_answer: "B"
+
+    - number: 17
+      question: "At year end, a car is worth 5% less than at the beginning. If worth $9,500 in Dec 2016, value in Jan 2016 was"
+      options:
+        A: "$9,995"
+        B: "$10,000"
+        C: "$10,200"
+        D: "$12,000"
+      correct_answer: "B"
+
+    - number: 18
+      question: "A loan of $8,000 repaid in 24 monthly instalments of $400. Rate of interest?"
+      options:
+        A: "5%"
+        B: "8⅓%"
+        C: "16⅓%"
+        D: "20%"
+      correct_answer: "D"
+
+    - number: 19
+      question: "Dinner advertised at $60.00 plus 18% tax. Total bill?"
+      options:
+        A: "$60.00"
+        B: "$70.80"
+        C: "$78.00"
+        D: "$81.60"
+      correct_answer: "B"
+
+    - number: 20
+      question: "Each book marked $3.00 off original price. Daniel paid $46.00 for two books at same sale price. Original cost of ONE book?"
+      options:
+        A: "$20.00"
+        B: "$21.50"
+        C: "$24.50"
+        D: "$26.00"
+      correct_answer: "D"
+
+    - number: 21
+      question: "1/(5x) + 2/(3x) is equal to"
+      options:
+        A: "3/(8x²)"
+        B: "3/(8x)"
+        C: "13/(15x²)"
+        D: "13/(15x)"
+      correct_answer: "D"
+
+    - number: 22
+      question: "When 5 is added to a number and the result multiplied by 3, the answer is 27. What is the original number?"
+      options:
+        A: "4"
+        B: "12"
+        C: "14"
+        D: "19"
+      correct_answer: "A"
+
+    - number: 23
+      question: "What is (x² + 3y)/(xy) if x = 4 and y = 2?"
+      options:
+        A: "1¾"
+        B: "2½"
+        C: "2⅜"
+        D: "2¾"
+      correct_answer: "D"
+
+    - number: 24
+      question: "If x is an integer satisfying 4 < 2x ≤ 6, then"
+      options:
+        A: "2 < x ≤ 3"
+        B: "-2 < x ≤ 3"
+        C: "-3 < x ≤ 2"
+        D: "-3 ≤ x < -2"
+      correct_answer: "A"
+
+    - number: 25
+      question: "Sum of two positive numbers p and q is 32. Their difference is 12. What is the SMALLER number?"
+      options:
+        A: "10"
+        B: "12"
+        C: "20"
+        D: "22"
+      correct_answer: "A"
+
+    - number: 26
+      question: "3x² × 2x³ ="
+      options:
+        A: "6x"
+        B: "6x⁵"
+        C: "6x⁶"
+        D: "72x⁵"
+      correct_answer: "B"
+
+    - number: 27
+      question: "Two matrices A and B are conformable for multiplication (A × B) if"
+      options:
+        A: "rows in A = columns in B"
+        B: "columns in A = rows in B"
+        C: "both matrices same order"
+        D: "both matrices rectangular"
+      correct_answer: "B"
+
+    - number: 28
+      question: "The determinant of the identity matrix is"
+      options:
+        A: "one"
+        B: "zero"
+        C: "undefined"
+        D: "negative one"
+      correct_answer: "A"
+
+    - number: 29
+      question: "If p = [3,2] and q = [-1,4], then p - 2q is"
+      options:
+        A: "[1,10]"
+        B: "[1,-6]"
+        C: "[5,10]"
+        D: "[5,-6]"
+      correct_answer: "D"
+
+    - number: 30
+      question: "In parallelogram WXYZ, XY = u, XW = v, R midpoint of YZ. WR expressed in terms of u and v is"
+      options:
+        A: "u - ½v"
+        B: "u + ½v"
+        C: "-u + ½v"
+        D: "-½v - u"
+      correct_answer: "C"
+
+    - number: 31
+      question: "Given 1 mm = 1/1000 m, 2,500 mm in metres is"
+      options:
+        A: "0.25"
+        B: "2.5"
+        C: "25"
+        D: "250"
+      correct_answer: "B"
+
+    - number: 32
+      question: "Sector AOB with angle 60° and radius r. Area of AOB is"
+      options:
+        A: "⅙πr²"
+        B: "⅙πr"
+        C: "⅓πr²"
+        D: "⅓πr"
+      correct_answer: "A"
+
+    - number: 33
+      question: "Volume in cm³ of a cube of edge 3 cm is"
+      options:
+        A: "9"
+        B: "18"
+        C: "27"
+        D: "54"
+      correct_answer: "C"
+
+    - number: 34
+      question: "Perimeter of a square is 48 cm. Area in cm²?"
+      options:
+        A: "36"
+        B: "72"
+        C: "108"
+        D: "144"
+      correct_answer: "D"
+
+    - number: 35
+      question: "Which figure has area = ½(5+4)×2 square units?"
+      options:
+        A: "Figure A"
+        B: "Figure B"
+        C: "Figure C"
+        D: "Figure D"
+      correct_answer: "A"
+
+    - number: 36
+      question: "Area of rectangle = 53.6 cm². Length ×4, width halved. New area?"
+      options:
+        A: "26.8 cm²"
+        B: "53.6 cm²"
+        C: "107.2 cm²"
+        D: "214.4 cm²"
+      correct_answer: "C"
+
+    - number: 37
+      question: "If length of minor arc PQ = 8 cm, what is circumference?"
+      options:
+        A: "16 cm"
+        B: "24 cm"
+        C: "48 cm"
+        D: "64 cm"
+      correct_answer: "C"
+
+    - number: 38
+      question: "Area of triangle = 30 cm², base = 10 cm. Height in cm?"
+      options:
+        A: "6"
+        B: "12"
+        C: "13"
+        D: "17"
+      correct_answer: "A"
+
+    - number: 39
+      question: "What was the modal age?"
+      options:
+        A: "5"
+        B: "6"
+        C: "7"
+        D: "8"
+      correct_answer: "B"
+
+    - number: 40
+      question: "The median mark scored by the 200 students is"
+      options:
+        A: "30.0"
+        B: "37.5"
+        C: "40.0"
+        D: "100.0"
+      correct_answer: "B"
+
+    - number: 41
+      question: "What is the interquartile range of the marks?"
+      options:
+        A: "12.5"
+        B: "30.0"
+        C: "42.5"
+        D: "100.0"
+      correct_answer: "A"
+
+    - number: 42
+      question: "If 38% of students passed, what was the pass mark?"
+      options:
+        A: "20"
+        B: "40"
+        C: "76"
+        D: "124"
+      correct_answer: "B"
+
+    - number: 43
+      question: "The range of the scores is"
+      options:
+        A: "2"
+        B: "7"
+        C: "8"
+        D: "10"
+      correct_answer: "C"
+
+    - number: 44
+      question: "A male student is picked at random. Probability he does NOT walk to school?"
+      options:
+        A: "2/5"
+        B: "13/18"
+        C: "20/27"
+        D: "7/10"
+      correct_answer: "C"
+
+    - number: 45
+      question: "Which represents the graph of a function?"
+      options:
+        A: "Graph A"
+        B: "Graph B"
+        C: "Graph C"
+        D: "Graph D"
+      correct_answer: "A"
+
+    - number: 46
+      question: "If f(x) = 2x² - 1, then f(-3) ="
+      options:
+        A: "-32"
+        B: "-19"
+        C: "17"
+        D: "35"
+      correct_answer: "C"
+
+    - number: 47
+      question: "The straight line AB cuts the y-axis at"
+      options:
+        A: "(0,3)"
+        B: "(0,2)"
+        C: "(3,-2)"
+        D: "(0,-2)"
+      correct_answer: "D"
+
+    - number: 48
+      question: "Equation of line through (0,5) with gradient 4 is"
+      options:
+        A: "y = 4x"
+        B: "y = 5x"
+        C: "y = 4x + 5"
+        D: "y = 5x + 4"
+      correct_answer: "C"
+
+    - number: 49
+      question: "Range of f: x → x³ for domain {-2,-1,0,1,2} is"
+      options:
+        A: "{8,1,0,1,8}"
+        B: "{6,3,0,3,6}"
+        C: "{-6,-3,0,3,6}"
+        D: "{-8,-1,0,1,8}"
+      correct_answer: "D"
+
+    - number: 50
+      question: "The values of x where y = 4x - x² intersects y = 0 are"
+      options:
+        A: "x = 0 and x = 4"
+        B: "x = 0 and x = 2"
+        C: "x = 0 and x = -4"
+        D: "x = 2 and x = 4"
+      correct_answer: "A"
+
+    - number: 51
+      question: "The coordinates of the turning point of y = 4x - x² are"
+      options:
+        A: "(0,0)"
+        B: "(0,4)"
+        C: "(4,2)"
+        D: "(2,4)"
+      correct_answer: "D"
+
+    - number: 52
+      question: "Which pair of lines is perpendicular?"
+      options:
+        A: "2y = -3x - 8 and 3x - 2y = -8"
+        B: "y = 2x + 1 and y = 2x - 6"
+        C: "y = -4x + 10 and 4y = x + 1"
+        D: "x - 2y = -1 and 3x + 5y = 8"
+      correct_answer: "C"
+
+    - number: 53
+      question: "What transformation maps PQR onto P'Q'R'?"
+      options:
+        A: "Enlargement"
+        B: "Rotation"
+        C: "Translation"
+        D: "Reflection"
+      correct_answer: "C"
+
+    - number: 54
+      question: "In the isosceles triangle, the value of x is"
+      options:
+        A: "30°"
+        B: "60°"
+        C: "120°"
+        D: "150°"
+      correct_answer: "C"
+
+    - number: 55
+      question: "In transversal diagram with AB ∥ CD, which BEST describes the relation between x and y?"
+      options:
+        A: "x > y"
+        B: "x = y"
+        C: "x + y > 2x"
+        D: "x + y < 2x"
+      correct_answer: "B"
+
+    - number: 56
+      question: "The length of MO in cm is"
+      options:
+        A: "2.5"
+        B: "3.0"
+        C: "3.5"
+        D: "7.0"
+      correct_answer: "B"
+
+    - number: 57
+      question: "Image of P(1,2) under translation is P'(-5,-4). Translation vector?"
+      options:
+        A: "[-6,-6]"
+        B: "[-4,-2]"
+        C: "[4,2]"
+        D: "[6,6]"
+      correct_answer: "A"
+
+    - number: 58
+      question: "Scale factor of enlargement mapping ΔABC to ΔA'B'C' with centre O"
+      options:
+        A: "1/2"
+        B: "-1/2"
+        C: "2"
+        D: "-2"
+      correct_answer: "B"
+
+    - number: 59
+      question: "Plane flying 045° changes course clockwise to 135°. Angle turned?"
+      options:
+        A: "45°"
+        B: "90°"
+        C: "135°"
+        D: "270°"
+      correct_answer: "B"
+
+    - number: 60
+      question: "Angle of depression of X from Z is 30°. X is 10 m from Y. Height YZ in metres is"
+      options:
+        A: "10 tan30°"
+        B: "10 sin30°"
+        C: "10 cos30°"
+        D: "10 cos60°"
+      correct_answer: "A"

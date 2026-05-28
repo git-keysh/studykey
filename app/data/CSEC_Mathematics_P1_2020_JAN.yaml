@@ -1,0 +1,545 @@
+exam:
+  title: "CSEC Mathematics P1 2020 JAN"
+  year: 2020
+  subject: "Mathematics"
+  total_items: 60
+  items:
+    - number: 1
+      question: "What percentage of 40 is 8?"
+      options:
+        A: "5"
+        B: "20"
+        C: "32"
+        D: "150"
+      correct_answer: "B"
+
+    - number: 2
+      question: "(2/3)² is equal to"
+      options:
+        A: "4/9"
+        B: "4/6"
+        C: "6/4"
+        D: "9/4"
+      correct_answer: "A"
+
+    - number: 3
+      question: "√(17² - 15²) ="
+      options:
+        A: "1"
+        B: "2"
+        C: "8"
+        D: "16"
+      correct_answer: "C"
+
+    - number: 4
+      question: "The square root of 191 lies between"
+      options:
+        A: "11 and 13"
+        B: "12 and 13"
+        C: "13 and 14"
+        D: "45 and 46"
+      correct_answer: "C"
+
+    - number: 5
+      question: "99 × 101 has the same value as"
+      options:
+        A: "(99 × 100) + 1"
+        B: "(99 × 100)(99 × 1)"
+        C: "(99 × 100) - (99 × 1)"
+        D: "(99 × 100) + (99 × 1)"
+      correct_answer: "D"
+
+    - number: 6
+      question: "There are 40 students in a class. Girls make up 60% of the class. 25% of the girls wear glasses. How many girls wear glasses?"
+      options:
+        A: "6"
+        B: "8"
+        C: "10"
+        D: "15"
+      correct_answer: "A"
+
+    - number: 7
+      question: "If n(A) = m, then the number of subsets of A can be expressed as"
+      options:
+        A: "2ᵐ"
+        B: "m²"
+        C: "2²ᵐ"
+        D: "2m²"
+      correct_answer: "A"
+
+    - number: 8
+      question: "Which statement describes the set of integers greater than -3 but less than 6?"
+      options:
+        A: "{x: -3 > x > 6, x ∈ Z}"
+        B: "{x: -3 ≥ x ≥ 6, x ∈ Z}"
+        C: "{x: -3 ≤ x ≤ 6, x ∈ Z}"
+        D: "{x: -3 < x < 6, x ∈ Z}"
+      correct_answer: "D"
+
+    - number: 9
+      question: "Which pair of sets is an example of disjoint sets?"
+      options:
+        A: "E = even numbers, F = odd numbers"
+        B: "P = multiples of 2, Q = multiples of 3"
+        C: "G = multiples of five, H = factors of 20"
+        D: "X = whole numbers, Y = rational numbers"
+      correct_answer: "A"
+
+    - number: 10
+      question: "Given A = {1,3,6,8,9,12,15} and B = {6,9,12}, which statement is true?"
+      options:
+        A: "B ⊂ A"
+        B: "A ∩ B = ∅"
+        C: "A and B are disjoint sets"
+        D: "B is the complement of A"
+      correct_answer: "A"
+
+    - number: 11
+      question: "30 students have a dog or cat or none. All with a cat also have a dog. n(C)=12, n(D)=16. Which Venn diagram is correct?"
+      options:
+        A: "Diagram A"
+        B: "Diagram B"
+        C: "Diagram C"
+        D: "Diagram D"
+      correct_answer: "A"
+
+    - number: 12
+      question: "In which Venn diagram is the region A ∩ B' shaded?"
+      options:
+        A: "Diagram A"
+        B: "Diagram B"
+        C: "Diagram C"
+        D: "Diagram D"
+      correct_answer: "A"
+
+    - number: 13
+      question: "If EC $2.50 = US $1.00, then EC $20.00 in US dollars is"
+      options:
+        A: "$5.00"
+        B: "$8.00"
+        C: "$50.00"
+        D: "$80.00"
+      correct_answer: "B"
+
+    - number: 14
+      question: "Simple interest on $600 for t years at 5% per annum is $120. The value of t is"
+      options:
+        A: "(100 × 120)/(600 × 5)"
+        B: "(600 × 5)/(100 × 120)"
+        C: "(100 × 5 × 120)/600"
+        D: "(600 × 5 × 120)/100"
+      correct_answer: "A"
+
+    - number: 15
+      question: "y varies directly as x and y = 19 when x = 152. Which equation represents the relationship?"
+      options:
+        A: "y = 8x"
+        B: "y = (1/133)x"
+        C: "y = (1/8)x"
+        D: "y = x - 133"
+      correct_answer: "C"
+
+    - number: 16
+      question: "Man's annual salary $45,000. Tax free allowances $13,000. Tax = 20% on taxable income. Tax payable?"
+      options:
+        A: "$2,600"
+        B: "$6,400"
+        C: "$9,000"
+        D: "$11,600"
+      correct_answer: "B"
+
+    - number: 17
+      question: "Man pays 60 cents per 200 m³ of gas plus fixed charge $13.75. How much for 55,000 m³?"
+      options:
+        A: "$178.75"
+        B: "$175.25"
+        C: "$165.00"
+        D: "$151.25"
+      correct_answer: "A"
+
+    - number: 18
+      question: "Car valued at $12,000 depreciates at 10% per annum. Value after one year?"
+      options:
+        A: "$10,800"
+        B: "$11,800"
+        C: "$11,880"
+        D: "$13,200"
+      correct_answer: "A"
+
+    - number: 19
+      question: "Dinner advertised at $60 plus 18% tax. Total bill?"
+      options:
+        A: "$60.00"
+        B: "$70.80"
+        C: "$78.00"
+        D: "$81.60"
+      correct_answer: "B"
+
+    - number: 20
+      question: "Store offers 10% discount for spending over $20. Customer bill $80. What will he pay?"
+      options:
+        A: "$60"
+        B: "$70"
+        C: "$72"
+        D: "$74"
+      correct_answer: "C"
+
+    - number: 21
+      question: "4/(5x) + 2/(5x) ="
+      options:
+        A: "6/(5x)"
+        B: "6/(10x)"
+        C: "8/(25x)"
+        D: "6/(25x)"
+      correct_answer: "A"
+
+    - number: 22
+      question: "If m*n = √(m³ - n²), then 5*2 ="
+      options:
+        A: "2"
+        B: "√11"
+        C: "√34"
+        D: "11"
+      correct_answer: "B"
+
+    - number: 23
+      question: "Given that 3(x - 1) - 2(x - 1) = 7, the value of x is"
+      options:
+        A: "6"
+        B: "7"
+        C: "8"
+        D: "9"
+      correct_answer: "C"
+
+    - number: 24
+      question: "-(-2g) - 3g ="
+      options:
+        A: "-6g"
+        B: "-5g"
+        C: "-g"
+        D: "5g"
+      correct_answer: "C"
+
+    - number: 25
+      question: "If x = 4 and y = 2, then (x² + 3y)/(xy) ="
+      options:
+        A: "1¾"
+        B: "2½"
+        C: "2¾"
+        D: "3"
+      correct_answer: "C"
+
+    - number: 26
+      question: "If p/5 = 20, then p ="
+      options:
+        A: "20 - 5"
+        B: "20 + 5"
+        C: "20 ÷ 5"
+        D: "20 × 5"
+      correct_answer: "D"
+
+    - number: 27
+      question: "The vector p - q is represented by"
+      options:
+        A: "[1,12]"
+        B: "[5,12]"
+        C: "[5,2]"
+        D: "[1,5]"
+      correct_answer: "C"
+
+    - number: 28
+      question: "In parallelogram EFGH, EF ∥ HG, EH ∥ FG, EF = k, EH = m. EG expressed in terms of k and m is"
+      options:
+        A: "k + m"
+        B: "k - m"
+        C: "m - k"
+        D: "-m - k"
+      correct_answer: "A"
+
+    - number: 29
+      question: "If [x,y] = 4[10,20], then x and y are"
+      options:
+        A: "x = 4, y = 5"
+        B: "x = 8, y = 16"
+        C: "x = 2.5, y = 4"
+        D: "x = 10, y = 20"
+      correct_answer: "B"
+
+    - number: 30
+      question: "The matrix product AB is"
+      options:
+        A: "[[-12,-6],[25,9]]"
+        B: "[[-6,-12],[9,25]]"
+        C: "[[9,-18],[9,25]]"
+        D: "[[9,-12],[9,25]]"
+      correct_answer: "A"
+
+    - number: 31
+      question: "The volume of a cube whose edge is 6 cm long is"
+      options:
+        A: "18 cm³"
+        B: "36 cm³"
+        C: "72 cm³"
+        D: "216 cm³"
+      correct_answer: "D"
+
+    - number: 32
+      question: "If a speedboat took 9 hours to travel 1,080 km, average speed in km/h is"
+      options:
+        A: "12"
+        B: "102"
+        C: "120"
+        D: "1,200"
+      correct_answer: "C"
+
+    - number: 33
+      question: "2,500 millimetres expressed in metres is"
+      options:
+        A: "0.25"
+        B: "2.5"
+        C: "25"
+        D: "250"
+      correct_answer: "B"
+
+    - number: 34
+      question: "Aircraft leaves A at 16:00, arrives B at 19:30, average speed 550 km/h. Distance from A to B?"
+      options:
+        A: "907.5"
+        B: "962.5"
+        C: "1,815"
+        D: "1,925"
+      correct_answer: "D"
+
+    - number: 35
+      question: "Rectangular garden: 15 m long, 12 m wide. 80 m² used for vegetables. Area NOT used?"
+      options:
+        A: "26 m²"
+        B: "100 m²"
+        C: "134 m²"
+        D: "260 m²"
+      correct_answer: "B"
+
+    - number: 36
+      question: "Distance around lake = 8 km. On map, represented by 2 cm. Scale?"
+      options:
+        A: "1:40"
+        B: "1:2,000"
+        C: "1:200,000"
+        D: "1:400,000"
+      correct_answer: "D"
+
+    - number: 37
+      question: "Volume of cuboid = 320 cm³, height = 5 cm, square base. Length of one side of base?"
+      options:
+        A: "8 cm"
+        B: "16 cm"
+        C: "32 cm"
+        D: "64 cm"
+      correct_answer: "A"
+
+    - number: 38
+      question: "Square has same area as rectangle of sides 9 cm and 16 cm. Side of square?"
+      options:
+        A: "9 cm"
+        B: "12 cm"
+        C: "12.5 cm"
+        D: "75 cm"
+      correct_answer: "B"
+
+    - number: 39
+      question: "The median of 1,1,5,5,6,7,7,7,8 is"
+      options:
+        A: "5.4"
+        B: "6"
+        C: "6.5"
+        D: "7"
+      correct_answer: "B"
+
+    - number: 40
+      question: "The lower class boundary of the interval '3-5' is"
+      options:
+        A: "2.0"
+        B: "2.5"
+        C: "3.0"
+        D: "5.5"
+      correct_answer: "B"
+
+    - number: 41
+      question: "The modal score is"
+      options:
+        A: "8"
+        B: "9"
+        C: "10"
+        D: "12"
+      correct_answer: "A"
+
+    - number: 42
+      question: "The median of the marks scored by the 200 students is"
+      options:
+        A: "30.0"
+        B: "35.0"
+        C: "37.5"
+        D: "100.0"
+      correct_answer: "C"
+
+    - number: 43
+      question: "How many children took part in the survey?"
+      options:
+        A: "5"
+        B: "15"
+        C: "75"
+        D: "87"
+      correct_answer: "D"
+
+    - number: 44
+      question: "600 students write an exam. Probability of failing = 1/5. How many expected to pass?"
+      options:
+        A: "100"
+        B: "120"
+        C: "480"
+        D: "500"
+      correct_answer: "C"
+
+    - number: 45
+      question: "The relationship that BEST describes the mapping in the diagram is"
+      options:
+        A: "one-to-one"
+        B: "one-to-many"
+        C: "many-to-one"
+        D: "many-to-many"
+      correct_answer: "C"
+
+    - number: 46
+      question: "The arrow diagram BEST describes the relation"
+      options:
+        A: "y is less than x"
+        B: "y is a factor of x"
+        C: "x is a multiple of y"
+        D: "x is a factor of y"
+      correct_answer: "B"
+
+    - number: 47
+      question: "Which line graph represents {x: -2 < x ≤ 4}?"
+      options:
+        A: "Graph A"
+        B: "Graph B"
+        C: "Graph C"
+        D: "Graph D"
+      correct_answer: "A"
+
+    - number: 48
+      question: "The maximum point of y = 4x - x² is"
+      options:
+        A: "(0,0)"
+        B: "(0,4)"
+        C: "(2,4)"
+        D: "(4,2)"
+      correct_answer: "C"
+
+    - number: 49
+      question: "The values of x where y = 4x - x² intersects y = 0 are"
+      options:
+        A: "x = 0 and x = 4"
+        B: "x = 0 and x = 2"
+        C: "x = 2 and x = 4"
+        D: "x = 0 and x = -4"
+      correct_answer: "A"
+
+    - number: 50
+      question: "Which represents the equation of a straight line?"
+      options:
+        A: "y = 4/x"
+        B: "y = 2x + 3"
+        C: "y = x² - 4"
+        D: "y = x² + 2x - 5"
+      correct_answer: "B"
+
+    - number: 51
+      question: "Which set is represented by f: x → x² + 3 where x ∈ {0,1,2,3}?"
+      options:
+        A: "{(0,3),(1,1),(2,4),(3,9)}"
+        B: "{(0,3),(1,4),(2,5),(3,6)}"
+        C: "{(0,3),(1,5),(2,7),(3,9)}"
+        D: "{(0,3),(1,4),(2,7),(3,12)}"
+      correct_answer: "D"
+
+    - number: 52
+      question: "Line L is parallel to 2x - 5y - 8 = 0. Gradient of L is"
+      options:
+        A: "-5/2"
+        B: "-2/5"
+        C: "2/5"
+        D: "2"
+      correct_answer: "C"
+
+    - number: 53
+      question: "The translation by which AB is mapped onto A'B' is represented by"
+      options:
+        A: "[1,1]"
+        B: "[2,1]"
+        C: "[3,2]"
+        D: "[5,3]"
+      correct_answer: "C"
+
+    - number: 54
+      question: "In the diagram, PQ ∥ RS. Which BEST describes the relation between p and q?"
+      options:
+        A: "p = q"
+        B: "p < q"
+        C: "p - q = 180°"
+        D: "p + q = 180°"
+      correct_answer: "D"
+
+    - number: 55
+      question: "Ship sailed 8 km east from A to B, then 6 km north to C. Which diagram BEST represents the path?"
+      options:
+        A: "Diagram A"
+        B: "Diagram B"
+        C: "Diagram C"
+        D: "Diagram D"
+      correct_answer: "A"
+
+    - number: 56
+      question: "Which diagram shows a reflection in the y-axis?"
+      options:
+        A: "Diagram A"
+        B: "Diagram B"
+        C: "Diagram C"
+        D: "Diagram D"
+      correct_answer: "A"
+
+    - number: 57
+      question: "In triangle ABC, angle A = x°, angle B = 2x°. Size of angle C?"
+      options:
+        A: "30°"
+        B: "60°"
+        C: "(180/3x)°"
+        D: "(180 - 3x)°"
+      correct_answer: "D"
+
+    - number: 58
+      question: "Triangle ABC mapped onto A'B'C' with centre O. Scale factor of enlargement?"
+      options:
+        A: "1/2"
+        B: "-2"
+        C: "-1"
+        D: "2"
+      correct_answer: "B"
+
+    - number: 59
+      question: "The length of MO, in centimetres, is"
+      options:
+        A: "3"
+        B: "3.5"
+        C: "6"
+        D: "7"
+      correct_answer: "A"
+
+    - number: 60
+      question: "Which trigonometric ratio is equal to 4/8?"
+      options:
+        A: "sin x"
+        B: "tan y"
+        C: "cos x"
+        D: "tan x"
+      correct_answer: "B"

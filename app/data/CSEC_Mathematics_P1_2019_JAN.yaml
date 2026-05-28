@@ -1,0 +1,545 @@
+exam:
+  title: "CSEC Mathematics P1 2019 JAN"
+  year: 2019
+  subject: "Mathematics"
+  total_items: 60
+  items:
+    - number: 1
+      question: "(2/3)² is equal to"
+      options:
+        A: "4/6"
+        B: "4/3"
+        C: "2/9"
+        D: "4/9"
+      correct_answer: "D"
+
+    - number: 2
+      question: "The number 3.14063 written correct to 3 decimal places is"
+      options:
+        A: "3.140"
+        B: "3.141"
+        C: "3.146"
+        D: "3.150"
+      correct_answer: "B"
+
+    - number: 3
+      question: "In standard notation, 208.06 is written as"
+      options:
+        A: "2.0806 × 10²"
+        B: "20.806 × 10¹"
+        C: "2.0806 × 10⁻²"
+        D: "0.20806 × 10³"
+      correct_answer: "A"
+
+    - number: 4
+      question: "If $560 is shared in the ratio 2:3:9, the difference between the largest and smallest shares is"
+      options:
+        A: "$80"
+        B: "$240"
+        C: "$280"
+        D: "$360"
+      correct_answer: "C"
+
+    - number: 5
+      question: "If 60% of a number is 90, what is 4/5 of the number?"
+      options:
+        A: "54"
+        B: "72"
+        C: "120"
+        D: "150"
+      correct_answer: "C"
+
+    - number: 6
+      question: "The first three common multiples of 3, 4 and 6 are"
+      options:
+        A: "0, 1, 2"
+        B: "3, 4, 6"
+        C: "6, 8, 12"
+        D: "12, 24, 36"
+      correct_answer: "D"
+
+    - number: 7
+      question: "If P = {2,3,5,7}, Q = {2,3,6} and S = {2,4,5}, then P ∩ Q ∩ S ="
+      options:
+        A: "{2}"
+        B: "{2,3}"
+        C: "{2,3,5}"
+        D: "{2,3,4,5,6,7}"
+      correct_answer: "A"
+
+    - number: 8
+      question: "In the Venn diagram, n(P)=5, n(Q)=9 and n(P∪Q)=10. What is n(Q∩P)?"
+      options:
+        A: "1"
+        B: "4"
+        C: "5"
+        D: "9"
+      correct_answer: "B"
+
+    - number: 9
+      question: "Which set is equivalent to the set {p,q,r,s}?"
+      options:
+        A: "{4}"
+        B: "{p,q,r}"
+        C: "{a,b,c,d}"
+        D: "{1,2,3,4,5}"
+      correct_answer: "C"
+
+    - number: 10
+      question: "All students play Scrabble or Checkers or both. 36% play Scrabble only, 48% play Checkers only. What percentage play BOTH?"
+      options:
+        A: "12"
+        B: "16"
+        C: "84"
+        D: "88"
+      correct_answer: "B"
+
+    - number: 11
+      question: "X = factors of 12, Y = factors of 9. The shaded region represents factors of"
+      options:
+        A: "3"
+        B: "6"
+        C: "21"
+        D: "108"
+      correct_answer: "A"
+
+    - number: 12
+      question: "In the Venn diagram, the shaded area represents"
+      options:
+        A: "P'"
+        B: "(P ∪ Q)"
+        C: "Q ∪ P"
+        D: "Q ∩ P"
+      correct_answer: "D"
+
+    - number: 13
+      question: "A store offers 15% discount on total bill for spending over $20. Customer bill $80. How much must she pay?"
+      options:
+        A: "$60"
+        B: "$65"
+        C: "$68"
+        D: "$71"
+      correct_answer: "C"
+
+    - number: 14
+      question: "Sales tax at 2% on a dress costing $180 is"
+      options:
+        A: "$3.60"
+        B: "$10.80"
+        C: "$176.40"
+        D: "$183.60"
+      correct_answer: "A"
+
+    - number: 15
+      question: "Land valued at $18,000. Land tax $126 annually. Rate per annum?"
+      options:
+        A: "0.07%"
+        B: "0.7%"
+        C: "7%"
+        D: "70%"
+      correct_answer: "B"
+
+    - number: 16
+      question: "US $1.00 = EC $2.70. What is US $4.50 in EC currency?"
+      options:
+        A: "$1.67"
+        B: "$6.00"
+        C: "$7.20"
+        D: "$12.15"
+      correct_answer: "D"
+
+    - number: 17
+      question: "Man's annual salary $45,000. Tax free allowances $13,000. Tax = 20% on taxable income. Tax payable?"
+      options:
+        A: "$2,600"
+        B: "$6,400"
+        C: "$9,000"
+        D: "$11,600"
+      correct_answer: "B"
+
+    - number: 18
+      question: "TV cash price $350. Hire purchase: $35 deposit + 12 × $30. How much saved by paying cash?"
+      options:
+        A: "$10"
+        B: "$25"
+        C: "$40"
+        D: "$45"
+      correct_answer: "D"
+
+    - number: 19
+      question: "Man pays 60 cents per 200 m³ of gas plus fixed charge $13.75. How much for 55,000 m³?"
+      options:
+        A: "$178.75"
+        B: "$175.25"
+        C: "$165.00"
+        D: "$151.25"
+      correct_answer: "A"
+
+    - number: 20
+      question: "House insurance: 25¢ per $100. Contents insurance: 50¢ per $100. House $50,000, contents $10,000. Total insurance?"
+      options:
+        A: "$175"
+        B: "$225"
+        C: "$450"
+        D: "$500"
+      correct_answer: "A"
+
+    - number: 21
+      question: "The product of (-2a) and (-3a) is"
+      options:
+        A: "-6a"
+        B: "-5a"
+        C: "5a³"
+        D: "6a²"
+      correct_answer: "D"
+
+    - number: 22
+      question: "When 6 is added to a number and the sum divided by 3, the result is 4. Written using mathematical symbols:"
+      options:
+        A: "6/3 + x = 4"
+        B: "(6 + x)/3 = 4"
+        C: "(6 + x)/3 = 4/3"
+        D: "6 + x/3 = 4"
+      correct_answer: "B"
+
+    - number: 23
+      question: "Althea normally saves $x each month. In June she saved $4 more than twice her usual amount. In June she saved"
+      options:
+        A: "$4x"
+        B: "$6x"
+        C: "$(x+4)"
+        D: "$(2x+4)"
+      correct_answer: "D"
+
+    - number: 24
+      question: "If 3 + 2/x = 1, the value of x is"
+      options:
+        A: "-1"
+        B: "1/5"
+        C: "1/2"
+        D: "5"
+      correct_answer: "A"
+
+    - number: 25
+      question: "If x = 4 and y = 2, what is (x² + 3y)/(xy)?"
+      options:
+        A: "1/4"
+        B: "2½"
+        C: "2⅜"
+        D: "2/4"
+      correct_answer: "B"
+
+    - number: 26
+      question: "The expression -2(x - 4) is the same as"
+      options:
+        A: "-2x - 8"
+        B: "-2x + 8"
+        C: "-2x - 4"
+        D: "-2x + 4"
+      correct_answer: "B"
+
+    - number: 27
+      question: "If |A| = 0, then A is"
+      options:
+        A: "an inverse matrix"
+        B: "a singular matrix"
+        C: "an identity matrix"
+        D: "a non-singular matrix"
+      correct_answer: "B"
+
+    - number: 28
+      question: "What is the order of the matrix product XY?"
+      options:
+        A: "2×2"
+        B: "2×3"
+        C: "3×2"
+        D: "3×3"
+      correct_answer: "B"
+
+    - number: 29
+      question: "If p = [3,2] and q = [-1,4], then -p - 2q is"
+      options:
+        A: "[5,-6]"
+        B: "[-2,-6]"
+        C: "[5,10]"
+        D: "[-1,-10]"
+      correct_answer: "D"
+
+    - number: 30
+      question: "In parallelogram WXYZ, R is midpoint of XY. ZR ="
+      options:
+        A: "WX + ½WZ"
+        B: "WX - ½WZ"
+        C: "½WX - WZ"
+        D: "½WX + WZ"
+      correct_answer: "A"
+
+    - number: 31
+      question: "If a speedboat took 9 hours to travel 1,080 km, average speed in km/h is"
+      options:
+        A: "12"
+        B: "102"
+        C: "120"
+        D: "1,200"
+      correct_answer: "C"
+
+    - number: 32
+      question: "The area of the trapezium is"
+      options:
+        A: "24 cm²"
+        B: "28 cm²"
+        C: "30 cm²"
+        D: "36 cm²"
+      correct_answer: "A"
+
+    - number: 33
+      question: "If circumference of circle is 15 cm, length of minor arc AB (angle 120°) in cm is"
+      options:
+        A: "(360/120) × 15"
+        B: "(120/360) × 15"
+        C: "[360/(360-120)] × 15"
+        D: "[(360-120)/360] × 15"
+      correct_answer: "B"
+
+    - number: 34
+      question: "Sides of triangle: x, 2x, 2x cm. Perimeter = 20 cm. Value of x is"
+      options:
+        A: "4"
+        B: "5"
+        C: "8"
+        D: "10"
+      correct_answer: "A"
+
+    - number: 35
+      question: "Rectangular garden: 15 m long, 12 m wide. 80 m² used for vegetables. Area planted with fruits?"
+      options:
+        A: "26 m²"
+        B: "100 m²"
+        C: "134 m²"
+        D: "260 m²"
+      correct_answer: "B"
+
+    - number: 36
+      question: "Distance around lake = 8 km. On map, represented by 2 cm. Scale?"
+      options:
+        A: "1:40"
+        B: "1:2,000"
+        C: "1:200,000"
+        D: "1:400,000"
+      correct_answer: "D"
+
+    - number: 37
+      question: "Cylinder of radius 3 cm and height 8 cm. Volume in terms of π?"
+      options:
+        A: "12π cm³"
+        B: "48π cm³"
+        C: "72π cm³"
+        D: "192π cm³"
+      correct_answer: "C"
+
+    - number: 38
+      question: "Volume of cuboid = 320 cm³, height = 5 cm, square base. Length of one side of base?"
+      options:
+        A: "8 cm"
+        B: "16 cm"
+        C: "32 cm"
+        D: "64 cm"
+      correct_answer: "A"
+
+    - number: 39
+      question: "Scores: 5,3,6,8,7,8,3,11,6,3,3. The modal score is"
+      options:
+        A: "3"
+        B: "6"
+        C: "8"
+        D: "11"
+      correct_answer: "A"
+
+    - number: 40
+      question: "How many students play cricket? (Pie chart, 720 students)"
+      options:
+        A: "35"
+        B: "120"
+        C: "252"
+        D: "300"
+      correct_answer: "C"
+
+    - number: 41
+      question: "How many students bought exactly 4 books?"
+      options:
+        A: "8"
+        B: "9"
+        C: "10"
+        D: "14"
+      correct_answer: "B"
+
+    - number: 42
+      question: "The median number of books bought by the students is"
+      options:
+        A: "5"
+        B: "6"
+        C: "29"
+        D: "30"
+      correct_answer: "B"
+
+    - number: 43
+      question: "The semi-interquartile range of the length of the fish is"
+      options:
+        A: "1.20 m"
+        B: "1.25 m"
+        C: "2.5 m"
+        D: "3.7 m"
+      correct_answer: "B"
+
+    - number: 44
+      question: "A fish is selected at random. Probability it is at LEAST 1.8 m long?"
+      options:
+        A: "5"
+        B: "8"
+        C: "12"
+        D: "15"
+      correct_answer: "C"
+
+    - number: 45
+      question: "The arrow diagram describes the relation"
+      options:
+        A: "y is less than x"
+        B: "y is a factor of x"
+        C: "x is a factor of y"
+        D: "x is a multiple of y"
+      correct_answer: "B"
+
+    - number: 46
+      question: "Which line graph represents {x: -2 < x ≤ 4}?"
+      options:
+        A: "Graph A"
+        B: "Graph B"
+        C: "Graph C"
+        D: "Graph D"
+      correct_answer: "A"
+
+    - number: 47
+      question: "Which graph represents a function?"
+      options:
+        A: "Graph A"
+        B: "Graph B"
+        C: "Graph C"
+        D: "Graph D"
+      correct_answer: "A"
+
+    - number: 48
+      question: "Which point lies on the line y = 2x - 3?"
+      options:
+        A: "(2,3)"
+        B: "(-2,-1)"
+        C: "(4,1)"
+        D: "(0,-3)"
+      correct_answer: "D"
+
+    - number: 49
+      question: "If f(x) = 2x² - 1, then f(-3) ="
+      options:
+        A: "-32"
+        B: "-19"
+        C: "17"
+        D: "35"
+      correct_answer: "C"
+
+    - number: 50
+      question: "The maximum point of y = 4x - x² is"
+      options:
+        A: "(0,0)"
+        B: "(0,4)"
+        C: "(2,4)"
+        D: "(4,2)"
+      correct_answer: "C"
+
+    - number: 51
+      question: "The values of x where y = 4x - x² intersects y = 0 are"
+      options:
+        A: "x = 0 and x = 4"
+        B: "x = 0 and x = 2"
+        C: "x = 0 and x = -4"
+        D: "x = 2 and x = 4"
+      correct_answer: "A"
+
+    - number: 52
+      question: "Which set is represented by f: x → x² + 3 where x ∈ {0,1,2,3}?"
+      options:
+        A: "{(0,3),(1,4),(2,7),(3,12)}"
+        B: "{(0,3),(1,5),(2,7),(3,9)}"
+        C: "{(0,3),(1,4),(2,5),(3,6)}"
+        D: "{(0,3),(1,1),(2,4),(3,9)}"
+      correct_answer: "A"
+
+    - number: 53
+      question: "If the line y = x is rotated anti-clockwise about O through 90°, what is its image?"
+      options:
+        A: "y = 0"
+        B: "x = 0"
+        C: "y = x"
+        D: "y = -x"
+      correct_answer: "D"
+
+    - number: 54
+      question: "AC and DE are straight lines intersecting at B. Angle DBA = 58°. The measure of angle ABE is"
+      options:
+        A: "58°"
+        B: "122°"
+        C: "142°"
+        D: "302°"
+      correct_answer: "B"
+
+    - number: 55
+      question: "Which angles are equal?"
+      options:
+        A: "∠DBC and ∠CBE"
+        B: "∠CBE and ∠ABE"
+        C: "∠ABD and ∠CBD"
+        D: "∠ABD and ∠CBE"
+      correct_answer: "D"
+
+    - number: 56
+      question: "Which diagram shows a reflection in the x-axis?"
+      options:
+        A: "Diagram A"
+        B: "Diagram B"
+        C: "Diagram C"
+        D: "Diagram D"
+      correct_answer: "A"
+
+    - number: 57
+      question: "In triangle ABC, angle A = x°, angle B = 2x°. Size of angle C?"
+      options:
+        A: "(180 - 3x)°"
+        B: "60°"
+        C: "30°"
+        D: "(180/3x)°"
+      correct_answer: "A"
+
+    - number: 58
+      question: "The length of MO in centimetres is"
+      options:
+        A: "3.0"
+        B: "3.5"
+        C: "6.0"
+        D: "10.5"
+      correct_answer: "A"
+
+    - number: 59
+      question: "Ship sailed 8 km east from A to B, then 6 km north to C. Which diagram BEST represents the path?"
+      options:
+        A: "Diagram A"
+        B: "Diagram B"
+        C: "Diagram C"
+        D: "Diagram D"
+      correct_answer: "A"
+
+    - number: 60
+      question: "Under translation [2,-3], the image of (3,-5) is"
+      options:
+        A: "(0,-3)"
+        B: "(1,-2)"
+        C: "(5,-8)"
+        D: "(6,15)"
+      correct_answer: "C"

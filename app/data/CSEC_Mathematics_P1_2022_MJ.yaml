@@ -1,0 +1,545 @@
+exam:
+  title: "CSEC Mathematics P1 2022 MJ"
+  year: 2022
+  subject: "Mathematics"
+  total_items: 60
+  items:
+    - number: 1
+      question: "What percentage of 40 is 8?"
+      options:
+        A: "5"
+        B: "20"
+        C: "32"
+        D: "150"
+      correct_answer: "B"
+
+    - number: 2
+      question: "The number 3.14063 written correct to 3 decimal places is"
+      options:
+        A: "3.140"
+        B: "3.141"
+        C: "3.146"
+        D: "3.150"
+      correct_answer: "B"
+
+    - number: 3
+      question: "If 4.3 × 0.37 = 1.591, then 0.43 × 370 is"
+      options:
+        A: "1.591"
+        B: "15.91"
+        C: "159.1"
+        D: "1591.0"
+      correct_answer: "C"
+
+    - number: 4
+      question: "The first 3 common multiples of 3, 4 and 6 are"
+      options:
+        A: "0, 1, 2"
+        B: "3, 4, 6"
+        C: "6, 8, 12"
+        D: "12, 24, 36"
+      correct_answer: "D"
+
+    - number: 5
+      question: "If $350 is shared in the ratio 2:5, the SMALLER share is"
+      options:
+        A: "$50"
+        B: "$70"
+        C: "$100"
+        D: "$150"
+      correct_answer: "C"
+
+    - number: 6
+      question: "There are 40 students in a class. Girls make up 60% of the class. 25% of the girls wear glasses. How many girls in the class wear glasses?"
+      options:
+        A: "6"
+        B: "8"
+        C: "10"
+        D: "15"
+      correct_answer: "A"
+
+    - number: 7
+      question: "If the universal set U = {1,2,3,4,5,6} and H = {3,4,6}, then H' ="
+      options:
+        A: "{1,3,5}"
+        B: "{1,2,5}"
+        C: "{2,4,6}"
+        D: "{3,4,6}"
+      correct_answer: "B"
+
+    - number: 8
+      question: "Which statement describes the set of integers greater than -3 but less than 6?"
+      options:
+        A: "{x: -3 > x > 6, x ∈ Z}"
+        B: "{x: -3 ≥ x ≥ 6, x ∈ Z}"
+        C: "{x: -3 ≤ x ≤ 6, x ∈ Z}"
+        D: "{x: -3 < x < 6, x ∈ Z}"
+      correct_answer: "D"
+
+    - number: 9
+      question: "If X and Y are finite sets with n(X)=9, n(X∩Y)=4 and n(X∪Y)=15, then n(Y) is"
+      options:
+        A: "5"
+        B: "6"
+        C: "10"
+        D: "12"
+      correct_answer: "C"
+
+    - number: 10
+      question: "In the Venn diagram, X = factors of 12, Y = factors of 9. The shaded region represents factors of"
+      options:
+        A: "3"
+        B: "6"
+        C: "21"
+        D: "108"
+      correct_answer: "A"
+
+    - number: 11
+      question: "30 students have a dog or cat or none. All with a cat also have a dog. n(C)=12, n(D)=16. Which Venn diagram is correct?"
+      options:
+        A: "Diagram A"
+        B: "Diagram B"
+        C: "Diagram C"
+        D: "Diagram D"
+      correct_answer: "A"
+
+    - number: 12
+      question: "Which pair of sets is an example of disjoint sets?"
+      options:
+        A: "E = even numbers, F = odd numbers"
+        B: "P = multiples of 2, Q = multiples of 3"
+        C: "X = whole numbers, Y = rational numbers"
+        D: "G = multiples of five, H = multiples of ten"
+      correct_answer: "A"
+
+    - number: 13
+      question: "If EC $2.50 = US $1.00, then EC $20.00 in US dollars is"
+      options:
+        A: "$5.00"
+        B: "$8.00"
+        C: "$50.00"
+        D: "$80.00"
+      correct_answer: "B"
+
+    - number: 14
+      question: "At a store, 3 cents on every dollar is sales tax. Tax on a costume costing $196.00 is"
+      options:
+        A: "$5.88"
+        B: "$17.64"
+        C: "$190.12"
+        D: "$201.88"
+      correct_answer: "A"
+
+    - number: 15
+      question: "TV cash price $350. Hire purchase: $35 deposit + 12 × $30. How much saved by paying cash?"
+      options:
+        A: "$10"
+        B: "$25"
+        C: "$40"
+        D: "$45"
+      correct_answer: "D"
+
+    - number: 16
+      question: "Company employs 20 persons (gardeners & clerks). Mean daily wage = $22.40. Each of 12 gardeners gets $26.00/day. Daily amount for each of 8 clerks?"
+      options:
+        A: "$3.60"
+        B: "$17.00"
+        C: "$24.20"
+        D: "$48.40"
+      correct_answer: "B"
+
+    - number: 17
+      question: "Delano invests $5,000 for 2 years at 8% compound interest per annum. Amount after 2 years?"
+      options:
+        A: "$800"
+        B: "$832"
+        C: "$5,800"
+        D: "$5,832"
+      correct_answer: "D"
+
+    - number: 18
+      question: "A car valued at $12,000 depreciates at 10% per annum. Value after one year?"
+      options:
+        A: "$10,800"
+        B: "$11,800"
+        C: "$11,880"
+        D: "$13,200"
+      correct_answer: "A"
+
+    - number: 19
+      question: "Man's basic wage for 40-hour week = $160.00. Overtime = $5.00 per hour. He works 6½ hours overtime. Total wage for the week?"
+      options:
+        A: "$165.00"
+        B: "$166.50"
+        C: "$171.50"
+        D: "$192.50"
+      correct_answer: "D"
+
+    - number: 20
+      question: "Salesman sells car for $10,500. Commission: 5% on first $10,000 and 8% on remainder. Total commission?"
+      options:
+        A: "$525"
+        B: "$540"
+        C: "$545"
+        D: "$565"
+      correct_answer: "B"
+
+    - number: 21
+      question: "Althea normally saves $x each month. In June she saved $4 more than twice her usual amount. In June she saved"
+      options:
+        A: "$4x"
+        B: "$6x"
+        C: "$2x + 4"
+        D: "$2(x + 4)"
+      correct_answer: "C"
+
+    - number: 22
+      question: "If m * n = √(m³ - n²), then 5 * 2 ="
+      options:
+        A: "2"
+        B: "√11"
+        C: "√34"
+        D: "11"
+      correct_answer: "B"
+
+    - number: 23
+      question: "The trapezium with height h has area x² cm². The equation that may be used to find x is"
+      options:
+        A: "x² = (h/2)(x - 2)"
+        B: "x² = 2h(x - 4)"
+        C: "x² = (h/2)(x - 6)"
+        D: "x² = h(x - 4)(x + 2)"
+      correct_answer: "A"
+
+    - number: 24
+      question: "-(-2q) - 3q ="
+      options:
+        A: "-6q"
+        B: "-5q"
+        C: "-q"
+        D: "5q"
+      correct_answer: "C"
+
+    - number: 25
+      question: "5^(m+1) × 5^(m+2) is the same as"
+      options:
+        A: "5^(2m)"
+        B: "5^(2m+3)"
+        C: "5^((2m))"
+        D: "2 × 5^(2m)"
+      correct_answer: "B"
+
+    - number: 26
+      question: "If 5(y - 2) - 3(y + 4) = 0, then y is"
+      options:
+        A: "-1"
+        B: "3"
+        C: "7"
+        D: "11"
+      correct_answer: "D"
+
+    - number: 27
+      question: "The vector p - q is represented by"
+      options:
+        A: "[1,12]"
+        B: "[5,12]"
+        C: "[5,2]"
+        D: "[1,5]"
+      correct_answer: "C"
+
+    - number: 28
+      question: "In parallelogram EFGH with EF ∥ HG, EH ∥ FG, EF = k, EH = m. EG expressed in terms of k and m is"
+      options:
+        A: "k + m"
+        B: "k - m"
+        C: "m - k"
+        D: "-m - k"
+      correct_answer: "A"
+
+    - number: 29
+      question: "If 5[x,y] = 4[10,20], then x and y are"
+      options:
+        A: "x = 4, y = 5"
+        B: "x = 8, y = 16"
+        C: "x = 2.5, y = 4"
+        D: "x = 10, y = 20"
+      correct_answer: "B"
+
+    - number: 30
+      question: "The matrix product AB is"
+      options:
+        A: "[[-12,-6],[25,9]]"
+        B: "[[-6,-12],[9,25]]"
+        C: "[[9,-18],[9,25]]"
+        D: "[[9,-12],[9,25]]"
+      correct_answer: "A"
+
+    - number: 31
+      question: "If a speedboat took 9 hours to travel 1,080 km, average speed in km/h is"
+      options:
+        A: "12"
+        B: "102"
+        C: "120"
+        D: "1,200"
+      correct_answer: "C"
+
+    - number: 32
+      question: "The perimeter of the trapezium in millimetres (mm) is"
+      options:
+        A: "0.092"
+        B: "9.2"
+        C: "920"
+        D: "920"
+      correct_answer: "C"
+
+    - number: 33
+      question: "If circumference of circle is 15 cm, length of minor arc AB (angle 120°) in cm is"
+      options:
+        A: "(360/120) × 15"
+        B: "(120/360) × 15"
+        C: "[360/(360-120)] × 15"
+        D: "[(360-120)/360] × 15"
+      correct_answer: "B"
+
+    - number: 34
+      question: "Aircraft leaves A at 16:00, arrives B at 19:30, average speed 550 km/h. Distance from A to B in km?"
+      options:
+        A: "907.5"
+        B: "962.5"
+        C: "1,815"
+        D: "1,925"
+      correct_answer: "D"
+
+    - number: 35
+      question: "Length of major arc FE is 40 cm. Circumference of the circle in cm?"
+      options:
+        A: "24"
+        B: "48"
+        C: "50"
+        D: "64"
+      correct_answer: "C"
+
+    - number: 36
+      question: "Volume of cuboid = 320 cm³, height = 5 cm, square base. Length of one side of base?"
+      options:
+        A: "8 cm"
+        B: "16 cm"
+        C: "32 cm"
+        D: "64 cm"
+      correct_answer: "A"
+
+    - number: 37
+      question: "Area of triangle = 60 cm², base = 12 cm. Perpendicular height in cm?"
+      options:
+        A: "5"
+        B: "10"
+        C: "13"
+        D: "17"
+      correct_answer: "B"
+
+    - number: 38
+      question: "A square has same area as a rectangle of sides 9 cm and 16 cm. Length of square side?"
+      options:
+        A: "9 cm"
+        B: "12 cm"
+        C: "12.5 cm"
+        D: "75 cm"
+      correct_answer: "B"
+
+    - number: 39
+      question: "The upper limit of the modal class is"
+      options:
+        A: "31"
+        B: "41"
+        C: "60"
+        D: "70"
+      correct_answer: "B"
+
+    - number: 40
+      question: "How many children have a mass GREATER than 40 kg?"
+      options:
+        A: "15"
+        B: "35"
+        C: "60"
+        D: "82"
+      correct_answer: "D"
+
+    - number: 41
+      question: "The modal score is"
+      options:
+        A: "8"
+        B: "9"
+        C: "10"
+        D: "12"
+      correct_answer: "A"
+
+    - number: 42
+      question: "The median of the marks scored by the 200 students is"
+      options:
+        A: "30.0"
+        B: "35.0"
+        C: "37.5"
+        D: "100.0"
+      correct_answer: "C"
+
+    - number: 43
+      question: "How many children took part in the survey?"
+      options:
+        A: "5"
+        B: "15"
+        C: "75"
+        D: "87"
+      correct_answer: "D"
+
+    - number: 44
+      question: "600 students write an exam. Probability of failing = 1/5. How many expected to pass?"
+      options:
+        A: "100"
+        B: "120"
+        C: "480"
+        D: "500"
+      correct_answer: "C"
+
+    - number: 45
+      question: "Which equation represents a linear function?"
+      options:
+        A: "xy = 4"
+        B: "y + 4 = x²"
+        C: "y + 3 = 2x"
+        D: "y = x² + 2x - 5"
+      correct_answer: "C"
+
+    - number: 46
+      question: "Which point, when added to {(2,7),(-4,6),(10,4)}, would make the relation NOT a function?"
+      options:
+        A: "(2,8)"
+        B: "(1,3)"
+        C: "(0,-4)"
+        D: "(-8,10)"
+      correct_answer: "A"
+
+    - number: 47
+      question: "The arrow diagram describes the relation"
+      options:
+        A: "y is more than x"
+        B: "y is a multiple of x"
+        C: "x is a factor of y"
+        D: "x is a multiple of y"
+      correct_answer: "B"
+
+    - number: 48
+      question: "What is the gradient of the straight line 2y = -3x - 8?"
+      options:
+        A: "2"
+        B: "3"
+        C: "-3/2"
+        D: "-3"
+      correct_answer: "C"
+
+    - number: 49
+      question: "If h(x) = (3x - 2)/5, then h(-6) ="
+      options:
+        A: "-4"
+        B: "-16/5"
+        C: "16/5"
+        D: "4"
+      correct_answer: "A"
+
+    - number: 50
+      question: "The range of f: x → -x² for domain {-2,-1,0,1,2} is"
+      options:
+        A: "{1,4}"
+        B: "{-4,-1,0}"
+        C: "{-4,-1,1,4}"
+        D: "{-4,-1,0,1,4}"
+      correct_answer: "B"
+
+    - number: 51
+      question: "Line L is parallel to 2x - 5y - 8 = 0. Gradient of L is"
+      options:
+        A: "-5/2"
+        B: "-2/5"
+        C: "2/5"
+        D: "2"
+      correct_answer: "C"
+
+    - number: 52
+      question: "The values of x where y = 4x - x² intersects y = 0 are"
+      options:
+        A: "x = 0 and x = 4"
+        B: "x = 0 and x = 2"
+        C: "x = 2 and x = 4"
+        D: "x = 0 and x = -4"
+      correct_answer: "A"
+
+    - number: 53
+      question: "The translation mapping AB onto A'B' is represented by"
+      options:
+        A: "[1,1]"
+        B: "[2,1]"
+        C: "[3,2]"
+        D: "[5,3]"
+      correct_answer: "C"
+
+    - number: 54
+      question: "In the transversal diagram with PQ ∥ RS, which BEST describes the relation between p and q?"
+      options:
+        A: "p = q"
+        B: "p < q"
+        C: "p + q = 90°"
+        D: "p + q = 180°"
+      correct_answer: "D"
+
+    - number: 55
+      question: "Ship sailed 8 km east from A to B, then 6 km north to C. Which diagram BEST represents the path?"
+      options:
+        A: "Diagram A"
+        B: "Diagram B"
+        C: "Diagram C"
+        D: "Diagram D"
+      correct_answer: "A"
+
+    - number: 56
+      question: "If O is the centre of the circle, then y° is"
+      options:
+        A: "25°"
+        B: "80°"
+        C: "90°"
+        D: "100°"
+      correct_answer: "B"
+
+    - number: 57
+      question: "If line y = x is rotated anticlockwise about O through 90°, its image is"
+      options:
+        A: "y = -x"
+        B: "x = y"
+        C: "x = 0"
+        D: "y = 0"
+      correct_answer: "A"
+
+    - number: 58
+      question: "In triangle ABC, angle A = x°, angle B = 2x°. Size of angle C?"
+      options:
+        A: "30°"
+        B: "60°"
+        C: "(180/3x)°"
+        D: "(180 - 3x)°"
+      correct_answer: "D"
+
+    - number: 59
+      question: "Angle of depression of X from Z is 35°. X is 12 m from Y. Height YZ in metres is"
+      options:
+        A: "12 cos 35°"
+        B: "12 sin 35°"
+        C: "12 tan 35°"
+        D: "12 cos 55°"
+      correct_answer: "D"
+
+    - number: 60
+      question: "Which trigonometric ratio is equal to 4/8?"
+      options:
+        A: "sin x"
+        B: "tan y"
+        C: "cos x"
+        D: "tan x"
+      correct_answer: "B"

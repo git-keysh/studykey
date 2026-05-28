@@ -1,0 +1,545 @@
+exam:
+  title: "CSEC Mathematics P1 2021 JAN"
+  year: 2021
+  subject: "Mathematics"
+  total_items: 60
+  items:
+    - number: 1
+      question: "What is the value of the digit 2 in the number 48.621?"
+      options:
+        A: "2/100"
+        B: "2/10"
+        C: "2"
+        D: "200"
+      correct_answer: "A"
+
+    - number: 2
+      question: "22.2 ÷ 0.02 ="
+      options:
+        A: "110"
+        B: "111"
+        C: "1100"
+        D: "1110"
+      correct_answer: "D"
+
+    - number: 3
+      question: "In standard notation, 208.06 is written as"
+      options:
+        A: "2.0806 × 10²"
+        B: "20.806 × 10¹"
+        C: "2.0806 × 10⁻²"
+        D: "0.20806 × 10³"
+      correct_answer: "A"
+
+    - number: 4
+      question: "In a school the ratio of pupils to teachers is 20:1. If pupils are 840, how many teachers are there?"
+      options:
+        A: "40"
+        B: "42"
+        C: "820"
+        D: "840"
+      correct_answer: "B"
+
+    - number: 5
+      question: "What is the LEAST number of apples that can be shared equally among either 6, 10 or 15 children?"
+      options:
+        A: "24"
+        B: "30"
+        C: "60"
+        D: "90"
+      correct_answer: "B"
+
+    - number: 6
+      question: "If 4.3 × 0.37 = 1.591, then 0.43 × 370 ="
+      options:
+        A: "1.591"
+        B: "15.91"
+        C: "159.1"
+        D: "1591.0"
+      correct_answer: "C"
+
+    - number: 7
+      question: "If P = {2,3,5,7}, Q = {2,3,6} and S = {2,4,5}, then P ∩ (Q ∪ S) ="
+      options:
+        A: "{2}"
+        B: "{2,3}"
+        C: "{2,3,5}"
+        D: "{2,3,4,5,6,7}"
+      correct_answer: "C"
+
+    - number: 8
+      question: "In the Venn diagram, n(P)=5, n(Q)=9 and n(P∪Q)=10. What is n(Q∩P)?"
+      options:
+        A: "1"
+        B: "4"
+        C: "5"
+        D: "9"
+      correct_answer: "B"
+
+    - number: 9
+      question: "Which pair of sets is an example of disjoint sets?"
+      options:
+        A: "E = even numbers, F = odd numbers"
+        B: "P = multiples of 2, Q = multiples of 3"
+        C: "X = whole numbers, Y = rational numbers"
+        D: "G = multiples of five, H = multiples of ten"
+      correct_answer: "A"
+
+    - number: 10
+      question: "All students play Scrabble or Checkers or both. 36% play Scrabble only, 48% play Checkers only. What percentage play BOTH?"
+      options:
+        A: "12"
+        B: "16"
+        C: "84"
+        D: "88"
+      correct_answer: "B"
+
+    - number: 11
+      question: "How many students play EXACTLY one game?"
+      options:
+        A: "6"
+        B: "7"
+        C: "9"
+        D: "11"
+      correct_answer: "C"
+
+    - number: 12
+      question: "In the Venn diagram, the unshaded area represents"
+      options:
+        A: "P'"
+        B: "Q'"
+        C: "P'Q'"
+        D: "Q'P'"
+      correct_answer: "A"
+
+    - number: 13
+      question: "For every $100 sales, a salesman is paid $10.00 commission. Sales for a month were $1,020.00. Commission paid?"
+      options:
+        A: "$10.20"
+        B: "$20.20"
+        C: "$102.00"
+        D: "$110.00"
+      correct_answer: "D"
+
+    - number: 14
+      question: "Sales tax at 2% on a dress costing $180 is"
+      options:
+        A: "$3.60"
+        B: "$10.80"
+        C: "$176.40"
+        D: "$183.60"
+      correct_answer: "A"
+
+    - number: 15
+      question: "If EC $2.50 = US $1.00, then EC $25.00 in US dollars is"
+      options:
+        A: "$5.00"
+        B: "$10.00"
+        C: "$62.50"
+        D: "$80.00"
+      correct_answer: "B"
+
+    - number: 16
+      question: "A calculator marked at $120 is sold at 30% discount. Change from $100 bill?"
+      options:
+        A: "$16"
+        B: "$20"
+        C: "$28"
+        D: "$36"
+      correct_answer: "A"
+
+    - number: 17
+      question: "A loan of $8,000 repaid in 2 years in monthly payments of $400. Interest as a percentage?"
+      options:
+        A: "5%"
+        B: "8⅓%"
+        C: "16⅔%"
+        D: "20%"
+      correct_answer: "D"
+
+    - number: 18
+      question: "A car valued at $12,000 depreciates at 10% per annum. Value after one year?"
+      options:
+        A: "$10,800"
+        B: "$11,800"
+        C: "$11,880"
+        D: "$13,200"
+      correct_answer: "A"
+
+    - number: 19
+      question: "A man pays 60 cents per 200 m³ of gas plus fixed charge of $13.75. How much for 55,000 m³?"
+      options:
+        A: "$151.25"
+        B: "$165.00"
+        C: "$175.25"
+        D: "$178.75"
+      correct_answer: "D"
+
+    - number: 20
+      question: "If $7,000 is borrowed at 5% per annum for 3 years, the simple interest is"
+      options:
+        A: "$105"
+        B: "$210"
+        C: "$350"
+        D: "$1,050"
+      correct_answer: "D"
+
+    - number: 21
+      question: "The product of a number p and its reciprocal may be written as"
+      options:
+        A: "p² × 1/p"
+        B: "p² × -p"
+        C: "p × 1/p"
+        D: "p × -p"
+      correct_answer: "C"
+
+    - number: 22
+      question: "The area of the rectangle is x². The equation to find x is"
+      options:
+        A: "x² = 2(x - 4)"
+        B: "x² = (x - 2)(x - 4)"
+        C: "x² = (x - 4)(x + 2)"
+        D: "x² = 2(x - 4)(x - 2)"
+      correct_answer: "C"
+
+    - number: 23
+      question: "Althea normally saves $x each month; in June she saved $4 more than twice her usual amount. In June she saved"
+      options:
+        A: "$4x"
+        B: "$6x"
+        C: "$(x+4)"
+        D: "$(2x+4)"
+      correct_answer: "D"
+
+    - number: 24
+      question: "If 3 + 2/x = 1, the value of x is"
+      options:
+        A: "-1"
+        B: "1/5"
+        C: "1/2"
+        D: "5"
+      correct_answer: "A"
+
+    - number: 25
+      question: "5^(m+1) × 5^(m+2) is the same as"
+      options:
+        A: "5^(2m)"
+        B: "5^(2m+3)"
+        C: "5^(3(2m))"
+        D: "2 × 5^(2m)"
+      correct_answer: "B"
+
+    - number: 26
+      question: "If 5(y - 2) - 3(y + 4) = 0, then y is"
+      options:
+        A: "-1"
+        B: "3"
+        C: "7"
+        D: "11"
+      correct_answer: "D"
+
+    - number: 27
+      question: "If |A| = 0, then A is"
+      options:
+        A: "an inverse matrix"
+        B: "a singular matrix"
+        C: "an identity matrix"
+        D: "a non-singular matrix"
+      correct_answer: "B"
+
+    - number: 28
+      question: "If A = [[1,2,5,4],[6,1,3,7],[-2,3,2,9]], then the order of A is"
+      options:
+        A: "2×3"
+        B: "3×2"
+        C: "3×4"
+        D: "4×3"
+      correct_answer: "C"
+
+    - number: 29
+      question: "If p = [3,2] and q = [-1,4], then -p - 2q is"
+      options:
+        A: "[5,-6]"
+        B: "[-2,-6]"
+        C: "[5,10]"
+        D: "[-1,-10]"
+      correct_answer: "D"
+
+    - number: 30
+      question: "In triangle OLM, R midpoint of OL, T midpoint of OM, OR = a, OT = b. LM expressed in terms of a and b is"
+      options:
+        A: "b - a"
+        B: "a + b"
+        C: "2(a + b)"
+        D: "2(b - a)"
+      correct_answer: "D"
+
+    - number: 31
+      question: "If a speedboat took 9 hours to travel 1,080 km, average speed in km/h is"
+      options:
+        A: "12"
+        B: "102"
+        C: "120"
+        D: "1,200"
+      correct_answer: "C"
+
+    - number: 32
+      question: "Length of major arc FE is 40 cm. Circumference of the circle in cm is"
+      options:
+        A: "24"
+        B: "48"
+        C: "50"
+        D: "64"
+      correct_answer: "C"
+
+    - number: 33
+      question: "Volume of cylinder = 180π cm³, diameter = 6 cm. Height in cm is"
+      options:
+        A: "9"
+        B: "20"
+        C: "30"
+        D: "36"
+      correct_answer: "B"
+
+    - number: 34
+      question: "Sides of triangle: x, 2x, 2x cm. Perimeter = 20 cm. Value of x is"
+      options:
+        A: "4"
+        B: "5"
+        C: "8"
+        D: "10"
+      correct_answer: "A"
+
+    - number: 35
+      question: "Fifty guests had 2 glasses of champagne each. Each glass held 150 mL. Litres of champagne used?"
+      options:
+        A: "0.15"
+        B: "1.5"
+        C: "15"
+        D: "150"
+      correct_answer: "C"
+
+    - number: 36
+      question: "A square has same area as a rectangle of sides 9 cm and 16 cm. Side of square?"
+      options:
+        A: "9 cm"
+        B: "12 cm"
+        C: "12.5 cm"
+        D: "75 cm"
+      correct_answer: "B"
+
+    - number: 37
+      question: "Circumference of circle = 154 cm, π = 22/7. Diameter in cm is"
+      options:
+        A: "7"
+        B: "24.5"
+        C: "49"
+        D: "54"
+      correct_answer: "C"
+
+    - number: 38
+      question: "Area of triangle = 60 cm², base = 12 cm. Perpendicular height in cm?"
+      options:
+        A: "5"
+        B: "10"
+        C: "13"
+        D: "17"
+      correct_answer: "B"
+
+    - number: 39
+      question: "The mode of the number of books bought is"
+      options:
+        A: "5"
+        B: "7"
+        C: "9"
+        D: "13"
+      correct_answer: "B"
+
+    - number: 40
+      question: "How many students play cricket? (Pie chart, 720 students)"
+      options:
+        A: "35"
+        B: "120"
+        C: "252"
+        D: "300"
+      correct_answer: "C"
+
+    - number: 41
+      question: "How many customers bought at LEAST 6 kg of fish?"
+      options:
+        A: "18"
+        B: "19"
+        C: "34"
+        D: "30"
+      correct_answer: "C"
+
+    - number: 42
+      question: "The median amount of fish bought by customers is"
+      options:
+        A: "5.5 kg"
+        B: "6 kg"
+        C: "6.5 kg"
+        D: "30 kg"
+      correct_answer: "A"
+
+    - number: 43
+      question: "The interquartile range of the set of measurements is"
+      options:
+        A: "2.4 cm"
+        B: "5.0 cm"
+        C: "7.4 cm"
+        D: "10.0 cm"
+      correct_answer: "B"
+
+    - number: 44
+      question: "A respondent from ethnic group P is selected at random. Probability of negative attitude towards Maths?"
+      options:
+        A: "11/100"
+        B: "6/25"
+        C: "1/4"
+        D: "2/5"
+      correct_answer: "D"
+
+    - number: 45
+      question: "The arrow diagram describes the relation"
+      options:
+        A: "y is less than x"
+        B: "y is a factor of x"
+        C: "x is a factor of y"
+        D: "x is a multiple of y"
+      correct_answer: "C"
+
+    - number: 46
+      question: "Which point, when added to {(-2,7),(4,6),(10,4)}, would make the relation NOT a function?"
+      options:
+        A: "(1,3)"
+        B: "(0,4)"
+        C: "(-2,8)"
+        D: "(-8,10)"
+      correct_answer: "C"
+
+    - number: 47
+      question: "If h(x) = (3x - 2)/5, then h(-6) ="
+      options:
+        A: "-4"
+        B: "-16"
+        C: "16"
+        D: "4"
+      correct_answer: "A"
+
+    - number: 48
+      question: "y varies inversely as x, y = 16 when x = 1/2. Equation representing the relationship?"
+      options:
+        A: "y = 8x"
+        B: "y = 32x"
+        C: "y = 32/x"
+        D: "y = 8/x"
+      correct_answer: "C"
+
+    - number: 49
+      question: "Which represents the equation of a straight line?"
+      options:
+        A: "xy = 4"
+        B: "y + 4 = x²"
+        C: "y + 3 = 2x"
+        D: "y = x² + 2x - 5"
+      correct_answer: "C"
+
+    - number: 50
+      question: "What is the x-value of intersection for f(x)=3 and g(x)=(5/2)x+1?"
+      options:
+        A: "0.8"
+        B: "1.6"
+        C: "5.0"
+        D: "8.5"
+      correct_answer: "A"
+
+    - number: 51
+      question: "Line L is parallel to 2x - 5y - 8 = 0. Gradient of L is"
+      options:
+        A: "-5/2"
+        B: "-2/5"
+        C: "2/5"
+        D: "2"
+      correct_answer: "C"
+
+    - number: 52
+      question: "Which set is represented by f: x → x² + 3 where x ∈ {0,1,2,3}?"
+      options:
+        A: "{(0,3),(1,1),(2,4),(3,9)}"
+        B: "{(0,3),(1,4),(2,5),(3,6)}"
+        C: "{(0,3),(1,5),(2,7),(3,9)}"
+        D: "{(0,3),(1,4),(2,7),(3,12)}"
+      correct_answer: "D"
+
+    - number: 53
+      question: "If O is the centre of the circle, then y° is"
+      options:
+        A: "25°"
+        B: "80°"
+        C: "90°"
+        D: "100°"
+      correct_answer: "B"
+
+    - number: 54
+      question: "In the diagram, PQ ∥ RS. Which BEST describes the relation between x and y?"
+      options:
+        A: "x = y"
+        B: "x < y"
+        C: "x + y = 90°"
+        D: "x + y = 180°"
+      correct_answer: "D"
+
+    - number: 55
+      question: "Item 55 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 56
+      question: "Which diagram shows a reflection in the x-axis?"
+      options:
+        A: "Diagram A"
+        B: "Diagram B"
+        C: "Diagram C"
+        D: "Diagram D"
+      correct_answer: "A"
+
+    - number: 57
+      question: "In triangle ABC, angle A = x°, angle B = 2x°. Size of angle C?"
+      options:
+        A: "(180 - 3x)°"
+        B: "60°"
+        C: "30°"
+        D: "(180/3x)°"
+      correct_answer: "A"
+
+    - number: 58
+      question: "Angle of depression of X from Z is 35°. X is 12 m from Y. Height YZ in metres is"
+      options:
+        A: "12 cos 35°"
+        B: "12 tan 35°"
+        C: "12 sin 35°"
+        D: "12 cos 55°"
+      correct_answer: "D"
+
+    - number: 59
+      question: "Item 59 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 60
+      question: "Item 60 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"

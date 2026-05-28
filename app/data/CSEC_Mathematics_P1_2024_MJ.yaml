@@ -1,0 +1,545 @@
+exam:
+  title: "CSEC Mathematics P1 2024 MJ"
+  year: 2024
+  subject: "Mathematics"
+  total_items: 60
+  items:
+    - number: 1
+      question: "(-3)^2 + (-2)^2 is equal to"
+      options:
+        A: "-13"
+        B: "-10"
+        C: "5"
+        D: "13"
+      correct_answer: "D"
+
+    - number: 2
+      question: "What is the value of the digit 6 in the number 48.621?"
+      options:
+        A: "6/100"
+        B: "6/10"
+        C: "6"
+        D: "600"
+      correct_answer: "A"
+
+    - number: 3
+      question: "What number when added to 1⅓ gives 2?"
+      options:
+        A: "1/3"
+        B: "2/3"
+        C: "1"
+        D: "3"
+      correct_answer: "B"
+
+    - number: 4
+      question: "The next term in the sequence 1, 6, 13, 22, 33, is"
+      options:
+        A: "44"
+        B: "45"
+        C: "46"
+        D: "52"
+      correct_answer: "C"
+
+    - number: 5
+      question: "What is the LEAST number of apples that can be shared equally among either 6, 10 or 15 children?"
+      options:
+        A: "24"
+        B: "30"
+        C: "60"
+        D: "90"
+      correct_answer: "B"
+
+    - number: 6
+      question: "A certain amount of money is shared among Jay, Troy and Jordan in the ratio 2:3:9. If Troy received $40 more than Jay, then the amount of money shared is"
+      options:
+        A: "$280"
+        B: "$360"
+        C: "$400"
+        D: "$560"
+      correct_answer: "A"
+
+    - number: 7
+      question: "If P = {2,3,5,7}, Q = {2,3,6} and S = {2,4,5}, then P ∪ Q ∪ S ="
+      options:
+        A: "{2}"
+        B: "{2,3}"
+        C: "{2,3,5}"
+        D: "{2,3,4,5,6,7}"
+      correct_answer: "D"
+
+    - number: 8
+      question: "The shaded region represents"
+      options:
+        A: "P ∪ Q'"
+        B: "(P ∩ Q)'"
+        C: "Q ∩ P'"
+        D: "(P ∪ Q)'"
+      correct_answer: "C"
+
+    - number: 9
+      question: "The elements of the set {x: 6 < x ≤ 10, where x is an integer} are"
+      options:
+        A: "{7, 8, 9}"
+        B: "{6, 7, 8, 9}"
+        C: "{7, 8, 9, 10}"
+        D: "{6, 7, 8, 9, 10}"
+      correct_answer: "C"
+
+    - number: 10
+      question: "M = {p,q,r}, N = {p,q}. Which of the following statements about sets M and N is true?"
+      options:
+        A: "M ⊂ N"
+        B: "M ∪ N = M"
+        C: "M ∪ N = N"
+        D: "M ∩ N = {}"
+      correct_answer: "B"
+
+    - number: 11
+      question: "All students in a class play Scrabble or Checkers or both. If 36% of the students play Scrabble only and 48% play Checkers only, what percentage play BOTH games?"
+      options:
+        A: "12"
+        B: "16"
+        C: "84"
+        D: "88"
+      correct_answer: "B"
+
+    - number: 12
+      question: "How many students play tennis but NOT chess?"
+      options:
+        A: "2"
+        B: "3"
+        C: "4"
+        D: "6"
+      correct_answer: "C"
+
+    - number: 13
+      question: "A dress which costs $180.00 is being sold at a discount of 10%. The amount of the discount is"
+      options:
+        A: "$1.80"
+        B: "$10.00"
+        C: "$18.00"
+        D: "$170.00"
+      correct_answer: "C"
+
+    - number: 14
+      question: "If EC $2.50 is equivalent to US $1.00, then EC $25.00, in US dollars, is"
+      options:
+        A: "$5.00"
+        B: "$10.00"
+        C: "$62.50"
+        D: "$80.00"
+      correct_answer: "B"
+
+    - number: 15
+      question: "For every sale amounting to $1, a salesman is paid $0.10 as commission. If his sales for a particular month was $1,020.00, how much commission was he paid?"
+      options:
+        A: "$10.20"
+        B: "$20.20"
+        C: "$102.00"
+        D: "$110.00"
+      correct_answer: "C"
+
+    - number: 16
+      question: "A man's basic wage for a 40-hour week is $160.00. He is paid overtime at 1¼ times the hourly rate. If he works 6½ hours overtime, his wage for that week is"
+      options:
+        A: "$165.00"
+        B: "$166.50"
+        C: "$171.50"
+        D: "$192.50"
+      correct_answer: "D"
+
+    - number: 17
+      question: "A television set costs $350 cash. On hire purchase: $35 deposit + 12 monthly payments of $30 each. How much is saved by paying cash?"
+      options:
+        A: "$10"
+        B: "$25"
+        C: "$40"
+        D: "$45"
+      correct_answer: "D"
+
+    - number: 18
+      question: "At year end, a car is worth 5% less than at the beginning. If a car was worth $9,500 in December 2021, its value in January 2021 was"
+      options:
+        A: "$9,025"
+        B: "$9,995"
+        C: "$10,000"
+        D: "$10,025"
+      correct_answer: "C"
+
+    - number: 19
+      question: "A loan of $15,000 was repaid in 24 equal monthly instalments of $750. The total interest paid as a percentage of the principal was"
+      options:
+        A: "5%"
+        B: "8⅓%"
+        C: "16⅓%"
+        D: "20%"
+      correct_answer: "D"
+
+    - number: 20
+      question: "At a sale, a discount of $3.00 off the original price was offered for each book. Daniel paid $46.00 for 2 books that had the same sale price. What was the original cost of ONE book?"
+      options:
+        A: "$20.00"
+        B: "$21.50"
+        C: "$24.50"
+        D: "$26.00"
+      correct_answer: "D"
+
+    - number: 21
+      question: "3x² × 2x³ ="
+      options:
+        A: "6x⁵"
+        B: "5x⁵"
+        C: "6x⁶"
+        D: "72x⁵"
+      correct_answer: "A"
+
+    - number: 22
+      question: "If 5(5ʸ - 2) = 3(5ʸ + 4), then y is"
+      options:
+        A: "-1"
+        B: "3"
+        C: "7"
+        D: "11"
+      correct_answer: "D"
+
+    - number: 23
+      question: "Seven times the product of two numbers, a and b, may be written as"
+      options:
+        A: "ab/7"
+        B: "7ab"
+        C: "7a + b"
+        D: "7(a + b)"
+      correct_answer: "B"
+
+    - number: 24
+      question: "Given that 3 * 6 = 3 and 2 * 4 = 0, then a * b may be defined as"
+      options:
+        A: "a² - b"
+        B: "6a - b"
+        C: "2a + b"
+        D: "4(b - a)"
+      correct_answer: "B"
+
+    - number: 25
+      question: "If x = -2, y = 3, t = 3, then (x/y)ᵗ ="
+      options:
+        A: "-6/9"
+        B: "-8/27"
+        C: "8/27"
+        D: "9/6"
+      correct_answer: "B"
+
+    - number: 26
+      question: "If 1/(3²ˣ) = 9, then the value of x is"
+      options:
+        A: "-1"
+        B: "1"
+        C: "2"
+        D: "1.1"
+      correct_answer: "A"
+
+    - number: 27
+      question: "Given A = [[1,3,-3],[3,0,5]], then 3A equals"
+      options:
+        A: "[[3,9,-9],[9,0,15]]"
+        B: "[[4,6,-6],[6,3,8]]"
+        C: "[[3,9,-6],[9,0,15]]"
+        D: "[[2,0,-6],[0,3,2]]"
+      correct_answer: "A"
+
+    - number: 28
+      question: "The determinant of the 2×2 identity matrix is"
+      options:
+        A: "zero"
+        B: "one"
+        C: "undefined"
+        D: "negative one"
+      correct_answer: "B"
+
+    - number: 29
+      question: "The vector p - q is represented by"
+      options:
+        A: "[1,12]"
+        B: "[5,12]"
+        C: "[5,2]"
+        D: "[1,5]"
+      correct_answer: "A"
+
+    - number: 30
+      question: "In parallelogram WXYZ with XY = u, XW = v, R midpoint of YZ, then RW in terms of u and v is"
+      options:
+        A: "½v - u"
+        B: "u + ½v"
+        C: "u - ½v"
+        D: "-½v - u"
+      correct_answer: "A"
+
+    - number: 31
+      question: "Given 1 mm = 1/1000 m, then 2500 mm in metres is"
+      options:
+        A: "0.25"
+        B: "2.5"
+        C: "25"
+        D: "250"
+      correct_answer: "B"
+
+    - number: 32
+      question: "The length of the edge of a cube that has a volume of 27 cm³ is"
+      options:
+        A: "3 cm"
+        B: "4.5 cm"
+        C: "6 cm"
+        D: "9 cm"
+      correct_answer: "A"
+
+    - number: 33
+      question: "The perimeter of a square is 48 cm. What is its area in cm²?"
+      options:
+        A: "36"
+        B: "72"
+        C: "108"
+        D: "144"
+      correct_answer: "D"
+
+    - number: 34
+      question: "The height h of trapezium PORS with area 65 cm² is"
+      options:
+        A: "2.5 cm"
+        B: "3.6 cm"
+        C: "5.0 cm"
+        D: "8.0 cm"
+      correct_answer: "C"
+
+    - number: 35
+      question: "The length of arc AB of a circle with radius r and angle AOB = 60° is"
+      options:
+        A: "⅓πr"
+        B: "⅙πr"
+        C: "⅓πr²"
+        D: "⅙πr²"
+      correct_answer: "A"
+
+    - number: 36
+      question: "Area of compound shape (rectangle + two semicircles) in terms of π is"
+      options:
+        A: "6(9 + π)"
+        B: "36(5 + π)"
+        C: "6(5 + 2π)"
+        D: "18(5 + 2π)"
+      correct_answer: "D"
+
+    - number: 37
+      question: "Area of rectangle = 40 cm². Length ×4, width halved. New area ="
+      options:
+        A: "20 cm²"
+        B: "40 cm²"
+        C: "80 cm²"
+        D: "160 cm²"
+      correct_answer: "C"
+
+    - number: 38
+      question: "Compound shape (triangle on square side 5 cm). Total area 35 cm². Height of triangle ="
+      options:
+        A: "2 cm"
+        B: "4 cm"
+        C: "5 cm"
+        D: "10 cm"
+      correct_answer: "B"
+
+    - number: 39
+      question: "The number of children who have a mass of at least 41 kg is"
+      options:
+        A: "12"
+        B: "62"
+        C: "70"
+        D: "104"
+      correct_answer: "B"
+
+    - number: 40
+      question: "The lower limit of the modal class is"
+      options:
+        A: "30.5"
+        B: "41.0"
+        C: "50.5"
+        D: "51.0"
+      correct_answer: "B"
+
+    - number: 41
+      question: "Ms Clarke arranged 15 test scores and selected the 8th score. Which statistical measure?"
+      options:
+        A: "Mean"
+        B: "Mode"
+        C: "Range"
+        D: "Median"
+      correct_answer: "D"
+
+    - number: 42
+      question: "Time spent studying Mathematics approximately (pie chart, 12 hours total)"
+      options:
+        A: "1 hour"
+        B: "2 hours"
+        C: "3 hours"
+        D: "4 hours"
+      correct_answer: "C"
+
+    - number: 43
+      question: "If mean of 4, 8, x, 12 is 10, then x ="
+      options:
+        A: "4"
+        B: "10"
+        C: "12"
+        D: "16"
+      correct_answer: "D"
+
+    - number: 44
+      question: "Probability respondent is ethnicity P AND has positive attitude towards Maths"
+      options:
+        A: "0.25"
+        B: "0.37"
+        C: "0.42"
+        D: "0.60"
+      correct_answer: "A"
+
+    - number: 45
+      question: "Which diagram BEST illustrates a function?"
+      options:
+        A: "Diagram A"
+        B: "Diagram B"
+        C: "Diagram C"
+        D: "Diagram D"
+      correct_answer: "A"
+
+    - number: 46
+      question: "The point where straight line AB crosses the horizontal axis is"
+      options:
+        A: "(3,0)"
+        B: "(0,3)"
+        C: "(0,-2)"
+        D: "(3,-2)"
+      correct_answer: "A"
+
+    - number: 47
+      question: "The equation of the straight line AB is"
+      options:
+        A: "y = x - 2"
+        B: "y = 2x - 2"
+        C: "y = (2/3)x - 2"
+        D: "y = -(3/2)x - 2"
+      correct_answer: "C"
+
+    - number: 48
+      question: "The coordinates of the maximum point of y = 4x - x² are"
+      options:
+        A: "(2,4)"
+        B: "(0,4)"
+        C: "(4,2)"
+        D: "(4,4)"
+      correct_answer: "A"
+
+    - number: 49
+      question: "The equation of the axis of symmetry of the quadratic function is"
+      options:
+        A: "x = 2"
+        B: "y = 2"
+        C: "y = x"
+        D: "y = 2x"
+      correct_answer: "A"
+
+    - number: 50
+      question: "If g(x) = (7x - 3)/5, then g⁻¹(-2) ="
+      options:
+        A: "-17/5"
+        B: "-1"
+        C: "1"
+        D: "13/7"
+      correct_answer: "B"
+
+    - number: 51
+      question: "Parking: $1.00 + $0.25 per hour or part (h). Cost function C(h) ="
+      options:
+        A: "C(h) = 0.25h"
+        B: "C(h) = 1.00h + 0.25"
+        C: "C(h) = 0.25h + 1.00"
+        D: "C(h) = h/0.25 + 1.00"
+      correct_answer: "C"
+
+    - number: 52
+      question: "Range of f: x → x³ for domain {-2,-1,0,1,2} is"
+      options:
+        A: "{8,1,0,1,8}"
+        B: "{6,3,0,3,6}"
+        C: "{-6,-3,0,3,6}"
+        D: "{-8,-1,0,1,8}"
+      correct_answer: "D"
+
+    - number: 53
+      question: "If sum of interior angles of a polygon is 4 right angles (360°), the polygon is a"
+      options:
+        A: "triangle"
+        B: "hexagon"
+        C: "pentagon"
+        D: "quadrilateral"
+      correct_answer: "D"
+
+    - number: 54
+      question: "In the right-angled triangle, which trigonometric ratio equals 4/8?"
+      options:
+        A: "Sin x"
+        B: "Tan y"
+        C: "Sin y"
+        D: "Tan x"
+      correct_answer: "B"
+
+    - number: 55
+      question: "In the isosceles triangle, the value of x is"
+      options:
+        A: "30°"
+        B: "60°"
+        C: "120°"
+        D: "150°"
+      correct_answer: "C"
+
+    - number: 56
+      question: "The length of MO (similar triangles) in cm is"
+      options:
+        A: "2.5"
+        B: "3.0"
+        C: "3.5"
+        D: "7.0"
+      correct_answer: "B"
+
+    - number: 57
+      question: "The translation mapping AB onto A'B' is represented by"
+      options:
+        A: "[2,1]"
+        B: "[1,1]"
+        C: "[3,2]"
+        D: "[5,3]"
+      correct_answer: "C"
+
+    - number: 58
+      question: "Scale factor of enlargement with centre O mapping ΔABC to ΔA'B'C'"
+      options:
+        A: "-2"
+        B: "-1"
+        C: "1"
+        D: "2"
+      correct_answer: "A"
+
+    - number: 59
+      question: "Angle of depression = 30°, F is 25 m from E. Distance FG in metres is"
+      options:
+        A: "25/tan30°"
+        B: "25/tan60°"
+        C: "25 cos30°"
+        D: "25 sin30°"
+      correct_answer: "A"
+
+    - number: 60
+      question: "Estimate of building height (surveyor 12 m from foot, angle of elevation 40°, instrument height 1.6 m) is"
+      options:
+        A: "1.6 + 12 tan40°"
+        B: "1.6 + 12 cos40°"
+        C: "(12 tan40°) - 1.6"
+        D: "(12 sin40°) - 1.6"
+      correct_answer: "A"

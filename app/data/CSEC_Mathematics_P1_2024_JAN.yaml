@@ -1,0 +1,545 @@
+exam:
+  title: "CSEC Mathematics P1 2024 JAN"
+  year: 2024
+  subject: "Mathematics"
+  total_items: 60
+  items:
+    - number: 1
+      question: "The number 3.14063 written correct to 3 decimal places is"
+      options:
+        A: "3.140"
+        B: "3.141"
+        C: "3.146"
+        D: "3.150"
+      correct_answer: "B"
+
+    - number: 2
+      question: "What percentage of 40 is 8?"
+      options:
+        A: "5"
+        B: "20"
+        C: "32"
+        D: "150"
+      correct_answer: "B"
+
+    - number: 3
+      question: "In standard notation, 208.06 is written as"
+      options:
+        A: "2.0806 × 10⁻²"
+        B: "20.806 × 10¹"
+        C: "2.0806 × 10²"
+        D: "0.20806 × 10³"
+      correct_answer: "C"
+
+    - number: 4
+      question: "What is the LEAST number of apples that can be shared equally among either 6, 10 or 15 children?"
+      options:
+        A: "24"
+        B: "30"
+        C: "60"
+        D: "90"
+      correct_answer: "B"
+
+    - number: 5
+      question: "If $350 is shared in the ratio 2:5, the LARGER share is"
+      options:
+        A: "$50"
+        B: "$70"
+        C: "$100"
+        D: "$250"
+      correct_answer: "D"
+
+    - number: 6
+      question: "There are 40 students in a class. Girls make up 60% of the class. 25% of the girls wear glasses. How many girls in the class wear glasses?"
+      options:
+        A: "6"
+        B: "8"
+        C: "10"
+        D: "15"
+      correct_answer: "A"
+
+    - number: 7
+      question: "If the universal set U = {1,2,3,4,5,6} and H = {3,4,6}, then H' ="
+      options:
+        A: "{1,3,5}"
+        B: "{1,2,5}"
+        C: "{2,4,6}"
+        D: "{3,4,6}"
+      correct_answer: "B"
+
+    - number: 8
+      question: "Which of the following statements describes the set of integers from -3 to 6?"
+      options:
+        A: "{x: -3 > x > 6, x ∈ Z}"
+        B: "{x: -3 ≥ x ≥ 6, x ∈ Z}"
+        C: "{x: -3 ≤ x ≤ 6, x ∈ Z}"
+        D: "{x: -3 < x < 6, x ∈ Z}"
+      correct_answer: "C"
+
+    - number: 9
+      question: "If X and Y are 2 finite sets such that n(X) = 9, n(Y) = 10 and n(X∪Y) = 15, then n(X∩Y) is"
+      options:
+        A: "4"
+        B: "6"
+        C: "10"
+        D: "19"
+      correct_answer: "A"
+
+    - number: 10
+      question: "In the Venn diagram, X represents the set of factors of 12. Y represents the set of factors of 9. The shaded region represents the set of all factors of"
+      options:
+        A: "3"
+        B: "6"
+        C: "21"
+        D: "108"
+      correct_answer: "A"
+
+    - number: 11
+      question: "Which of the following pairs of sets is an example of disjoint sets?"
+      options:
+        A: "X = whole numbers and Y = rational numbers"
+        B: "G = multiples of five and H = multiples of ten"
+        C: "P = multiples of 2 and Q = multiples of 3"
+        D: "E = even numbers and F = odd numbers"
+      correct_answer: "D"
+
+    - number: 12
+      question: "The 30 students in Teacher May's class have either a dog (D) or a cat (C) or none. All students who have a cat also have a dog. If n(C)=12 and n(D)=16, which Venn diagram correctly represents this information?"
+      options:
+        A: "Diagram A"
+        B: "Diagram B"
+        C: "Diagram C"
+        D: "Diagram D"
+      correct_answer: "B"
+
+    - number: 13
+      question: "Excluding sales tax, how much will be saved when a video which costs $12.00 is sold at a 20% discount?"
+      options:
+        A: "$0.24"
+        B: "$1.20"
+        C: "$2.40"
+        D: "$3.60"
+      correct_answer: "C"
+
+    - number: 14
+      question: "If EC $2.50 is equivalent to US $1.00, then EC $20.00 in US dollars is"
+      options:
+        A: "$5.00"
+        B: "$8.00"
+        C: "$50.00"
+        D: "$80.00"
+      correct_answer: "B"
+
+    - number: 15
+      question: "The cash price of a television set is $350. When bought on hire purchase, a deposit of $35 is required, followed by 12 monthly payments of $30. How much is saved by paying cash?"
+      options:
+        A: "$10"
+        B: "$25"
+        C: "$40"
+        D: "$45"
+      correct_answer: "D"
+
+    - number: 16
+      question: "A company employs 20 persons as gardeners and clerks. The mean daily wage of ALL employees is $22.40. If EACH of the 12 gardeners is paid $26.00 per day, then the daily amount paid to each of the 8 clerks is"
+      options:
+        A: "$3.60"
+        B: "$12.20"
+        C: "$17.00"
+        D: "$48.40"
+      correct_answer: "C"
+
+    - number: 17
+      question: "A man's annual salary is $45,000. His tax free allowances total $13,000. He has to pay a tax of 20% on his taxable income. The tax payable is"
+      options:
+        A: "$2,600"
+        B: "$6,400"
+        C: "$9,000"
+        D: "$11,600"
+      correct_answer: "B"
+
+    - number: 18
+      question: "A salesman sells a car for $10,500. If he is paid a commission of 5% for the first $10,000 and 8% on the remainder, then the TOTAL commission he receives is"
+      options:
+        A: "$525"
+        B: "$530"
+        C: "$540"
+        D: "$565"
+      correct_answer: "C"
+
+    - number: 19
+      question: "A man's basic wage for a 40-hour week is $160.00. He is paid $5.00 per hour for overtime. If he works 6½ hours overtime in a certain week, then his wage for that week is"
+      options:
+        A: "$165.00"
+        B: "$166.50"
+        C: "$171.50"
+        D: "$192.50"
+      correct_answer: "D"
+
+    - number: 20
+      question: "A calculator which is marked at $120 is sold for cash at a 30% discount. How much change would Susan receive if she pays for the calculator with a $100 bill?"
+      options:
+        A: "$16"
+        B: "$20"
+        C: "$28"
+        D: "$36"
+      correct_answer: "A"
+
+    - number: 21
+      question: "Meghan normally saves $5x each month but in August she saved $4 less than twice her usual amount. In August, she saved"
+      options:
+        A: "$4x"
+        B: "$6x"
+        C: "$2x - 4"
+        D: "$10x - 4"
+      correct_answer: "D"
+
+    - number: 22
+      question: "If m * n = √(m³ - n²), then 5 * (5 * 2) ="
+      options:
+        A: "2"
+        B: "√11"
+        C: "√34"
+        D: "11"
+      correct_answer: "B"
+
+    - number: 23
+      question: "The trapezium with height h has an area of x² cm². The height of the trapezium expressed in terms of x is"
+      options:
+        A: "h = 2x²/(x - 2)"
+        B: "h = (x - 2)/(2x²)"
+        C: "h = x²/[2(x - 4)]"
+        D: "h = x²/[(x - 4)(x + 2)]"
+      correct_answer: "A"
+
+    - number: 24
+      question: "3 - (x - 2) ="
+      options:
+        A: "1 - x"
+        B: "x + 5"
+        C: "5 - x"
+        D: "3x + 2"
+      correct_answer: "C"
+
+    - number: 25
+      question: "5ⁿ⁺¹ × 5ⁿ⁺² is the same as"
+      options:
+        A: "5²ⁿ"
+        B: "5²ⁿ⁺³"
+        C: "5³⁽²ⁿ⁾"
+        D: "2 × 5²ⁿ"
+      correct_answer: "B"
+
+    - number: 26
+      question: "If 5(y - 2) = 3(y + 4), then y is"
+      options:
+        A: "-1"
+        B: "3"
+        C: "7"
+        D: "11"
+      correct_answer: "D"
+
+    - number: 27
+      question: "Given p = [3,7] and q = [-2,5], the vector p - 2q is represented by"
+      options:
+        A: "[1,3]"
+        B: "[-7,3]"
+        C: "[7,-3]"
+        D: "[-1,-3]"
+      correct_answer: "C"
+
+    - number: 28
+      question: "In parallelogram EFGH with EF ∥ HG, EH ∥ FG, EF = k and EH = m, EG expressed in terms of k and m is"
+      options:
+        A: "k + m"
+        B: "k - m"
+        C: "m - k"
+        D: "-m - k"
+      correct_answer: "A"
+
+    - number: 29
+      question: "If 5[x,y] = 4[10,20], then the values of x and y are"
+      options:
+        A: "x = 4, y = 5"
+        B: "x = 8, y = 16"
+        C: "x = 2.5, y = 4"
+        D: "x = 10, y = 20"
+      correct_answer: "B"
+
+    - number: 30
+      question: "The inverse of matrix A = [[2,1],[7,4]] is"
+      options:
+        A: "(1/17)[[4,-1],[-7,2]]"
+        B: "(1/17)[[-4,1],[7,-2]]"
+        C: "[[-4,1],[7,-2]]"
+        D: "[[4,-1],[-7,2]]"
+      correct_answer: "A"
+
+    - number: 31
+      question: "If it took a speedboat 9 hours to travel a distance of 1,080 km, what was its average speed in km/h?"
+      options:
+        A: "12"
+        B: "102"
+        C: "120"
+        D: "1,200"
+      correct_answer: "C"
+
+    - number: 32
+      question: "The perimeter of the trapezium, in cm, is"
+      options:
+        A: "0.092"
+        B: "9.2"
+        C: "92"
+        D: "920"
+      correct_answer: "C"
+
+    - number: 33
+      question: "If the circumference of the circle is 15 cm, then the length of the minor arc AB (angle 120°), in cm, is"
+      options:
+        A: "(360/120) × 15"
+        B: "(120/360) × 15"
+        C: "[360/(360-120)] × 15"
+        D: "[(360-120)/360] × 15"
+      correct_answer: "B"
+
+    - number: 34
+      question: "An aircraft leaves A at 16:00 hours and arrives at B at 19:30 hours, travelling at an average speed of 550 km/h. A and B are in the same time zone. The distance from A to B, in km, is"
+      options:
+        A: "907.5"
+        B: "962.5"
+        C: "1,815"
+        D: "1,925"
+      correct_answer: "D"
+
+    - number: 35
+      question: "If the area of the major sector is 515 cm², then the area of the circle, in cm², is"
+      options:
+        A: "103"
+        B: "412"
+        C: "575"
+        D: "618"
+      correct_answer: "D"
+
+    - number: 36
+      question: "Item 36 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 37
+      question: "Item 37 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 38
+      question: "Item 38 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 39
+      question: "Item 39 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 40
+      question: "Item 40 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 41
+      question: "Item 41 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 42
+      question: "Item 42 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 43
+      question: "Item 43 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 44
+      question: "Item 44 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 45
+      question: "Item 45 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 46
+      question: "Item 46 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 47
+      question: "Item 47 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 48
+      question: "Item 48 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 49
+      question: "Item 49 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 50
+      question: "Item 50 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 51
+      question: "Item 51 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 52
+      question: "Item 52 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 53
+      question: "Item 53 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 54
+      question: "Item 54 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 55
+      question: "Item 55 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 56
+      question: "Item 56 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 57
+      question: "Item 57 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 58
+      question: "Item 58 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 59
+      question: "Item 59 not provided in text"
+      options:
+        A: "N/A"
+        B: "N/A"
+        C: "N/A"
+        D: "N/A"
+      correct_answer: "Not found"
+
+    - number: 60
+      question: "Which trigonometric ratio is equal to 4/8?"
+      options:
+        A: "sin x"
+        B: "tan y"
+        C: "cos x"
+        D: "tan x"
+      correct_answer: "B"
