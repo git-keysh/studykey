@@ -647,6 +647,151 @@
             .main-content { padding: 1rem; }
         }
 
+        /* ── Mobile swipe drawers ── */
+        @media (max-width: 900px) {
+            .drawer-backdrop {
+                display: none;
+                position: fixed;
+                inset: 0;
+                background: rgba(0,0,0,0.55);
+                z-index: 200;
+                backdrop-filter: blur(3px);
+            }
+            .drawer-backdrop.open { display: block; }
+
+            .mobile-drawer {
+                position: fixed;
+                top: 0;
+                height: 100vh;
+                width: min(82vw, 320px);
+                background: var(--surface);
+                border: 1px solid var(--border);
+                z-index: 201;
+                overflow-y: auto;
+                padding: 1.2rem 1rem;
+                transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
+                scrollbar-width: thin;
+                scrollbar-color: var(--border) transparent;
+            }
+
+            .mobile-drawer-left {
+                left: 0;
+                border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+                transform: translateX(-100%);
+            }
+            .mobile-drawer-left.open { transform: translateX(0); }
+
+            .mobile-drawer-right {
+                right: 0;
+                border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+                transform: translateX(100%);
+                width: min(90vw, 360px);
+                padding: 0;
+                overflow: hidden;
+            }
+            .mobile-drawer-right.open { transform: translateX(0); }
+
+            .drawer-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 1.2rem;
+                padding-bottom: 0.8rem;
+                border-bottom: 1px solid var(--border);
+            }
+            .mobile-drawer-right .drawer-header {
+                margin-bottom: 0;
+                padding: 0.8rem 1rem;
+                border-radius: var(--radius-lg) 0 0 0;
+            }
+            .drawer-header-title {
+                font-weight: 700;
+                font-size: 0.88rem;
+                display: flex;
+                align-items: center;
+                gap: 0.4rem;
+            }
+            .drawer-close {
+                background: var(--surface2);
+                border: 1px solid var(--border);
+                color: var(--text-muted);
+                width: 28px; height: 28px;
+                border-radius: 50%;
+                cursor: pointer;
+                font-size: 0.85rem;
+                display: flex; align-items: center; justify-content: center;
+                flex-shrink: 0;
+            }
+
+            .mobile-pdf-frame {
+                width: 100%;
+                height: calc(100vh - 50px);
+                border: none;
+                background: #111;
+                display: block;
+            }
+
+            /* ── Swipe hint tabs ── */
+            .swipe-hint {
+                position: fixed;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 150;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+
+            .swipe-hint-left  { left: 0; }
+            .swipe-hint-right { right: 0; }
+
+            .swipe-tab {
+                background: var(--surface);
+                border: 1px solid var(--border);
+                color: var(--text-muted);
+                font-size: 0.58rem;
+                font-weight: 700;
+                letter-spacing: 0.06em;
+                writing-mode: vertical-rl;
+                padding: 0.7rem 0.4rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .swipe-hint-left  .swipe-tab { border-radius: 0 10px 10px 0; border-left: none; }
+            .swipe-hint-right .swipe-tab { border-radius: 10px 0 0 10px; border-right: none; }
+
+            .swipe-tab .tab-icon { font-size: 1rem; writing-mode: horizontal-tb; }
+            .swipe-tab .tab-label { writing-mode: vertical-rl; text-orientation: mixed; }
+
+            .swipe-arrow {
+                font-size: 0.85rem;
+                color: var(--accent);
+                writing-mode: horizontal-tb;
+            }
+
+            .swipe-hint-left .swipe-arrow  { animation: pulseRight 1.6s ease-in-out infinite; }
+            .swipe-hint-right .swipe-arrow { animation: pulseLeft  1.6s ease-in-out infinite 0.4s; }
+
+            @keyframes pulseRight {
+                0%,100% { opacity:0.25; transform:translateX(0); }
+                50%     { opacity:1;    transform:translateX(4px); }
+            }
+            @keyframes pulseLeft {
+                0%,100% { opacity:0.25; transform:translateX(0); }
+                50%     { opacity:1;    transform:translateX(-4px); }
+            }
+        }
+
+        @media (min-width: 901px) {
+            .mobile-drawer, .drawer-backdrop, .swipe-hint { display: none !important; }
+        }
+
         /* ── Entry animation ── */
         @keyframes fadeUp {
             from { opacity: 0; transform: translateY(12px); }
@@ -765,6 +910,47 @@
 <!-- Mobile fun mode button -->
 <button id="mobileFunToggle" class="fun-mode-toggle-mobile hidden">✨ Fun Mode</button>
 
+<!-- Mobile swipe hint tabs -->
+<div class="swipe-hint swipe-hint-left" id="swipeHintLeft" onclick="openDrawer('left')">
+    <div class="swipe-tab">
+        <span class="swipe-arrow">›</span>
+        <span class="tab-icon">🧮</span>
+        <span class="tab-label">CALC</span>
+    </div>
+</div>
+<div class="swipe-hint swipe-hint-right" id="swipeHintRight" onclick="openDrawer('right')">
+    <div class="swipe-tab">
+        <span class="tab-label">PDF</span>
+        <span class="tab-icon">📖</span>
+        <span class="swipe-arrow">‹</span>
+    </div>
+</div>
+
+<!-- Backdrop -->
+<div class="drawer-backdrop" id="drawerBackdrop" onclick="closeDrawers()"></div>
+
+<!-- Left drawer: Calculator -->
+<div class="mobile-drawer mobile-drawer-left" id="mobileDrawerLeft">
+    <div class="drawer-header">
+        <div class="drawer-header-title">🧮 Quick Calculator</div>
+        <button class="drawer-close" onclick="closeDrawers()">✕</button>
+    </div>
+    <div id="mobileCalcWidget" class="calc-widget"></div>
+    <div style="margin-top:0.8rem;font-size:0.7rem;color:var(--text-muted);text-align:center;line-height:1.8;">
+        <code style="background:var(--surface2);padding:0.1rem 0.4rem;border-radius:4px;">√</code> = sqrt &nbsp;·&nbsp;
+        <code style="background:var(--surface2);padding:0.1rem 0.4rem;border-radius:4px;">%</code> = ÷100
+    </div>
+</div>
+
+<!-- Right drawer: PDF viewer -->
+<div class="mobile-drawer mobile-drawer-right" id="mobileDrawerRight">
+    <div class="drawer-header" style="padding:0.8rem 1rem;border-bottom:1px solid var(--border);">
+        <div class="drawer-header-title">📖 <span id="mobilePdfLabel">Source Paper</span></div>
+        <button class="drawer-close" onclick="closeDrawers()">✕</button>
+    </div>
+    <iframe class="mobile-pdf-frame" id="mobilePdfViewer" src="about:blank" title="CSEC Maths Paper"></iframe>
+</div>
+
 <script>
     // ─── PAPER LIST ───────────────────────────────────────────────
     const PAPERS = [
@@ -871,10 +1057,52 @@
     }
 
     function updatePDFViewer(paperInfo, qNum) {
-        if (!paperInfo?.pdf) { pdfViewer.src = 'about:blank'; pdfLabelSpan.innerText = ''; return; }
-        const page = getPageNumber(paperInfo, qNum);
-        pdfViewer.src = `${PDF_DIR}${paperInfo.pdf}#page=${page}`;
-        pdfLabelSpan.innerText = `${paperInfo.session} ${paperInfo.year} · p.${page}`;
+        const mv = document.getElementById('mobilePdfViewer');
+        const ml = document.getElementById('mobilePdfLabel');
+        if (!paperInfo?.pdf) {
+            pdfViewer.src = 'about:blank'; pdfLabelSpan.innerText = '';
+            if (mv) mv.src = 'about:blank';
+            if (ml) ml.innerText = 'Source Paper';
+            return;
+        }
+        const page  = getPageNumber(paperInfo, qNum);
+        const url   = `${PDF_DIR}${paperInfo.pdf}#page=${page}`;
+        const label = `${paperInfo.session} ${paperInfo.year} · p.${page}`;
+        pdfViewer.src = url; pdfLabelSpan.innerText = label;
+        if (mv) mv.src = url;
+        if (ml) ml.innerText = label;
+    }
+
+    // ─── MOBILE DRAWERS ──────────────────────────────────────────
+    function openDrawer(side) {
+        document.getElementById('drawerBackdrop').classList.add('open');
+        if (side === 'left')  document.getElementById('mobileDrawerLeft').classList.add('open');
+        if (side === 'right') document.getElementById('mobileDrawerRight').classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeDrawers() {
+        document.getElementById('drawerBackdrop').classList.remove('open');
+        document.getElementById('mobileDrawerLeft').classList.remove('open');
+        document.getElementById('mobileDrawerRight').classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    // Swipe-to-open gesture
+    function initSwipeGesture() {
+        let startX = 0, startY = 0;
+        document.addEventListener('touchstart', e => {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+        }, { passive: true });
+        document.addEventListener('touchend', e => {
+            const dx = e.changedTouches[0].clientX - startX;
+            const dy = e.changedTouches[0].clientY - startY;
+            if (Math.abs(dy) > Math.abs(dx) || Math.abs(dx) < 40) return; // not a horizontal swipe
+            // Only trigger from edge zones
+            if (dx > 0 && startX < 30) openDrawer('left');   // swipe right from left edge
+            if (dx < 0 && startX > window.innerWidth - 30) openDrawer('right'); // swipe left from right edge
+        }, { passive: true });
     }
 
     // ─── CALCULATOR ──────────────────────────────────────────────
@@ -1165,7 +1393,9 @@
         nextBtn.onclick = () => { if (currentIndex + 1 < quizQuestions.length) { currentIndex++; showQuestion(); } else endQuiz(); };
         updateHistoryDisplays();
         buildCalculator('desktopCalcWidget');
+        buildCalculator('mobileCalcWidget');
         initMobileFun();
+        initSwipeGesture();
         initResizableSidebar();
         pdfViewer.src = 'about:blank';
     }
