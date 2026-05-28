@@ -21,6 +21,7 @@
             color: #0f172a;
             transition: background 0.2s ease;
             min-height: 100vh;
+            overflow-x: hidden;
         }
 
         body.fun-mode-active {
@@ -32,11 +33,13 @@
         .dashboard {
             display: flex;
             min-height: 100vh;
+            width: 100vw;
         }
 
         /* LEFT SIDEBAR - Calculator (desktop) */
         .left-sidebar {
-            width: 320px;
+            width: 280px;
+            min-width: 240px;
             background: #ffffff;
             border-right: 1px solid #e2e8f0;
             position: sticky;
@@ -45,6 +48,7 @@
             overflow-y: auto;
             padding: 1.5rem 1rem;
             z-index: 10;
+            flex-shrink: 0;
         }
 
         body.fun-mode-active .left-sidebar {
@@ -52,23 +56,56 @@
             border-right-color: #2a2a35;
         }
 
-        /* RIGHT SIDEBAR - PDF viewer */
+        /* main content area */
+        .main-content {
+            flex: 1;
+            padding: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+            width: 100%;
+            overflow-y: auto;
+        }
+
+        /* RIGHT SIDEBAR - PDF viewer (Now wider by default and flexible) */
         .right-sidebar {
-            width: 420px;
+            width: 550px; /* Increased default width */
+            min-width: 350px;
+            max-width: 80vw;
             background: #ffffff;
-            border-left: 1px solid #e2e8f0;
             position: sticky;
             top: 0;
             height: 100vh;
-            overflow-y: auto;
             display: flex;
             flex-direction: column;
             z-index: 10;
+            flex-shrink: 0;
         }
 
         body.fun-mode-active .right-sidebar {
             background: #0f0f14;
-            border-left-color: #2a2a35;
+        }
+
+        /* Draggable Resizer Bar */
+        .resizer {
+            width: 8px;
+            background: #e2e8f0;
+            cursor: col-resize;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            z-index: 20;
+            transition: background 0.2s;
+            flex-shrink: 0;
+        }
+        .resizer:hover, .resizer.dragging {
+            background: #3b82f6;
+        }
+
+        body.fun-mode-active .resizer {
+            background: #2a2a35;
+        }
+        body.fun-mode-active .resizer:hover, body.fun-mode-active .resizer.dragging {
+            background: #3b82f6;
         }
 
         .pdf-header {
@@ -79,11 +116,15 @@
             position: sticky;
             top: 0;
             z-index: 2;
+            border-left: 1px solid #e2e8f0;
+        }
+        body.fun-mode-active .pdf-header {
+            border-left-color: #2a2a35;
         }
 
         .pdf-frame {
             flex: 1;
-            min-height: 500px;
+            height: calc(100vh - 60px);
         }
 
         .pdf-frame iframe {
@@ -91,15 +132,10 @@
             height: 100%;
             border: none;
             background: #f8fafc;
+            border-left: 1px solid #e2e8f0;
         }
-
-        /* main content area */
-        .main-content {
-            flex: 1;
-            padding: 1.5rem;
-            max-width: 900px;
-            margin: 0 auto;
-            width: 100%;
+        body.fun-mode-active .pdf-frame iframe {
+            border-left-color: #2a2a35;
         }
 
         /* cards & quiz styling */
@@ -266,7 +302,7 @@
 
         /* mobile adjustments */
         @media (max-width: 900px) {
-            .left-sidebar, .right-sidebar { display: none; }
+            .left-sidebar, .right-sidebar, .resizer { display: none; }
             .main-content { padding: 1rem; }
             .fun-mode-toggle-mobile { position: fixed; bottom: 20px; right: 20px; background: #f97316; border: none; padding: 12px 18px; border-radius: 40px; font-weight: bold; z-index: 100; box-shadow: 0 4px 12px black; }
         }
@@ -288,14 +324,12 @@
 </head>
 <body>
 <div class="dashboard">
-    <!-- LEFT SIDEBAR: Calculator -->
     <div class="left-sidebar">
         <div style="margin-bottom: 1.5rem;"><strong>🧮 Quick Calc</strong></div>
         <div id="desktopCalcWidget" class="calc-widget"></div>
         <div style="margin-top: 2rem; font-size: 0.75rem; color: #64748b; text-align: center;">√ = sqrt, % = /100</div>
     </div>
 
-    <!-- MAIN CONTENT -->
     <div class="main-content" id="mainContent">
         <div id="setupScreen">
             <div class="card">
@@ -332,8 +366,9 @@
         </div>
     </div>
 
-    <!-- RIGHT SIDEBAR: PDF Preview -->
-    <div class="right-sidebar">
+    <div class="resizer" id="sidebarResizer"></div>
+
+    <div class="right-sidebar" id="pdfSidebar">
         <div class="pdf-header">📖 Source Paper <span id="pdfLabel"></span></div>
         <div class="pdf-frame" id="pdfFrameContainer">
             <iframe id="pdfViewer" src="about:blank" title="CSEC Maths Paper"></iframe>
@@ -341,7 +376,6 @@
     </div>
 </div>
 
-<!-- mobile fun mode toggle (appears only on mobile) -->
 <div id="mobileFunToggle" class="fun-mode-toggle-mobile hidden">✨ Fun Mode</div>
 
 <script>
@@ -391,6 +425,40 @@
     const scoreDisplaySpan = document.getElementById('scoreDisplay');
     const pdfViewer = document.getElementById('pdfViewer');
     const pdfLabelSpan = document.getElementById('pdfLabel');
+    const pdfSidebar = document.getElementById('pdfSidebar');
+    const sidebarResizer = document.getElementById('sidebarResizer');
+
+    // ----- Resizable Sidebar Implementation -----
+    function initResizableSidebar() {
+        let isDragging = false;
+
+        sidebarResizer.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            sidebarResizer.classList.add('dragging');
+            document.body.style.cursor = 'col-resize';
+            // Disable pointer events on iframe while dragging to prevent stutter
+            pdfViewer.style.pointerEvents = 'none';
+            e.preventDefault();
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            // Calculate width based on viewport right edge
+            const newWidth = window.innerWidth - e.clientX;
+            if (newWidth > 300 && newWidth < window.innerWidth * 0.8) {
+                pdfSidebar.style.width = `${newWidth}px`;
+            }
+        });
+
+        document.addEventListener('mouseup', () => {
+            if (isDragging) {
+                isDragging = false;
+                sidebarResizer.classList.remove('dragging');
+                document.body.style.cursor = 'default';
+                pdfViewer.style.pointerEvents = 'auto';
+            }
+        });
+    }
 
     // ----- Helper: load page map from helper.json -----
     async function loadPageMap() {
@@ -486,10 +554,19 @@
                 const data = jsyaml.load(txt);
                 if (data?.exam?.items) {
                     const meta = PAPERS.find(p => p.file === f);
-                    loaded.push({
-                        file: f, year: meta?.year, session: meta?.session,
-                        items: data.exam.items, paperInfo: meta
+                    
+                    // Filter out non-existent / dummy placeholder questions
+                    const validItems = data.exam.items.filter(item => {
+                        const text = (item.question || "").toLowerCase();
+                        return !(text.includes("not provided") || text.includes("n/a") || item.correct_answer === "Not found");
                     });
+
+                    if (validItems.length > 0) {
+                        loaded.push({
+                            file: f, year: meta?.year, session: meta?.session,
+                            items: validItems, paperInfo: meta
+                        });
+                    }
                 }
             } catch(e) { console.warn(e); }
         }
@@ -513,7 +590,7 @@
 
         startBtn.disabled = true;
         allPapersData = await loadSelectedPapers(selected);
-        if (allPapersData.length === 0) { loadingDiv.remove(); alert('Failed to load papers'); startBtn.disabled=false; return; }
+        if (allPapersData.length === 0) { loadingDiv.remove(); alert('No valid questions found in selected papers'); startBtn.disabled=false; return; }
 
         // Prefetch PDFs for all selected papers (cache them)
         const uniquePaperInfos = [...new Map(allPapersData.map(p => [p.paperInfo?.pdf, p.paperInfo])).values()];
@@ -734,6 +811,7 @@
         updateHistoryDisplays();
         buildCalculator('desktopCalcWidget');
         initMobileFun();
+        initResizableSidebar();
         // preload default placeholder
         pdfViewer.src = 'about:blank';
     }
