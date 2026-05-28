@@ -5,73 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="CSEC Mathematics Paper 1 practice with past papers, smart tools, and PDF preview.">
     <title>Study Key • Mathematics P1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
+        :root {
+            --bg: #0d0f14;
+            --surface: #13161e;
+            --surface2: #1a1e2a;
+            --border: #252a38;
+            --accent: #5b6ef5;
+            --accent-glow: rgba(91,110,245,0.25);
+            --accent2: #34d399;
+            --accent2-glow: rgba(52,211,153,0.2);
+            --danger: #f87171;
+            --warn: #fbbf24;
+            --text: #e8eaf2;
+            --text-muted: #6b7280;
+            --text-dim: #9ca3af;
+            --radius: 14px;
+            --radius-lg: 20px;
+            --sidebar-left: 268px;
+            --sidebar-right: 520px;
         }
 
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
         body {
-            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f1f5f9;
-            color: #0f172a;
-            transition: background 0.2s ease;
+            font-family: 'Sora', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
             min-height: 100vh;
             overflow-x: hidden;
         }
 
-        body.fun-mode-active {
-            background: #000000;
-            color: #f1f5f9;
-        }
+        /* ── Fun mode ── */
+        body.fun-mode-active { background: #000; }
 
-        /* 3-column layout for desktop */
-        .dashboard {
-            display: flex;
-            min-height: 100vh;
-            width: 100vw;
-        }
+        /* ── Layout ── */
+        .dashboard { display: flex; min-height: 100vh; width: 100vw; }
 
-        /* LEFT SIDEBAR - Calculator (desktop) */
+        /* LEFT SIDEBAR */
         .left-sidebar {
-            width: 280px;
-            min-width: 240px;
-            background: #ffffff;
-            border-right: 1px solid #e2e8f0;
+            width: var(--sidebar-left);
+            min-width: 220px;
+            background: var(--surface);
+            border-right: 1px solid var(--border);
             position: sticky;
             top: 0;
             height: 100vh;
             overflow-y: auto;
-            padding: 1.5rem 1rem;
+            padding: 1.4rem 1rem;
             z-index: 10;
+            flex-shrink: 0;
+            scrollbar-width: thin;
+            scrollbar-color: var(--border) transparent;
+        }
+
+        .sidebar-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1.6rem;
+            padding-bottom: 1.2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sidebar-logo .logo-icon {
+            width: 32px; height: 32px;
+            background: linear-gradient(135deg, var(--accent), #8b5cf6);
+            border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1rem;
             flex-shrink: 0;
         }
 
-        body.fun-mode-active .left-sidebar {
-            background: #0f0f14;
-            border-right-color: #2a2a35;
+        .sidebar-logo .logo-text {
+            font-weight: 700;
+            font-size: 0.9rem;
+            line-height: 1.1;
+            color: var(--text);
         }
 
-        /* main content area */
+        .sidebar-logo .logo-sub {
+            font-size: 0.68rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .sidebar-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 0.6rem;
+        }
+
+        body.fun-mode-active .left-sidebar { background: #0a0a10; border-right-color: #1e1e2a; }
+
+        /* MAIN */
         .main-content {
             flex: 1;
-            padding: 1.5rem;
-            max-width: 900px;
+            padding: 1.8rem 1.6rem;
+            max-width: 860px;
             margin: 0 auto;
             width: 100%;
-            overflow-y: auto;
         }
 
-        /* RIGHT SIDEBAR - PDF viewer (Now wider by default and flexible) */
+        /* RIGHT SIDEBAR */
         .right-sidebar {
-            width: 550px; /* Increased default width */
-            min-width: 350px;
+            width: var(--sidebar-right);
+            min-width: 320px;
             max-width: 80vw;
-            background: #ffffff;
+            background: var(--surface);
+            border-left: 1px solid var(--border);
             position: sticky;
             top: 0;
             height: 100vh;
@@ -81,375 +130,705 @@
             flex-shrink: 0;
         }
 
-        body.fun-mode-active .right-sidebar {
-            background: #0f0f14;
-        }
+        body.fun-mode-active .right-sidebar { background: #0a0a10; }
 
-        /* Draggable Resizer Bar */
+        /* RESIZER */
         .resizer {
-            width: 8px;
-            background: #e2e8f0;
+            width: 5px;
+            background: var(--border);
             cursor: col-resize;
             position: sticky;
             top: 0;
             height: 100vh;
             z-index: 20;
-            transition: background 0.2s;
+            transition: background 0.15s;
             flex-shrink: 0;
         }
-        .resizer:hover, .resizer.dragging {
-            background: #3b82f6;
-        }
+        .resizer:hover, .resizer.dragging { background: var(--accent); }
 
-        body.fun-mode-active .resizer {
-            background: #2a2a35;
-        }
-        body.fun-mode-active .resizer:hover, body.fun-mode-active .resizer.dragging {
-            background: #3b82f6;
-        }
-
+        /* PDF PANEL */
         .pdf-header {
-            padding: 1rem;
+            padding: 0.9rem 1.1rem;
+            font-weight: 600;
+            font-size: 0.82rem;
+            border-bottom: 1px solid var(--border);
+            background: var(--surface2);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-dim);
+        }
+
+        .pdf-header .pdf-badge {
+            background: var(--accent);
+            color: white;
+            font-size: 0.65rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 20px;
             font-weight: 700;
-            border-bottom: 1px solid #eef2ff;
-            background: inherit;
-            position: sticky;
-            top: 0;
-            z-index: 2;
-            border-left: 1px solid #e2e8f0;
-        }
-        body.fun-mode-active .pdf-header {
-            border-left-color: #2a2a35;
+            letter-spacing: 0.05em;
         }
 
-        .pdf-frame {
-            flex: 1;
-            height: calc(100vh - 60px);
-        }
+        .pdf-frame { flex: 1; height: calc(100vh - 48px); }
+        .pdf-frame iframe { width: 100%; height: 100%; border: none; background: #1a1a1a; }
 
-        .pdf-frame iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            background: #f8fafc;
-            border-left: 1px solid #e2e8f0;
-        }
-        body.fun-mode-active .pdf-frame iframe {
-            border-left-color: #2a2a35;
-        }
-
-        /* cards & quiz styling */
+        /* ── Cards ── */
         .card {
-            background: #ffffff;
-            border-radius: 1.5rem;
-            padding: 1.6rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid #eef2ff;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+            background: var(--surface);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            margin-bottom: 1.2rem;
+            border: 1px solid var(--border);
+            position: relative;
         }
 
-        body.fun-mode-active .card {
-            background: #0f0f12;
-            border-color: #2a2a35;
+        body.fun-mode-active .card { background: #0f0f14; border-color: #1e1e2a; }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
+        .card-sub {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-bottom: 1.2rem;
+        }
+
+        /* ── Buttons ── */
         .btn {
-            background: #1a56db;
+            background: var(--accent);
             color: white;
             border: none;
-            padding: 0.7rem 1.4rem;
+            padding: 0.65rem 1.4rem;
             border-radius: 60px;
             font-weight: 600;
+            font-size: 0.88rem;
             cursor: pointer;
-            transition: 0.1s;
+            transition: opacity 0.12s, transform 0.1s;
+            font-family: inherit;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
         }
 
-        .btn-outline {
+        .btn:hover { opacity: 0.88; transform: translateY(-1px); }
+        .btn:active { transform: scale(0.97); }
+        .btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+
+        .btn-ghost {
             background: transparent;
-            border: 2px solid #1a56db;
-            color: #1a56db;
+            border: 1.5px solid var(--border);
+            color: var(--text-dim);
         }
 
+        .btn-ghost:hover { border-color: var(--accent); color: var(--accent); opacity: 1; }
+
+        .btn-success { background: var(--accent2); }
+
+        /* ── Progress bar ── */
         .progress-bar {
-            height: 5px;
-            background: #e2e8f0;
+            height: 4px;
+            background: var(--border);
             border-radius: 4px;
             margin: 1rem 0;
+            overflow: hidden;
         }
 
         .progress-fill {
             height: 100%;
-            background: #1a56db;
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
             width: 0%;
             border-radius: 4px;
+            transition: width 0.3s ease;
         }
 
-        .options {
+        /* ── Quiz header row ── */
+        .quiz-header-row {
             display: flex;
-            flex-direction: column;
-            gap: 0.7rem;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.78rem;
+            color: var(--text-muted);
         }
+
+        .q-counter {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 0.2rem 0.7rem;
+            font-weight: 600;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text);
+        }
+
+        .score-badge {
+            background: var(--accent-glow);
+            border: 1px solid var(--accent);
+            border-radius: 20px;
+            padding: 0.2rem 0.7rem;
+            font-weight: 600;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--accent);
+        }
+
+        /* ── Question ── */
+        .question-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1.55;
+            margin: 0.8rem 0 0.3rem;
+        }
+
+        .question-source {
+            font-size: 0.73rem;
+            color: var(--text-muted);
+            font-family: 'DM Mono', monospace;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .question-source::before {
+            content: '';
+            display: inline-block;
+            width: 6px; height: 6px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        /* ── Option buttons ── */
+        .options { display: flex; flex-direction: column; gap: 0.6rem; }
 
         .option-btn {
             text-align: left;
-            padding: 0.9rem 1rem;
-            background: #f8fafc;
-            border: 2px solid #e2e8f0;
-            border-radius: 1rem;
-            font-size: 0.95rem;
+            padding: 0.85rem 1rem;
+            background: var(--surface2);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius);
+            font-size: 0.9rem;
             cursor: pointer;
+            color: var(--text);
+            font-family: inherit;
+            transition: border-color 0.12s, background 0.12s, transform 0.08s;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
         }
 
-        body.fun-mode-active .option-btn {
-            background: #1a1a24;
-            border-color: #334155;
-            color: #e2e8f0;
+        .option-btn:hover:not(:disabled) {
+            border-color: var(--accent);
+            background: var(--accent-glow);
+            transform: translateX(3px);
+        }
+
+        .option-btn .opt-letter {
+            font-weight: 700;
+            font-family: 'DM Mono', monospace;
+            color: var(--accent);
+            font-size: 0.85rem;
+            min-width: 1.4em;
+            padding-top: 0.05rem;
         }
 
         .option-btn.correct {
-            background: #dcfce7;
-            border-color: #22c55e;
+            background: var(--accent2-glow);
+            border-color: var(--accent2);
+            color: var(--accent2);
         }
+
+        .option-btn.correct .opt-letter { color: var(--accent2); }
 
         .option-btn.wrong {
-            background: #fee2e2;
-            border-color: #ef4444;
+            background: rgba(248,113,113,0.12);
+            border-color: var(--danger);
+            color: var(--danger);
         }
 
+        .option-btn.wrong .opt-letter { color: var(--danger); }
+
+        /* ── Feedback ── */
         .feedback {
-            padding: 0.8rem;
-            border-radius: 1rem;
-            margin: 1rem 0;
+            padding: 0.7rem 1rem;
+            border-radius: var(--radius);
+            margin: 0.8rem 0 0;
             font-weight: 600;
+            font-size: 0.88rem;
             display: none;
+            align-items: center;
+            gap: 0.5rem;
         }
 
-        /* fun mode grid */
+        .feedback.correct {
+            background: var(--accent2-glow);
+            border: 1px solid var(--accent2);
+            color: var(--accent2);
+            display: flex;
+        }
+
+        .feedback.wrong {
+            background: rgba(248,113,113,0.12);
+            border: 1px solid var(--danger);
+            color: var(--danger);
+            display: flex;
+        }
+
+        /* ── Fun mode grid ── */
         .fun-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1.2rem;
+            gap: 1rem;
             margin: 1rem 0;
         }
 
         .fun-card {
-            aspect-ratio: 1 / 1;
-            border-radius: 2rem;
+            aspect-ratio: 1/1;
+            border-radius: 1.5rem;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 2.5rem;
             font-weight: 800;
             color: white;
-            text-shadow: 0 2px 6px black;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.5);
             cursor: pointer;
-            transition: 0.07s linear;
-            box-shadow: 0 12px 20px -8px rgba(0,0,0,0.3);
+            transition: transform 0.08s;
+            box-shadow: 0 8px 24px -8px rgba(0,0,0,0.5);
         }
 
-        .fun-card:active { transform: scale(0.96); }
-        .color-red { background: linear-gradient(145deg, #ef4444, #b91c1c); }
-        .color-green { background: linear-gradient(145deg, #22c55e, #15803d); }
-        .color-blue { background: linear-gradient(145deg, #3b82f6, #1d4ed8); }
-        .color-yellow { background: linear-gradient(145deg, #eab308, #a16207); }
+        .fun-card:active { transform: scale(0.94); }
+        .color-red    { background: linear-gradient(145deg,#ef4444,#b91c1c); }
+        .color-green  { background: linear-gradient(145deg,#22c55e,#15803d); }
+        .color-blue   { background: linear-gradient(145deg,#3b82f6,#1d4ed8); }
+        .color-yellow { background: linear-gradient(145deg,#eab308,#a16207); }
+
         .wrong-shake { animation: shake 0.2s ease-in-out 0s 2; }
-        @keyframes shake { 0% { transform: translateX(0); } 25% { transform: translateX(-7px); } 75% { transform: translateX(7px); } 100% { transform: translateX(0); } }
+        @keyframes shake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-7px)} 75%{transform:translateX(7px)} }
 
+        /* ── Calculator ── */
         .calc-widget {
-            background: #f8fafc;
-            border-radius: 24px;
+            background: var(--surface2);
+            border-radius: 18px;
             padding: 0.8rem;
-            margin-top: 0.5rem;
+            border: 1px solid var(--border);
         }
-        body.fun-mode-active .calc-widget { background: #1e1e2f; }
+
+        body.fun-mode-active .calc-widget { background: #111118; }
+
         .calc-display {
-            background: #0f172a;
-            color: #a5f3c3;
-            font-family: monospace;
-            font-size: 1.5rem;
-            padding: 0.8rem;
+            background: #060810;
+            color: var(--accent2);
+            font-family: 'DM Mono', monospace;
+            font-size: 1.4rem;
+            padding: 0.7rem 0.8rem;
             text-align: right;
-            border-radius: 20px;
-            margin-bottom: 1rem;
+            border-radius: 12px;
+            margin-bottom: 0.7rem;
             word-break: break-all;
-            min-height: 75px;
+            min-height: 68px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            border: 1px solid var(--border);
         }
+
         .calc-buttons {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 0.6rem;
+            gap: 0.45rem;
         }
+
         .calc-btn {
-            background: white;
-            border: none;
-            padding: 0.8rem 0;
-            font-size: 1.1rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 0.7rem 0;
+            font-size: 0.95rem;
             font-weight: 600;
-            border-radius: 40px;
+            border-radius: 10px;
             cursor: pointer;
-        }
-        body.fun-mode-active .calc-btn { background: #2d2d3a; color: #f1f5f9; }
-        .calc-btn.operator { background: #eef2ff; color: #1e40af; }
-        .calc-btn.equal { background: #1a56db; color: white; }
-
-        .hidden { display: none; }
-        .year-checkboxes { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
-        .year-checkboxes label { background: #f1f5f9; padding: 0.3rem 1rem; border-radius: 2rem; display: flex; align-items: center; gap: 0.3rem; }
-        .results-grid { display: flex; gap: 1rem; margin: 1rem 0; }
-        .result-stat { background: #f1f5f9; padding: 1rem; border-radius: 1rem; text-align: center; flex: 1; }
-        .history-list { list-style: none; margin-top: 0.8rem; }
-        .history-list li { padding: 0.5rem 0; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; }
-
-        /* mobile adjustments */
-        @media (max-width: 900px) {
-            .left-sidebar, .right-sidebar, .resizer { display: none; }
-            .main-content { padding: 1rem; }
-            .fun-mode-toggle-mobile { position: fixed; bottom: 20px; right: 20px; background: #f97316; border: none; padding: 12px 18px; border-radius: 40px; font-weight: bold; z-index: 100; box-shadow: 0 4px 12px black; }
+            color: var(--text);
+            font-family: inherit;
+            transition: background 0.1s, border-color 0.1s;
         }
 
+        .calc-btn:hover { background: var(--border); }
+        .calc-btn.operator { color: var(--accent); background: var(--accent-glow); border-color: rgba(91,110,245,0.3); }
+        .calc-btn.equal   { background: var(--accent); color: white; border-color: var(--accent); }
+        .calc-btn.equal:hover { opacity: 0.85; }
+
+        /* ── Year checkboxes ── */
+        .year-checkboxes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin: 1rem 0 1.2rem;
+        }
+
+        .year-checkboxes label {
+            background: var(--surface2);
+            border: 1.5px solid var(--border);
+            padding: 0.3rem 0.8rem;
+            border-radius: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: border-color 0.12s, background 0.12s;
+            color: var(--text-dim);
+        }
+
+        .year-checkboxes label:hover {
+            border-color: var(--accent);
+            color: var(--text);
+        }
+
+        .year-checkboxes input[type="checkbox"] {
+            accent-color: var(--accent);
+            width: 13px; height: 13px;
+        }
+
+        /* ── Number input ── */
+        .q-count-row {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .q-count-label { font-size: 0.82rem; color: var(--text-dim); font-weight: 500; white-space: nowrap; }
+
+        .q-count-input {
+            background: var(--surface2);
+            border: 1.5px solid var(--border);
+            color: var(--text);
+            padding: 0.45rem 0.7rem;
+            border-radius: 10px;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.9rem;
+            width: 80px;
+            transition: border-color 0.12s;
+        }
+
+        .q-count-input:focus { outline: none; border-color: var(--accent); }
+
+        /* ── Results ── */
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.8rem;
+            margin: 1rem 0 1.2rem;
+        }
+
+        .result-stat {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            padding: 1rem;
+            border-radius: var(--radius);
+            text-align: center;
+        }
+
+        .result-stat .number {
+            font-size: 2rem;
+            font-weight: 800;
+            font-family: 'DM Mono', monospace;
+            color: var(--accent);
+        }
+
+        .result-stat .label { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem; }
+
+        /* ── History list ── */
+        .history-list { list-style: none; margin-top: 0.6rem; }
+
+        .history-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: var(--text-dim);
+        }
+
+        .history-list li:last-child { border-bottom: none; }
+
+        .history-list .hist-score {
+            font-family: 'DM Mono', monospace;
+            font-weight: 600;
+            color: var(--accent2);
+        }
+
+        /* ── Section divider ── */
+        .section-divider {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 1rem 0;
+        }
+
+        /* ── Loading overlay ── */
         .loading-overlay {
             position: fixed;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            background: rgba(0,0,0,0.7);
+            background: rgba(13,15,20,0.85);
             display: flex;
             align-items: center;
             justify-content: center;
             z-index: 1000;
-            color: white;
-            font-size: 1.2rem;
-            backdrop-filter: blur(4px);
+            backdrop-filter: blur(6px);
         }
+
+        .loading-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2rem 2.5rem;
+            text-align: center;
+            color: var(--text);
+        }
+
+        .loading-box .spinner {
+            width: 36px; height: 36px;
+            border: 3px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* ── Util ── */
+        .hidden { display: none !important; }
+
+        .section-heading {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 0.6rem;
+        }
+
+        .btn-row {
+            display: flex;
+            gap: 0.7rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        /* ── Mobile fun toggle ── */
+        .fun-mode-toggle-mobile {
+            position: fixed;
+            bottom: 20px; right: 20px;
+            background: linear-gradient(135deg, #f97316, #ef4444);
+            border: none;
+            padding: 12px 18px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(249,115,22,0.4);
+            color: white;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        /* ── Mobile ── */
+        @media (max-width: 900px) {
+            .left-sidebar, .right-sidebar, .resizer { display: none; }
+            .main-content { padding: 1rem; }
+        }
+
+        /* ── Entry animation ── */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(12px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .card { animation: fadeUp 0.3s ease both; }
+        .card:nth-child(2) { animation-delay: 0.06s; }
+        .card:nth-child(3) { animation-delay: 0.12s; }
     </style>
 </head>
 <body>
 <div class="dashboard">
+
+    <!-- LEFT SIDEBAR: Calculator -->
     <div class="left-sidebar">
-        <div style="margin-bottom: 1.5rem;"><strong>🧮 Quick Calc</strong></div>
+        <div class="sidebar-logo">
+            <div class="logo-icon">📐</div>
+            <div>
+                <div class="logo-text">Study Key</div>
+                <div class="logo-sub">Mathematics P1</div>
+            </div>
+        </div>
+        <div class="sidebar-label">Quick Calculator</div>
         <div id="desktopCalcWidget" class="calc-widget"></div>
-        <div style="margin-top: 2rem; font-size: 0.75rem; color: #64748b; text-align: center;">√ = sqrt, % = /100</div>
+        <div style="margin-top:1rem; font-size:0.7rem; color:var(--text-muted); text-align:center; line-height:1.6;">
+            <code style="background:var(--surface2);padding:0.1rem 0.4rem;border-radius:4px;">√</code> = sqrt &nbsp;·&nbsp;
+            <code style="background:var(--surface2);padding:0.1rem 0.4rem;border-radius:4px;">%</code> = ÷100
+        </div>
     </div>
 
+    <!-- MAIN CONTENT -->
     <div class="main-content" id="mainContent">
+
+        <!-- SETUP SCREEN -->
         <div id="setupScreen">
             <div class="card">
-                <h2>📐 Mathematics Paper 1</h2>
-                <p>Select past papers & question count</p>
+                <div class="card-title">📐 Mathematics Paper 1</div>
+                <div class="card-sub">Select past papers and set your question count to begin</div>
+
+                <div class="section-heading">Papers</div>
                 <div class="year-checkboxes" id="yearCheckboxes"></div>
-                <label>Number of questions:</label>
-                <input type="number" id="questionCount" min="5" max="200" value="30" step="5" style="margin: 0.5rem 0 1rem; padding: 0.5rem; border-radius: 12px; border: 1px solid #cbd5e1;">
-                <div><button class="btn" id="startBtn">🚀 Start Quiz</button></div>
+
+                <div class="q-count-row">
+                    <span class="q-count-label">Questions:</span>
+                    <input type="number" id="questionCount" class="q-count-input" min="5" max="200" value="30" step="5">
+                </div>
+
+                <button class="btn" id="startBtn">🚀 Start Quiz</button>
             </div>
-            <div class="card"><h3>📋 Recent attempts</h3><div id="historyContainer">—</div></div>
+
+            <div class="card">
+                <div class="card-title" style="font-size:0.92rem;">📋 Recent Attempts</div>
+                <div id="historyContainer" style="color:var(--text-muted);font-size:0.85rem;">—</div>
+            </div>
         </div>
 
+        <!-- QUIZ SCREEN -->
         <div id="quizScreen" class="hidden">
             <div class="card">
-                <div style="display: flex; justify-content: space-between;"><span id="qCounter"></span><span id="scoreDisplay"></span></div>
+                <div class="quiz-header-row">
+                    <span class="q-counter" id="qCounter"></span>
+                    <span class="score-badge" id="scoreDisplay"></span>
+                </div>
                 <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
-                <div class="question-text" id="questionText" style="font-size: 1.2rem; font-weight: 600;"></div>
-                <div class="question-source" id="questionSource" style="font-size: 0.8rem; margin: 0.3rem 0 1rem; color: #64748b;"></div>
+
+                <div class="question-text" id="questionText"></div>
+                <div class="question-source" id="questionSource"></div>
+
                 <div id="standardOptions" class="options"></div>
                 <div id="funModeContainer" class="hidden"></div>
+
                 <div class="feedback" id="feedbackMsg"></div>
-                <button class="btn" id="nextBtn" style="margin-top: 1rem; display: none;">Next →</button>
+                <div class="btn-row">
+                    <button class="btn" id="nextBtn" style="display:none;">Next →</button>
+                </div>
             </div>
         </div>
 
+        <!-- RESULTS SCREEN -->
         <div id="resultsScreen" class="hidden">
             <div class="card">
-                <h2>✅ Quiz completed</h2>
-                <div class="results-grid"><div class="result-stat"><div class="number" id="finalScore">0</div><div>Correct</div></div><div class="result-stat"><div class="number" id="finalTotal">0</div><div>Total</div></div><div class="result-stat"><div class="number" id="finalPercent">0%</div><div>Score</div></div></div>
-                <div style="display: flex; gap: 0.8rem;"><button class="btn" id="retryQuizBtn">Retry</button><button class="btn btn-outline" id="newQuizBtn">New quiz</button></div>
+                <div class="card-title">✅ Quiz Complete</div>
+                <div class="results-grid">
+                    <div class="result-stat"><div class="number" id="finalScore">0</div><div class="label">Correct</div></div>
+                    <div class="result-stat"><div class="number" id="finalTotal">0</div><div class="label">Total</div></div>
+                    <div class="result-stat"><div class="number" id="finalPercent">0%</div><div class="label">Score</div></div>
+                </div>
+                <div class="btn-row">
+                    <button class="btn" id="retryQuizBtn">↺ Retry</button>
+                    <button class="btn btn-ghost" id="newQuizBtn">New Quiz</button>
+                </div>
             </div>
-            <div class="card"><h3>Past attempts</h3><div id="resultsHistory"></div></div>
+            <div class="card">
+                <div class="card-title" style="font-size:0.9rem;">📊 Past Attempts</div>
+                <div id="resultsHistory" style="color:var(--text-muted);font-size:0.85rem;">—</div>
+            </div>
         </div>
     </div>
 
+    <!-- RESIZER -->
     <div class="resizer" id="sidebarResizer"></div>
 
+    <!-- RIGHT SIDEBAR: PDF viewer -->
     <div class="right-sidebar" id="pdfSidebar">
-        <div class="pdf-header">📖 Source Paper <span id="pdfLabel"></span></div>
+        <div class="pdf-header">
+            <span class="pdf-badge">PDF</span>
+            Source Paper <span id="pdfLabel" style="color:var(--text);font-weight:700;margin-left:0.3rem;"></span>
+        </div>
         <div class="pdf-frame" id="pdfFrameContainer">
             <iframe id="pdfViewer" src="about:blank" title="CSEC Maths Paper"></iframe>
         </div>
     </div>
 </div>
 
-<div id="mobileFunToggle" class="fun-mode-toggle-mobile hidden">✨ Fun Mode</div>
+<!-- Mobile fun mode button -->
+<button id="mobileFunToggle" class="fun-mode-toggle-mobile hidden">✨ Fun Mode</button>
 
 <script>
-    // ---------- PAPER LIST ----------
+    // ─── PAPER LIST ───────────────────────────────────────────────
     const PAPERS = [
-        { file: 'CSEC_Mathematics_P1_2017_MJ', label: 'May/June 2017', year:2017, session:'May/June', pdf:'CSEC_Mathematics_P1_2017_MJ.pdf', helperKey:'Maths MJ 2017' },
-        { file: 'CSEC_Mathematics_P1_2018_JAN', label: 'January 2018', year:2018, session:'January', pdf:'CSEC_Mathematics_P1_2018_JAN.pdf', helperKey:'Maths Jan 2018' },
-        { file: 'CSEC_Mathematics_P1_2019_JAN', label: 'January 2019', year:2019, session:'January', pdf:'CSEC_Mathematics_P1_2019_JAN.pdf', helperKey:'Maths Jan 2019' },
-        { file: 'CSEC_Mathematics_P1_2019_MJ', label: 'May/June 2019', year:2019, session:'May/June', pdf:'CSEC_Mathematics_P1_2019_MJ.pdf', helperKey:'Maths MJ 2019' },
-        { file: 'CSEC_Mathematics_P1_2020_JAN', label: 'January 2020', year:2020, session:'January', pdf:'CSEC_Mathematics_P1_2020_JAN.pdf', helperKey:'Maths Jan 2020' },
-        { file: 'CSEC_Mathematics_P1_2021_JAN', label: 'January 2021', year:2021, session:'January', pdf:'CSEC_Mathematics_P1_2021_JAN.pdf', helperKey:'Maths Jan 2021' },
-        { file: 'CSEC_Mathematics_P1_2022_MJ', label: 'May/June 2022', year:2022, session:'May/June', pdf:'CSEC_Mathematics_P1_2022_MJ.pdf', helperKey:'Maths MJ 2022' },
-        { file: 'CSEC_Mathematics_P1_2023_JAN', label: 'January 2023', year:2023, session:'January', pdf:'CSEC_Mathematics_P1_2023_JAN.pdf', helperKey:'Maths Jan 2023' },
-        { file: 'CSEC_Mathematics_P1_2023_MJ', label: 'May/June 2023', year:2023, session:'May/June', pdf:'CSEC_Mathematics_P1_2023_MJ.pdf', helperKey:'Maths MJ 2023' },
-        { file: 'CSEC_Mathematics_P1_2024_JAN', label: 'January 2024', year:2024, session:'January', pdf:'CSEC_Mathematics_P1_2024_JAN.pdf', helperKey:'Maths Jan 2024' },
-        { file: 'CSEC_Mathematics_P1_2024_MJ', label: 'May/June 2024', year:2024, session:'May/June', pdf:'CSEC_Mathematics_P1_2024_MJ.pdf', helperKey:'Maths MJ 2024' }
+        { file:'CSEC_Mathematics_P1_2017_MJ',  label:'May/June 2017',  year:2017, session:'May/June', pdf:'CSEC_Mathematics_P1_2017_MJ.pdf',  helperKey:'Maths MJ 2017'  },
+        { file:'CSEC_Mathematics_P1_2018_JAN', label:'January 2018',   year:2018, session:'January',  pdf:'CSEC_Mathematics_P1_2018_JAN.pdf', helperKey:'Maths Jan 2018' },
+        { file:'CSEC_Mathematics_P1_2019_JAN', label:'January 2019',   year:2019, session:'January',  pdf:'CSEC_Mathematics_P1_2019_JAN.pdf', helperKey:'Maths Jan 2019' },
+        { file:'CSEC_Mathematics_P1_2019_MJ',  label:'May/June 2019',  year:2019, session:'May/June', pdf:'CSEC_Mathematics_P1_2019_MJ.pdf',  helperKey:'Maths MJ 2019'  },
+        { file:'CSEC_Mathematics_P1_2020_JAN', label:'January 2020',   year:2020, session:'January',  pdf:'CSEC_Mathematics_P1_2020_JAN.pdf', helperKey:'Maths Jan 2020' },
+        { file:'CSEC_Mathematics_P1_2021_JAN', label:'January 2021',   year:2021, session:'January',  pdf:'CSEC_Mathematics_P1_2021_JAN.pdf', helperKey:'Maths Jan 2021' },
+        { file:'CSEC_Mathematics_P1_2022_MJ',  label:'May/June 2022',  year:2022, session:'May/June', pdf:'CSEC_Mathematics_P1_2022_MJ.pdf',  helperKey:'Maths MJ 2022'  },
+        { file:'CSEC_Mathematics_P1_2023_JAN', label:'January 2023',   year:2023, session:'January',  pdf:'CSEC_Mathematics_P1_2023_JAN.pdf', helperKey:'Maths Jan 2023' },
+        { file:'CSEC_Mathematics_P1_2023_MJ',  label:'May/June 2023',  year:2023, session:'May/June', pdf:'CSEC_Mathematics_P1_2023_MJ.pdf',  helperKey:'Maths MJ 2023'  },
+        { file:'CSEC_Mathematics_P1_2024_JAN', label:'January 2024',   year:2024, session:'January',  pdf:'CSEC_Mathematics_P1_2024_JAN.pdf', helperKey:'Maths Jan 2024' },
+        { file:'CSEC_Mathematics_P1_2024_MJ',  label:'May/June 2024',  year:2024, session:'May/June', pdf:'CSEC_Mathematics_P1_2024_MJ.pdf',  helperKey:'Maths MJ 2024'  }
     ];
-    const YAML_DIR = '../app/data/';
-    const PDF_DIR = '../app/pdfs/';
+
+    const YAML_DIR    = '../app/data/';
+    const PDF_DIR     = '../app/pdfs/';
     const HELPER_JSON = '../app/pdfs/mathshelper.json';
     const STORAGE_KEY = 'studykey_maths_p1';
 
-    let pageMap = {};
-    let allPapersData = [];
-    let quizQuestions = [];
+    // ─── STATE ────────────────────────────────────────────────────
+    let pageMap = {}, allPapersData = [], quizQuestions = [];
     let currentIndex = 0, score = 0;
-    let funMode = false;
-    let waitingAnswer = false;
-    let currentQuestionObj = null;
-    let isMobile = window.matchMedia("(pointer: coarse)").matches || window.innerWidth <= 900;
+    let funMode = false, waitingAnswer = false, currentQuestionObj = null;
+    const isMobile = window.matchMedia('(pointer: coarse)').matches || window.innerWidth <= 900;
 
-    // DOM elements
-    const setupScreen = document.getElementById('setupScreen');
-    const quizScreen = document.getElementById('quizScreen');
-    const resultsScreen = document.getElementById('resultsScreen');
-    const yearContainer = document.getElementById('yearCheckboxes');
-    const startBtn = document.getElementById('startBtn');
-    const qCountInput = document.getElementById('questionCount');
-    const questionTextSpan = document.getElementById('questionText');
-    const questionSourceSpan = document.getElementById('questionSource');
-    const standardOptionsDiv = document.getElementById('standardOptions');
-    const funContainer = document.getElementById('funModeContainer');
-    const feedbackMsg = document.getElementById('feedbackMsg');
-    const nextBtn = document.getElementById('nextBtn');
-    const progressFill = document.getElementById('progressFill');
-    const qCounterSpan = document.getElementById('qCounter');
-    const scoreDisplaySpan = document.getElementById('scoreDisplay');
-    const pdfViewer = document.getElementById('pdfViewer');
-    const pdfLabelSpan = document.getElementById('pdfLabel');
-    const pdfSidebar = document.getElementById('pdfSidebar');
-    const sidebarResizer = document.getElementById('sidebarResizer');
+    // ─── DOM REFS ────────────────────────────────────────────────
+    const setupScreen       = document.getElementById('setupScreen');
+    const quizScreen        = document.getElementById('quizScreen');
+    const resultsScreen     = document.getElementById('resultsScreen');
+    const yearContainer     = document.getElementById('yearCheckboxes');
+    const startBtn          = document.getElementById('startBtn');
+    const qCountInput       = document.getElementById('questionCount');
+    const questionTextSpan  = document.getElementById('questionText');
+    const questionSourceSpan= document.getElementById('questionSource');
+    const standardOptionsDiv= document.getElementById('standardOptions');
+    const funContainer      = document.getElementById('funModeContainer');
+    const feedbackMsg       = document.getElementById('feedbackMsg');
+    const nextBtn           = document.getElementById('nextBtn');
+    const progressFill      = document.getElementById('progressFill');
+    const qCounterSpan      = document.getElementById('qCounter');
+    const scoreDisplaySpan  = document.getElementById('scoreDisplay');
+    const pdfViewer         = document.getElementById('pdfViewer');
+    const pdfLabelSpan      = document.getElementById('pdfLabel');
+    const pdfSidebar        = document.getElementById('pdfSidebar');
+    const sidebarResizer    = document.getElementById('sidebarResizer');
 
-    // ----- Resizable Sidebar Implementation -----
+    // ─── RESIZABLE SIDEBAR ───────────────────────────────────────
     function initResizableSidebar() {
         let isDragging = false;
-
-        sidebarResizer.addEventListener('mousedown', (e) => {
+        sidebarResizer.addEventListener('mousedown', e => {
             isDragging = true;
             sidebarResizer.classList.add('dragging');
             document.body.style.cursor = 'col-resize';
-            // Disable pointer events on iframe while dragging to prevent stutter
             pdfViewer.style.pointerEvents = 'none';
             e.preventDefault();
         });
-
-        document.addEventListener('mousemove', (e) => {
+        document.addEventListener('mousemove', e => {
             if (!isDragging) return;
-            // Calculate width based on viewport right edge
             const newWidth = window.innerWidth - e.clientX;
-            if (newWidth > 300 && newWidth < window.innerWidth * 0.8) {
+            if (newWidth > 300 && newWidth < window.innerWidth * 0.8)
                 pdfSidebar.style.width = `${newWidth}px`;
-            }
         });
-
         document.addEventListener('mouseup', () => {
             if (isDragging) {
                 isDragging = false;
@@ -460,7 +839,7 @@
         });
     }
 
-    // ----- Helper: load page map from helper.json -----
+    // ─── PAGE MAP / PDF ──────────────────────────────────────────
     async function loadPageMap() {
         try {
             const resp = await fetch(HELPER_JSON);
@@ -468,25 +847,23 @@
                 const data = await resp.json();
                 for (const [key, entries] of Object.entries(data)) {
                     pageMap[key] = {};
-                    entries.forEach(entry => { pageMap[key][String(entry.question)] = entry.page; });
+                    entries.forEach(e => { pageMap[key][String(e.question)] = e.page; });
                 }
             }
         } catch(e) { console.warn(e); }
     }
 
     function getPageNumber(paperInfo, qNum) {
-        if (paperInfo && pageMap[paperInfo.helperKey] && pageMap[paperInfo.helperKey][String(qNum)])
+        if (paperInfo && pageMap[paperInfo.helperKey]?.[String(qNum)])
             return pageMap[paperInfo.helperKey][String(qNum)];
         return Math.floor((qNum - 1) / 5) + 2;
     }
 
-    // Preload PDFs into browser cache using link prefetch
     function preloadPDFs(paperInfos) {
         paperInfos.forEach(info => {
-            if (info && info.pdf) {
+            if (info?.pdf) {
                 const link = document.createElement('link');
-                link.rel = 'prefetch';
-                link.as = 'document';
+                link.rel = 'prefetch'; link.as = 'document';
                 link.href = PDF_DIR + info.pdf;
                 document.head.appendChild(link);
             }
@@ -494,34 +871,28 @@
     }
 
     function updatePDFViewer(paperInfo, qNum) {
-        if (!paperInfo || !paperInfo.pdf) {
-            pdfViewer.src = 'about:blank';
-            pdfLabelSpan.innerText = '';
-            return;
-        }
+        if (!paperInfo?.pdf) { pdfViewer.src = 'about:blank'; pdfLabelSpan.innerText = ''; return; }
         const page = getPageNumber(paperInfo, qNum);
-        const pdfUrl = `${PDF_DIR}${paperInfo.pdf}#page=${page}`;
-        pdfViewer.src = pdfUrl;
-        pdfLabelSpan.innerText = `${paperInfo.session} ${paperInfo.year} (p.${page})`;
+        pdfViewer.src = `${PDF_DIR}${paperInfo.pdf}#page=${page}`;
+        pdfLabelSpan.innerText = `${paperInfo.session} ${paperInfo.year} · p.${page}`;
     }
 
-    // ----- Calculator Widget (reusable) -----
+    // ─── CALCULATOR ──────────────────────────────────────────────
     function buildCalculator(containerId) {
         const container = document.getElementById(containerId);
         if (!container) return;
         let expression = '0';
-        const updateDisplay = (disp) => { const d = container.querySelector('.calc-display-target'); if(d) d.innerText = disp || '0'; };
+        const updateDisplay = d => { const el = container.querySelector('.calc-display-target'); if(el) el.innerText = d || '0'; };
         const compute = () => {
             try {
-                let expr = expression.replace(/√/g, 'Math.sqrt').replace(/%/g, '/100');
-                let res = Function('"use strict";return (' + expr + ')')();
-                expression = String(res);
+                let expr = expression.replace(/√/g,'Math.sqrt').replace(/%/g,'/100');
+                expression = String(Function('"use strict";return (' + expr + ')')());
                 updateDisplay(expression);
-            } catch(e) { expression = 'Error'; updateDisplay('Error'); }
+            } catch { expression = 'Error'; updateDisplay('Error'); }
         };
-        const btns = [ ['7','8','9','/'], ['4','5','6','*'], ['1','2','3','-'], ['0','C','=','+'], ['%','.','√','AC'] ];
-        container.innerHTML = `<div class="calc-display calc-display-target">0</div><div class="calc-buttons" id="calc-grid-${containerId}"></div>`;
-        const grid = container.querySelector(`.calc-buttons`);
+        const btns = [['7','8','9','/'],['4','5','6','*'],['1','2','3','-'],['0','C','=','+'],['%','.','√','AC']];
+        container.innerHTML = `<div class="calc-display calc-display-target">0</div><div class="calc-buttons"></div>`;
+        const grid = container.querySelector('.calc-buttons');
         btns.flat().forEach(label => {
             const btn = document.createElement('button');
             btn.className = 'calc-btn';
@@ -529,93 +900,85 @@
             if (label === '=') btn.classList.add('equal');
             btn.innerText = label;
             btn.onclick = () => {
-                if (label === 'C') expression = '0';
-                else if (label === 'AC') expression = '0';
-                else if (label === '=') compute();
+                if (label === 'C' || label === 'AC') expression = '0';
+                else if (label === '=') { compute(); return; }
                 else {
                     if (expression === '0' && !isNaN(label) && label !== '.') expression = label;
                     else expression += label;
-                    updateDisplay(expression);
                 }
+                updateDisplay(expression);
             };
             grid.appendChild(btn);
         });
-        updateDisplay('0');
     }
 
-    // ----- Load YAML papers -----
+    // ─── LOAD YAML ───────────────────────────────────────────────
     async function loadSelectedPapers(files) {
-        let loaded = [];
-        for (let f of files) {
+        const loaded = [];
+        for (const f of files) {
             try {
                 const resp = await fetch(YAML_DIR + f + '.yaml');
                 if (!resp.ok) continue;
-                const txt = await resp.text();
-                const data = jsyaml.load(txt);
+                const data = jsyaml.load(await resp.text());
                 if (data?.exam?.items) {
                     const meta = PAPERS.find(p => p.file === f);
-                    
-                    // Filter out non-existent / dummy placeholder questions
                     const validItems = data.exam.items.filter(item => {
-                        const text = (item.question || "").toLowerCase();
-                        return !(text.includes("not provided") || text.includes("n/a") || item.correct_answer === "Not found");
+                        const text = (item.question || '').toLowerCase();
+                        return !(text.includes('not provided') || text.includes('n/a') || item.correct_answer === 'Not found');
                     });
-
-                    if (validItems.length > 0) {
-                        loaded.push({
-                            file: f, year: meta?.year, session: meta?.session,
-                            items: validItems, paperInfo: meta
-                        });
-                    }
+                    if (validItems.length) loaded.push({ file: f, year: meta?.year, session: meta?.session, items: validItems, paperInfo: meta });
                 }
             } catch(e) { console.warn(e); }
         }
         return loaded;
     }
 
-    function shuffle(arr) { for (let i = arr.length - 1; i > 0; i--) { const j = Math.floor(Math.random()*(i+1)); [arr[i], arr[j]] = [arr[j], arr[i]]; } return arr; }
+    function shuffle(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+    }
 
-    // Preload PDFs for selected papers AND also preload helper pages
+    // ─── START QUIZ ──────────────────────────────────────────────
     async function startQuiz() {
         const selected = Array.from(document.querySelectorAll('#yearCheckboxes input:checked')).map(cb => cb.value);
-        if (selected.length === 0) { alert('Select at least one paper'); return; }
-        let count = parseInt(qCountInput.value,10);
+        if (!selected.length) { alert('Select at least one paper'); return; }
+        let count = parseInt(qCountInput.value, 10);
         if (isNaN(count) || count < 1) count = 30;
 
-        // Show loading overlay
         const loadingDiv = document.createElement('div');
         loadingDiv.className = 'loading-overlay';
-        loadingDiv.innerHTML = '<div>📖 Loading questions & preloading PDFs... ⏳</div>';
+        loadingDiv.innerHTML = '<div class="loading-box"><div class="spinner"></div><div>Loading questions…</div></div>';
         document.body.appendChild(loadingDiv);
-
         startBtn.disabled = true;
-        allPapersData = await loadSelectedPapers(selected);
-        if (allPapersData.length === 0) { loadingDiv.remove(); alert('No valid questions found in selected papers'); startBtn.disabled=false; return; }
 
-        // Prefetch PDFs for all selected papers (cache them)
-        const uniquePaperInfos = [...new Map(allPapersData.map(p => [p.paperInfo?.pdf, p.paperInfo])).values()];
-        preloadPDFs(uniquePaperInfos);
+        allPapersData = await loadSelectedPapers(selected);
+        if (!allPapersData.length) {
+            loadingDiv.remove();
+            alert('No valid questions found in selected papers');
+            startBtn.disabled = false;
+            return;
+        }
+
+        preloadPDFs([...new Map(allPapersData.map(p => [p.paperInfo?.pdf, p.paperInfo])).values()]);
 
         let allItems = [];
-        allPapersData.forEach(paper => {
-            paper.items.forEach(item => {
-                allItems.push({ ...item, paperFile: paper.file, session: paper.session, year: paper.year,
-                    originalQuestionNumber: item.number, paperInfo: paper.paperInfo });
-            });
-        });
+        allPapersData.forEach(paper => paper.items.forEach(item => {
+            allItems.push({ ...item, paperFile: paper.file, session: paper.session, year: paper.year,
+                originalQuestionNumber: item.number, paperInfo: paper.paperInfo });
+        }));
         allItems = shuffle(allItems);
-        if (allItems.length < count) count = allItems.length;
-        quizQuestions = allItems.slice(0, count);
+        quizQuestions = allItems.slice(0, Math.min(count, allItems.length));
         currentIndex = 0; score = 0;
 
         loadingDiv.remove();
         startBtn.disabled = false;
-
         setupScreen.classList.add('hidden');
         quizScreen.classList.remove('hidden');
         resultsScreen.classList.add('hidden');
 
-        // initial PDF preview (first question)
         if (quizQuestions.length) updatePDFViewer(quizQuestions[0].paperInfo, quizQuestions[0].originalQuestionNumber);
 
         if (funMode && isMobile) {
@@ -630,19 +993,19 @@
         showQuestion();
     }
 
+    // ─── SHOW QUESTION ───────────────────────────────────────────
     function showQuestion() {
         if (currentIndex >= quizQuestions.length) { endQuiz(); return; }
         const q = quizQuestions[currentIndex];
         currentQuestionObj = q;
-        questionTextSpan.innerHTML = `${currentIndex+1}. ${q.question}`;
-        questionSourceSpan.innerText = `${q.session} ${q.year} • Q${q.originalQuestionNumber}`;
+        questionTextSpan.innerHTML = `${currentIndex + 1}. ${q.question}`;
+        questionSourceSpan.innerText = `${q.session} ${q.year} · Q${q.originalQuestionNumber}`;
         updatePDFViewer(q.paperInfo, q.originalQuestionNumber);
-        const progress = ((currentIndex) / quizQuestions.length) * 100;
-        progressFill.style.width = progress + '%';
-        qCounterSpan.innerText = `Q${currentIndex+1}/${quizQuestions.length}`;
-        scoreDisplaySpan.innerText = `Score: ${score}/${currentIndex}`;
+        progressFill.style.width = `${(currentIndex / quizQuestions.length) * 100}%`;
+        qCounterSpan.innerText = `Q${currentIndex + 1} / ${quizQuestions.length}`;
+        scoreDisplaySpan.innerText = `Score ${score}/${currentIndex}`;
         feedbackMsg.className = 'feedback';
-        feedbackMsg.style.display = 'none';
+        feedbackMsg.style.display = '';
         nextBtn.style.display = 'none';
         waitingAnswer = false;
 
@@ -657,14 +1020,14 @@
         }
     }
 
+    // ─── STANDARD OPTIONS ────────────────────────────────────────
     function renderStandardOptions(q) {
         standardOptionsDiv.innerHTML = '';
-        const letters = ['A','B','C','D'];
-        letters.forEach(letter => {
-            if (q.options && q.options[letter]) {
+        ['A','B','C','D'].forEach(letter => {
+            if (q.options?.[letter]) {
                 const btn = document.createElement('button');
                 btn.className = 'option-btn';
-                btn.innerText = `${letter}. ${q.options[letter]}`;
+                btn.innerHTML = `<span class="opt-letter">${letter}</span><span>${q.options[letter]}</span>`;
                 btn.onclick = () => { if (!waitingAnswer) handleStandardAnswer(letter, q.correct_answer); };
                 standardOptionsDiv.appendChild(btn);
             }
@@ -674,39 +1037,30 @@
     function handleStandardAnswer(selected, correct) {
         if (waitingAnswer) return;
         waitingAnswer = true;
-        const isCorrect = (selected === correct);
+        const isCorrect = selected === correct;
         if (isCorrect) score++;
-        scoreDisplaySpan.innerText = `Score: ${score}/${currentIndex+1}`;
-        const btns = document.querySelectorAll('#standardOptions .option-btn');
-        btns.forEach(btn => {
+        scoreDisplaySpan.innerText = `Score ${score}/${currentIndex + 1}`;
+        document.querySelectorAll('#standardOptions .option-btn').forEach(btn => {
             btn.disabled = true;
-            const letter = btn.innerText.charAt(0);
+            const letter = btn.querySelector('.opt-letter')?.innerText;
             if (letter === correct) btn.classList.add('correct');
             if (letter === selected && !isCorrect) btn.classList.add('wrong');
         });
-        feedbackMsg.innerText = isCorrect ? '✓ Correct' : `✗ Incorrect. Answer: ${correct}`;
+        feedbackMsg.innerText = isCorrect ? '✓ Correct!' : `✗ Incorrect — Answer: ${correct}`;
         feedbackMsg.className = `feedback ${isCorrect ? 'correct' : 'wrong'}`;
-        feedbackMsg.style.display = 'block';
         nextBtn.style.display = 'inline-flex';
         waitingAnswer = false;
     }
 
+    // ─── FUN MODE ────────────────────────────────────────────────
     function buildFunGrid(q) {
         const letters = ['A','B','C','D'];
-        const colors = ['red','green','blue','yellow'];
-        let html = `<div class="fun-grid">`;
-        letters.forEach((letter, idx) => {
-            if (q.options[letter]) {
-                html += `<div class="fun-card color-${colors[idx]}" data-letter="${letter}">${letter}</div>`;
-            }
-        });
-        html += `</div>`;
-        funContainer.innerHTML = html;
+        const colors  = ['red','green','blue','yellow'];
+        funContainer.innerHTML = `<div class="fun-grid">${letters.map((l,i) => q.options[l]
+            ? `<div class="fun-card color-${colors[i]}" data-letter="${l}">${l}</div>` : '').join('')}</div>`;
         document.querySelectorAll('.fun-card').forEach(card => {
-            card.addEventListener('click', (e) => {
-                if (waitingAnswer) return;
-                const chosen = card.dataset.letter;
-                handleFunAnswer(chosen, q.correct_answer, card);
+            card.addEventListener('click', () => {
+                if (!waitingAnswer) handleFunAnswer(card.dataset.letter, q.correct_answer, card);
             });
         });
     }
@@ -714,65 +1068,62 @@
     function handleFunAnswer(selected, correct, cardElem) {
         if (waitingAnswer) return;
         waitingAnswer = true;
-        const isCorrect = (selected === correct);
+        const isCorrect = selected === correct;
         if (isCorrect) {
-            canvasConfetti({ particleCount: 130, spread: 70, origin: { y: 0.6 }, colors: ['#22c55e', '#3b82f6', '#facc15'] });
+            canvasConfetti({ particleCount: 130, spread: 70, origin: { y: 0.6 }, colors: ['#22c55e','#3b82f6','#facc15'] });
             score++;
-            scoreDisplaySpan.innerText = `Score: ${score}/${currentIndex+1}`;
-            document.querySelectorAll('.fun-card').forEach(c => { if(c.dataset.letter === correct) c.style.filter = 'brightness(1.3) drop-shadow(0 0 6px gold)'; });
+            scoreDisplaySpan.innerText = `Score ${score}/${currentIndex + 1}`;
+            document.querySelectorAll('.fun-card').forEach(c => { if(c.dataset.letter === correct) c.style.filter = 'brightness(1.3) drop-shadow(0 0 8px gold)'; });
         } else {
             cardElem.classList.add('wrong-shake');
             setTimeout(() => cardElem.classList.remove('wrong-shake'), 400);
             const wrongDiv = document.createElement('div');
+            Object.assign(wrongDiv.style, { position:'fixed', top:'35%', left:'50%', transform:'translate(-50%,-50%)',
+                fontSize:'2.6rem', fontWeight:'900', color:'#ef4444', zIndex:'999',
+                background:'rgba(0,0,0,0.8)', padding:'0.3rem 1.8rem', borderRadius:'60px', fontFamily:'inherit' });
             wrongDiv.innerText = 'WRONG';
-            wrongDiv.style.position = 'fixed'; wrongDiv.style.top = '35%'; wrongDiv.style.left = '50%';
-            wrongDiv.style.transform = 'translate(-50%, -50%)'; wrongDiv.style.fontSize = '2.6rem';
-            wrongDiv.style.fontWeight = '900'; wrongDiv.style.color = '#ef4444'; wrongDiv.style.zIndex = '999';
-            wrongDiv.style.background = 'rgba(0,0,0,0.7)'; wrongDiv.style.padding = '0.3rem 1.8rem'; wrongDiv.style.borderRadius = '60px';
             document.body.appendChild(wrongDiv);
             setTimeout(() => wrongDiv.remove(), 600);
             document.querySelectorAll('.fun-card').forEach(c => { if(c.dataset.letter === correct) c.style.boxShadow = '0 0 0 4px white, 0 0 0 8px #22c55e'; });
         }
         setTimeout(() => {
-            if (currentIndex + 1 < quizQuestions.length) {
-                currentIndex++;
-                showQuestion();
-            } else {
-                endQuiz();
-            }
             waitingAnswer = false;
+            if (currentIndex + 1 < quizQuestions.length) { currentIndex++; showQuestion(); }
+            else endQuiz();
         }, 1000);
     }
 
+    // ─── END QUIZ ────────────────────────────────────────────────
     function endQuiz() {
         quizScreen.classList.add('hidden');
         resultsScreen.classList.remove('hidden');
-        const total = quizQuestions.length;
-        const percent = Math.round((score/total)*100);
-        document.getElementById('finalScore').innerText = score;
-        document.getElementById('finalTotal').innerText = total;
-        document.getElementById('finalPercent').innerText = percent+'%';
+        const total   = quizQuestions.length;
+        const percent = Math.round((score / total) * 100);
+        document.getElementById('finalScore').innerText   = score;
+        document.getElementById('finalTotal').innerText   = total;
+        document.getElementById('finalPercent').innerText = percent + '%';
         let history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
         history.push({ date: new Date().toISOString(), score, total, percent });
         localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
         updateHistoryDisplays();
     }
 
+    // ─── HISTORY ─────────────────────────────────────────────────
     function updateHistoryDisplays() {
         const history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
-        const recent = history.slice(-5).reverse();
-        const htmlList = recent.map(h => `<li><span>${new Date(h.date).toLocaleString()}</span><span>${h.score}/${h.total} (${h.percent}%)</span></li>`).join('');
-        document.getElementById('historyContainer').innerHTML = recent.length ? `<ul class="history-list">${htmlList}</ul>` : '<p>No attempts</p>';
-        document.getElementById('resultsHistory').innerHTML = recent.length ? `<ul class="history-list">${htmlList}</ul>` : '<p>—</p>';
+        const recent  = history.slice(-5).reverse();
+        const makeList = () => recent.length
+            ? `<ul class="history-list">${recent.map(h =>
+                `<li><span>${new Date(h.date).toLocaleString()}</span><span class="hist-score">${h.score}/${h.total} (${h.percent}%)</span></li>`).join('')}</ul>`
+            : '<p style="color:var(--text-muted);font-size:0.85rem;">No attempts yet</p>';
+        document.getElementById('historyContainer').innerHTML = makeList();
+        document.getElementById('resultsHistory').innerHTML   = makeList();
     }
 
-    // mobile fun mode toggle (only on mobile)
+    // ─── MOBILE FUN TOGGLE ───────────────────────────────────────
     function initMobileFun() {
         const toggleBtn = document.getElementById('mobileFunToggle');
-        if (!isMobile) {
-            toggleBtn.classList.add('hidden');
-            return;
-        }
+        if (!isMobile) { toggleBtn.classList.add('hidden'); return; }
         toggleBtn.classList.remove('hidden');
         toggleBtn.onclick = () => {
             funMode = !funMode;
@@ -790,13 +1141,12 @@
                     if (currentQuestionObj) renderStandardOptions(currentQuestionObj);
                 }
             } else {
-                if (funMode) document.body.classList.add('fun-mode-active');
-                else document.body.classList.remove('fun-mode-active');
+                document.body.classList.toggle('fun-mode-active', funMode);
             }
         };
     }
 
-    // ----- Initialization -----
+    // ─── INIT ────────────────────────────────────────────────────
     async function init() {
         await loadPageMap();
         PAPERS.forEach(p => {
@@ -806,15 +1156,20 @@
         });
         startBtn.onclick = startQuiz;
         document.getElementById('retryQuizBtn').onclick = () => { resultsScreen.classList.add('hidden'); setupScreen.classList.remove('hidden'); };
-        document.getElementById('newQuizBtn').onclick = () => { resultsScreen.classList.add('hidden'); setupScreen.classList.remove('hidden'); document.querySelectorAll('#yearCheckboxes input').forEach(cb => cb.checked=true); qCountInput.value=30; };
-        nextBtn.onclick = () => { if (currentIndex+1 < quizQuestions.length) { currentIndex++; showQuestion(); } else endQuiz(); };
+        document.getElementById('newQuizBtn').onclick   = () => {
+            resultsScreen.classList.add('hidden');
+            setupScreen.classList.remove('hidden');
+            document.querySelectorAll('#yearCheckboxes input').forEach(cb => cb.checked = true);
+            qCountInput.value = 30;
+        };
+        nextBtn.onclick = () => { if (currentIndex + 1 < quizQuestions.length) { currentIndex++; showQuestion(); } else endQuiz(); };
         updateHistoryDisplays();
         buildCalculator('desktopCalcWidget');
         initMobileFun();
         initResizableSidebar();
-        // preload default placeholder
         pdfViewer.src = 'about:blank';
     }
+
     init();
 </script>
 </body>
